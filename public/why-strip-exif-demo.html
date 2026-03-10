@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>移除 EXIF 的重要性 — 展现形式示例</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #fafafa;
+      --card: #fff;
+      --border: #e5e7eb;
+      --text: #111827;
+      --muted: #6b7280;
+      --primary: #2563eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "DM Sans", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 2rem 1.5rem 4rem;
+      line-height: 1.6;
+    }
+    .page-header {
+      max-width: 720px;
+    }
+    .page-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .page-desc {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 2.5rem;
+    }
+    .demo-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      max-width: 720px;
+    }
+    @media (min-width: 960px) {
+      .page-header { max-width: 1200px; }
+      .demo-grid {
+        max-width: 1200px;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    section.demo {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 0;
+      min-width: 0;
+    }
+    section.demo h2 {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      margin: 0 0 1rem;
+    }
+    .block-title {
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin-bottom: 1.25rem;
+      color: var(--text);
+    }
+
+    /* 方案一：列表 + 小标题 */
+    .list-block { }
+    .list-item {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .list-item:last-child { border-bottom: 0; }
+    .list-num {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.875rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .list-body h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0 0 0.35rem;
+    }
+    .list-body p {
+      font-size: 0.875rem;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    /* 方案二：时间线 */
+    .timeline {
+      position: relative;
+      padding-left: 1.5rem;
+    }
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 5px;
+      top: 8px;
+      bottom: 8px;
+      width: 2px;
+      background: var(--border);
+      border-radius: 1px;
+    }
+    .timeline-item {
+      position: relative;
+      padding-bottom: 1.25rem;
+    }
+    .timeline-item:last-child { padding-bottom: 0; }
+    .timeline-dot {
+      position: absolute;
+      left: -1.5rem;
+      top: 2px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--primary);
+      border: 2px solid var(--card);
+      box-shadow: 0 0 0 1px var(--border);
+    }
+    .timeline-item h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0 0 0.35rem;
+    }
+    .timeline-item p {
+      font-size: 0.875rem;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    /* 方案三：图标 + 横排列表 */
+    .row-list { }
+    .row-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 0.875rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .row-item:last-child { border-bottom: 0; }
+    .row-icon {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: rgba(37, 99, 235, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+    }
+    .row-icon svg { width: 22px; height: 22px; }
+    .row-body h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0 0 0.25rem;
+    }
+    .row-body p {
+      font-size: 0.875rem;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    /* 方案四：单栏长文分段（文章式） */
+    .article-block .block-title { margin-bottom: 1rem; }
+    .article-block .article-p {
+      font-size: 0.9375rem;
+      color: var(--text);
+      margin: 0 0 1rem;
+    }
+    .article-block .article-p:last-of-type { margin-bottom: 0; }
+    .article-block h3.article-heading {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 1.25rem 0 0.5rem;
+      color: var(--text);
+    }
+    .article-block h3.article-heading:first-child { margin-top: 0; }
+
+    /* 方案五：标签页 Tab */
+    .tabs-wrap { margin-top: 0.5rem; }
+    .tabs-nav {
+      display: flex;
+      gap: 0.25rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+    .tabs-nav button {
+      font: inherit;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--muted);
+      background: none;
+      border: none;
+      padding: 0.5rem 0.75rem;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -1px;
+      border-radius: 4px 4px 0 0;
+    }
+    .tabs-nav button:hover { color: var(--text); }
+    .tabs-nav button.active {
+      color: var(--primary);
+      border-bottom-color: var(--primary);
+    }
+    .tabs-panel {
+      font-size: 0.9375rem;
+      color: var(--text);
+      line-height: 1.65;
+      display: none;
+    }
+    .tabs-panel.active { display: block; }
+
+    /* 方案六：引用块 / 高亮句 + 说明 */
+    .quote-block { }
+    .quote-item {
+      margin-bottom: 1.25rem;
+    }
+    .quote-item:last-child { margin-bottom: 0; }
+    .quote-line {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+      border-left: 3px solid var(--primary);
+      padding-left: 0.875rem;
+      margin: 0 0 0.35rem;
+      font-style: normal;
+    }
+    .quote-desc {
+      font-size: 0.875rem;
+      color: var(--muted);
+      margin: 0;
+      padding-left: 0.875rem;
+      border-left: 3px solid var(--border);
+      margin-left: 0;
+    }
+
+    /* 宽屏：区块内 4 条内容两列排布 */
+    @media (min-width: 960px) {
+      .list-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 1.5rem;
+      }
+      .list-item { border-bottom: 1px solid var(--border); }
+      .list-item:nth-child(odd) { padding-right: 0.5rem; }
+      .list-item:nth-child(even) { padding-left: 0.5rem; }
+
+      /* 时间线保持单列，避免左侧竖线只覆盖一列 */
+      .row-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 1.5rem;
+      }
+      .row-item:nth-child(odd) { padding-right: 0.5rem; }
+      .row-item:nth-child(even) { padding-left: 0.5rem; }
+
+      .quote-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 1.5rem;
+      }
+      .quote-item:nth-child(odd) { padding-right: 0.5rem; }
+      .quote-item:nth-child(even) { padding-left: 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="page-header">
+    <h1 class="page-title">移除 EXIF 的重要性 — 展现形式示例</h1>
+    <p class="page-desc">同一套文案，多种非卡片展现形式，便于选型。内容仅为示例，正式文案可再润色。</p>
+  </header>
+
+  <div class="demo-grid">
+  <!-- 方案一：列表 + 小标题（带序号） -->
+  <section class="demo">
+    <h2>方案一 · 列表 + 小标题</h2>
+    <h3 class="block-title">为什么要移除 EXIF</h3>
+    <div class="list-block">
+      <div class="list-item">
+        <span class="list-num">1</span>
+        <div class="list-body">
+          <h3>保护位置隐私</h3>
+          <p>EXIF 中可能包含 GPS 坐标、拍摄时间等。分享原图等于暴露「在何时何地拍摄」，容易被推断常去地点甚至家庭、公司位置。移除 EXIF 可避免位置信息随图流出。</p>
+        </div>
+      </div>
+      <div class="list-item">
+        <span class="list-num">2</span>
+        <div class="list-body">
+          <h3>避免设备与身份信息泄露</h3>
+          <p>元数据里常有相机/手机型号、序列号、软件版本等。这些信息可被用于设备指纹、身份推断。剥离后对外只留下「图本身」，不附带设备与身份线索。</p>
+        </div>
+      </div>
+      <div class="list-item">
+        <span class="list-num">3</span>
+        <div class="list-body">
+          <h3>安全分享与二次传播</h3>
+          <p>图片一旦发给他人或上传到社交平台，EXIF 可能被读取、存储或二次传播。上传或发送前移除 EXIF，可降低被追踪、滥用的风险。</p>
+        </div>
+      </div>
+      <div class="list-item">
+        <span class="list-num">4</span>
+        <div class="list-body">
+          <h3>由你决定哪些信息随图流出</h3>
+          <p>是否携带元数据应由发布者决定。在需要「只发图、不带后台信息」的场景下，先剥离 EXIF 再分享，更符合「知情、可控」的预期。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 方案二：时间线 / 步骤条式 -->
+  <section class="demo">
+    <h2>方案二 · 时间线</h2>
+    <h3 class="block-title">为什么要移除 EXIF</h3>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="timeline-dot"></span>
+        <h3>保护位置隐私</h3>
+        <p>EXIF 中可能包含 GPS 坐标、拍摄时间等。分享原图等于暴露「在何时何地拍摄」。移除 EXIF 可避免位置信息随图流出。</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-dot"></span>
+        <h3>避免设备与身份信息泄露</h3>
+        <p>元数据里常有相机/手机型号、序列号、软件版本等。剥离后对外只留下「图本身」，不附带设备与身份线索。</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-dot"></span>
+        <h3>安全分享与二次传播</h3>
+        <p>图片一旦发给他人或上传到社交平台，EXIF 可能被读取或二次传播。发送前移除 EXIF，可降低被追踪、滥用的风险。</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-dot"></span>
+        <h3>由你决定哪些信息随图流出</h3>
+        <p>是否携带元数据应由发布者决定。先剥离 EXIF 再分享，更符合「知情、可控」的预期。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 方案三：图标 + 横排列表 -->
+  <section class="demo">
+    <h2>方案三 · 图标 + 横排列表</h2>
+    <h3 class="block-title">为什么要移除 EXIF</h3>
+    <div class="row-list">
+      <div class="row-item">
+        <div class="row-icon">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        </div>
+        <div class="row-body">
+          <h3>保护位置隐私</h3>
+          <p>EXIF 可能包含 GPS、拍摄时间。分享原图易暴露地点与时间。移除 EXIF 可避免位置信息随图流出。</p>
+        </div>
+      </div>
+      <div class="row-item">
+        <div class="row-icon">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        </div>
+        <div class="row-body">
+          <h3>避免设备与身份信息泄露</h3>
+          <p>元数据常有设备型号、序列号等。剥离后只留下「图本身」，不附带设备与身份线索。</p>
+        </div>
+      </div>
+      <div class="row-item">
+        <div class="row-icon">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6 2m-6-2l6-2m0 0V9m0 0a3 3 0 105.367-2.684m0 2.684L15 12m-3 0h.008M12 3v.008"/></svg>
+        </div>
+        <div class="row-body">
+          <h3>安全分享与二次传播</h3>
+          <p>图片发给他人或上传平台后，EXIF 可能被读取或二次传播。发送前移除可降低被追踪与滥用风险。</p>
+        </div>
+      </div>
+      <div class="row-item">
+        <div class="row-icon">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+        </div>
+        <div class="row-body">
+          <h3>由你决定哪些信息随图流出</h3>
+          <p>是否携带元数据应由发布者决定。先剥离 EXIF 再分享，更符合「知情、可控」的预期。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 方案四：单栏长文分段（文章式） -->
+  <section class="demo">
+    <h2>方案四 · 单栏长文分段（文章式）</h2>
+    <div class="article-block">
+      <h3 class="block-title">为什么要移除 EXIF</h3>
+      <p class="article-p">分享照片时，很多人会直接发送原图。原图里往往带有 EXIF 元数据，若不处理就分享，可能带来隐私与安全风险。下面从几个方面说明移除 EXIF 的重要性。</p>
+      <h3 class="article-heading">保护位置隐私</h3>
+      <p class="article-p">EXIF 中可能包含 GPS 坐标、拍摄时间等。分享原图等于暴露「在何时何地拍摄」，容易被推断常去地点甚至家庭、公司位置。移除 EXIF 可避免位置信息随图流出。</p>
+      <h3 class="article-heading">避免设备与身份信息泄露</h3>
+      <p class="article-p">元数据里常有相机/手机型号、序列号、软件版本等。这些信息可被用于设备指纹、身份推断。剥离后对外只留下「图本身」，不附带设备与身份线索。</p>
+      <h3 class="article-heading">安全分享与二次传播</h3>
+      <p class="article-p">图片一旦发给他人或上传到社交平台，EXIF 可能被读取、存储或二次传播。上传或发送前移除 EXIF，可降低被追踪、滥用的风险。</p>
+      <h3 class="article-heading">由你决定哪些信息随图流出</h3>
+      <p class="article-p">是否携带元数据应由发布者决定。在需要「只发图、不带后台信息」的场景下，先剥离 EXIF 再分享，更符合「知情、可控」的预期。</p>
+    </div>
+  </section>
+
+  <!-- 方案五：标签页 Tab -->
+  <section class="demo">
+    <h2>方案五 · 标签页</h2>
+    <h3 class="block-title">为什么要移除 EXIF</h3>
+    <div class="tabs-wrap">
+      <div class="tabs-nav" role="tablist">
+        <button type="button" role="tab" aria-selected="true" data-tab="0" class="active">位置隐私</button>
+        <button type="button" role="tab" aria-selected="false" data-tab="1">设备与身份</button>
+        <button type="button" role="tab" aria-selected="false" data-tab="2">安全分享</button>
+        <button type="button" role="tab" aria-selected="false" data-tab="3">由你决定</button>
+      </div>
+      <div id="tab-panel-0" class="tabs-panel active" role="tabpanel">
+        <p>EXIF 中可能包含 GPS 坐标、拍摄时间等。分享原图等于暴露「在何时何地拍摄」，容易被推断常去地点甚至家庭、公司位置。移除 EXIF 可避免位置信息随图流出。</p>
+      </div>
+      <div id="tab-panel-1" class="tabs-panel" role="tabpanel">
+        <p>元数据里常有相机/手机型号、序列号、软件版本等。这些信息可被用于设备指纹、身份推断。剥离后对外只留下「图本身」，不附带设备与身份线索。</p>
+      </div>
+      <div id="tab-panel-2" class="tabs-panel" role="tabpanel">
+        <p>图片一旦发给他人或上传到社交平台，EXIF 可能被读取、存储或二次传播。上传或发送前移除 EXIF，可降低被追踪、滥用的风险。</p>
+      </div>
+      <div id="tab-panel-3" class="tabs-panel" role="tabpanel">
+        <p>是否携带元数据应由发布者决定。在需要「只发图、不带后台信息」的场景下，先剥离 EXIF 再分享，更符合「知情、可控」的预期。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 方案六：引用块 / 高亮句 + 说明 -->
+  <section class="demo">
+    <h2>方案六 · 引用块（高亮句 + 说明）</h2>
+    <h3 class="block-title">为什么要移除 EXIF</h3>
+    <div class="quote-block">
+      <div class="quote-item">
+        <p class="quote-line">位置信息会随图流出。</p>
+        <p class="quote-desc">EXIF 中可能包含 GPS 坐标、拍摄时间等。分享原图等于暴露「在何时何地拍摄」。移除 EXIF 可避免位置信息随图流出。</p>
+      </div>
+      <div class="quote-item">
+        <p class="quote-line">设备与身份线索可能被利用。</p>
+        <p class="quote-desc">元数据里常有相机/手机型号、序列号、软件版本等，可被用于设备指纹、身份推断。剥离后只留下「图本身」。</p>
+      </div>
+      <div class="quote-item">
+        <p class="quote-line">EXIF 可能被读取并二次传播。</p>
+        <p class="quote-desc">图片发给他人或上传到社交平台后，EXIF 可能被读取、存储或二次传播。发送前移除可降低被追踪、滥用的风险。</p>
+      </div>
+      <div class="quote-item">
+        <p class="quote-line">由你决定哪些信息随图流出。</p>
+        <p class="quote-desc">是否携带元数据应由发布者决定。先剥离 EXIF 再分享，更符合「知情、可控」的预期。</p>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <script>
+    (function() {
+      var nav = document.querySelector('.tabs-nav');
+      if (!nav) return;
+      nav.addEventListener('click', function(e) {
+        var btn = e.target.closest('button[data-tab]');
+        if (!btn) return;
+        var idx = btn.getAttribute('data-tab');
+        nav.querySelectorAll('button').forEach(function(b) {
+          b.classList.toggle('active', b === btn);
+          b.setAttribute('aria-selected', b === btn ? 'true' : 'false');
+        });
+        document.querySelectorAll('.tabs-panel').forEach(function(p, i) {
+          p.classList.toggle('active', String(i) === idx);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,615 @@
+{
+  "quickActions": {
+    "title": "Quick actions",
+    "upload": "Upload image",
+    "metadata": "Metadata",
+    "privacy": "Privacy"
+  },
+  "seo": {
+    "relatedReading": "Related reading"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "blog": "Blog",
+    "guides": "Guides",
+    "faq": "FAQ",
+    "language": "Language",
+    "sectionNav": {
+      "hero": "Hero",
+      "intro": "Intro",
+      "upload": "Upload",
+      "metadata": "Metadata",
+      "metadataGraph": "Graph",
+      "whyStripExif": "Why strip EXIF",
+      "privacy": "Privacy",
+      "exifTable": "EXIF Table",
+      "faq": "FAQ"
+    }
+  },
+  "languageOption": {
+    "en": "English",
+    "zh-CN": "中文",
+    "ja": "日本語"
+  },
+  "hero": {
+    "title": "Free EXIF viewer, editor and metadata remover",
+    "desc": "View, edit, and strip EXIF in your browser. No upload, free forever."
+  },
+  "intro": {
+    "whoWeAre": "What is ExifStrip?",
+    "whoWeAreDesc": "We are an online photo EXIF viewer and editor. You can view, edit, and remove EXIF—all in your browser, nothing is uploaded, no sign-up required, and it's free.",
+    "whatYouCanDo": "How we protect your privacy",
+    "whatYouCanDoDesc": "Your privacy and security are our top priority. We do not collect extra information. For details, see Privacy.",
+    "whatYouCanDoDescPart1": "Your privacy and security are our top priority. We do not collect extra information. For details, see ",
+    "whatYouCanDoDescLink": "Privacy",
+    "whatYouCanDoDescPart2": ".",
+    "whatIsExif": "View, edit & remove EXIF",
+    "whatIsExifDesc": "Upload one or more images, then view, edit, analyze, or remove EXIF—all processed locally, completely free.",
+    "tryIt": "Try it",
+    "aboutPrivacy": "Why does EXIF matter?",
+    "aboutPrivacyDesc": "Photos from phones and cameras often contain personal data like GPS location and device model. So it’s necessary to check and clean EXIF before you share.",
+    "learnMore": "Want to learn more?",
+    "learnMoreDesc": "You can find more on our blog or FAQ.",
+    "learnMoreDescPart1": "You can find more on our ",
+    "learnMoreDescBlog": "blog",
+    "learnMoreDescOr": " or ",
+    "learnMoreDescFaq": "FAQ",
+    "learnMoreDescPart2": ". Our ",
+    "learnMoreDescTutorialsLink": "Guides",
+    "learnMoreDescPart3": " also offer detailed usage."
+  },
+  "upload": {
+    "title": "Upload Image(s)",
+    "hint": "Drag image files here, or click to select—to view or strip EXIF.",
+    "hintDrag": "Drag & drop your image(s) here",
+    "or": "or",
+    "fileInfo": "File Information",
+    "fileInfoPlaceholder": "File info will appear here after upload.",
+    "browse": "Choose File(s)",
+    "clear": "Remove",
+    "reset": "Reset",
+    "clearAll": "Clear all",
+    "addMore": "Add more images",
+    "fileName": "Name",
+    "fileSize": "Size",
+    "fileType": "File Type",
+    "imageSize": "Image Size",
+    "bitsPerSample": "Bits Per Sample",
+    "colorSpace": "Color Space",
+    "mimeType": "MIME Type",
+    "lastModified": "Last Modified",
+    "caption": "Caption",
+    "artist": "Artist",
+    "copyright": "Copyright",
+    "supportedFormats": "Supported file types",
+    "supportedFormatsHint": "JPEG, PNG, TIFF, HEIC/HEIF, AVIF, WebP",
+    "supportedFormatsFooter": "More formats may be added over time.",
+    "gpsPlaceholder": "GPS Map (shown when location data exists)",
+    "locationsTitle": "Location(s)",
+    "mapLoading": "Loading map…",
+    "noLocationData": "No location data",
+    "seeMetadataBelow": "See metadata in tile below",
+    "showOnlySelectedImage": "Show only selected image",
+    "privacyAnalysis": "Privacy analysis",
+    "privacyAnalysisPlaceholder": "Privacy analysis will appear after you upload and select an image.",
+    "riskHigh": "High risk",
+    "riskMedium": "Medium risk",
+    "riskLow": "Low risk",
+    "riskNone": "No risk",
+    "riskSafe": "No privacy risk items detected.",
+    "riskDescLocation": "Exact coordinates where the photo was taken",
+    "riskDescDevice": "Camera or phone model and device info",
+    "riskDescOther": "Artist, copyright, user comment, etc.",
+    "riskDescDateTime": "Date and time when photo was taken or modified",
+    "issuesFound": "{{count}} issues found"
+  },
+  "metadata": {
+    "title": "EXIF metadata",
+    "device": "Device",
+    "imageSettings": "Image settings",
+    "location": "Location",
+    "dateTime": "Date & time",
+    "other": "Author & copyright",
+    "image": "Image properties",
+    "icc": "ICC",
+    "blockContentPlaceholder": "Block content scrolls here when taller.",
+    "noFileHint": "Upload and select an image to view metadata.",
+    "emptyStateTitle": "No metadata yet.",
+    "emptyStateDesc": "Upload one or more images in the section above. Metadata will appear here by dimension once a file is selected.",
+    "emptyStateDescLine1": "Upload one or more images in the section above and",
+    "emptyStateDescLine2": "select a file to view EXIF by dimension here.",
+    "selectFileHint": "Select an image from the list to view its metadata.",
+    "loading": "Reading metadata…",
+    "iccEmpty": "No ICC profile in this file.",
+    "edit": "Edit",
+    "save": "Save",
+    "cancel": "Cancel",
+    "downloadWithEdits": "Download with edits",
+    "delete": "Remove",
+    "restore": "Restore",
+    "deleteBlock": "Delete this dimension",
+    "restoreBlock": "Restore this dimension",
+    "editDisabledNonJpeg": "Editing is only supported for JPEG.",
+    "deleteDisabledNonJpeg": "Removing tags is only supported for JPEG in this version.",
+    "prev": "Prev",
+    "next": "Next",
+    "exportExif": "Export EXIF",
+    "exportCsv": "CSV",
+    "exportJson": "JSON",
+    "exportTxt": "TXT",
+    "exportHex": "HEX (raw)",
+    "clean": "Strip EXIF",
+    "presetFull": "Remove all EXIF",
+    "presetPrivacy": "Privacy (GPS, author, serials)",
+    "presetGpsOnly": "GPS only",
+    "presetDeviceOnly": "Device/serial only",
+    "downloadCleaned": "Download stripped image",
+    "stripUnsupportedFormat": "Stripping is not supported for this format (e.g. HEIC, HEIF, TIFF, AVIF).",
+    "stripNoRiskItems": "No privacy risk items detected for this image; stripping is not needed.",
+    "graphRootLabel": "Image",
+    "graphClose": "Close",
+    "inputFormatHint": "Letters, numbers, common symbols only.",
+    "validationAsciiOnly": "Only English letters, numbers and common symbols are allowed.",
+    "validationInteger": "Please enter an integer.",
+    "validationNumber": "Invalid number or fraction.",
+    "validationLatitude": "Latitude must be between -90 and 90.",
+    "validationLongitude": "Longitude must be between -180 and 180.",
+    "opt": {
+      "orientation": {
+        "0": "Undefined",
+        "1": "Top-left",
+        "2": "Top-right",
+        "3": "Bottom-right",
+        "4": "Bottom-left",
+        "5": "Left-top",
+        "6": "Right-top",
+        "7": "Right-bottom",
+        "8": "Left-bottom"
+      },
+      "whiteBalance": {
+        "0": "Auto",
+        "1": "Manual"
+      },
+      "flash": {
+        "0": "No flash",
+        "1": "Fired",
+        "5": "Fired, return not detected",
+        "7": "Fired, return detected",
+        "9": "Compulsory",
+        "13": "Compulsory, return not detected",
+        "15": "Compulsory, return detected",
+        "16": "No compulsory",
+        "24": "Auto",
+        "25": "Auto, return not detected",
+        "29": "Auto, return detected",
+        "31": "Auto, return detected"
+      },
+      "exposureProgram": {
+        "0": "Undefined",
+        "1": "Manual",
+        "2": "Normal",
+        "3": "Aperture priority",
+        "4": "Shutter priority",
+        "5": "Creative",
+        "6": "Action",
+        "7": "Portrait",
+        "8": "Landscape"
+      },
+      "exposureMode": {
+        "0": "Auto",
+        "1": "Manual",
+        "2": "Auto bracket"
+      },
+      "meteringMode": {
+        "0": "Unknown",
+        "1": "Average",
+        "2": "Center",
+        "3": "Spot",
+        "4": "Multi",
+        "5": "Pattern",
+        "6": "Partial"
+      },
+      "sceneCaptureType": {
+        "0": "Standard",
+        "1": "Landscape",
+        "2": "Portrait",
+        "3": "Night"
+      },
+      "resolutionUnit": {
+        "1": "Unknown",
+        "2": "inches",
+        "3": "cm"
+      },
+      "colorSpace": {
+        "1": "sRGB",
+        "2": "Adobe RGB",
+        "65535": "Uncalibrated"
+      },
+      "gpsRef": {
+        "N": "North",
+        "S": "South",
+        "E": "East",
+        "W": "West"
+      },
+      "gpsDir": {
+        "T": "True",
+        "M": "Magnetic"
+      },
+      "gpsSpeedRef": {
+        "K": "km/h",
+        "M": "mph",
+        "N": "knots"
+      }
+    }
+  },
+  "metadataGraph": {
+    "title": "Metadata graph",
+    "noDataTitle": "No graph data yet.",
+    "noDataDesc": "Upload images to view the metadata graph here."
+  },
+  "toast": {
+    "exportFailed": "Export failed, please try again",
+    "cleanFailed": "Strip failed, please try again",
+    "downloadFailed": "Download failed, please try again",
+    "parseError": "Parse failed"
+  },
+  "fourCards": {
+    "card1Title": "View EXIF",
+    "card1Desc": "Upload images to see EXIF data by dimension—device, location, date, and more. No upload to our servers.",
+    "card2Title": "Edit & remove",
+    "card2Desc": "Edit fields like artist and copyright in JPEG, or strip EXIF with presets: GPS only, device only, privacy, or remove all.",
+    "card3Title": "Export & privacy",
+    "card3Desc": "Export EXIF to CSV, JSON, TXT, or HEX. Privacy analysis highlights sensitive fields before you share.",
+    "card4Title": "No upload, no account",
+    "card4Desc": "Everything runs in your browser. Your photos never leave your device. No sign-up required."
+  },
+  "whyStripExif": {
+    "title": "Why remove EXIF",
+    "item1Quote": "Did you know?",
+    "item1Desc": "Your photos may contain GPS coordinates, capture time, and more. Sharing originals exposes when and where you shot.",
+    "item2Quote": "What's in EXIF?",
+    "item2Desc": "Metadata often includes camera/phone model, serial, software version—usable for fingerprinting. After stripping, only the image remains.",
+    "item3Quote": "What is EXIF?",
+    "item3Desc": "EXIF (Exchangeable Image File Format) is metadata embedded in photos, recording device, time, aperture, shutter, GPS, and more.",
+    "item4Quote": "What should I remove?",
+    "item4Desc": "You can choose to remove all EXIF or only specific dimensions (e.g. location, device). You decide what travels with the image."
+  },
+  "exifTable": {
+    "title": "EXIF reference table",
+    "tagHex": "Tag(Hex)",
+    "name": "Name",
+    "ifd": "IFD",
+    "type": "Type",
+    "value": "Value",
+    "valueExampleHeader": "Value (example)",
+    "noFile": "Upload an image first",
+    "noTags": "No EXIF data"
+  },
+  "privacy": {
+    "title": "Privacy",
+    "intro": "ExifStrip is committed to protecting your privacy. This tool is designed so that your images and metadata **never leave your device**.",
+    "lastUpdated": "Last updated: March 2025",
+    "noUploadsTitle": "No uploads",
+    "noUploadsContent": "All image processing, EXIF reading, editing, and removal are **performed entirely in your browser**. Your images are **never uploaded to any server**, including ours.",
+    "noTrackingTitle": "No tracking",
+    "noTrackingContent": "We **do not track, log, or store** any images, EXIF data, or edits you make. Your usage is **anonymous**.",
+    "cookiesTitle": "Analytics & cookies (GA4)",
+    "cookiesContent": "We use **Google Analytics 4 (GA4)** for site analytics. GA4 may set cookies to measure traffic and usage. We **do not use cookies for our own tracking or advertising**. You can control or disable cookies in your browser; to opt out of Google Analytics, you can use the Google Analytics Opt-out Browser Add-on or adjust your browser settings.",
+    "adsenseTitle": "Advertising (AdSense)",
+    "adsenseContent": "We may use Google AdSense to serve ads. Google may use cookies to personalize ads. We **do not share any image or EXIF data** with Google or any third party.",
+    "securityTitle": "Security",
+    "securityContent": "All processing runs **locally in your browser**. We use **HTTPS** to protect your connection.",
+    "openSourceTitle": "Open source",
+    "openSourceContent": "Our core logic is **transparent** and can be reviewed by anyone. We encourage privacy-conscious users to inspect our code.",
+    "childrenTitle": "Children's privacy",
+    "childrenContent": "This site is **not intended for children under 13**. We do not knowingly collect any personal information from children.",
+    "contactTitle": "Contact",
+    "contactContent": "For privacy questions, contact us via the means provided on this site or in the repository.",
+    "summaryTitle": "Summary",
+    "summaryContent": "Your images and metadata **stay on your device**. We **never see, store, or transmit** your files. You are **in full control** of your data at all times.",
+    "linksHeading": "More information",
+    "linkGoogleAdsText": "Google Advertising Policy",
+    "linkGooglePrivacyText": "Google Privacy Policy",
+    "linkGoogleAnalyticsText": "How Google uses data with sites and apps",
+    "rightsNote": "If you are in the **EU, UK, California**, or similar regions, you may have rights under local law; we **do not collect or store** your personal data on our servers. To exercise your rights, please contact us using the details above."
+  },
+  "footer": {
+    "siteName": "ExifStrip",
+    "intro": "View, edit, and remove EXIF metadata from images in your browser. Your data never leaves your device. No sign-up required.",
+    "copyright": "© {year} ExifStrip",
+    "links": "Links",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "about": "About",
+    "faq": "FAQ",
+    "contactUs": "Contact us",
+    "twitter": "Twitter",
+    "github": "GitHub",
+    "feedback": "Feedback"
+  },
+  "guides": {
+    "pageTitle": "EXIF Guide",
+    "heroSubtitle": "Understand EXIF in depth so you can better protect your own privacy.",
+    "pageDesc": "Understanding EXIF, privacy, and how to use this site.",
+    "comingSoon": "Content coming soon.",
+    "notFound": "Entry not found.",
+    "referencesTitle": "References",
+    "category": {
+      "knowExif": "Understanding EXIF",
+      "exifContent": "What's in EXIF (by dimension)",
+      "privacy": "EXIF and privacy",
+      "howTo": "How to view and edit EXIF",
+      "faq": "FAQ",
+      "reference": "Reference and links"
+    },
+    "entry": {
+      "whatIsExif": {
+        "title": "What is EXIF?",
+        "desc": "EXIF is a metadata standard embedded in photos, recording device, time, GPS, and more; maintained by JEITA/CIPA—it is not a new image format.",
+        "content": "Ever scroll through your photos and wonder how your phone knows exactly when a shot was taken, which lens was used, or even where you were? That’s EXIF at work.\n\nEXIF stands for Exchangeable Image File Format. Despite the name, it isn’t a new image format—your file is still a JPEG or TIFF. EXIF is the set of rules for what gets “tagged” onto that file and how, so that different devices and apps can all read the same information.\n\nAccording to the [Library of Congress – Exif format family](https://www.loc.gov/preservation/digital/formats/fdd/fdd000618.shtml) and other authoritative descriptions of the Exif specification, those tags can include: camera or phone model (Make, Model), shutter speed, aperture, exposure time, date and time, resolution, color space, copyright and description, GPS location, and even an embedded thumbnail.\n\nSo EXIF is a metadata standard, not an image file format: the image is still stored as JPEG, TIFF, or (for sound) WAV; EXIF defines how metadata is organized and named inside those files.\n\nThe standard was first developed by the Japan Electronic Industry Development Association (JEIDA), with Version 1 published in 1995–1996. In 2000, JEIDA merged with EIAJ to form the Japan Electronics and Information Technology Industries Association (JEITA). Since 2009, the Exif standard has been jointly maintained by JEITA and the Camera & Imaging Products Association (CIPA).\n\nThe specification is fully public and widely adopted by digital cameras, smartphones, and printers—which is why a single snapshot from your phone already carries so much hidden detail.\n\nTo see how the standard evolved over time, read [“History of EXIF”](/guides/exif-history); to see which file types can carry EXIF, read [“Which formats contain EXIF?”](/guides/supported-formats)."
+      },
+      "exifHistory": {
+        "title": "History of EXIF",
+        "desc": "Version evolution from 1.0 (1995) to 3.1: GPS, serials, UTF-8, and more; CIPA/JEITA jointly maintain the standard.",
+        "content": "The EXIF (Exchangeable Image File Format) standard dates back to October 1995, when the Japan Electronic Industry Development Association (JEIDA) published Version 1.0, defining a unified way for digital cameras to record image data in files. According to CIPA’s update history and the Library of Congress’s format description, the specification has evolved through many revisions over the following decades. If you’re new to EXIF, you may want to read [“What is EXIF?”](/guides/what-is-exif) first.\n\nKey version milestones:\n\n- 1.0 (1995): First edition; method of recording image data in files.\n- 2.0 (1997): GPS Info IFD added for location data—EXIF began to answer “where was this taken?”\n- 2.1 (1998): Extended to audio: the method of writing audio data in files; EXIF was no longer still images only.\n- 2.2 (2002): ImageUniqueID (to prove image uniqueness), Exif Print, and related tags; from 2.2 onward, sRGB and Adobe RGB color identification are supported.\n- 2.3 (2010): Tags for camera owner and serial number to attest image origin.\n- 2.31 (2016): UTC time offset and environmental tags (temperature, humidity, pressure).\n- 2.32 (2019): Revisions including composite image support.\n- 3.0 (2023): Major revision—UTF-8/Unicode, box-structured data, AI annotation, image authenticity; many tag definitions added or changed (e.g. Title, Photographer, Artist, Software).\n- 3.1 (2026): Current latest (CIPA DC-008-Translation-2026).\n\nThe standard is jointly maintained by CIPA and JEITA. Update history and specification documents are on the CIPA website.\n\nThe specification requires that newer readers support earlier versions and skip unknown extensions, ensuring backward compatibility. For which file formats can store EXIF in each version, see [“Which formats contain EXIF?”](/guides/supported-formats)."
+      },
+      "supportedFormats": {
+        "title": "Which formats contain EXIF?",
+        "desc": "How JPEG/TIFF/WAV carry EXIF by spec; HEIC, RAW, WebP compatibility and this site’s support.",
+        "content": "[“What is EXIF?”](/guides/what-is-exif) explains that EXIF is a metadata standard, not a file format. The EXIF (Exchangeable Image File Format) specification explicitly defines two kinds of carriers: image files (TIFF- and JFIF/JPEG-based) and audio (WAV). According to the Library of Congress’s description of the Exif family and CIPA standard documents, the formats that “contain EXIF” in the defined way are primarily JPEG and TIFF.\n\n• **JPEG**: Exif data is stored in JPEG’s predefined APP1 application segment (segment marker 0xFFE1); that segment acts as a container for a TIFF-like structure holding a full set of Exif tags. Most camera and phone JPEGs include Exif—camera model, date/time, aperture and shutter, resolution, optional thumbnail, and more.\n\n• **TIFF**: The TIFF private tag 0x8769 establishes the Exif sub-IFD (Image File Directory) for Exif-specific tags; 0x8825 is used for the GPS sub-IFD (latitude, longitude, altitude, etc.); the spec also defines an Interoperability IFD within the Exif sub-IFD via tag 0xA005.\n\n• **WAV**: From [Exif 2.1](/guides/exif-history) onward, the specification covers Exif audio (WAVE) recording; the declared filename extensions in the Exif spec include jpg, tif, and wav.\n\nExif-style metadata also often appears in formats that do not strictly follow the spec—for example HEIC/HEIF (used by Apple and others), which can carry Exif-compatible camera parameters, GPS, and timestamps inside an ISOBMFF container; some RAW, AVIF, or WebP files may embed similar data as implemented by vendors or software.\n\nOn this site (ExifStrip): we support reading and displaying EXIF for JPEG, PNG, TIFF, HEIC, AVIF, WebP, etc.; preset-based stripping that leaves pixels unchanged is supported mainly for JPEG; other formats typically require re-encoding to remove metadata.\n\nSee the homepage “Supported formats” for current support."
+      },
+      "exifStructure": {
+        "title": "How is EXIF structured?",
+        "desc": "EXIF is organized in TIFF-style directories: 0th IFD, Exif sub-IFD, GPS sub-IFD, Interop IFD, and how tags/values are stored.",
+        "lead": "EXIF inside a photo file isn’t a flat blob—it’s organized as directories, tags, and values. The diagram below summarizes how EXIF sits inside the file so you can get the big picture before reading the details.",
+        "content": "EXIF metadata is organized in a TIFF-style directory structure. In JPEG files the entire EXIF block lives in the APP1 application segment (marker `0xFFE1`), effectively embedding a TIFF; in TIFF files the same IFD mechanism is used directly. According to the Library of Congress format description, the main directories are as follows.\n\n## 0th IFD (main image file directory)\n\nPointed to by the file header or an offset inside APP1; holds tags for the primary image, such as width, height, and orientation.\n\n## Exif sub-IFD\n\nPointed to by TIFF private tag 0x8769 (Exif IFD) in the 0th IFD; holds Exif-specific tags—capture parameters, device info, date/time, and the like. See [Device and camera info](/guides/dimension-device), [Capture settings](/guides/dimension-settings), and [Date and time](/guides/dimension-datetime).\n\n## GPS sub-IFD\n\nPointed to by private tag 0x8825 in the 0th IFD; holds latitude, longitude, altitude, GPS timestamps, etc.; included in the spec from [Exif 2.0](/guides/exif-history) onward.\n\n## Interoperability IFD\n\nInside the Exif sub-IFD, defined by tag 0xA005; used for compatibility-related data.\n\n---\n\nEach directory is a set of tag–value pairs; readers use tag IDs and types to parse. For the definition of EXIF and which formats carry it, see [What is EXIF?](/guides/what-is-exif) and [Which formats contain EXIF?](/guides/supported-formats)."
+      },
+      "dimensionDevice": {
+        "title": "Device and camera info",
+        "desc": "Make/Model, body and lens serials, Software, firmware; written by device or software—serials are sensitive.",
+        "content": "Device and camera EXIF records the imaging device and software; it is usually written at capture or save by the camera, phone, or software. The Library of Congress groups this under \"camera settings\" and related metadata.\n\n## Common tags\n\nAligned with this site’s device dimension: Make and Model for manufacturer and model; BodySerialNumber and CameraSerialNumber; LensMake and LensModel; Software; FirmwareVersion.\n\nThese appear in the 0th IFD and Exif sub-IFD per the CIPA/JEITA standard and common practice.\n\n## Use and caution\n\nUses include device attribution and statistics; serial numbers can uniquely identify a device and are sensitive—consider stripping before sharing. See [Which EXIF fields are sensitive?](/guides/sensitive-fields) for more."
+      },
+      "dimensionSettings": {
+        "title": "Capture settings",
+        "desc": "Shutter, aperture, ISO, focal length, white balance, flash, exposure program; written by the device at capture.",
+        "content": "Capture settings record exposure and optical conditions at the moment of capture; they are written by the device and live mainly in the Exif sub-IFD. The Library of Congress classifies them as \"camera settings\" and \"technical image data.\"\n\n## Typical tags\n\nExposureTime (shutter, e.g. 1/125 s); FNumber (aperture, e.g. f/2.8); ISOSpeedRatings; FocalLength (mm); WhiteBalance; Flash; ExposureProgram (e.g. program, aperture priority); ExposureBiasValue; MeteringMode; SceneCaptureType.\n\n## In plain terms\n\nAperture controls light and depth of field; shutter and ISO determine exposure; focal length affects angle of view. These fields support analysis or reproduction of shooting conditions and, together with [Image properties](/guides/dimension-image) (resolution, color space), describe how a single image was produced."
+      },
+      "dimensionLocation": {
+        "title": "Location (GPS)",
+        "desc": "Lat/lon, altitude, GPS timestamps in the GPS sub-IFD; written by devices with positioning—highly sensitive.",
+        "content": "Location EXIF is stored in a separate GPS sub-IFD, pointed to by private tag 0x8825 in the 0th IFD. According to the Library of Congress, GPS support was added in Exif 2.0 to record where a photo was taken.\n\n## Common tags\n\nGPSLatitude and GPSLongitude with GPSLatitudeRef and GPSLongitudeRef (N/S, E/W); in the spec these are degree-minute-second rationals, convertible to decimal degrees for mapping.\n\nGPSAltitude and GPSAltitudeRef; GPSDateStamp and GPSTimeStamp; optional speed and direction tags.\n\n## Privacy note\n\nDevices with positioning (cameras or phones) write this at capture. Coordinates and timestamps can pinpoint place and time and are highly sensitive; review or strip before sharing. See [Why care about EXIF privacy?](/guides/why-care-privacy)."
+      },
+      "dimensionDatetime": {
+        "title": "Date and time",
+        "desc": "Capture, modification, and digitization time; common format has no timezone; some devices use extension fields.",
+        "content": "Date and time EXIF records when a photo was taken, when the file was modified, and when it was digitized—used for ordering, search, and provenance. The Library of Congress lists it under \"date and time information\" in Exif metadata.\n\n## Common tags and format\n\nDateTimeOriginal (capture), DateTime (modification), DateTimeDigitized. Format is typically \"YYYY:MM:DD HH:MM:SS\" (e.g. 2024:03:15 14:30:00) with no timezone field.\n\n## Timezone limitation\n\nThe standard date/time tags do not include UTC offset. Some devices or software use extensions such as OffsetTime or OffsetTimeOriginal; not all files have them. Exif 2.31 added support for UTC offset; see [History of EXIF](/guides/exif-history) for version details."
+      },
+      "dimensionImage": {
+        "title": "Image properties",
+        "desc": "Width, height, resolution, color space, bit depth; used for display/print; they do not change pixel data.",
+        "content": "Image-property EXIF describes geometry, resolution, color, and encoding—how the image is displayed or printed. The Library of Congress notes that image-related metadata includes pixel count, aspect ratio (required 1:1 in the spec), and sampling (e.g. RGB 4:4:4, Y:Cb:Cr 4:2:2 or 4:2:0).\n\n## Common tags\n\nImageWidth and ImageLength; XResolution, YResolution, ResolutionUnit (e.g. DPI); ColorSpace (e.g. sRGB); BitsPerSample, SamplesPerPixel; Compression, PhotometricInterpretation; ExifVersion, FlashPixVersion.\n\n## Purpose\n\nThese allow correct sizing and color handling without changing pixel data. The container format (see [Which formats contain EXIF?](/guides/supported-formats)) defines how image data is encoded; EXIF only describes the embedded metadata."
+      },
+      "dimensionOther": {
+        "title": "Artist, copyright, and comments",
+        "desc": "Artist, Copyright, UserComment, ImageDescription, MakerNote; the first are often read/write; MakerNote is vendor-private.",
+        "content": "Artist, copyright, and comment EXIF are descriptive metadata; the Library of Congress groups them as \"descriptive metadata\" and \"copyright.\" Some are user- or software-editable; others are written by the device or vendor.\n\n## Common tags\n\nArtist, Copyright, UserComment, ImageDescription, MakerNote.\n\nArtist, Copyright, UserComment, and ImageDescription are typically read/writable in most software; MakerNote is vendor-defined, often undocumented, and only fully interpreted by vendor tools—removing or keeping it does not affect standard compliance.\n\n## Version and privacy\n\nExif 3.0 added or changed definitions for Title, Photographer, ImageEditor, Artist, Software, and others. UserComment and ImageDescription may contain personal data; check before sharing. See [Which EXIF fields are sensitive?](/guides/sensitive-fields)."
+      },
+      "iptcXmpOverview": {
+        "title": "IPTC, XMP, and EXIF: how they fit together",
+        "desc": "Photos can hold IPTC (captions, keywords) and XMP (extensible metadata) alongside EXIF; why tools list them in separate groups.",
+        "content": "People often say \"EXIF\" when they mean \"everything hidden in the photo file.\" In practice, cameras and apps may store **several families** of metadata: **EXIF** (capture settings, GPS, dates), **IPTC** (news-style captions, copyright notices, keywords), and **XMP** (flexible, XML-based tags that Adobe and others use for titles, rights, and more). Tools like [ExifTool](https://exiftool.org/) document each family under its own tag namespace—handy when you want to go deep.\n\n## How they differ (in one paragraph)\n\n**EXIF** is the classic camera/phone block: aperture, ISO, lens, GPS, DateTimeOriginal, etc. **IPTC** historically served news agencies; you still see Caption, Credit, Keywords in many workflows. **XMP** can duplicate some EXIF/IPTC fields but also carries Dublin Core–style fields and app-specific data. The same *idea* (e.g. copyright) might appear in more than one block—that is normal, not a bug.\n\n## What this means for stripping and privacy\n\nRemoving \"EXIF\" in a narrow sense might **not** remove every caption or keyword stored in IPTC or XMP. Always **preview** what your tool actually shows before you share. On [ExifStrip](https://exifstrip.com) we surface parsed metadata by dimension; for JPEG, preset stripping targets the metadata segments we support—see [How to edit or remove EXIF?](/guides/how-to-edit-strip) and [Supported image formats on ExifStrip](/blog/product-supported-formats).\n\n## Read more\n\n- [What is EXIF?](/guides/what-is-exif)\n- [How EXIF is structured](/guides/exif-structure)\n- [Is EXIF the same as \"metadata\"?](/blog/topic-exif-vs-metadata)"
+      },
+      "makerNotesBasics": {
+        "title": "What are camera maker notes (MakerNote)?",
+        "desc": "Vendor-specific EXIF blobs (Canon, Nikon, Sony, …) explain extra fields; they are not \"wrong EXIF\"—just private extensions.",
+        "content": "Besides the standard EXIF tags you see in specs, many files contain a **MakerNote** (manufacturer note): a block of data that **only the camera vendor** fully understands. That is why the same scene from a Canon and a Sony can show different \"extra\" rows in a metadata viewer.\n\n## Why MakerNote exists\n\nVendors pack autofocus details, internal serials, lens corrections, and dozens of proprietary fields into MakerNote. Generic standards do not define those tags, so they live in a private area. Reference tools such as [ExifTool](https://exiftool.org/TagNames/index.html) publish many **per-brand** MakerNote interpretations.\n\n## Privacy\n\nMakerNote is usually **less obvious** than GPS in social risk, but it can still carry **serials, firmware hints, or internal IDs**. If you strip \"device\" or \"privacy\" presets on a site that rewrites JPEG metadata, MakerNote may be removed along with standard device tags—behavior depends on implementation. When in doubt, **view first**, then choose a preset. See [Sensitive fields](/guides/sensitive-fields).\n\n## On this site\n\nWe group some vendor-specific data with **Device** or related dimensions when parsers expose it. For background on standard vs vendor tags, see [What's in EXIF — device](/guides/dimension-device) and [Artist, copyright, and comments](/guides/dimension-other) (MakerNote is mentioned there too)."
+      },
+      "orientationTagExplained": {
+        "title": "EXIF Orientation: what it does (and what it doesn't)",
+        "desc": "Orientation values 1–8 tell viewers how to rotate the image for display; they do not always mean pixels were physically rotated.",
+        "content": "The **Orientation** tag in EXIF (often under image settings) tells software **how to display** the JPEG: rotation and mirroring. Values **1–8** map to different combinations (0°, 90°, 180°, 270°, and flips). A well-behaved viewer rotates the picture **for display**; the compressed pixel grid may still be stored in the sensor's native orientation.\n\n## Common confusion\n\n- **\"My file looks wrong in one app\"** — Some apps ignore Orientation and show raw pixels; others honor the tag. Same file, different look.\n- **\"If I edit Orientation, did I rotate the photo?\"** — Changing only the tag adjusts the **interpretation**; truly re-encoding the image to bake rotation into pixels is a separate step (export/re-save in an editor).\n\n## EXIF Orientation vs quality\n\nUpdating Orientation in metadata **does not** recompress the image; it is a small metadata change. Stripping Orientation may cause some viewers to show the file \"sideways\" again—decide based on how you will share the file.\n\n## Learn more\n\n- [Image settings dimension](/guides/dimension-settings)\n- [How to view EXIF](/guides/how-to-view)\n\nFormal tag lists appear in CIPA/JEITA docs and references such as ExifTool's [EXIF tag page](https://exiftool.org/TagNames/EXIF.html)."
+      },
+      "whyCarePrivacy": {
+        "title": "Why care about EXIF privacy?",
+        "desc": "Photos often carry GPS and device info by default; it’s invisible in the gallery but readable with tools—check and strip before sharing.",
+        "content": "A lot of people assume they're only sending a picture—but the file usually carries a bunch of invisible baggage: EXIF. Phones and cameras write GPS, model name, and capture time into the file by default. When you copy the file to a PC, upload to the cloud, or send it in a chat, that metadata typically goes along for the ride.\n\n**Why does it slip under the radar?** Because your gallery doesn't show it. EXIF is just part of the file: any system info panel, image viewer, or online EXIF tool can read latitude, longitude, timestamps, and sometimes even serial numbers. Below are two example screenshots of parsed EXIF:\n\n![EXIF parsing example 1](/images/guides/why-care-privacy/0ad3b346-6904-4671-8c10-50eabd569275.png)\n\n![EXIF parsing example 2](/images/guides/why-care-privacy/e3db8d12-1776-4167-9fc9-5a3cf04738a6.png)\n\nDo social networks and file hosts strip it on upload? Some do, some don't, and they rarely spell it out—you can't rely on \"the platform will handle it.\"\n\n**What's the fallout?** Anyone with the original file can infer where and when you shot it and what device you used. That's enough for profiling, stalking, or doxxing; in commercial contexts it can feed user targeting. Common counter-example: you post a \"check-in\" photo as the original file in a group; the EXIF includes precise GPS, so everyone who can save the image can see your regular spots or even your address.\n\nSo: glance at what's in the file before you share, and strip what you don't want to expose. For which fields are risky, see [Which EXIF fields are sensitive?](/guides/sensitive-fields); for how to choose \"location only\" vs \"remove all,\" see [What to do before sharing?](/guides/before-you-share)."
+      },
+      "sensitiveFields": {
+        "title": "Which EXIF fields are sensitive?",
+        "desc": "By risk level: location and serials, time and model, free text; why they matter and when they can backfire.",
+        "content": "Whether something is \"sensitive\" depends on who gets the file and what they do with it—the same EXIF can be low risk in one context and high in another. Here's a rough order from highest to lower risk.\n\n**High: location and unique device IDs**\n\n[Location (GPS)](/guides/dimension-location) fields—latitude, longitude, altitude, GPS timestamps—pinpoint where the photo was taken, often to within meters. If the original gets out, others can see where you were; with several photos they can infer routines, home, or workplace. Camera or lens serial numbers (e.g. CameraSerialNumber, BodySerialNumber) in EXIF can uniquely identify your gear and tie to warranty, accounts, or second-hand history; they've been used in scams or harassment. Below is an example of high-sensitivity fields parsed from a photo:\n\n![High-sensitivity fields example](/images/guides/sensitive-fields/8023c07e-def7-4ae7-8183-96a31ef94dbd.png)\n\n**Medium: time and camera model**\n\n[Date and time](/guides/dimension-datetime) fields (e.g. DateTimeOriginal) reveal when you shot; combined they build a timeline of your activity. Make/Model aren't unique but can suggest device tier and habits and become an identity clue in some situations.\n\n**Lower but don't ignore: free-text**\n\nUserComment and ImageDescription are whatever you or the app typed in—names, places, plans, notes. Sharing without checking is giving that away. Below is an example of medium- and low-sensitivity fields (time, model, free-text):\n\n![Medium/low-sensitivity fields example](/images/guides/sensitive-fields/ef685d0f-95c7-46dc-a592-7a515a38947a.png)\n\n**Counter-example:** A family photo with GPS in the hands of a stranger shows parks and school routes; or serial number plus social profile used to impersonate the owner and recover a device.\n\nOnce you know which fields matter, pair that with [What to do before sharing?](/guides/before-you-share) to choose a stripping strategy."
+      },
+      "beforeYouShare": {
+        "title": "What to do before sharing?",
+        "desc": "Get in the habit of \"view first, then decide\": use this site or system properties to check, then choose location-only, device-only, or remove all—matching our presets.",
+        "content": "There's no universal rule like \"never keep EXIF\"—it depends who you're sending to and whether the file might be re-shared. A simple habit helps: **look first, then decide**.\n\n**Step 1: Inspect the file**\n\nUse your OS file properties, a desktop EXIF tool, or a [browser-based viewer](/guides/how-to-view) like this site. Check whether the kinds of data in [Which EXIF fields are sensitive?](/guides/sensitive-fields) are present—GPS, serials, capture time, UserComment—and how much. On this site, after upload you can use the privacy analysis block to see which sensitive items exist. Example:\n\n![Privacy analysis example](/images/guides/before-you-share/4d550a07-ed4d-485e-9f6d-6012509120dd.png)\n\n**Step 2: Pick a strategy**\n\n- **Strip location only:** Keep device and time for your own sorting and archives; good when sharing with people you know but you don't want to reveal where you were.\n- **Strip device/serials only:** Keep time and location; use when you only care about hiding your gear.\n- **Remove all:** Safest when the image goes to strangers or could be reposted; no guesswork about what's left.\n\nThe site's [strip presets](/guides/how-to-edit-strip) (e.g. privacy-only, GPS-only, device-only, remove all) map to these; choose what fits. Once you've chosen, select the matching preset and run the strip. Example:\n\n![Strip and remove example](/images/guides/before-you-share/40e336e7-9ff5-4489-94e6-1bc9f88f8ce8.png)\n\n**Counter-example:** Stripping everything without looking, then later wanting capture time for sorting and finding it's gone; or leaving everything in and sending the original to a stranger or a public forum.\n\nIn short: look before you send, then choose what to remove. For what this site can do, see [What can ExifStrip do?](/guides/what-exifstrip-does)."
+      },
+      "howToView": {
+        "title": "How to view EXIF?",
+        "desc": "OS (Windows Properties, macOS Preview, phone details), desktop apps, online tools; this site: local parsing, no upload, by dimension.",
+        "content": "EXIF information is often said to matter a lot—so what is it? EXIF (Exchangeable Image File Format) is a metadata standard embedded in photo files; it records camera model, shutter, aperture, date/time, GPS, and more. The standard is developed and maintained by JEITA (Japan Electronics and Information Technology Industries Association) and CIPA (Camera & Imaging Products Association).\n\nFor an official format overview, see the [Library of Congress – Exif family](https://www.loc.gov/preservation/digital/formats/fdd/fdd000618.shtml) and the [CIPA Exif standard](https://www.cipa.jp/e/std/std-sec.html).\n\nThis information usually does not appear in normal galleries or thumbnails; you can’t see it just by looking at the image, because it sits behind the photo. In built-in or more advanced software, however, you can view it, and it is useful for checking where a photo came from, reviewing privacy before sharing, or organizing files.\n\nBelow are several ways to view the EXIF hidden in your photos.\n\n# **Built into your operating system**\n\nYou can view this information without professional software. The steps depend on your OS.\n\n**Windows:** In File Explorer, right-click the image → **Properties** → open the **Details** tab. You’ll see some fields (e.g. camera, dimensions, date taken). What appears varies by Windows version, and not all EXIF fields are shown.\n\n![View EXIF on Windows](/images/guides/how-to-view/window-view.png)\n\n**macOS:** Open the image in **Preview** → menu **Tools** → **Show Inspector** (or Option+Command+I). Use the **More Info** or similar tab to view EXIF; some fields may be missing depending on format or device.\n\n**Phone (Android / iOS):** In the Photos/Gallery app, open the image and look for **Details**, **Info**, or swipe up. You’ll usually see capture date and sometimes location; full EXIF is not always shown. For more, use a file manager or a third‑party EXIF app.\n\n![View EXIF on iOS](/images/guides/how-to-view/ios-view.png)\n\n# **Desktop EXIF software**\n\nFor full EXIF, batch viewing, or editing, desktop tools are an option.\n\n**ExifTool:** Command-line tool; reads and writes EXIF for many formats and is used by many apps under the hood. The downside is that it requires the command line, which can be a barrier for some users.\n\n**XnView:** Free, supports many image formats, can view and export EXIF in batch, with a straightforward interface; some advanced features are in the paid version.\n\n**IrfanView** (Windows): Lightweight and fast; can view and edit EXIF. It only runs on Windows.\n\nThese tools work offline and are powerful; the downside is they require installation, and support for HEIC, RAW, etc. varies—check compatibility for your file types.\n\n# **Online EXIF viewers**\n\nMany websites let you upload an image and view its EXIF in the browser, with no install. That’s convenient for a one-off check. When you use such a service, the image is sent to their servers; if the photo is private or sensitive, check the site’s privacy policy and how they handle data before uploading.\n\n# **How to view EXIF on this site ([ExifStrip](https://exifstrip.com))**\n\n**Step 1:** Open the [ExifStrip](https://exifstrip.com) website in your browser and go to the homepage.\n\n![Step 1](/images/guides/how-to-view/7d6ba228-d45f-4dca-8188-e64943375df4.png)\n\n**Step 2:** Click the upload area or drag and drop the image(s) you want to inspect; single or multiple files are supported.\n\n![Step 2](/images/guides/how-to-view/23f33ad8-9927-4bf3-bed7-8479df406acc.png)\n\n**Step 3:** After you select files, the page parses EXIF locally—your images are not uploaded to our servers. When parsing finishes, the **File information** section shows name, dimensions, type, etc.; below that, metadata is grouped by category (device, capture settings, location, date/time, image properties, author/copyright), so you can quickly find what you need.\n\n![Step 3](/images/guides/how-to-view/df78d179-7f68-4aa9-9362-df72046dd366.png)\n\n**Step 4:** If the image has GPS data, the page shows the capture location on a map.\n\n![Step 4](/images/guides/how-to-view/ec7a0466-bd8a-405e-8598-d13f0ea3c053.png)\n\nAdvantages of using [ExifStrip](https://exifstrip.com): parsing and display happen entirely in your browser, so your images never leave your device, which helps with privacy; no installation; and it can read EXIF from JPEG, PNG, HEIC, WebP, and other common formats.\n\n---\n\nYou can choose how to view EXIF based on your habits, whether you need batch handling, and whether you’re comfortable sending files to a third party. If after viewing you want to edit or remove EXIF, see [How to edit or remove EXIF?](/guides/how-to-edit-strip); for a full list of what this site does, see [What can ExifStrip do?](/guides/what-exifstrip-does)."
+      },
+      "howToEditStrip": {
+        "title": "How to edit or remove EXIF?",
+        "desc": "Edit artist/copyright/time and write back to JPEG; strip by dimension or remove all—JPEG lossless, PNG/WebP re-encode; four presets explained.",
+        "content": "In JPEG, EXIF metadata typically lives in an [APP1 segment](https://www.loc.gov/preservation/digital/formats/fdd/fdd000147.shtml) alongside the compressed image data—so it can often be changed without re-encoding pixels.\n\nSince EXIF in your photos matters so much, how can you edit or remove it to protect your privacy? This site offers two approaches:\n\n1. **Edit** — Change some EXIF fields (e.g. author, copyright, capture time) and write them back to the file; you can enter false or neutral values to hide your real metadata.\n\n2. **Strip** — Remove some or all metadata; anyone who gets the modified image cannot see or recover the original EXIF.\n\nBelow we explain both and how they work on this site.\n\n# **Editing EXIF**\n\nMany tools let you edit certain EXIF fields (e.g. Artist, Copyright, capture time) and save the result back to the file. On this site, JPEGs support editing for some fields; follow the steps below.\n\n**Step 1: Upload and view** — After you [view EXIF](/guides/how-to-view) and upload an image, the page shows metadata grouped by dimension (device, capture settings, author/copyright, date/time, etc.). Locate the dimension block you want to change and continue to the next step.\n\n![Editing step 1: metadata by dimension after upload](/images/guides/how-to-edit-strip/0f0a5151-c932-4fd3-9a5b-594dc67a8977.png)\n\n**Step 2: Click edit and change the value** — In the right dimension (e.g. author/copyright, date/time), find a row that has an edit icon. Click the edit icon on that row, then enter the new value in the dialog (e.g. replace author, copyright, or capture time) to hide real metadata or enter false information.\n\n![Editing step 2: click edit and modify](/images/guides/how-to-edit-strip/0b18359e-a2df-4ca8-9b15-add3b3aac849.png)\n\n**Step 3: Save to write back** — When you’re done, click save; the changes are written back to the image’s EXIF. Not every tag is editable; only fields that the spec allows to be written and that the site supports will show an edit control.\n\n![Editing step 3: save and write back to file](/images/guides/how-to-edit-strip/cb971da1-98c8-427f-8b3e-120842d80445.png)\n\n# **Removing / stripping**\n\nThere are two common approaches: strip by **dimension** (e.g. remove only GPS, or only device info, keep the rest), or remove **all** EXIF. On this site you can choose a strip preset and run the strip; an example is shown below.\n\n![Strip / remove EXIF example](/images/guides/how-to-edit-strip/b19298f7-47e7-4612-9772-54ac12e18712.png)\n\nIn **JPEG**, EXIF lives in the APP1 segment, separate from the pixel data. Stripping only rewrites or drops that segment and does not touch pixels, so you can get **lossless stripping** with no change in image quality. For **PNG, WebP**, and similar formats there is usually no “header-only” path; removing EXIF typically means decode then re-encode, which can have a very small quality impact. For more, see [Does removing EXIF affect image quality?](/guides/faq-remove-safe). Which formats carry EXIF is described in [Which formats contain EXIF?](/guides/supported-formats).\n\n# **Presets on this site**\n\n[ExifStrip](https://exifstrip.com) offers four strip presets, aligned with the “strip by dimension” idea:\n\n- **Remove all**: Remove all EXIF from the file.\n- **Privacy only**: Remove only location, device, author/copyright, etc.; keep capture settings, date/time, image properties.\n- **GPS only**: Remove only location data; keep the rest.\n- **Device only**: Remove only device and lens-related data; keep the rest.\n\nAn example of the four presets is shown below.\n\n![Strip presets on this site](/images/guides/how-to-edit-strip/ca9fa2cc-90ad-42bd-aa7f-ff6caddb214b.png)\n\nFor **JPEG**, using these presets only rewrites metadata and does not change pixels, so quality is unchanged. For **PNG, WebP**, and similar formats, choosing “Remove all” strips metadata by re-encoding; quality impact is usually negligible. **HEIC, TIFF, AVIF** and the like are not supported for preset-based stripping on this site; to remove EXIF from those, you can convert to JPEG first and then strip, or use another tool that supports the format.\n\n---\n\nAfter choosing a preset, click “Strip” and download to get the processed file. To inspect EXIF before deciding what to remove, see [How to view EXIF?](/guides/how-to-view); for a full list of what this site does, see [What can ExifStrip do?](/guides/what-exifstrip-does)."
+      },
+      "whatExifstripDoes": {
+        "title": "What can ExifStrip do?",
+        "desc": "View (by dimension and map), edit some fields, four strip presets, export CSV/JSON/TXT/HEX, privacy analysis; all local, free, no upload.",
+        "content": "[ExifStrip](https://exifstrip.com) is a tool for viewing, editing, and removing EXIF from images in your browser. No installation is required—open the site and you can start; all parsing, editing, and stripping happen on your device, and your images are not uploaded to any server, so it suits anyone who wants to inspect or clean EXIF while keeping privacy in mind. Below is what the site can do, by feature.\n\n# **View**\n\nAfter you upload or drag and drop an image, the page shows EXIF grouped by dimension: **device** (maker, model, lens, etc.), **capture settings** (aperture, shutter, ISO, focal length, etc.), **location** (GPS), **date/time**, **image properties** (width, height, resolution, color space, etc.), and **author/copyright** (Artist, Copyright, UserComment, etc.). This grouping makes it easy to find a particular kind of data without scanning a flat tag list. The **File information** area at the top shows file name, dimensions, type, and modification time; if the image has GPS data, the capture location is shown on a map so you can cross-check coordinates with the EXIF fields. The site can read and display EXIF from JPEG, PNG, HEIC, WebP, and other common formats. The following shows the dimension-grouped EXIF and file information area.\n\n![EXIF and file information by dimension](/images/guides/what-exifstrip-does/e7a1b2c3-d4e5-4f6a-b7c8-d9e0f1a2b3c4.png)\n\nFor step-by-step use, see [How to view EXIF?](/guides/how-to-view).\n\n# **Edit and strip**\n\n**Editing**: Some fields (e.g. Artist, Copyright, capture time) can be changed in the UI; when you save, the changes are written back to the JPEG. That is useful for overwriting real metadata with false or neutral values while keeping the EXIF structure. **Stripping**: Four presets are available—**Remove all** (clear all EXIF), **Privacy only** (remove location, device, author/copyright, etc.), **GPS only**, and **Device only**. For JPEG, preset-based stripping only rewrites the metadata segment and does not touch pixels, so image quality is unchanged; for non-JPEG (e.g. PNG, WebP), choosing Remove all strips metadata by re-encoding, and the impact on quality is usually negligible. HEIC, TIFF, AVIF, and similar formats do not support preset-based stripping at the moment. For details and format behavior, see [How to edit or remove EXIF?](/guides/how-to-edit-strip).\n\n# **Export**\n\nYou can export the current image’s EXIF as **CSV**, **JSON**, **TXT**, or **HEX** (raw hexadecimal), as shown below.\n\n![Export EXIF format options](/images/guides/what-exifstrip-does/b3c4d5e6-f7a8-4b9c-0d1e-2f3a4b5c6d7e.png)\n\nCSV is handy for viewing or merging data from multiple images in a spreadsheet; JSON is suitable for programmatic use; TXT is plain text for archiving or search; HEX is a low-level dump for debugging or comparing with the spec. The exported content matches the dimension-grouped data shown on the page.\n\n# **Privacy analysis**\n\nThe page automatically detects sensitive items such as GPS, device/lens serial numbers, and capture time, and shows risk levels (e.g. high, medium, low) in the UI.\n\n![File info, GPS and privacy risk indicators](/images/guides/what-exifstrip-does/a2b3c4d5-e6f7-4a8b-9c0d-1e2f3a4b5c6d.png)\n\nThat way you can see at a glance what sensitive EXIF the image contains before sharing, and then decide whether to strip only location or remove everything—aligned with [Which EXIF fields are sensitive?](/guides/sensitive-fields) and [What to do before sharing?](/guides/before-you-share), so you can get into the habit of checking before you strip.\n\n---\n\n[ExifStrip](https://exifstrip.com) is free and ad-free; you can select multiple images and view or process them one by one. Everything runs locally with a privacy-first design. To learn how to view or strip EXIF step by step, see [How to view EXIF?](/guides/how-to-view) and [How to edit or remove EXIF?](/guides/how-to-edit-strip)."
+      },
+      "faqRemoveSafe": {
+        "title": "Does removing EXIF affect image quality?",
+        "desc": "Metadata-only removal (e.g. our JPEG presets) leaves quality unchanged; re-encoding PNG/WebP may have tiny theoretical differences.",
+        "content": "**Short answer:** If you only remove metadata and don't re-encode (e.g. the site's preset-based strip for JPEG), pixels are untouched and image quality is unchanged. Quality can be affected when EXIF is removed by re-encoding—e.g. decode-then-encode for PNG or WebP—which adds another compression step; in practice the difference is usually negligible.\n\n**Why:** EXIF lives in the file header (e.g. APP1 in JPEG), separate from the compressed image data. Stripping only rewrites or drops those segments and doesn't touch the image stream, so metadata-only removal doesn't affect quality.\n\n**Counter-example:** Assuming \"removing EXIF always means re-encoding\" and therefore not stripping; or using a tool that does re-encode and expecting pixel-identical output—that depends on format and settings.\n\nFor how stripping works here, see [How to edit or remove EXIF?](/guides/how-to-edit-strip); for which formats carry EXIF, see [Which formats contain EXIF?](/guides/supported-formats)."
+      },
+      "faqWhoWrites": {
+        "title": "Who writes EXIF?",
+        "desc": "Mainly the capture device at shutter press; editing, export, and platforms may keep, change, or add—final EXIF may not be \"camera-original.\"",
+        "content": "**Who writes it?** First, the capture device. When you press the shutter, the camera or phone firmware writes a full set of EXIF: model, [date and time](/guides/dimension-datetime), often [location (GPS)](/guides/dimension-location). So the first answer is: **the device at capture time**.\n\n**Can it be changed later?** Yes. Software (editors, exporters, managers) may keep, alter, or add fields—e.g. Software, timestamp, copyright. After upload, many platforms re-encode or strip EXIF too. So the EXIF you see may be device + several apps; it's not always \"what the camera wrote.\"\n\n**Counter-example:** Treating EXIF as immutable camera evidence without considering edits/exports/uploads; or assuming \"no one touched it\" when you're not sure of the chain.\n\nFor device-related fields, see [Device and camera info](/guides/dimension-device)."
+      },
+      "faqSocialNetwork": {
+        "title": "Is EXIF still there after posting to social media?",
+        "desc": "Platform behavior varies and is rarely documented; don’t assume \"posted = gone\"—strip before upload if you want to be sure.",
+        "content": "**Short answer:** Many platforms do something to uploads (resize, re-encode, strip some or all EXIF), but **behavior isn't uniform and often isn't documented**. So you can't assume \"once I post it, EXIF is gone\"; if you want to be sure nothing sensitive goes with the image, clean it yourself before uploading.\n\n**Why:** For privacy or policy, some services strip all EXIF, some only for public posts, some only resize and leave metadata. You often can't know the exact rule, and it can change.\n\n**Counter-example:** Posting originals assuming \"the platform will strip it\" and then having a copy with GPS/timestamps saved by a bot or another user; or the opposite—being too worried to share anything. Sensible middle ground: check EXIF before posting and, if needed, strip by [What to do before sharing?](/guides/before-you-share), then upload.\n\nFor why EXIF privacy matters, see [Why care about EXIF privacy?](/guides/why-care-privacy)."
+      },
+      "faqCanRecover": {
+        "title": "Can I recover EXIF after removal?",
+        "desc": "You cannot recover stripped EXIF from that file; only the original or an unmodified copy still has the metadata.",
+        "content": "**Short answer:** You **cannot** recover removed EXIF from the **stripped file itself**. There's no recycle bin—once it's gone from that file, it's gone. You can only get it back if you still have an **original backup** (or another copy that wasn't overwritten).\n\n**Why:** Stripping either rewrites/removes the metadata segments or produces a new file by re-encoding. The new file never contained the old EXIF, so nothing can read it back from that file.\n\n**Counter-example:** Realizing after stripping that you needed the capture time or GPS for archives; or overwriting the original and only keeping the stripped version—then it's really gone. So: back up originals before stripping; if you need to keep EXIF long-term, don't overwrite the original with a fully stripped file.\n\nFor how stripping works, see [How to edit or remove EXIF?](/guides/how-to-edit-strip)."
+      },
+      "faqRawHeic": {
+        "title": "What's special about RAW / HEIC EXIF?",
+        "desc": "RAW varies by vendor; HEIC uses ISOBMFF; we can read HEIC EXIF; preset-based precise stripping is mainly for JPEG.",
+        "content": "**How they differ from JPEG** RAW is vendor-specific; EXIF is often tied to the RAW header and MakerNote, so read/write follows each vendor's spec. HEIC/HEIF use an ISOBMFF container; they can embed EXIF-like metadata (camera, GPS, time), but **embedding and stripping work differently from JPEG**—often involving container edits or re-encode, not \"just tweak APP1, pixels unchanged.\"\n\n**What this site does** The site can **read** EXIF from HEIC and similar formats and show it. **Preset-based stripping** (metadata-only, pixels unchanged) is implemented mainly for JPEG. For RAW/HEIC, removing EXIF usually means re-encoding or other tools, not the same \"lossless strip\" as JPEG.\n\n**Counter-example:** Expecting the same \"no quality loss\" as JPEG when stripping RAW/HEIC; or expecting the site to do identical preset stripping for HEIC as for JPEG—currently it doesn't.\n\nFor which formats carry EXIF, see [Which formats contain EXIF?](/guides/supported-formats); for site capabilities, see [What can ExifStrip do?](/guides/what-exifstrip-does)."
+      },
+      "tagReference": {
+        "title": "EXIF tag quick reference",
+        "desc": "EXIF tags this site can parse, grouped by device, capture, location, date/time, artist/copyright, image—with short descriptions.",
+        "content": "Below is the full tag list, organized by dimension and aligned with [How EXIF is structured](/guides/exif-structure). Each tag maps to `exifBlocks` and the EXIF dimension docs; formal definitions follow CIPA/JEITA and the [LOC Tags for TIFF](https://www.loc.gov/preservation/digital/formats/content/tiff_tags.shtml).\n\n## 1. device (camera/equipment)\n\n| Tag | Description |\n|-----|-------------|\n| Make | Manufacturer |\n| Model | Model |\n| BodySerialNumber | Body serial number |\n| CameraSerialNumber | Camera serial number |\n| LensMake | Lens manufacturer |\n| LensModel | Lens model |\n| Software | Software |\n| FirmwareVersion | Firmware version |\n\n## 2. imageSettings (capture settings)\n\n| Tag | Description |\n|-----|-------------|\n| Orientation | Orientation |\n| ExposureTime | Shutter speed |\n| FNumber | Aperture (f-number) |\n| FocalLength | Focal length |\n| ISOSpeedRatings | ISO speed |\n| WhiteBalance | White balance |\n| Flash | Flash |\n| ExposureProgram | Exposure program |\n| ExposureMode | Exposure mode |\n| MeteringMode | Metering mode |\n| SceneCaptureType | Scene capture type |\n| SceneType | Scene type (byte) |\n| ExposureBiasValue | Exposure bias |\n\n## 3. location (GPS)\n\n| Tag | Description |\n|-----|-------------|\n| GPSLatitude | Latitude |\n| GPSLongitude | Longitude |\n| GPSAltitude | Altitude |\n| GPSDateStamp | GPS date |\n| GPSTimeStamp | GPS time |\n| GPSLatitudeRef | N/S reference |\n| GPSLongitudeRef | E/W reference |\n| GPSSpeedRef | Speed unit reference |\n| GPSImgDirection | Image direction |\n| GPSImgDirectionRef | Direction reference |\n| GPSDestBearing | Destination bearing |\n| GPSDestBearingRef | Bearing reference |\n\n## 4. dateTime (date and time)\n\n| Tag | Description |\n|-----|-------------|\n| DateTimeOriginal | Shooting time |\n| DateTime | Modification time |\n| DateTimeDigitized | Digitization time |\n\n## 5. other (author/copyright)\n\n| Tag | Description |\n|-----|-------------|\n| Artist | Artist |\n| Copyright | Copyright |\n| UserComment | User comment |\n| ImageDescription | Image description |\n| MakerNote | Maker note |\n\n## 6. image (image properties)\n\n| Tag | Description |\n|-----|-------------|\n| ImageWidth | Image width |\n| ImageLength | Image height |\n| XResolution | Horizontal resolution |\n| YResolution | Vertical resolution |\n| ResolutionUnit | Resolution unit |\n| ColorSpace | Color space |\n| BitsPerSample | Bits per sample |\n| SamplesPerPixel | Samples per pixel |\n| Compression | Compression |\n| PhotometricInterpretation | Photometric interpretation |\n| YCbCrPositioning | YCbCr positioning |\n| PlanarConfiguration | Planar configuration |\n| ExifVersion | EXIF version |\n| FlashPixVersion | FlashPix version |\n| ComponentsConfiguration | Components configuration |\n| CompressedBitsPerPixel | Compressed bits per pixel |\n\n---\n\nThis list matches the homepage [EXIF table](/), the metadata block display, and the dimension guides: [Device and camera info](/guides/dimension-device), [Capture settings](/guides/dimension-settings), [Location (GPS)](/guides/dimension-location), [Date and time](/guides/dimension-datetime), [Image properties](/guides/dimension-image), [Artist, copyright, and comments](/guides/dimension-other). See [Standards and specs](/guides/standards-links) for specifications."
+      },
+      "standardsLinks": {
+        "title": "Standards and specs",
+        "desc": "CIPA spec and history, Library of Congress EXIF/TIFF format and tag docs, Wikipedia intro; for parsers and tag/version checks.",
+        "content": "When implementing readers, writers, or checking tag/version behavior, you need the actual specs. Here are links and one-line notes only; no copied text—rely on the official sources.\n\n**CIPA** (with JEITA) maintains the Exif standard.\n\n- [CIPA standards (Exif DC-008)](https://www.cipa.jp/e/std/std-sec.html) — Current Exif spec and downloads.\n- [CIPA update history](https://www.cipa.jp/e/std/history_sec.html) — Version history.\n\n**Library of Congress (LOC)**\n\n- [Exchangeable Image File Format (Exif) Family](https://www.loc.gov/preservation/digital/formats/fdd/fdd000618.shtml) — Overview, versions, use in JPEG/TIFF.\n- [Tags for TIFF and Related Specifications](https://www.loc.gov/preservation/digital/formats/content/tiff_tags.shtml) — TIFF/Exif tag list (Exif, GPS, Interop).\n\n**Further** Wikipedia [Exif](https://en.wikipedia.org/wiki/Exif) is a useful intro; for exact tag and format behavior, use CIPA/JEITA and LOC.\n\nFor spec history and versions, see [History of EXIF](/guides/exif-history); for tag meanings, see [EXIF tag quick reference](/guides/tag-reference)."
+      }
+    }
+  },
+  "pages": {
+    "privacy": {
+      "title": "Privacy"
+    },
+    "terms": {
+      "title": "Terms of Use",
+      "content": "Terms of use content will appear here. Do not use this tool to violate others' privacy or applicable laws. By using the service you agree to these terms."
+    },
+    "about": {
+      "title": "About",
+      "section1Title": "What is ExifStrip?",
+      "section1Content": "ExifStrip is a tool you can use right in your browser to view, edit, and remove EXIF data from photos. You don’t need to install anything: open the page, upload an image, and you’ll see what metadata is embedded—camera and lens, date and time, aperture, shutter speed, ISO, GPS location, and more, grouped by category.\n\nIf the photo has GPS data, the shot location is shown on a map so you can quickly see whether the image exposes where you were. You can edit specific fields or use presets to remove whole groups (e.g. location only, or device-related only), then download the result.\n\nIt works on both desktop and mobile, with interfaces in English, Chinese, and Japanese.",
+      "section2Title": "Why did we build it?",
+      "section2Content": "We built it for a simple reason. EXIF is useful for organizing and remembering where and how a photo was taken, but it can also expose information you’d rather keep private.\n\nMany people don’t realize that the originals they post or send often include precise GPS, device model, and even camera serial numbers; anyone who downloads the file can read that data with the right tool. That can create privacy or safety risks.\n\nThere are desktop apps that handle EXIF, but they usually require installation, sometimes cost money, and it’s not always clear whether your images are uploaded elsewhere. We wanted a straightforward, free way for anyone to see what’s in their photos before sharing or uploading, and to decide what to remove, without installing software—and with all processing done locally so your photos never leave your device. So ExifStrip was built around the idea of handling everything locally and never uploading your images.",
+      "section3Title": "What does it do?",
+      "section3Content": "ExifStrip has four main areas.\n\nFirst, viewing: after you upload, you can browse EXIF by category (device, capture settings, location, date/time, etc.); if GPS is present, the shot location is shown on a map. A \"privacy analysis\" view helps you quickly see which fields might be sensitive.\n\nSecond, editing: fields like author, copyright, and capture time can be changed on the page and saved back into the JPEG, useful when you want to replace identifying info before sharing.\n\nThird, stripping: several presets (remove all, privacy only, GPS only, device only, etc.) let you drop metadata without touching pixels for JPEG, so quality stays the same; other formats such as PNG and WebP can use \"remove all\" with re-encoding.\n\nFourth, export: you can export the current image’s EXIF to CSV, JSON, plain text, or hex for backup or for reviewing what to strip. JPEG, PNG, TIFF, HEIC, AVIF, and WebP are supported; capabilities vary a bit by format (e.g. preset-based stripping is focused on JPEG), and the site’s guides and blog explain the details.",
+      "section4Title": "Privacy",
+      "section4Content": "From reading and editing to stripping and export, everything runs in your browser on your device. We don’t receive or see the images you open; if you don’t send them to us, we don’t have a copy.\n\nWe don’t use your photos for training, analytics, or ads. That way you can manage EXIF without handing your photos to anyone else.\n\nThe full commitment (including what site-usage data or cookies we use) is in the site’s privacy notice—worth a look if you want to be sure.",
+      "section5Title": "In closing",
+      "section5Content": "If you need to view or clean EXIF from photos without installing software, you’re welcome to try ExifStrip. You can start from the homepage; for a fuller picture, check the guides and the blog for tips. For common questions, see the FAQ; for feedback or suggestions, use the contact options on the site.\n\nWe’ll keep improving the tool and the documentation—thanks for using it."
+    },
+    "faq": {
+      "title": "FAQ",
+      "heroSubtitle": "Common questions about EXIF, privacy, and how to use the tool.",
+      "viewAll": "View all",
+      "q1": "What is EXIF?",
+      "a1": "EXIF (Exchangeable Image File Format) is metadata embedded in photos, which can include device, date/time, aperture, GPS, and more.",
+      "q2": "Are my images uploaded to a server?",
+      "a2": "No. All processing happens in your browser on your device. We do not receive or store your images.",
+      "q3": "What image formats are supported?",
+      "a3": "We support JPEG, PNG, TIFF, HEIC/HEIF, AVIF, WebP and other common formats. Preset-based stripping is supported for JPEG only.",
+      "q4": "How do I remove all EXIF?",
+      "a4": "Choose \"Remove all EXIF\" and download the cleaned image. Other formats are re-encoded to strip all metadata.",
+      "q5": "Will removing EXIF affect image quality?",
+      "a5": "For JPEG with preset-based stripping we only rewrite metadata; pixels are unchanged. PNG, WebP, etc. are re-encoded and may differ very slightly; the difference is usually imperceptible.",
+      "q6": "Can I remove only GPS or capture time?",
+      "a6": "Yes. In the metadata block select the \"Location\" or \"Date/Time\" dimension and use \"Remove selected\" to strip only that part of the EXIF while keeping the rest.",
+      "q7": "Can I process multiple images at once?",
+      "a7": "Yes. You can upload multiple images, then view and edit EXIF for each in the list, or strip and download the currently selected image.",
+      "q8": "Is my data sent to your servers?",
+      "a8": "No. All reading, editing, stripping, and export happen in your browser. We do not and cannot receive, store, or view your images or EXIF.",
+      "q9": "What is an IFD?",
+      "a9": "IFD (Image File Directory) is an EXIF standard structure. Common IFDs include IFD0 (main image), Exif, GPS, and Interop; each holds different tags.",
+      "q10": "Can I restore EXIF after stripping?",
+      "a10": "No. Once EXIF is removed and you download the new file, the original metadata cannot be recovered from it. We recommend keeping a backup of the original.",
+      "q11": "Why do some tags show as \"Unknown\"?",
+      "a11": "Some camera makers use custom tags outside the standard EXIF spec. The tool still parses and shows hex and raw values; the name may appear as unknown.",
+      "q12": "What's the difference between HEIC/HEIF and JPEG?",
+      "a12": "HEIC is a more efficient format used by Apple and others. We can read EXIF from HEIC; for precise preset-based stripping, converting to JPEG first is recommended.",
+      "q13": "Is my language preference saved?",
+      "a13": "Yes. Your chosen UI language is stored locally in your browser (e.g. localStorage) and will be used on your next visit.",
+      "q14": "Can I use this on phone or tablet?",
+      "a14": "Yes. The site is responsive and works in mobile and tablet browsers. Support for HEIC and large files may vary by device and browser.",
+      "q15": "How can I contact you?",
+      "a15": "For privacy, usage, or technical questions, use the contact email in our privacy section; we will respond as soon as we can."
+    }
+  },
+  "blog": {
+    "pageTitle": "Blog",
+    "heroSubtitle": "Tips, use cases, product updates and related topics—to help you get the most out of ExifStrip and understand EXIF and privacy.",
+    "notFound": "Post not found.",
+    "referencesTitle": "References",
+    "category": {
+      "tips": "Tips",
+      "topic": "Related topics",
+      "product": "Product & updates"
+    },
+    "entry": {
+      "topicPhonePrivacy": {
+        "title": "Phone photo privacy: what can you turn off?",
+        "desc": "Turn off or limit \"write location into photos\" and photo/camera access in system settings.\nExisting photos that already have location still need a tool to strip EXIF.",
+        "content": "EXIF in photos often includes location, device, and time. Besides cleaning it before sharing, you can reduce what gets written in the first place by changing system settings: turning off or limiting \"write location into photos\" and controlling which apps can access your camera and photo library. Below we only describe what system settings can do; we don’t go into EXIF format details.\n\n**Location and photos**\n\nMost phones have a master \"Location services\" or \"Location\" switch in Settings. With it off, newly taken photos usually stop getting GPS coordinates. Some devices also have a separate location permission for \"Camera\" or \"Photos\": when allowed, new shots get location; when denied, new photos typically have no location. Note: turning off location does not remove EXIF from photos already taken; existing files that already contain GPS still need to be cleaned with [ExifStrip](https://exifstrip.com) or similar.\n\n**Photo library and camera permissions**\n\n\"Photos\" or \"Camera\" permissions control which apps can read, write, or delete your images. On iOS and Android you can set this per app: no access, access to selected photos only, or full access. Restricting third‑party apps to \"selected photos\" or revoking access reduces the chance they scan your whole library or upload originals with EXIF. Camera permission controls use of the camera; with it off, the app cannot take new photos, so it won’t create new EXIF either.\n\n**Differences by device and OS**\n\nMenus and labels vary by brand and OS version—\"Privacy\", \"Location services\", or per‑app settings under \"App management\". If you can’t find an option, check the manufacturer’s or OS help.\n\nIn short: turning off location or limiting photo/camera access reduces new photos carrying location and who can read your library; for existing EXIF you still need to [view](/guides/how-to-view) and then [edit or strip](/guides/how-to-edit-strip) as needed."
+      },
+      "topicPlatformStrip": {
+        "title": "How do social platforms handle EXIF in your photos?",
+        "desc": "How X, Meta, WeChat, Weibo, etc. typically handle uploaded photos; with reference links.\n\"Not shown to others\" doesn't mean \"not collected\"—strip before upload to stay in control.",
+        "content": "After you upload a photo to a social platform, the service usually processes the file: some strip or alter EXIF, others read it first and then decide what to show. Policies differ by platform and can change; below we summarize common, publicly reported behaviour and add reference links. Regardless of platform behaviour, **cleaning EXIF yourself before upload** keeps you in better control of who gets what.\n\n**Common behaviour (summary)**\n\n**X (formerly Twitter)**\n\nAccording to X’s Help Center, location on posts is optional and separate from EXIF embedded in the image; uploaded images are processed, and in many cases EXIF such as GPS is not shown to other users. Current behaviour is determined by the platform.\n\n**Instagram / Facebook (Meta)**\n\nReports and tests indicate that Meta processes photos before what others see; many EXIF fields (e.g. GPS, camera model, timestamps) do not appear on the version shown to others. Meta’s Terms and Data Policy, however, state that they collect information from content you share, including \"the location of a photo or the date a file was created\"—so the platform may read metadata before deciding what to display. \"Others can’t see it\" does not mean \"the platform doesn’t collect it\".\n\n**WeChat**\n\nMedia and official responses have noted that sending \"original\" images can include EXIF (including location); images shared in Moments or after compression typically do not retain full EXIF. Official advice includes avoiding sending originals and turning off camera location to reduce exposure.\n\n**Weibo, Xiaohongshu, and others**\n\nThese platforms do not publish detailed, separate statements on whether or how they strip EXIF; actual behaviour may change with updates. The safer approach is to strip sensitive EXIF before upload.\n\n**Recommendation**\n\nPlatform policies change, and \"not shown to others\" does not mean \"not stored or used by the platform\". If you prefer not to hand location, device, or time to the platform or others: [view](/guides/how-to-view) and [strip as needed](/guides/how-to-edit-strip) with [ExifStrip](https://exifstrip.com) or a local tool first, then upload; for important photos you can [export EXIF as a backup](/blog/tip-export-exif) before stripping. More on this in [Before you share](/guides/before-you-share).\n\n---\n\n# **References**\n\n- [X: Post location – FAQs](https://help.x.com/en/safety-and-security/post-location-settings) (X Help Center, on posting and location)\n- [Meta Privacy Policy](https://www.facebook.com/privacy/policy/) (Meta’s explanation of information collected from photos and other content)\n- [WeChat original images and location – official advice](https://www.yicai.com/news/100421452.html) (Yicai, 2018, citing WeChat’s official response)"
+      },
+      "topicExifVsMetadata": {
+        "title": "Is EXIF the same as \"metadata\"?",
+        "desc": "EXIF is only one metadata standard; IPTC, XMP, MakerNote briefly explained.\nWho writes what, and why \"author\" can remain after stripping EXIF—links to the guide.",
+        "content": "People often use \"EXIF\" and \"metadata\" interchangeably, but EXIF is only one metadata standard, not all of it. Understanding that makes it easier to see what other metadata lives in a photo and who writes it—and why some tools only remove EXIF while others touch more.\n\n**What is metadata?**\n\nMetadata is \"data about data\": it describes who created the file, when, with what device, and can include copyright, title, keywords, and so on. In photos, metadata is not the pixels; it is stored inside the file or alongside it, for software, platforms, or people to read.\n\n**Where EXIF fits**\n\nEXIF (Exchangeable Image File Format) is a **metadata standard** for photos (and some audio), defined by bodies such as JEITA/CIPA. It specifies a set of tags—camera model, aperture, shutter, GPS, capture time, etc.—and how they are stored in JPEG, TIFF, and similar files. So **EXIF is one type of metadata**, mainly written automatically by cameras, phones, and scanners when they capture or create the file. For the concept and structure, see [What is EXIF?](/guides/what-is-exif).\n\n**Other common metadata**\n\n- **IPTC**: Often used in news and publishing; focuses on title, author, copyright, keywords, captions. Many stock libraries and editing tools write IPTC. See also [IPTC, XMP, and EXIF: how they fit together](/guides/iptc-xmp-overview).\n- **XMP** (Adobe-led): Stored as XML, can be embedded in JPEG, PNG, RAW, etc.; often appears together with EXIF and IPTC; used by Photoshop, Lightroom, and others for edit history, ratings, tags.\n- **Maker notes**: Vendor‑specific blocks (e.g. MakerNote) with serial numbers, lens calibration, etc.; only fully interpretable by the vendor’s software.\n\nA single image can contain EXIF, IPTC, and XMP. Some tools that \"remove EXIF\" only touch the EXIF block and leave IPTC/XMP; if you still see author or copyright after stripping EXIF, it’s likely in another metadata block.\n\n**Who writes what**\n\nCameras and phones mainly write EXIF when capturing; editing and publishing software often modify EXIF and write IPTC/XMP. After upload, platforms may also alter or strip some metadata. If you want to \"remove only location\" or \"keep only copyright\", first [view](/guides/how-to-view) what dimensions and blocks are in the file, then [edit or strip](/guides/how-to-edit-strip) as needed.\n\nIn short: EXIF is one metadata standard, mainly for capture parameters, device, time, and location; IPTC and XMP are other standards or formats that can sit alongside EXIF. For a list of common EXIF tags, see [EXIF tag reference](/guides/tag-reference)."
+      },
+      "tipBeforeTravelShare": {
+        "title": "Before you share travel photos, clean EXIF first",
+        "desc": "Travel and trip shots often carry GPS; posting originals can expose place and time.\nUse \"GPS only\" or \"Privacy only\" to strip, then download and share—three steps.",
+        "content": "Photos from trips or business travel often carry location data that your phone recorded automatically. If you post them straight to social media, anyone who gets the file could see where (and when) the shot was taken from the EXIF. If you’d rather not expose your home area or itinerary, cleaning EXIF before you share is a good habit. With ExifStrip you can do it in the browser, no install.\n\n**Step 1: Open ExifStrip and upload the photos you want to share**\n\nOn the [ExifStrip](https://exifstrip.com) homepage, click the upload area or drag the photos in. You can add one or several at a time.\n\n![Upload photos to share](/images/blogs/tip-before-travel-share/a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d.png)\n\n**Step 2: Choose a strip option**\n\nIf you only want to remove location and keep camera model and capture settings, choose \"**GPS only**\". If you also want to remove device, serial numbers, author and copyright, choose \"**Privacy only**\". Then run the strip for the current image; the page will give you a new file with those fields removed.\n\n![Choose GPS only or Privacy only](/images/blogs/tip-before-travel-share/b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e.png)\n\n**Step 3: Download the cleaned photo and share that**\n\nShare the downloaded file instead of the original. Keep the originals as backup.\n\n![Download the cleaned photo](/images/blogs/tip-before-travel-share/c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e7f.png)\n\nFor JPEGs, \"GPS only\" and \"Privacy only\" only change metadata, not pixels, so quality stays the same. For HEIC or other formats you can convert to JPEG first and then do the same, or use \"Remove all\" (which strips by re-encoding). More on formats: [ExifStrip supported image formats](/blog/product-supported-formats)."
+      },
+      "tipBatchClean": {
+        "title": "Batch cleaning EXIF from many photos: how to go faster",
+        "desc": "Upload many at once, then work through the list: pick preset, strip, download per image.\nSame preset for the batch makes the flow quick once you're used to it.",
+        "content": "When you need to share a dozen or more photos, opening a tool and processing each one separately is slow. ExifStrip lets you upload many at once, then work through the list: pick a preset, strip, download, move to the next. Much faster than doing them one by one.\n\n**Upload all the photos you want to process**\n\nOn [ExifStrip](https://exifstrip.com) you can select multiple images in one go or drag several in together. After upload, a file list appears on the left (or top); click a file and the right side shows that image’s EXIF and actions.\n\n![List after uploading multiple photos](/images/blogs/tip-batch-clean/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f8a.png)\n\n**Pick a preset, then strip and download each**\n\nIn the strip area, choose a preset (e.g. \"GPS only\" or \"Privacy only\"), run strip on the current image, and download. Then select the next in the list, same preset, strip, download, and repeat. Once you’re used to it, the same preset for a batch goes quickly.\n\n![Select preset and download for current image](/images/blogs/tip-batch-clean/e5f6a7b8-c9d0-4e1f-2a3b-4c5d6e7f8a9b.png)\n\nWhen you're done, keep the cleaned downloads separate from originals so you don't share the wrong file. \n\nThere’s usually a \"Add more\" or similar control near the list; use it to add another batch without refreshing. When you’re done, keep the cleaned downloads separate from originals so you don’t share the wrong file.\n\nWorth trying the preset on one or two images first, then running through the rest. You can also use the privacy analysis or scan by dimension to see what’s in each photo before deciding which preset to use."
+      },
+      "tipKeepWhatYouNeed": {
+        "title": "Only want to remove GPS and keep the rest?",
+        "desc": "To hide \"where\" but keep device and capture settings, use \"GPS only\".\nFor JPEG we only change metadata; quality stays the same.",
+        "content": "Sometimes you don’t want people to see where a photo was taken, but you do want to keep the camera or phone model, aperture, shutter speed, and so on—for your own reference or for others. In that case you only need to remove the location (GPS) from EXIF and leave the rest. ExifStrip’s \"**GPS only**\" preset does exactly that.\n\n**After uploading, choose \"GPS only\" in the strip section**\n\nOpen [ExifStrip](https://exifstrip.com) and upload the image. In the strip area, select the preset \"**GPS only**\" and run strip for the current image.\n\n![Select GPS only preset](/images/blogs/tip-keep-what-you-need/f6a7b8c9-d0e1-4f2a-3b4c-5d6e7f8a9b0c.png)\n\nThe new file will have latitude, longitude, altitude and other location fields removed; device, capture settings, date/time, author and copyright stay. For JPEG we only change the metadata segment, so quality is unchanged. Download that file and share it.\n\nIf you also want to remove device model, serial numbers, author info and the like, use \"Privacy only\" instead; to clear everything, use \"Remove all\". For the difference between presets and when to use which, see [How to edit or remove EXIF?](/guides/how-to-edit-strip) and [What to do before sharing?](/guides/before-you-share)."
+      },
+      "tipExportExif": {
+        "title": "View first, then decide: export EXIF for backup or audit",
+        "desc": "Export EXIF (CSV/JSON/TXT/HEX) before stripping so you can check \"what was there\" later.\nOr export first, review, then choose which preset or fields to remove.",
+        "content": "Before you strip or delete EXIF, exporting a copy gives you a record of what the file originally contained—handy later if you need to check. Or export first, review it, then decide which preset or fields to remove. ExifStrip can export the current image’s EXIF as CSV, JSON, TXT, or hex (HEX); the flow is straightforward.\n\n**After opening an image, find \"Export\" on the page**\n\nOnce you’ve uploaded or opened an image on [ExifStrip](https://exifstrip.com), the page shows its EXIF by dimension. The export control is usually near the file info or metadata area; click it to choose a format.\n\n![Export format options for EXIF](/images/blogs/tip-export-exif/a7b8c9d0-e1f2-4a3b-4c5d-6e7f8a9b0c1d.png)\n\n**Pick a format and download**\n\n- **CSV**: Opens easily in a spreadsheet; you can merge data from multiple images for comparison.\n- **JSON**: Easy for scripts or programs; good for backup or further processing.\n- **TXT**: Plain text, small, easy to search and archive.\n- **HEX**: Raw hexadecimal; useful for debugging or comparing with the spec.\n\nThe export contains the same dimensions and fields shown on the page, no more, no less. Export only creates a file on your machine; nothing is uploaded to us.\n\nA good habit: before sharing or batch stripping, export EXIF for important photos as backup, then strip. That way you have a record of what was there and whether you removed what you intended."
+      },
+      "tipRemoveExifHeicIphone": {
+        "title": "Remove EXIF from iPhone HEIC photos before you share",
+        "desc": "HEIC from iPhone often includes GPS and device info; view it in the browser, then strip—JPEG presets work best after converting to JPEG.",
+        "content": "iPhone photos are often **HEIC** (HEIF). They can hold the same kinds of metadata people associate with \"EXIF\": **location**, **capture time**, **camera model**, and more. Before you post originals to chat, forums, or marketplaces, it helps to **open the file** and see what is inside.\n\n## View HEIC on ExifStrip\n\nGo to [ExifStrip](https://exifstrip.com), upload the `.heic` file, and read metadata by dimension—same flow as JPEG. If there is GPS, you will see it on the map.\n\n## Strip metadata: what works today\n\n**JPEG** on ExifStrip supports **preset stripping** (GPS only, privacy, device only, remove all) **without re-encoding** the pixels. **HEIC** uses a different container than JPEG; **preset-based strip** is not the same as on JPEG. For HEIC, our **\"remove all\"** path may **re-encode** the image to drop metadata—see [Supported image formats](/blog/product-supported-formats) and the [RAW / HEIC FAQ](/guides/faq-raw-heic).\n\n**Practical workflow:** If you need the same **fine-grained presets** as JPEG, **export the photo as JPEG** first (Photos app or any converter), then upload the JPEG to ExifStrip and run **GPS only** or **Privacy** preset. If you accept a re-encode, try **remove all** on HEIC directly.\n\n## Related\n\n- [Tip: only remove GPS](/blog/tip-keep-what-you-need)\n- [Which formats contain EXIF?](/guides/supported-formats)"
+      },
+      "tipRemoveExifPng": {
+        "title": "Remove EXIF from PNG: what to expect",
+        "desc": "PNG may embed EXIF or XMP in chunks; on ExifStrip, full removal usually means re-encoding—unlike JPEG preset strip.",
+        "content": "PNG files do not use the same single **APP1 EXIF block** as JPEG. Metadata may live in **several chunks** (e.g. EXIF, XMP, text chunks). That is why **\"remove everything except GPS\"** is harder than on JPEG—you must edit specific chunks, not one contiguous segment.\n\n## What ExifStrip can do\n\n- **View**: If the PNG contains parseable EXIF-related data, we show it by dimension like other formats.\n- **Remove all metadata**: Choosing **remove all** typically **re-encodes** the PNG so chunks carrying metadata are omitted. There is usually a small quality/size tradeoff from an extra encode step.\n- **Preset strip (GPS only, privacy, etc.)**: These presets are **designed around JPEG's metadata layout**. For PNG, use **remove all** if you need a clean file, or convert to JPEG first if you want preset behavior—see [Supported image formats](/blog/product-supported-formats).\n\n## Habit\n\nBefore sharing a PNG from design tools or screenshots, **upload once** to see if anything sensitive is attached, then decide whether to strip.\n\n## Related\n\n- [How to edit or remove EXIF?](/guides/how-to-edit-strip)\n- [Is EXIF the same as metadata?](/blog/topic-exif-vs-metadata)"
+      },
+      "topicExiftoolVsOnline": {
+        "title": "ExifTool vs online EXIF tools: when each makes sense",
+        "desc": "ExifTool is a powerful CLI for batch and rare formats; browser tools like ExifStrip excel at quick, install-free checks and JPEG preset stripping.",
+        "content": "[ExifTool](https://exiftool.org/) by Phil Harvey is the **reference** many power users rely on: huge tag coverage, **batch** processing, directory trees, copying metadata between files, geotagging workflows, and output formats like JSON and CSV from the command line. It is **not** a replacement for a website—and a website is **not** a replacement for ExifTool. They solve overlapping but different jobs.\n\n## When ExifTool shines\n\n- **Thousands of files** (events, archives) where scripting `-r`, `-ext`, or `-tagsFromFile` saves hours.\n- **Odd formats** or **maker notes** where you need the latest tag database.\n- **Automation** on your own machine (backups, DAM pipelines, CI).\n\nInstall once, read the [application documentation](https://exiftool.org/exiftool_pod.html), and you get depth no browser app can match.\n\n## When an online tool shines\n\n- **No install**: school or work machine, or you only fix a few images.\n- **Quick visual check**: map for GPS, grouped dimensions, export to CSV/JSON for a single file.\n- **JPEG preset strip in the browser** without touching the shell—[ExifStrip](https://exifstrip.com) keeps files **on your device** (no upload to us).\n\n## Privacy for both\n\n- **ExifTool**: runs **locally**; you control where files go.\n- **ExifStrip**: processing runs **in your browser**; pick a tool you trust and read its privacy policy.\n\n## Takeaway\n\nUse **ExifTool** when you live in the terminal and need scale. Use **ExifStrip** when you want a fast, visual pass on a handful of photos—especially **JPEG**—before sharing. Many people use **both** at different times.\n\n## On this site\n\n- [What can ExifStrip do?](/guides/what-exifstrip-does)\n- [IPTC, XMP, and EXIF](/guides/iptc-xmp-overview)"
+      },
+      "productWelcome": {
+        "title": "Welcome to ExifStrip",
+        "desc": "View, edit, strip, and export EXIF; everything runs locally, images never uploaded.\nA good first read; links to guides and FAQ at the end.",
+        "content": "ExifStrip is a tool you use right in your browser to view, edit, and remove EXIF data from your photos. No install—just open the site and go. Everything runs on your own device, so your images never get sent to our servers. Here’s a quick look at what it can do, what happens to your data, and where to dig deeper.\n\n# **What it does**\n\n**View**: Upload or drag in an image and the page shows its EXIF in blocks—device, capture settings, location, date and time, image properties, author and copyright, and so on. If the photo has GPS data, the capture location appears on a map so you can check it at a glance.\n\n![EXIF by dimension](/images/blogs/product-welcome/c1a2b3c4-d5e6-4f7a-8b9c-0d1e2f3a4b5c.png)\n\n![File info and GPS map](/images/blogs/product-welcome/d2b3c4d5-e6f7-4a8b-9c0d-1e2f3a4b5c6d.png)\n\n**Edit**: Fields like artist, copyright, and capture time can be edited in the page and saved back to the JPEG. Handy when you want to replace sensitive details with something neutral, or overwrite the real info before sharing.\n\n![Editing EXIF fields](/images/blogs/product-welcome/e3c4d5e6-f7a8-4b9c-0d1e-2f3a4b5c6d7e.png)\n\n**Strip**: We offer four presets—remove all, privacy only, GPS only, device only. For JPEGs, preset stripping only changes the metadata and leaves the pixels alone, so quality stays the same; for other formats, “remove all” strips metadata by re-encoding the image.\n\n![Stripping EXIF by preset](/images/blogs/product-welcome/f4d5e6f7-a8b9-4c0d-1e2f-3a4b5c6d7e8f.png)\n\n**Export**: You can export the current image’s EXIF as CSV, JSON, TXT, or hex, so you can back it up or review it yourself before deciding what to remove.\n\n# **Local processing and privacy**\n\nFrom parsing and editing to stripping and export, everything runs in your browser on your device. We never see or store the images you open; if you don’t send them to us, we don’t have them. So you get the tools without handing your photos to anyone. The full picture is in our [Privacy](/privacy) page.\n\n# **Free to use**\n\nExifStrip is free and has no ads. The interface is available in Chinese, English, and Japanese. To learn more about EXIF or follow step-by-step instructions, check out [What can ExifStrip do?](/guides/what-exifstrip-does), [How to view EXIF?](/guides/how-to-view), [How to edit or remove EXIF?](/guides/how-to-edit-strip), or the [FAQ](/faq)."
+      },
+      "productSupportedFormats": {
+        "title": "ExifStrip supported image formats",
+        "desc": "What JPEG, PNG, TIFF, HEIC, AVIF, WebP can do on this site: view / edit / strip.\nExplains why each format can or can't—structure differs, support level differs.",
+        "content": "This site supports viewing and processing EXIF for common image formats: **JPEG, PNG, TIFF, HEIC, AVIF, and WebP**. How each format stores EXIF inside the file differs, so the level of support for \"view\", \"edit\", and \"strip by preset\" differs too: some formats let us change only the metadata and leave pixels untouched; others require re-encoding the whole image to drop metadata. Below we explain what is supported and **why**. For format and standard-level background, see [Which formats contain EXIF?](/guides/supported-formats).\n\n# **JPEG**\n\nJPEG has the fullest support on this site.\n\n**View**: Supported. In JPEG, EXIF lives in a fixed **APP1 application segment** (marker 0xFFE1) as one contiguous block of TIFF-style data. The site parses it and shows it by dimension—device, capture settings, location, date/time, image properties, author and copyright, and so on. If GPS is present, the capture location is shown on a map.\n\n**Edit**: Supported. Fields such as Artist, Copyright, and capture time can be edited in the UI and **written back** to the JPEG. The reason is the same: that data lives entirely in the APP1 segment; we rewrite only that segment and leave the compressed image bytes unchanged, so quality is unchanged.\n\n**Strip**: All four presets—**remove all**, **privacy only**, **GPS only**, **device only**—are supported. We only rewrite or remove the corresponding tags inside the APP1 segment and do not re-encode the image, so quality is unchanged. That is why JPEG is the only format that supports \"strip by preset\" precisely: its metadata and image data are in separate segments, and we only touch the metadata segment.\n\n# **PNG / WebP**\n\n**View**: Well supported. If the file contains EXIF or similar metadata (e.g. PNG tEXt/zTXt, WebP EXIF chunk), the site parses and displays it by dimension—device, capture settings, location, date/time, etc.—the same way as for JPEG.\n\n**Edit**: **Not supported** for writing metadata back into PNG or WebP. In these formats, metadata is stored in **multiple separate chunks**; the layout is not a single APP1-like segment as in JPEG. Writing back would require rewriting those chunks according to each format’s spec. The site currently implements write-back only for JPEG, so PNG/WebP are view-only for now.\n\n**Strip**: If you choose \"**remove all**\", the site **re-encodes the whole image** and omits metadata in the output. That is because metadata in PNG/WebP is spread across multiple chunks; to \"remove only some\" or \"strip by preset\" (e.g. only GPS or only device) we would have to parse and rewrite or drop specific chunks, which is not implemented. So the only way to remove metadata entirely is to re-encode and leave out those chunks. **Preset-based stripping** and **single-field removal** are therefore not available for these formats. Re-encoding usually has a small impact on quality but adds one more encode step.\n\n# **HEIC / HEIF**\n\nCommon on Apple devices; metadata lives in **ISOBMFF container** boxes, not in a single segment like JPEG.\n\n**View**: Supported. The site reads EXIF-related boxes from the container and displays device, capture settings, location, date/time, etc., the same as for JPEG.\n\n**Edit**: **Not supported** for writing back to HEIC. The container’s box structure and write rules differ from JPEG; implementing it would require rewriting or adding boxes per HEIC/ISOBMFF spec, which is not done yet.\n\n**Strip**: **Preset-based stripping** is not supported. To remove only GPS or only device while keeping the rest would require rewriting the right boxes inside the container, which is not implemented. If you want to remove EXIF with minimal impact on quality, convert HEIC to JPEG first and then use the site on the JPEG—then \"remove all\" or any preset only touches the metadata segment and does not re-encode pixels.\n\n# **TIFF / AVIF**\n\n**View**: Supported; existing EXIF is read and shown by dimension, same as JPEG.\n\n**Edit / Strip**: TIFF also uses IFD-based EXIF in the spec, so in principle metadata could be rewritten without re-encoding; AVIF is box-based like HEIC. On this site, **preset-based stripping** and **write-back** for TIFF and AVIF are limited—either not implemented or \"remove all\" is done via re-encoding. Exact behaviour depends on the current release. For the full edit-and-preset-strip experience, converting to JPEG and then using the site is recommended.\n\n---\n\nThe above reflects the current version and the reasons for each behaviour; it may change with updates. The homepage \"Supported formats\" section and [Which formats contain EXIF?](/guides/supported-formats) stay in sync with this; if a format does not parse or an option is missing, check file type and size, or see the [FAQ](/faq)."
+      },
+      "productUpdate": {
+        "title": "Release notes",
+        "desc": "ExifStrip release notes page.\nNew features, improvements, and fixes will be listed here when we ship.",
+        "content": "This page lists ExifStrip release notes. When we ship a new version, we add major new features, improvements, and fixes here.\n\n# First release\n\n**View EXIF** — Upload one or more images; EXIF is shown by dimension (device, image settings, location, date & time, author & copyright, image properties, ICC). Supported formats: JPEG, PNG, TIFF, HEIC, AVIF, WebP. GPS is shown on a map when present.\n\n**Edit EXIF** — For JPEG only: edit fields such as Artist, Copyright, and capture time in the UI; save changes; remove single tags or whole dimensions; download the image with edits applied.\n\n**Strip EXIF** — Four presets: remove all, privacy (GPS, author, serials), GPS only, device/serial only. JPEG: preset-based stripping without re-encoding. PNG/WebP: \"remove all\" via re-encode. Download the stripped image.\n\n**Export EXIF** — Export metadata to CSV, JSON, TXT, or HEX (raw).\n\n**Privacy analysis** — Risk levels (high/medium/low) for location, device, date/time, and other sensitive fields before you share.\n\n**Site** — All processing in the browser; no upload to our servers. Pages: [Home](/), [Guides](/guides), [Blog](/blog), [FAQ](/faq), [About](/about), [Privacy](/privacy), [Terms](/terms). English, 简体中文, 日本語."
+      }
+    }
+  }
+}

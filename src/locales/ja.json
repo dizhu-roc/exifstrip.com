@@ -1,0 +1,537 @@
+{
+  "quickActions": {
+    "title": "クイックアクション",
+    "upload": "画像をアップロード",
+    "metadata": "メタデータ",
+    "privacy": "プライバシー"
+  },
+  "seo": {
+    "relatedReading": "関連記事・ガイド"
+  },
+  "nav": {
+    "home": "ホーム",
+    "about": "について",
+    "blog": "ブログ",
+    "guides": "チュートリアル",
+    "faq": "FAQ",
+    "language": "言語",
+    "sectionNav": {
+      "hero": "ヒーロー",
+      "intro": "サイト紹介",
+      "upload": "アップロード",
+      "metadata": "メタデータ",
+      "metadataGraph": "関係図",
+      "whyStripExif": "EXIF を削除する理由",
+      "privacy": "プライバシー",
+      "exifTable": "EXIF 一覧",
+      "faq": "FAQ"
+    }
+  },
+  "languageOption": {
+    "en": "English",
+    "zh-CN": "中文",
+    "ja": "日本語"
+  },
+  "hero": {
+    "title": "無料の EXIF ビューア・編集・メタデータ削除ツール",
+    "desc": "ブラウザで EXIF を閲覧・編集・削除。アップロード不要、ずっと無料。"
+  },
+  "intro": {
+    "whoWeAre": "EXIFStrip とは？",
+    "whoWeAreDesc": "オンラインの写真 EXIF 閲覧・編集ツールです。閲覧・編集・削除はすべてブラウザ内で完結し、サーバーにアップロードされず、登録不要、完全無料です。",
+    "whatYouCanDo": "プライバシーの保護",
+    "whatYouCanDoDesc": "お客様のプライバシーと安全を最優先にしています。追加の情報は収集しません。詳細はプライバシーポリシーをご覧ください。",
+    "whatYouCanDoDescPart1": "お客様のプライバシーと安全を最優先にしています。追加の情報は収集しません。詳細は ",
+    "whatYouCanDoDescLink": "プライバシーポリシー",
+    "whatYouCanDoDescPart2": " をご覧ください。",
+    "whatIsExif": "EXIF の閲覧・編集・削除",
+    "whatIsExifDesc": "画像を1枚または複数枚アップロードし、EXIF の閲覧・編集・分析・削除ができます。すべてローカルで処理、完全無料。",
+    "tryIt": "試してみる",
+    "aboutPrivacy": "なぜ EXIF を気にする必要があるのか？",
+    "aboutPrivacyDesc": "スマートフォンやカメラで撮った写真には、GPS 位置や機種名などの個人情報が含まれることがあります。そのまま共有すると他人に知られる可能性があります。共有前に EXIF を確認・削除しておくことが大切です。",
+    "learnMore": "もっと知りたい？",
+    "learnMoreDesc": "ブログやFAQで詳しい情報をご覧いただけます。",
+    "learnMoreDescPart1": "当サイトの",
+    "learnMoreDescBlog": "ブログ",
+    "learnMoreDescOr": "または",
+    "learnMoreDescFaq": "FAQ",
+    "learnMoreDescPart2": "で詳しい情報をご覧ください。当サイトの ",
+    "learnMoreDescTutorialsLink": "チュートリアル",
+    "learnMoreDescPart3": " でも使い方を詳しく紹介しています。"
+  },
+  "upload": {
+    "title": "画像をアップロード",
+    "hint": "画像をここにドラッグするか、クリックして選択—EXIF の閲覧・削除ができます。",
+    "hintDrag": "画像をここにドラッグ＆ドロップ",
+    "or": "または",
+    "fileInfo": "ファイル情報",
+    "fileInfoPlaceholder": "アップロード後にファイル情報がここに表示されます。",
+    "browse": "ファイルを選択",
+    "clear": "削除",
+    "reset": "リセット",
+    "clearAll": "すべて削除",
+    "addMore": "画像を追加",
+    "fileName": "名前",
+    "fileSize": "サイズ",
+    "fileType": "ファイルタイプ",
+    "imageSize": "画像サイズ",
+    "bitsPerSample": "ビット深度",
+    "colorSpace": "色空間",
+    "mimeType": "MIME タイプ",
+    "lastModified": "更新日時",
+    "caption": "キャプション",
+    "artist": "作者",
+    "copyright": "著作権",
+    "supportedFormats": "対応ファイル形式",
+    "supportedFormatsHint": "JPEG、PNG、TIFF、HEIC/HEIF、AVIF、WebP",
+    "supportedFormatsFooter": "今後、対応形式を追加する場合があります。",
+    "gpsPlaceholder": "GPS マップ（位置データがある場合に表示）",
+    "locationsTitle": "位置",
+    "mapLoading": "地図を読み込み中…",
+    "noLocationData": "位置データがありません",
+    "seeMetadataBelow": "下のメタデータ欄をご確認ください",
+    "showOnlySelectedImage": "選択中の画像のみ表示",
+    "privacyAnalysis": "プライバシー分析",
+    "privacyAnalysisPlaceholder": "画像をアップロードして選択すると表示されます。",
+    "riskHigh": "高リスク",
+    "riskMedium": "中リスク",
+    "riskLow": "低リスク",
+    "riskNone": "リスクなし",
+    "riskSafe": "検出されたリスクはありません。",
+    "riskDescLocation": "撮影時の正確な位置情報",
+    "riskDescDevice": "カメラ・端末の機種情報",
+    "riskDescOther": "作者・著作権・ユーザーコメント等",
+    "riskDescDateTime": "撮影・更新日時",
+    "issuesFound": "{{count}} 件のリスク"
+  },
+  "metadata": {
+    "title": "EXIF メタデータ",
+    "device": "デバイス",
+    "imageSettings": "撮影設定",
+    "location": "位置",
+    "dateTime": "日時",
+    "other": "作者・著作権",
+    "image": "画像プロパティ",
+    "icc": "ICC",
+    "blockContentPlaceholder": "ブロック内容はここでスクロールします。",
+    "noFileHint": "画像をアップロードして選択するとメタデータを表示します。",
+    "emptyStateTitle": "メタデータがありません",
+    "emptyStateDesc": "上のアップロード欄から画像を追加し、一覧で選択すると、ここに次元ごとのメタデータが表示されます。",
+    "emptyStateDescLine1": "上のアップロード欄から画像を追加してください。",
+    "emptyStateDescLine2": "一覧で選択すると、ここに次元ごとの EXIF が表示されます。",
+    "selectFileHint": "一覧から画像を選択するとメタデータを表示します。",
+    "loading": "メタデータを読み込み中…",
+    "iccEmpty": "このファイルに ICC プロファイルはありません。",
+    "edit": "編集",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "downloadWithEdits": "編集を反映してダウンロード",
+    "delete": "削除",
+    "restore": "元に戻す",
+    "deleteBlock": "このブロックを削除",
+    "restoreBlock": "このブロックを元に戻す",
+    "editDisabledNonJpeg": "編集は JPEG のみ対応です。",
+    "deleteDisabledNonJpeg": "現バージョンでは JPEG のみタグ削除に対応しています。",
+    "prev": "前へ",
+    "next": "次へ",
+    "exportExif": "EXIF エクスポート",
+    "exportCsv": "CSV",
+    "exportJson": "JSON",
+    "exportTxt": "TXT",
+    "exportHex": "HEX（生データ）",
+    "clean": "EXIF を除去",
+    "presetFull": "EXIF をすべて削除",
+    "presetPrivacy": "プライバシー（GPS・作者・シリアル）",
+    "presetGpsOnly": "GPS のみ",
+    "presetDeviceOnly": "デバイス・シリアルのみ",
+    "downloadCleaned": "除去済み画像をダウンロード",
+    "stripUnsupportedFormat": "この形式（HEIC・HEIF・TIFF・AVIF など）では除去に対応していません。",
+    "stripNoRiskItems": "この画像にリスク項目は検出されていません。",
+    "graphRootLabel": "画像",
+    "graphClose": "閉じる",
+    "inputFormatHint": "英数字・常用記号のみ。",
+    "validationAsciiOnly": "英数字および常用記号のみ入力できます。",
+    "validationInteger": "整数を入力してください。",
+    "validationNumber": "数値または分数の形式が不正です。",
+    "validationLatitude": "緯度は -90 ～ 90 の範囲で入力してください。",
+    "validationLongitude": "経度は -180 ～ 180 の範囲で入力してください。",
+    "opt": {
+      "orientation": { "0": "未定義", "1": "左上", "2": "右上", "3": "右下", "4": "左下", "5": "左頂", "6": "右頂", "7": "右底", "8": "左底" },
+      "whiteBalance": { "0": "自動", "1": "手動" },
+      "flash": { "0": "なし", "1": "発光", "5": "発光(復帰不明)", "7": "発光(復帰)", "9": "強制", "13": "強制(復帰不明)", "15": "強制(復帰)", "16": "禁止", "24": "自動", "25": "自動(復帰不明)", "29": "自動(復帰)", "31": "自動(復帰)" },
+      "exposureProgram": { "0": "未定義", "1": "手動", "2": "通常", "3": "絞り優先", "4": "シャッター優先", "5": "クリエイティブ", "6": "アクション", "7": "ポートレート", "8": "風景" },
+      "exposureMode": { "0": "自動", "1": "手動", "2": "ブラケット" },
+      "meteringMode": { "0": "不明", "1": "平均", "2": "中央", "3": "スポット", "4": "マルチ", "5": "パターン", "6": "部分" },
+      "sceneCaptureType": { "0": "標準", "1": "風景", "2": "ポートレート", "3": "夜景" },
+      "resolutionUnit": { "1": "不明", "2": "インチ", "3": "cm" },
+      "colorSpace": { "1": "sRGB", "2": "Adobe RGB", "65535": "未校正" },
+      "gpsRef": { "N": "北", "S": "南", "E": "東", "W": "西" },
+      "gpsDir": { "T": "真北", "M": "磁北" },
+      "gpsSpeedRef": { "K": "km/h", "M": "mph", "N": "ノット" }
+    }
+  },
+  "metadataGraph": {
+    "title": "メタデータ関係図",
+    "noDataTitle": "関係図データがありません",
+    "noDataDesc": "画像をアップロードすると、ここにメタデータ関係図が表示されます。"
+  },
+  "toast": {
+    "exportFailed": "エクスポートに失敗しました。もう一度お試しください",
+    "cleanFailed": "除去に失敗しました。もう一度お試しください",
+    "downloadFailed": "ダウンロードに失敗しました。もう一度お試しください",
+    "parseError": "解析に失敗しました"
+  },
+  "fourCards": {
+    "card1Title": "EXIF を閲覧",
+    "card1Desc": "画像をアップロードすると、デバイス・位置・日時など次元ごとに EXIF を表示。サーバーへはアップロードされません。",
+    "card2Title": "編集・除去",
+    "card2Desc": "JPEG で作者・著作権などを編集したり、プリセットで EXIF を除去（GPS のみ・端末のみ・プライバシー・全削除）。",
+    "card3Title": "エクスポート・プライバシー",
+    "card3Desc": "EXIF を CSV・JSON・TXT・HEX でエクスポート。共有前にプライバシー分析で敏感な項目を確認できます。",
+    "card4Title": "アップロード不要・登録不要",
+    "card4Desc": "すべてブラウザ内で完結。写真は端末外に送信されません。登録不要でご利用いただけます。"
+  },
+  "whyStripExif": {
+    "title": "EXIF を除去する理由",
+    "item1Quote": "ご存知ですか？",
+    "item1Desc": "撮影した写真には GPS や撮影日時などが含まれることがあります。原図を共有すると「いつ・どこで」が露出します。",
+    "item2Quote": "EXIF には何が入っている？",
+    "item2Desc": "メタデータには機種名・シリアル・ソフト版などが含まれることがあり、フィンガープリントに利用され得ます。除去後は「画像そのもの」だけになります。",
+    "item3Quote": "EXIF とは？",
+    "item3Desc": "EXIF（交換可能画像ファイル形式）は写真に埋め込まれたメタデータで、撮影機器・日時・絞り・シャッター・GPS などを記録します。",
+    "item4Quote": "どの情報を削除すればいい？",
+    "item4Desc": "EXIF をすべて削除するか、位置・端末など特定の項目だけ削除するか選べます。画像に乗せる情報はあなたが決められます。"
+  },
+  "exifTable": {
+    "title": "EXIF リファレンス表",
+    "tagHex": "Tag(Hex)",
+    "name": "Name",
+    "ifd": "IFD",
+    "type": "Type",
+    "value": "Value",
+    "valueExampleHeader": "Value（例）",
+    "noFile": "画像をアップロードしてください",
+    "noTags": "EXIF データがありません"
+  },
+  "privacy": {
+    "title": "プライバシー",
+    "intro": "ExifStrip はプライバシーの保護を重視しています。本ツールは、画像とメタデータが**お使いのデバイスから送信されない**よう設計されています。",
+    "lastUpdated": "最終更新：2025年3月",
+    "noUploadsTitle": "アップロードなし",
+    "noUploadsContent": "画像の処理、EXIF の読み取り・編集・除去は**すべてお使いのブラウザ内**で行われます。画像が**当方を含むいかなるサーバーにもアップロードされることはありません**。",
+    "noTrackingTitle": "トラッキングなし",
+    "noTrackingContent": "当方は画像・EXIF データ・編集内容を**追跡・記録・保存しません**。ご利用は**匿名**です。",
+    "cookiesTitle": "アクセス解析と Cookie（GA4）",
+    "cookiesContent": "当方は **Google Analytics 4（GA4）** でサイトのアクセス解析を行っています。GA4 はトラフィックや利用状況の計測のために Cookie を使用することがあります。当方自身は**トラッキングや広告目的で Cookie を使用しません**。Cookie はブラウザで管理・無効化できます。Google 解析を無効にするには、Google のオプトアウト用アドオンやブラウザ設定をご利用ください。",
+    "adsenseTitle": "広告（AdSense）",
+    "adsenseContent": "当方は Google AdSense で広告を配信している場合があります。Google は広告のパーソナライズに Cookie を使用することがありますが、当方は**画像や EXIF データを Google や第三者と共有しません**。",
+    "securityTitle": "セキュリティ",
+    "securityContent": "処理は**すべてお使いのブラウザ内でローカルに**実行されます。接続は **HTTPS** で保護しています。",
+    "openSourceTitle": "オープンソース",
+    "openSourceContent": "コアのロジックは**公開**されており、どなたでも確認できます。プライバシーを重視される方はコードの確認をお勧めします。",
+    "childrenTitle": "お子様のプライバシー",
+    "childrenContent": "本サイトは**13 歳未満の方を対象としていません**。当方はお子様の個人情報を故意に収集しません。",
+    "contactTitle": "お問い合わせ",
+    "contactContent": "プライバシーに関するご質問は、本サイトまたはリポジトリに記載の方法でご連絡ください。",
+    "summaryTitle": "要約",
+    "summaryContent": "画像とメタデータは**お使いのデバイスに留まります**。当方がファイルを**見る・保存する・送信することはありません**。データは**常にご自身が完全に管理**できます。",
+    "linksHeading": "詳細",
+    "linkGoogleAdsText": "Google の広告ポリシー",
+    "linkGooglePrivacyText": "Google プライバシーポリシー",
+    "linkGoogleAnalyticsText": "サイトとアプリでの Google によるデータの使用",
+    "rightsNote": "**EU・英国・カリフォルニア**などお住まいの地域の法令に基づく権利がある場合があります。当方は**サーバーでお客様の個人データを収集・保存しません**。権利の行使は上記の方法でご連絡ください。"
+  },
+  "footer": {
+    "siteName": "ExifStrip",
+    "intro": "ブラウザで画像の EXIF メタデータを閲覧・編集・削除。データは端末外に送信されず、登録不要です。",
+    "copyright": "© {year} ExifStrip",
+    "links": "リンク",
+    "privacy": "プライバシー",
+    "terms": "利用規約",
+    "about": "About",
+    "faq": "FAQ",
+    "contactUs": "お問い合わせ",
+    "twitter": "Twitter",
+    "github": "GitHub",
+    "feedback": "フィードバック"
+  },
+  "guides": {
+    "pageTitle": "EXIF ガイド",
+    "heroSubtitle": "EXIF をより深く理解し、ご自身のプライバシー情報を守るお手伝いをします。",
+    "pageDesc": "EXIF・プライバシー・当サイトの使い方。",
+    "comingSoon": "コンテンツは準備中です。",
+    "notFound": "該当する項目が見つかりません。",
+    "referencesTitle": "参考文献",
+    "category": {
+      "knowExif": "EXIF を知る",
+      "exifContent": "EXIF に含まれるもの（维度別）",
+      "privacy": "EXIF とプライバシー",
+      "howTo": "EXIF の閲覧・編集",
+      "faq": "よくある質問",
+      "reference": "参考・リンク"
+    },
+    "entry": {
+      "whatIsExif": {
+        "title": "EXIF とは？",
+        "desc": "写真に埋め込まれたメタデータ規格で、機器・日時・GPS などを記録。JEITA/CIPA が維持。画像形式そのものではない。",
+        "content": "写真を見返していて、「なんでこの日時・レンズ・場所まで分かるんだろう？」と思ったことはありませんか。その正体が EXIF です。\n\nEXIF の正式名称は Exchangeable Image File Format（交換可能な画像ファイル形式）です。名前には「画像ファイル」とありますが、新しい画像形式というわけではありません。画像そのものはこれまで通り JPEG や TIFF で、EXIF が決めているのは、そのファイルに「どんなタグを、どう付けるか」というルールです。\n\nアメリカ議会図書館の [Exif 形式ファミリー（LOC）](https://www.loc.gov/preservation/digital/formats/fdd/fdd000618.shtml) などによる EXIF 規格の整理によれば、こうしたタグには次のようなものが含まれます：カメラ・機種名（Make、Model）、シャッター速度、絞り、露出時間、撮影日時、解像度、色空間、著作権・説明、GPS 位置、さらには埋め込みサムネイルなどです。\n\nつまり EXIF は「メタデータの規格」であり、「画像ファイル形式」そのものではありません。画像はあくまで JPEG・TIFF、または音声の場合は WAV として保存され、EXIF はその中に埋め込まれるメタデータの構成と名称を定義しています。\n\n規格はもともと日本電子工業振興協会（JEIDA）が 1995～1996 年に策定・公開し、2000 年に JEIDA と EIAJ が合併して日本電子情報技術産業協会（JEITA）となり、2009 年からは JEITA とカメラ映像機器工業会（CIPA）が共同で管理・維持しています。\n\n規格は完全に公開されており、デジタルカメラ・スマートフォン・プリンタなどで広く採用されているため、いま撮った一枚の写真にも、すでにたくさんの情報が乗っているわけです。\n\n規格の版本ごとの変遷を知りたい方は [「EXIF の由来と変遷」](/guides/exif-history) を、どのファイル形式が EXIF を載せられるか知りたい方は [「どの形式に EXIF が含まれる？」](/guides/supported-formats) をご覧ください。"
+      },
+      "exifHistory": {
+        "title": "EXIF の由来と変遷",
+        "desc": "1.0（1995）から 3.1 までのバージョン変遷；GPS・シリアル・UTF-8 等の追加、CIPA/JEITA が共同維持。",
+        "content": "EXIF（Exchangeable Image File Format、交換可能な画像ファイル形式）の規格は、1995 年 10 月に日本電子工業振興協会（JEIDA）が 1.0 版を発表したところから始まります。デジタルカメラが「ファイルに画像データをどう記録するか」の統一方式を定めたものです。CIPA の更新履歴や議会図書館の EXIF 形式説明によれば、その後約 30 年にわたり何度も改訂が重ねられ、機能が拡張されています。EXIF そのものの説明は [「EXIF とは？」](/guides/what-is-exif) をご参照ください。\n\n主なバージョンは以下のとおりです。\n\n- 1.0（1995）：初版。画像データの記録方法を規定。\n- 2.0（1997）：GPS 情報 IFD を導入し、撮影位置を記録可能に。EXIF が「どこで撮ったか」に対応し始めました。\n- 2.1（1998）：音声へ拡張。「ファイルに音声データをどう書き込むか」を規定。EXIF は静止画だけの規格ではなくなります。\n- 2.2（2002）：ImageUniqueID（画像の一意性証明）、Exif Print 等を追加。2.2 以降は sRGB・Adobe RGB 等の色の識別もサポート。\n- 2.3（2010）：カメラ所有者・機体シリアル等のタグを追加し、画像の出所証明に利用可能に。\n- 2.31（2016）：UTC 時差の記述、温度・湿度・気圧等の撮影環境タグを追加。\n- 2.32（2019）：複合画像関連タグ等の整備。\n- 3.0（2023）：大幅改訂。UTF-8/Unicode、ボックス構造データ、AI 注釈・画像真正性の検証に対応。Title、Photographer、Artist、Software など多くのタグが新設・変更。\n- 3.1（2026）：現時点の最新版（CIPA DC-008-Translation-2026）。\n\n規格は CIPA と JEITA が共同で維持しており、改訂履歴と規格書は CIPA のウェブサイトで参照できます。\n\n新バージョンの読み手は旧版を認識し、未定義の拡張は読み飛ばすことが求められ、後方互換が保たれます。各バージョンで EXIF を書き込めるファイル形式の詳細は [「どの形式に EXIF が含まれる？」](/guides/supported-formats) を参照してください。"
+      },
+      "supportedFormats": {
+        "title": "どの形式に EXIF が含まれる？",
+        "desc": "規格上 JPEG/TIFF/WAV がどう EXIF を載せるか；HEIC・RAW・WebP 等の互換性と当サイトの対応。",
+        "content": "[「EXIF とは？」](/guides/what-is-exif) で、EXIF がメタデータ規格でありファイル形式そのものではないことを説明しました。EXIF（Exchangeable Image File Format）規格で明示的に定義されている carrier は、画像ファイル（TIFF 系・JFIF/JPEG 系）と音声ファイル（WAV）の二種類です。アメリカ議会図書館の EXIF ファミリーの形式説明および CIPA 規格文書によれば、規格上「EXIF を含む」とされるのはまず JPEG と TIFF です。\n\n・**JPEG**：EXIF データは JPEG の事前定義されたアプリケーションセグメント APP1（セグメントマーカー 0xFFE1）に格納されます。このセグメントは TIFF 構造のコンテナとして機能し、EXIF タグ一式を収めます。デジタルカメラ・スマホの JPEG のほとんどに EXIF が付き、機種名・撮影日時・絞り・シャッター・解像度・オプションのサムネイルなどが含まれます。\n\n・**TIFF**：TIFF のプライベートタグ 0x8769 で Exif 子 IFD（Image File Directory）を定義し EXIF 専用タグを格納。0x8825 で GPS 子 IFD（緯度・経度・高度等）。規格では Exif 子 IFD 内のタグ 0xA005 で「互換性 IFD」も定義されています。\n\n・**WAV**：[Exif 2.1](/guides/exif-history) 以降、Exif オーディオ（WAVE）の書き込み方法も規格に含まれます。EXIF 規格で宣言されているファイル名拡張子には jpg、tif、wav などがあります。\n\nこのほか、EXIF に相当するメタデータは、規格に厳密に従わない形式にもよく登場します。例えば HEIC/HEIF（Apple 等が利用）は ISOBMFF コンテナ内に EXIF 互換の撮影パラメータ・GPS・タイムスタンプ等を持てます。一部の RAW・AVIF・WebP 等も、ベンダーやソフトの実装に応じて同様のデータを埋め込みます。\n\n当サイト（ExifStrip）では、JPEG・PNG・TIFF・HEIC・AVIF・WebP 等の EXIF の読み取り・表示に対応しています。プリセットに基づくメタデータの除去は主に JPEG（ピクセル非変更）に対応しており、その他の形式で EXIF を除去する場合は通常再エンコードが必要です。\n\n詳細はトップページの「対応形式」をご確認ください。"
+      },
+      "exifStructure": {
+        "title": "EXIF の構造",
+        "desc": "TIFF 風ディレクトリで整理：0th IFD、Exif 子 IFD、GPS 子 IFD、Interop IFD とタグ・値の格納方法。",
+        "lead": "写真ファイル内の EXIF はランダムな塊ではなく、「ディレクトリ → タグ → 値」の階層で整理されています。下の図は EXIF がファイル内でどう配置されているかをまとめたもので、本文を読む前に全体像をつかむのに役立ちます。",
+        "content": "EXIF メタデータは TIFF のディレクトリ構造に沿って格納される。JPEG では EXIF 全体がアプリケーションセグメント APP1（マーカー `0xFFE1`）に収まり、実質的に TIFF を埋め込んだ形になる。TIFF では同じ IFD の仕組みをそのまま使う。議会図書館の形式説明によれば、主なディレクトリは次のとおりである。\n\n## 0th IFD（メイン画像ファイルディレクトリ）\n\nファイルヘッダまたは APP1 内のオフセットで指される。画像の幅・高さ・向きなど、主画像に関わるタグを格納する。\n\n## Exif 子 IFD\n\n0th IFD の TIFF プライベートタグ 0x8769（Exif IFD）で指される。撮影パラメータ・機器情報・日時など Exif 専用タグの多くがここにあり、[デバイス・カメラ情報](/guides/dimension-device)、[撮影パラメータ](/guides/dimension-settings)、[日付・時刻](/guides/dimension-datetime) で扱う内容に対応する。\n\n## GPS 子 IFD\n\n0th のプライベートタグ 0x8825 で指される。緯度・経度・高度・GPS タイムスタンプなどを格納。[Exif 2.0](/guides/exif-history) から規格に含まれる。\n\n## Interoperability IFD（互換性 IFD）\n\nExif 子 IFD 内にあり、タグ 0xA005 で定義。互換性関連のデータに使う。\n\n---\n\n各ディレクトリは「タグ＋値」の集合であり、読み取り時はタグ番号と型に従って解釈する。EXIF の定義と対応形式については [EXIF とは？](/guides/what-is-exif) および [どの形式に EXIF が含まれる？](/guides/supported-formats) を参照。"
+      },
+      "dimensionDevice": {
+        "title": "デバイス・カメラ情報",
+        "desc": "Make/Model、本体・レンズのシリアル、Software、ファーム；機器やソフトが書き込み、シリアルはセンシティブ。",
+        "content": "デバイス・カメラ系の EXIF は撮像素子やソフトウェアの情報を記録し、撮影時や保存時にカメラ・スマホ・現像ソフトなどが書き込む。議会図書館の説明では「カメラ設定」などのメタデータに含まれる。\n\n## 主なタグ\n\n当サイトの「デバイス」维度と一致する：Make（メーカー）、Model（機種名）、BodySerialNumber／CameraSerialNumber（本体・カメラのシリアル）、LensMake／LensModel（レンズメーカー・型番）、Software、FirmwareVersion（ファームウェア版）。\n\nこれらは 0th IFD と Exif 子 IFD に分散して格納され、CIPA/JEITA 規格と一般的な実装に従う。\n\n## 用途と注意\n\n用途は機種の特定・統計・出所の証明など。シリアルは機器を一意に特定できるためセンシティブであり、共有前に除去を検討するとよい。リスクの詳細は [どの EXIF が敏感？](/guides/sensitive-fields) を参照。"
+      },
+      "dimensionSettings": {
+        "title": "撮影パラメータ",
+        "desc": "シャッター・絞り・ISO・焦点距離・ホワイトバランス・フラッシュ・露出プログラム等；撮影時に機器が書き込む。",
+        "content": "撮影パラメータはシャッターを切った瞬間の露出・光学条件を記録し、撮影時に機器が書き込む。主に Exif 子 IFD に格納される。議会図書館では「カメラ設定」「技術的画像データ」に分類される。\n\n## 代表的なタグ\n\nExposureTime（シャッター、秒、例 1/125）、FNumber（絞り、例 f/2.8）、ISOSpeedRatings（感度）、FocalLength（焦点距離・mm）、WhiteBalance、Flash、ExposureProgram（プログラムオート・絞り優先など）、ExposureBiasValue（露出補正）、MeteringMode（測光）、SceneCaptureType（シーンタイプ）。\n\n## 簡単な意味\n\n絞りは入射光量と被写界深度、シャッターと ISO は露出を決め、焦点距離は画角と遠近感に影響する。これらのデータは撮影条件の分析や再現に使え、[画像属性](/guides/dimension-image) の解像度・色空間と合わせて一枚の画像の生成環境を説明する。"
+      },
+      "dimensionLocation": {
+        "title": "位置情報（GPS）",
+        "desc": "緯度経度・高度・GPS タイムスタンプは GPS 子 IFD に格納；測位対応機器が書き込み、高リスク情報。",
+        "content": "位置情報は独立した GPS 子 IFD に格納され、0th IFD のプライベートタグ 0x8825 で参照される。議会図書館の説明では、GPS 対応は Exif 2.0 で導入され、撮影地点の地理情報を記録するために使われる。\n\n## 主なタグ\n\nGPSLatitude／GPSLongitude と GPSLatitudeRef／GPSLongitudeRef（南北・東西）で緯度経度を表す。規格上は度分秒の有理数で、十進度に換算して地図表示に使う。\n\nGPSAltitude／GPSAltitudeRef、GPSDateStamp／GPSTimeStamp、および速度・撮影方向などのオプションタグがある。\n\n## プライバシー上の注意\n\n測位機能を持つカメラやスマホが撮影時にこれらを書き込む。緯度経度とタイムスタンプで撮影場所・時刻を特定できるため高リスクであり、共有前に表示・除去を推奨する。詳しくは [EXIF のプライバシーをなぜ気にする？](/guides/why-care-privacy) を参照。"
+      },
+      "dimensionDatetime": {
+        "title": "日付・時刻",
+        "desc": "撮影・更新・デジタル化の時刻；一般的な形式にタイムゾーンなし；一部機器は拡張で時差を記録。",
+        "content": "日付・時刻の EXIF は撮影・更新・デジタル化の時刻を記録し、並び替え・検索・出所の確認に使う。議会図書館では EXIF メタデータの「日付・時刻情報」に含まれる。\n\n## 主なタグと形式\n\nDateTimeOriginal（撮影）、DateTime（更新）、DateTimeDigitized（デジタル化）。形式は通常「YYYY:MM:DD HH:MM:SS」（例 2024:03:15 14:30:00）で、タイムゾーン欄はない。\n\n## タイムゾーンの制限\n\n規格上の標準日時タグには UTC オフセットが含まれない。OffsetTime／OffsetTimeOriginal などの拡張で時差を記録する機器・ソフトもあるが、すべてのファイルにあるわけではない。\n\nExif 2.31 で UTC 時差の記述が追加されている。版本の変遷は [EXIF の由来と変遷](/guides/exif-history) を参照。"
+      },
+      "dimensionImage": {
+        "title": "画像属性",
+        "desc": "幅・高さ・解像度・色空間・ビット深度；表示・印刷用で、ピクセル内容は変えない。",
+        "content": "画像属性は画像の幾何・解像度・色・符号化方式を記述し、表示・印刷に直結する。議会図書館の EXIF 説明では、画像データに関連するメタデータとしてピクセル数・アスペクト比（規格では 1:1 が要求）、ピクセル構成・サンプリング（RGB 4:4:4、Y:Cb:Cr 4:2:2 または 4:2:0）が挙げられている。\n\n## 主なタグ\n\nImageWidth／ImageLength（ピクセル幅・高さ）、XResolution／YResolution／ResolutionUnit（解像度と単位、例 DPI）、ColorSpace（例 sRGB）、BitsPerSample／SamplesPerPixel、Compression／PhotometricInterpretation、ExifVersion／FlashPixVersion など。\n\n## 用途\n\nこれらは表示・印刷時にサイズと色を正しく扱うために使われ、ピクセル内容は変えない。ファイル形式（[どの形式に EXIF が含まれる？](/guides/supported-formats) の JPEG・TIFF など）が画像データの符号化を決め、EXIF は埋め込みメタデータの記述のみを担う。"
+      },
+      "dimensionOther": {
+        "title": "作者・著作権・コメント",
+        "desc": "Artist、Copyright、UserComment、ImageDescription、MakerNote；前者は読み書き可、MakerNote はメーカー固有。",
+        "content": "作者・著作権・コメント系の EXIF は記述的メタデータであり、議会図書館では「記述的メタデータ」「著作権情報」に分類される。ユーザーやソフトが編集するものと、機器・ベンダーが書き込むものがある。\n\n## 主なタグ\n\nArtist（作者）、Copyright（著作権）、UserComment（ユーザーコメント）、ImageDescription（画像説明）、MakerNote（メーカーノート）。\n\nArtist／Copyright／UserComment／ImageDescription は多くのソフトで読み書き可能。MakerNote はメーカー固有で形式は非公開であり、メーカー製ツールでのみ完全に解釈される。削除・保持は規格適合に影響しない。\n\n## バージョンとプライバシー\n\nExif 3.0 では Title、Photographer、ImageEditor、Artist、Software などの定義が追加・変更されている。UserComment や ImageDescription に個人情報が含まれる場合があるため、共有前に確認を推奨。敏感な項目は [どの EXIF が敏感？](/guides/sensitive-fields) を参照。"
+      },
+      "iptcXmpOverview": {
+        "title": "IPTC・XMP・EXIF の関係",
+        "desc": "写真には EXIF 以外に IPTC（キャプション等）や XMP（拡張メタデータ）も同居しうる；ツールは族ごとに表示する。",
+        "content": "口語では「EXIF」で総称しがちだが、実際には **EXIF**（撮影条件・GPS・日時）、**IPTC**（キャプション・キーワード・クレジット等）、**XMP**（XML ベースの柔軟なタグ群）が同居することがある。[ExifTool](https://exiftool.org/) は名前空間ごとに整理され、調べるのに便利だ。\n\n## 一言で違い\n\n**EXIF** はカメラの中心ブロック。**IPTC** は報道系ワークフロー由来。**XMP** は重複して著作権などを持ちうる——**同じ内容が複数ブロックにあるのは正常**だ。\n\n## 削除・共有との関係\n\n狭い意味の「EXIF 削除」だけでは **IPTC/XMP のキャプションが残る**ことがある。**共有前に実際に表示される内容を確認**すること。[ExifStrip](https://exifstrip.com) では解析できる範囲を次元表示する。JPEG 以外との差は [EXIF の編集・削除](/guides/how-to-edit-strip) と [対応フォーマット](/blog/product-supported-formats) を参照。\n\n## 関連\n\n- [EXIF とは](/guides/what-is-exif)\n- [EXIF の構造](/guides/exif-structure)\n- [EXIF とメタデータは同じ？](/blog/topic-exif-vs-metadata)"
+      },
+      "makerNotesBasics": {
+        "title": "メーカーノート（MakerNote）とは？",
+        "desc": "メーカー固有のバイナリ領域で、標準 EXIF 外の詳細を格納する；「変な EXIF」ではなく拡張だ。",
+        "content": "標準 EXIF タグのほかに **MakerNote（メーカーノート）** があり、**完全な意味づけはメーカー側**に委ねられる。機種によって「余分な行」が違うのはこれが理由だ。\n\n## なぜあるか\n\nAF 情報、内部シリアル、レンズ補正等を格納する。[ExifTool の Tag Names](https://exiftool.org/TagNames/index.html) ではブランド別解釈がまとまっている。\n\n## プライバシー\n\nGPS ほど目立たないが **シリアル・内部 ID** が入りうる。**プリセットで何が消えるかは実装依存**なので先に表示を確認。[敏感なフィールド](/guides/sensitive-fields) も参照。\n\n## 本サイト\n\nパーサが出したメーカー情報は **デバイス** 等に表示される場合がある。背景は [デバイス](/guides/dimension-device) と [作者・著作権](/guides/dimension-other) を参照。"
+      },
+      "orientationTagExplained": {
+        "title": "EXIF Orientation：表示とピクセルの関係",
+        "desc": "値 1～8 は表示時の回転・反転；ピクセル行列そのものが必ずしも物理回転されているわけではない。",
+        "content": "**Orientation** はビューアに「どう表示するか」（回転・ミラー）を指示するタグで、値 **1～8** が定義される。正しいビューアはタグに従うが、**圧縮ビットストリームはセンサー向きのまま**ということが多い。\n\n## よくある誤解\n\n- アプリによって向きが違う → Orientation を無視する実装があるから。\n- タグだけ変えたら「回転した」？→ 多くは**表示解釈**の変更。ピクセルを焼き込むには再エンコードが別途必要。\n\n## 品質への影響\n\nOrientation をメタデータだけ更新しても JPEG の再圧縮は通常不要。削除すると再度「横向き」に見えることがある。\n\n## 詳しく\n\n- [画像設定ディメンション](/guides/dimension-settings)\n- [EXIF の見方](/guides/how-to-view)\n\n[ExifTool EXIF タグ](https://exiftool.org/TagNames/EXIF.html) も参照。"
+      },
+      "whyCarePrivacy": {
+        "title": "EXIF のプライバシーをなぜ気にする？",
+        "desc": "写真は標準で GPS・機種情報を載せやすい；ギャラリーでは見えないがツールで読める。共有前に確認・除去を習慣に。",
+        "content": "「写真を送っただけ」と思いがちだが、一緒に渡っているのは見えない付録——EXIF である。スマホやカメラは標準で GPS・機種名・撮影日時を書き込む。PC にコピーしたり、クラウドやグループに送ったりすると、多くの場合そのメタデータもそのまま付いてくる。\n\n**なぜ見落としやすいか** 普段のギャラリーでは表示されないからだ。だが EXIF はファイルの一部なので、OS のプロパティや専用ソフト、オンラインの EXIF ビューアで、緯度経度・タイムスタンプ・機体シリアルなどを読める。以下は解析後の EXIF 表示例：\n\n![EXIF 解析例1](/images/guides/why-care-privacy/0ad3b346-6904-4671-8c10-50eabd569275.png)\n\n![EXIF 解析例2](/images/guides/why-care-privacy/e3db8d12-1776-4167-9fc9-5a3cf04738a6.png)\n\nSNS やストレージがアップロード時に strip してくれるかはサービス次第で、明示されていない。「プラットフォームが何とかしてくれる」と想定するのは危ない。\n\n**結果として起きること** 原図を手にした人が、どこで・いつ・何で撮ったかを復元できる。行動分析・ストーカー・個人特定に使われる可能性がある；商用ではユーザー targeting に回ることもある。反例はよくある：グループに「打卡」写真を原図のまま送り、EXIF に正確な GPS が入っていれば、よく行く場所や住所が保存できる全員に筒抜けになる。\n\nだから、共有前に一度中身を確認し、不要なものは剥がす習慣をつけるとよい。どの項目が敏感かは [どの EXIF が敏感？](/guides/sensitive-fields)、実務で「位置だけ消す」か「全消し」かは [共有前に何をすべき？](/guides/before-you-share) を参照。"
+      },
+      "sensitiveFields": {
+        "title": "どの EXIF が敏感？",
+        "desc": "リスク順：位置・シリアル、時刻・機種、自由記述；なぜ敏感か・どんな反例があるかを整理。",
+        "content": "「敏感」かどうかは、誰がそのファイルを手にし、何に使うかで変わる。同じ EXIF でも文脈でリスクは違う。ここではリスクの高そうな順に整理する。\n\n**高リスク：位置と機器の一意識別子**\n\n[位置情報（GPS）](/guides/dimension-location) の緯度・経度・高度・GPS タイムスタンプは、撮影場所を数 m 単位で特定できる。原図が流出すれば、いつどこにいたかが分かり、複数枚から行動パターン・自宅・勤務先の推定も可能になる。カメラやレンズのシリアル（CameraSerialNumber、BodySerialNumber など）が EXIF に含まれる場合、その機器を一意に特定でき、保証・アカウント・中古取引と結びつけられる；詐欺や嫌がらせの事例もある。以下は某写真を解析した高敏感字段の例：\n\n![高敏感字段の例](/images/guides/sensitive-fields/8023c07e-def7-4ae7-8183-96a31ef94dbd.png)\n\n**中程度：時刻と機種**\n\n[日付・時刻](/guides/dimension-datetime) の撮影時刻（DateTimeOriginal 等）から行動のタイムラインや生活リズムが分かる。Make/Model は一意ではないが、機器のクラスや利用習慣の手がかりになり、文脈によっては個人特定につながる。\n\n**低いが油断しない：自由記述**\n\nUserComment や ImageDescription はユーザーやソフトが入力したテキストで、名前・場所・予定・メモが混ざっている可能性がある。確認せずに送れば自ら開示しているのと同じ。以下は時刻・機種・自由記述など中低敏感字段の例：\n\n![中低敏感字段の例](/images/guides/sensitive-fields/ef685d0f-95c7-46dc-a592-7a515a38947a.png)\n\n**反例** GPS 付きの家族写真が第三者に渡り、よく行く公園や通学路が一目で分かる；あるいはシリアルと SNS プロフィールから持ち主を装い機器を取り戻す手口。\n\n「どの項目が敏感か」を押さえたうえで、[共有前に何をすべき？](/guides/before-you-share) と組み合わせて除去方針を決めるとよい。"
+      },
+      "beforeYouShare": {
+        "title": "共有前に何をすべき？",
+        "desc": "「まず見てから決める」習慣：当サイトや OS のプロパティで確認し、位置のみ・デバイスのみ・全削除を選ぶ。当サイトのプリセットに対応。",
+        "content": "「EXIF は絶対残すな」という一律ルールはない。誰に渡すか、相手が再共有するかで変わる。習慣にしたいのは **まず見て、それから決める** こと。\n\n**ステップ1：中身を確認する**\n\nOS のプロパティや専用ソフト、あるいは当サイトのような [EXIF の見方](/guides/how-to-view) で原図を開く。[どの EXIF が敏感？](/guides/sensitive-fields) で挙げた GPS・シリアル・撮影時刻・UserComment が、自分の写真にどれだけ入っているかを見る。当サイトではアップロード後に「プライバシー分析」で敏感な項目を確認できる。示意：\n\n![プライバシー分析の例](/images/guides/before-you-share/4d550a07-ed4d-485e-9f6d-6012509120dd.png)\n\n**ステップ2：方針を選ぶ**\n\n- **位置だけ削除** 機器・時刻は残し、自分用の並び替えやアーカイブに使う。知人に渡すが撮影場所は出したくない場合向け。\n- **機器・シリアルだけ削除** 時刻・位置は残す。機材を隠したいだけのとき。\n- **全削除** 不特定に公開したり、相手が再共有する可能性があるときは、これが一番無難。\n\n当サイトの「プライバシーのみ／GPS のみ／デバイスのみ／全削除」といった [除去プリセット](/guides/how-to-edit-strip) はこの考え方に対応している。方針が決まったら、対応するプリセットを選んで実行すればよい。示意：\n\n![除去・削除の例](/images/guides/before-you-share/40e336e7-9ff5-4489-94e6-1bc9f88f8ce8.png)\n\n**反例** 確認せずに全部消してしまい、あとで撮影日時で並べ直したくなったら無い；あるいは消すべきところを残したまま原図を不特定や掲示板に送る。\n\n一言で言えば、送る前に一度見て、場面に合わせて「何を消すか」を選ぶ。当サイトでできることは [ExifStrip でできること](/guides/what-exifstrip-does) を参照。"
+      },
+      "howToView": {
+        "title": "EXIF の見方",
+        "desc": "OS（Windows プロパティ、macOS プレビュー、スマホの詳細）、専用ソフト、オンライン；当サイトはローカル解析・アップロード不要・次元別表示。",
+        "content": "EXIF 情報は重要だと言われますが、では EXIF 情報とは何でしょうか。EXIF（Exchangeable Image File Format）は、写真ファイルに埋め込まれたメタデータの規格で、撮影機器・絞りシャッター・日時・GPS などを記録します。この規格は JEITA（電子情報技術産業協会）と CIPA（カメラ映像機器工業会）が策定・維持しています。\n\n形式の公式な概要は [議会図書館 – Exif ファミリー](https://www.loc.gov/preservation/digital/formats/fdd/fdd000618.shtml) と [CIPA Exif 標準](https://www.cipa.jp/e/std/std-sec.html) を参照できます。\n\n通常、これらの情報は一般的なアルバムやサムネイルには表示されず、見た目だけでは分かりません。写真の裏側に隠れた情報だからです。一方で、システム標準の機能ややや専門的なソフトでは表示でき、写真の出所確認、共有前のプライバシー確認、整理の際に役立ちます。\n\nここでは、写真に含まれる EXIF の見方をいくつか説明します。\n\n# **OS 標準の方法**\n\n専門ソフトがなくても、これらの情報を表示できます。OS ごとの手順です。\n\n**Windows**：エクスプローラーで画像を右クリック → 「プロパティ」→「詳細」タブを開く。カメラ・サイズ・撮影日など一部の項目が表示されます。Windows のバージョンで表示項目は異なり、すべての EXIF が表示されるわけではありません。\n\n![Windows で EXIF を表示](/images/guides/how-to-view/window-view.png)\n\n**macOS**：標準の「プレビュー」で画像を開く → メニュー「ツール」→「インスペクタを表示」（Option+Command+I）。「詳細」などのタブで EXIF を確認できます。形式や機種によっては一部の項目が出ない場合があります。\n\n**スマートフォン（Android / iOS）**：写真／ギャラリーアプリで画像を開き、「詳細」「情報」や上スワイプで表示される項目を確認します。撮影日・位置などは多くの場合表示されますが、EXIF 全体が表示されるとは限りません。より詳しく見るにはファイルマネージャやサードパーティの EXIF アプリを使う方法があります。\n\n![iOS で EXIF を表示](/images/guides/how-to-view/ios-view.png)\n\n# **専門ソフト**\n\nEXIF を網羅的に見たい、一括で見たい、編集したい場合は、デスクトップの専門ツールが向いています。\n\n**ExifTool**：コマンドラインで動作。多くの形式の EXIF を読み書きでき、多くのソフトの内部でも使われています。コマンド操作が必要なため、不慣れな人にはやや敷居が高い面があります。\n\n**XnView**：無料で、多くの画像形式に対応し、EXIF の一覧表示・エクスポートが可能。インターフェースも分かりやすい一方、高度な機能の一部は有料版に含まれます。\n\n**IrfanView**（Windows）：軽量で起動が速く、EXIF の表示・編集が可能。Windows 専用です。\n\nいずれもオフラインで使え、機能は充実していますが、インストールが必要で、HEIC や RAW などへの対応はソフトにより異なります。利用前に自分のファイル形式に対応しているか確認するとよいです。\n\n# **オンラインツール**\n\n「画像をアップロードして EXIF を表示する」サイトは多数あり、インストール不要でどの端末のブラウザからでも使えます。一時的に 1 枚だけ確認するのに向いています。こうしたサービスでは画像が相手のサーバーに送信されるため、プライバシーや機密性が気になる写真の場合は、各サイトのプライバシーポリシーやデータの取り扱いを確認してから利用することをおすすめします。\n\n# **当サイト（[ExifStrip](https://exifstrip.com)）での見方**\n\n**ステップ1**：ブラウザで [ExifStrip](https://exifstrip.com) のサイトを開き、トップページへ進みます。\n\n![ステップ1](/images/guides/how-to-view/7d6ba228-d45f-4dca-8188-e64943375df4.png)\n\n**ステップ2**：アップロード欄をクリックするか、見たい画像を指定のエリアにドラッグ＆ドロップします。1 枚でも複数枚でも選択できます。\n\n![ステップ2](/images/guides/how-to-view/23f33ad8-9927-4bf3-bed7-8479df406acc.png)\n\n**ステップ3**：ファイルを選ぶと、ページ上でその画像の EXIF がローカルで解析され、サーバーには送信されません。解析が終わると「ファイル情報」にファイル名・サイズ・タイプなどが表示され、その下にメタデータが次元別（デバイス・撮影パラメータ・位置・日時・画像属性・作者・著作権など）に並び、必要な項目をすぐ探せます。\n\n![ステップ3](/images/guides/how-to-view/df78d179-7f68-4aa9-9362-df72046dd366.png)\n\n**ステップ4**：画像に GPS が含まれる場合は、撮影位置が地図上に表示されます。\n\n![ステップ4](/images/guides/how-to-view/ec7a0466-bd8a-405e-8598-d13f0ea3c053.png)\n\n[ExifStrip](https://exifstrip.com) の利点は、解析と表示がすべてブラウザ内で完結し、画像が端末外に送られないためプライバシーを守りやすいこと、インストール不要でブラウザだけで使えること、JPEG・PNG・HEIC・WebP など多くの形式の読み取りと表示に対応していることです。\n\n---\n\nEXIF の見方は用途・利用環境・第三者へ画像を送るかどうかで選べます。表示したあとで EXIF を編集したり削除したりする方法は [EXIF の編集・削除方法](/guides/how-to-edit-strip)、当サイトでできることの一覧は [ExifStrip でできること](/guides/what-exifstrip-does) を参照してください。"
+      },
+      "howToEditStrip": {
+        "title": "EXIF の編集・削除方法",
+        "desc": "作者・著作権・時刻などを編集して JPEG に書き戻す；次元単位で削るか全削除。JPEG は無劣化、PNG/WebP は再エンコード。四種のプリセットを説明。",
+        "content": "JPEG では EXIF メタデータは多くの場合 [APP1 セグメント](https://www.loc.gov/preservation/digital/formats/fdd/fdd000147.shtml) にあり、圧縮画像データと切り離せるため、**ピクセルを再エンコードせずに**メタデータだけ更新できることがあります。\n\n写真に含まれる EXIF がそれだけ重要なら、プライバシーを守るためにどう編集・削除すればよいでしょうか。当サイトでは次の二つの方法を提供しています：\n\n1. **編集** —— EXIF の一部フィールド（作者・著作権・撮影時刻など）を変更してファイルに書き戻す。虚偽や中立的な値に差し替えて、本当のメタデータを隠すのに使える。\n\n2. **除去（ストリップ）** —— メタデータの一部または全部を削除する。変更後の画像を入手した第三者には、元の EXIF は見えず、復元もできない。\n\n以下で両方と、当サイトでの扱いを説明する。\n\n# **EXIF の編集**\n\n多くのソフトでは、Artist（作者）・Copyright（著作権）・撮影時刻などの EXIF フィールドを編集し、結果をファイルに保存できる。当サイトでは JPEG の一部フィールドを編集可能。手順は次のとおり。\n\n**ステップ1：アップロードして表示** —— [EXIF の見方](/guides/how-to-view) で画像をアップロードすると、メタデータが次元別（デバイス・撮影パラメータ・作者・著作権・日時など）に表示される。変更したい次元ブロックを開き、次へ進む。\n\n![編集ステップ1：アップロード後の次元別表示](/images/guides/how-to-edit-strip/0f0a5151-c932-4fd3-9a5b-594dc67a8977.png)\n\n**ステップ2：編集をクリックして値を変更** —— 該当する次元（作者・著作権、日時など）のうち、編集アイコンが付いている行を探し、その行の編集アイコンをクリックする。ダイアログで新しい値（作者・著作権・撮影時刻の差し替えなど）を入力し、本当のメタデータを隠したり虚偽の情報を入れたりできる。\n\n![編集ステップ2：編集アイコンをクリックして変更](/images/guides/how-to-edit-strip/0b18359e-a2df-4ca8-9b15-add3b3aac849.png)\n\n**ステップ3：保存して書き戻し** —— 内容を確認して保存をクリックすると、変更がその画像の EXIF に書き戻される。すべてのタグが編集できるわけではなく、規格で書き込みが許されていて当サイトが対応しているフィールドだけに編集 UI が表示される。\n\n![編集ステップ3：保存してファイルに書き戻し](/images/guides/how-to-edit-strip/cb971da1-98c8-427f-8b3e-120842d80445.png)\n\n# **削除・除去**\n\nEXIF を削除する代表的なやり方は二つある：**次元単位**でまとめて削る（例：GPS だけ、デバイス情報だけを削除し他は残す）か、**一括で全削除**するか。当サイトではプリセットを選んで除去を実行できる。示意は以下のとおり。\n\n![削除・除去の示意](/images/guides/how-to-edit-strip/b19298f7-47e7-4612-9772-54ac12e18712.png)\n\n**JPEG** では EXIF は APP1 セグメントに格納され、ピクセルデータとは別になっている。除去時はこのメタデータ部分だけを書き換えたり削除するため、ピクセルには触れず**無劣化で除去**でき、画質は変わらない。**PNG・WebP** などでは「ヘッダだけいじる」ような経路がなく、EXIF を削るにはいったんデコードしてから再エンコードすることが多く、画質への影響は通常ごく小さい。詳しくは [EXIF 削除で画質は変わる？](/guides/faq-remove-safe) を参照。各形式で EXIF がどう載るかは [どの形式に EXIF が含まれる？](/guides/supported-formats) を参照。\n\n# **当サイトのプリセット**\n\n[ExifStrip](https://exifstrip.com) では、次の四種類の除去プリセットを用意している（「次元単位で削る」考え方に対応）：\n\n- **全削除**：ファイルから EXIF をすべて削除。\n- **プライバシーのみ**：位置・デバイス・作者・著作権などプライバシー関連の次元だけを削除し、撮影パラメータ・日時・画像属性などは残す。\n- **GPS のみ**：位置情報だけを削除し、他は残す。\n- **デバイスのみ**：デバイス・レンズ関連だけを削除し、他は残す。\n\n四種類のプリセットの例は以下のとおり。\n\n![当サイトの除去プリセット示意](/images/guides/how-to-edit-strip/ca9fa2cc-90ad-42bd-aa7f-ff6caddb214b.png)\n\n**JPEG** でこれらのプリセットを使う場合、メタデータ部分だけを書き換えるためピクセルは変更されず、画質は変わらない。**PNG・WebP** などで「全削除」を選ぶと、再エンコードによってメタデータを除去するため、画質への影響は通常無視できる程度。**HEIC・TIFF・AVIF** などは当サイトではプリセットによる除去には未対応。これらの形式から EXIF を落としたい場合は、いったん JPEG に変換してから除去するか、当該形式に対応した別のツールを使うことを検討してほしい。\n\n---\n\nプリセットを選んだあと、ページで「除去」を実行してダウンロードすれば処理後のファイルが得られる。何を削るか決める前に中身を確認したい場合は [EXIF の見方](/guides/how-to-view)、当サイトでできることの一覧は [ExifStrip でできること](/guides/what-exifstrip-does) を参照。"
+      },
+      "whatExifstripDoes": {
+        "title": "ExifStrip でできること",
+        "desc": "閲覧（次元別・地図）、一部フィールド編集、四種の除去プリセット、CSV/JSON/TXT/HEX 出力、プライバシー分析；すべてローカル・無料・アップロードなし。",
+        "content": "[ExifStrip](https://exifstrip.com) は、ブラウザ内で画像の EXIF を閲覧・編集・削除するツールです。インストール不要で、サイトを開けばすぐ使える。解析・編集・除去はすべてお使いの端末で行われ、画像がサーバーにアップロードされることはなく、EXIF を確認したり整理したりしたいがプライバシーも気にする方に向いている。以下、機能ごとに当サイトでできることを説明する。\n\n# **閲覧**\n\n画像をアップロードまたはドラッグ＆ドロップすると、EXIF が次元別に表示される：**デバイス**（メーカー・モデル・レンズ等）、**撮影パラメータ**（絞り・シャッター・ISO・焦点距離等）、**位置**（GPS）、**日時**、**画像属性**（幅・高さ・解像度・色空間等）、**作者・著作権**（Artist・Copyright・UserComment 等）。こうしたグループ分けで、タグ一覧を端から見なくても目的の情報にすぐたどり着ける。上部の「ファイル情報」ではファイル名・サイズ・タイプ・更新日時などが確認でき、GPS が含まれる場合は地図上に撮影位置が表示され、EXIF の位置フィールドと照合しやすい。JPEG・PNG・HEIC・WebP など多数の形式で EXIF の読み取りと表示に対応している。次図は次元別の EXIF とファイル情報領域の例である。\n\n![次元別の EXIF とファイル情報](/images/guides/what-exifstrip-does/e7a1b2c3-d4e5-4f6a-b7c8-d9e0f1a2b3c4.png)\n\n操作手順は [EXIF の見方](/guides/how-to-view) を参照。\n\n# **編集と除去**\n\n**編集**：Artist・Copyright・撮影時刻などの一部フィールドは画面から直接変更でき、保存すると JPEG に書き戻される。本当のメタデータを虚偽や中立的な値で上書きして敏感な内容を隠したい場合に使える。**除去**：四種類のプリセットに対応——**全削除**（EXIF をすべて削除）、**プライバシーのみ**（位置・デバイス・作者・著作権等のみ削除）、**GPS のみ**、**デバイスのみ**。JPEG の場合はメタデータ部分だけを書き換え、ピクセルには触れないため画質は変わらない。非 JPEG（PNG・WebP 等）で「全削除」を選ぶと再エンコードでメタデータを除去し、画質への影響は通常ごく小さい。HEIC・TIFF・AVIF などは現時点ではプリセットによる除去には未対応。手順と形式ごとの挙動は [EXIF の編集・削除方法](/guides/how-to-edit-strip) を参照。\n\n# **エクスポート**\n\n現在の画像の EXIF を **CSV**・**JSON**・**TXT**・**HEX**（生の十六進）でエクスポートできる。下図のとおりである。\n\n![EXIF エクスポート形式の選択](/images/guides/what-exifstrip-does/b3c4d5e6-f7a8-4b9c-0d1e-2f3a4b5c6d7e.png)\n\nCSV は表計算ソフトで複数画像のデータをまとめて見るのに向き、JSON はプログラムでの読み込みや二次処理に、TXT はテキストでの保管や検索に、HEX は低レベルなダンプとして仕様との突き合わせやデバッグに使える。出力内容は画面で次元別に表示しているデータと同一である。\n\n# **プライバシー分析**\n\nGPS・デバイス／レンズのシリアル番号・撮影時刻などの敏感な項目を自動で検出し、画面で高・中・低などのリスクレベルを表示する。\n\n![ファイル情報・GPS・プライバシーリスク表示](/images/guides/what-exifstrip-does/a2b3c4d5-e6f7-4a8b-9c0d-1e2f3a4b5c6d.png)\n\n共有前にその画像にどんな敏感な EXIF が含まれるかを一目で把握し、「位置だけ削る」か「全削除」にするかを決めやすく、[どの EXIF が敏感？](/guides/sensitive-fields) や [共有前に何をすべき？](/guides/before-you-share) の考え方と一致している。「まず確認してから削る」習慣づけにも役立つ。\n\n---\n\n[ExifStrip](https://exifstrip.com) は無料・広告なし。複数画像をまとめて選択し、1 枚ずつ表示・処理できる。処理はすべてローカルで行われ、プライバシーを重視した設計である。EXIF の見方・除去の手順は [EXIF の見方](/guides/how-to-view) と [EXIF の編集・削除方法](/guides/how-to-edit-strip) を参照してください。"
+      },
+      "faqRemoveSafe": {
+        "title": "EXIF 削除で画質は変わる？",
+        "desc": "メタデータのみの除去（当サイトの JPEG プリセット等）なら画質は変わらない；PNG/WebP の再エンコードでは理論上ごくわずかな差の可能性。",
+        "content": "**結論から言うと** メタデータだけを削除して再エンコードしない（当サイトの JPEG 向け「プリセット除去」など）場合は、ピクセルは一切触れないので画質は変わらない。変わりうるのは「再エンコードして EXIF を落とす」場合——PNG や WebP を一度 decode してまた encode すると、もう一度圧縮がかかるので理論上はごくわずかな差が出ることがあるが、通常は目立たない。\n\n**理由** EXIF はファイルのヘッダ（JPEG なら APP1 など）にあり、画像の圧縮データとは別になっている。除去時はそのセグメントを書き換えたり削るだけで、画像ストリームには手を付けない。だから「メタデータだけいじる」削除では画質に影響しない。\n\n**反例** 「EXIF 削除 = 必ず再エンコード」と思って削除をためらう；あるいは再エンコードするツールを使いながら「ピクセルは 100% 同じ」を期待する——それは形式と設定次第。\n\n当サイトでの除去の仕方は [EXIF の編集・削除方法](/guides/how-to-edit-strip)、各形式での EXIF の載り方は [どの形式に EXIF が含まれる？](/guides/supported-formats) を参照。"
+      },
+      "faqWhoWrites": {
+        "title": "EXIF は誰が書き込む？",
+        "desc": "主に撮影機器がシャッター時に書き込む；現像・書き出し・プラットフォームが残す・変更・追記するため、最終 EXIF は「カメラそのまま」とは限らない。",
+        "content": "**誰が書くか** まず撮影機器。シャッターを切った瞬間に、カメラやスマホのファームが [日付・時刻](/guides/dimension-datetime) や [位置情報（GPS）](/guides/dimension-location) も含めて EXIF を一通り書き込む。だから「誰が書いたか」の第一の答えは **撮影時のデバイス**。\n\n**あとから変わるか** 変わる。現像・書き出し・管理ソフトがそのまま残したり、書き換えたり、追記したりする（Software や日時、著作権など）。SNS やストレージにアップロードしたあとも、多くのサービスがリサイズ・再エンコード・EXIF の一部または全部除去をする。だから目にしている EXIF が「カメラの生データ」とは限らず、デバイス＋複数のソフトの結果になっていることがある。\n\n**反例** EXIF を「カメラの一次記録」として証拠的に使うのに、現像・書き出し・アップロードの有無を考えない；あるいは「誰も触っていない」と決めつける——経路が不明なときは注意。\n\n機器関連の項目の意味は [デバイス・カメラ情報](/guides/dimension-device) を参照。"
+      },
+      "faqSocialNetwork": {
+        "title": "SNS に投稿したあと EXIF は残る？",
+        "desc": "プラットフォームごとに挙動が異なり明文化されていない。「投稿すれば消える」と決めつけず、確実に消したいならアップロード前に自前で除去。",
+        "content": "**短い結論** 多くのプラットフォームはアップロード画像に何かしら処理（リサイズ、再エンコード、EXIF の一部または全部除去）をするが、**挙動はサービスごとに違い、明示されていないことも多い**。だから「投稿したら EXIF は消える」と決めつけられない。敏感な情報を確実に付けたくないなら、自分で除去してからアップロードするのが確実。\n\n**理由** プライバシーやポリシーで、全部 strip するサービス、公開時だけ strip するサービス、リサイズだけしてメタデータは触らないサービスなどがある。外からはどのルールか分かりにくく、ルールも変わる。\n\n**反例** 除去せずに原図を投稿し「大手が strip してくれる」と思ったら、ボットや他人が GPS・時刻入りのコピーを保存していた；あるいは逆に心配しすぎて何も出せない。現実的な折衷は、投稿前に EXIF を確認し、[共有前に何をすべき？](/guides/before-you-share) に従って「位置だけ」や「全削除」を選んでからアップロードすること。\n\nなぜ EXIF のプライバシーを気にするかは [EXIF のプライバシーをなぜ気にする？](/guides/why-care-privacy) を参照。"
+      },
+      "faqCanRecover": {
+        "title": "削除後に復元できる？",
+        "desc": "除去したそのファイルから EXIF を復元することはできない；元ファイルや上書きしていないコピーにのみメタデータが残る。",
+        "content": "**結論** **除去済みのそのファイル**から、消した EXIF を復元することは**できない**。ごみ箱のようなものはなく、そのファイルから消えたら終わり。復元できるのは、**元ファイルのバックアップ**（または上書きされていない別コピー）がまだある場合だけ。\n\n**理由** 除去時にはメタデータのセグメントを書き換えたり削除するか、再エンコードで新しいファイルを作る。新しいファイルにはもともと旧 EXIF が含まれていないので、そのファイルをどう読んでも取り出せない。\n\n**反例** 除去したあとで、撮影時刻や GPS をアーカイブに使いたいと気づく；あるいは原図を上書きして除去版だけ残してしまう——そうなると本当に戻らない。だから重要な原図は先にバックアップしてから除去する；EXIF を残したい場合は原ファイルを「全削除」で上書きしない。\n\n除去のやり方は [EXIF の編集・削除方法](/guides/how-to-edit-strip) を参照。"
+      },
+      "faqRawHeic": {
+        "title": "RAW / HEIC の EXIF の特徴",
+        "desc": "RAW はメーカーごと、HEIC は ISOBMFF；当サイトは HEIC の EXIF を読み取り可能。プリセットによる精密除去は主に JPEG 向け。",
+        "content": "**JPEG との違い** RAW はメーカーごとの形式で、EXIF は RAW ヘッダや MakerNote と結びついていることが多く、読み書きは各社の仕様に従う。HEIC（HEIF）は ISOBMFF コンテナを使い、EXIF 互換のメタデータ（カメラ・GPS・時刻など）を埋め込めるが、**埋め方と除去の仕組みは JPEG と異なり**、コンテナの編集や再エンコードが伴うことが多く、「APP1 だけいじってピクセルはそのまま」とはいかない。\n\n**当サイトでできること** 当サイトでは HEIC 等の EXIF を**読み取り**表示できる。一方、**プリセットに基づく除去**（メタデータのみ変更・ピクセル不変）は主に JPEG 向け。RAW/HEIC で EXIF を落とすには、再エンコードや専用ツールが必要になり、JPEG の「無劣化除去」と同じにはならない。\n\n**反例** JPEG の感覚で「EXIF 削除は画質に影響しない」と RAW/HEIC に当てはめる；あるいは当サイトが HEIC でも JPEG と同一のプリセット除去をすると期待する——現状はそうなっていない。\n\nどの形式が EXIF を載せるかは [どの形式に EXIF が含まれる？](/guides/supported-formats)、当サイトの機能は [ExifStrip でできること](/guides/what-exifstrip-does) を参照。"
+      },
+      "tagReference": {
+        "title": "EXIF タグ早見表",
+        "desc": "デバイス・撮影・位置・日時・作者・画像属性など次元別に、当サイトで解析可能な EXIF タグと簡単な説明を一覧。",
+        "content": "[EXIF の構造](/guides/exif-structure) の 0th/Exif/GPS 等に対応し、`exifBlocks` と EXIF 次元ドキュメントに合わせた完全なタグ一覧。正式な定義は CIPA/JEITA および [LOC Tags for TIFF](https://www.loc.gov/preservation/digital/formats/content/tiff_tags.shtml) に準拠。\n\n## 1. device（デバイス／カメラ）\n\n| Tag | 説明 |\n|-----|------|\n| Make | メーカー |\n| Model | モデル |\n| BodySerialNumber | ボディシリアル |\n| CameraSerialNumber | カメラシリアル |\n| LensMake | レンズメーカー |\n| LensModel | レンズモデル |\n| Software | ソフトウェア |\n| FirmwareVersion | ファームウェア版 |\n\n## 2. imageSettings（撮影パラメータ）\n\n| Tag | 説明 |\n|-----|------|\n| Orientation | 方向 |\n| ExposureTime | シャッター速度 |\n| FNumber | 絞り |\n| FocalLength | 焦点距離 |\n| ISOSpeedRatings | ISO |\n| WhiteBalance | ホワイトバランス |\n| Flash | フラッシュ |\n| ExposureProgram | 露出プログラム |\n| ExposureMode | 露出モード |\n| MeteringMode | 測光モード |\n| SceneCaptureType | シーンタイプ |\n| SceneType | シーンタイプ（バイト） |\n| ExposureBiasValue | 露出補正 |\n\n## 3. location（GPS）\n\n| Tag | 説明 |\n|-----|------|\n| GPSLatitude | 緯度 |\n| GPSLongitude | 経度 |\n| GPSAltitude | 高度 |\n| GPSDateStamp | GPS 日付 |\n| GPSTimeStamp | GPS 時刻 |\n| GPSLatitudeRef | 南北参照 |\n| GPSLongitudeRef | 東西参照 |\n| GPSSpeedRef | 速度単位参照 |\n| GPSImgDirection | 画像方向 |\n| GPSImgDirectionRef | 方向参照 |\n| GPSDestBearing | 目的地方位 |\n| GPSDestBearingRef | 方位参照 |\n\n## 4. dateTime（日付・時刻）\n\n| Tag | 説明 |\n|-----|------|\n| DateTimeOriginal | 撮影日時 |\n| DateTime | 更新日時 |\n| DateTimeDigitized | デジタル化日時 |\n\n## 5. other（作者・著作権）\n\n| Tag | 説明 |\n|-----|------|\n| Artist | 作者 |\n| Copyright | 著作権 |\n| UserComment | ユーザーコメント |\n| ImageDescription | 画像説明 |\n| MakerNote | メーカーノート |\n\n## 6. image（画像属性）\n\n| Tag | 説明 |\n|-----|------|\n| ImageWidth | 画像幅 |\n| ImageLength | 画像高さ |\n| XResolution | 水平解像度 |\n| YResolution | 垂直解像度 |\n| ResolutionUnit | 解像度単位 |\n| ColorSpace | 色空間 |\n| BitsPerSample | ビット深度 |\n| SamplesPerPixel | サンプル数 |\n| Compression | 圧縮 |\n| PhotometricInterpretation | フォトメトリック解釈 |\n| YCbCrPositioning | YCbCr 配置 |\n| PlanarConfiguration | プレーナー構成 |\n| ExifVersion | EXIF バージョン |\n| FlashPixVersion | FlashPix バージョン |\n| ComponentsConfiguration | コンポーネント構成 |\n| CompressedBitsPerPixel | 圧縮ビット/ピクセル |\n\n---\n\n上記はトップページの [EXIF 一覧](/)、メタデータブロックの表示、および次元別ガイドと一致： [デバイス・カメラ情報](/guides/dimension-device)、[撮影パラメータ](/guides/dimension-settings)、[位置情報（GPS）](/guides/dimension-location)、[日付・時刻](/guides/dimension-datetime)、[画像属性](/guides/dimension-image)、[作者・著作権・コメント](/guides/dimension-other)。規格は [規格・仕様リンク](/guides/standards-links) を参照。"
+      },
+      "standardsLinks": {
+        "title": "規格・仕様リンク",
+        "desc": "CIPA 規格と履歴、米国議会図書館の EXIF/TIFF 形式・タグ説明、Wikipedia 入門；パーサやタグ・バージョン確認時に一次ソースを参照。",
+        "content": "互換実装やパーサを書く・タグやバージョンを確認するときに、公式の規格を参照する必要がある。ここではリンクと一行説明のみとし、本文は転載しない。最新は公式を参照のこと。\n\n**CIPA（カメラ映像機器工業会）** が JEITA と共同で Exif 規格を維持している。\n\n- [CIPA 標準一覧（Exif DC-008 含む）](https://www.cipa.jp/e/std/std-sec.html) — 現行 Exif 規格とダウンロード。\n- [CIPA 更新履歴](https://www.cipa.jp/e/std/history_sec.html) — バージョン履歴。\n\n**米国議会図書館（LOC）形式説明**\n\n- [Exchangeable Image File Format (Exif) Family](https://www.loc.gov/preservation/digital/formats/fdd/fdd000618.shtml) — Exif ファミリー概要・バージョン・JPEG/TIFF での利用。\n- [Tags for TIFF and Related Specifications](https://www.loc.gov/preservation/digital/formats/content/tiff_tags.shtml) — TIFF/Exif タグ一覧（Exif/GPS/Interop）。\n\n**その他** Wikipedia の [Exif](https://en.wikipedia.org/wiki/Exif) は入門向け；タグや挙動の詳細は CIPA/JEITA と LOC を参照。\n\n規格の由来とバージョンは [EXIF の由来と変遷](/guides/exif-history)、タグの意味の速査は [EXIF タグ早見表](/guides/tag-reference) を参照。"
+      }
+    }
+  },
+  "pages": {
+    "privacy": { "title": "プライバシー" },
+    "terms": { "title": "利用規約", "content": "利用規約の内容はここに表示されます。本ツールを他者のプライバシー侵害や法令に反する目的で使用しないでください。利用により本規約に同意したものとみなします。" },
+    "about": {
+      "title": "私たちについて",
+      "section1Title": "ExifStrip とは？",
+      "section1Content": "ExifStrip はブラウザだけで使える、写真の EXIF を閲覧・編集・削除するツールです。ソフトのインストールは不要で、ページを開いて画像をアップロードすれば、その画像にどんなメタデータ（機種・レンズ・日時・絞りシャッター・ISO・GPS など）が入っているかが、項目ごとに表示されます。\n\nGPS 付きの写真は地図上に撮影位置が出るので、「この画像で位置が漏れていないか」をすぐ確認できます。必要な項目だけ編集したり、プリセットで「位置だけ」「機種関連だけ」などをまとめて削除したりして、処理後の画像をダウンロードできます。\n\nスマホ・PC どちらでも使え、日本語・英語・中国語の表示に対応しています。",
+      "section2Title": "なぜこのツールを作ったか",
+      "section2Content": "このツールを作った理由はシンプルです。写真に付く EXIF は整理や思い出には便利ですが、公開したくない情報が漏れる可能性もあります。\n\nSNS に上げたり誰かに送ったりする「原図」には、多くの人が気づいていませんが、位置情報・機種名・機体シリアル番号まで含まれていることがあり、ダウンロードした側がツールで読み取れば、どこで・何で撮ったか分かってしまいます。悪用されればプライバシーや安全のリスクになり得ます。\n\nEXIF を扱うデスクトップソフトはありますが、インストールが必要だったり有料だったり、画像がどこかに送信されていないか分かりにくいものもあります。そこで、誰でも「共有・アップロードの前に、自分の写真に何が入っているか確認し、削除するかどうか選べる」ように、インストール不要で無料、かつ「すべてローカルで処理し、アップロードしない」方針の手段が欲しいと考え、ExifStrip を作りました。",
+      "section3Title": "どんな機能があるか",
+      "section3Content": "機能は大きく四つです。\n\n一つ目は「閲覧」：アップロード後、EXIF を項目（機種・撮影パラメータ・位置・日時など）ごとに見られ、GPS があれば地図上に撮影位置が表示されます。「プライバシー分析」で、どの項目がセンシティブかもざっと確認できます。\n\n二つ目は「編集」：作者・著作権・撮影日時などの項目は画面で直接編集し、JPEG に保存できます。共有前に個人を特定しうる情報を別の内容に差し替えるのに向いています。\n\n三つ目は「削除」：複数のプリセット（全削除・プライバシーのみ・GPS のみ・機種のみなど）があり、JPEG の場合はメタデータだけを書き換えるため画質は変わりません。PNG・WebP などは「全削除」で再エンコードによりメタデータを除去できます。\n\n四つ目は「エクスポート」：現在の画像の EXIF を CSV・JSON・TXT・十六進のいずれかで出力でき、バックアップや「何を削除するか」の確認に使えます。JPEG・PNG・TIFF・HEIC・AVIF・WebP などに対応しており、形式ごとの対応（例：プリセット削除は主に JPEG 向け）はサイト内のチュートリアルやブログに詳しく書いてあります。",
+      "section4Title": "プライバシー",
+      "section4Content": "プライバシーについては、解析・編集・削除・エクスポートはすべてお使いのデバイスのブラウザ内で完結します。当方で画像を受け取ったり閲覧したりすることはありません。お客様が送信しない限り、当方にコピーは存在しません。\n\n写真を学習や解析・広告に使うこともありません。EXIF を管理しつつ、写真を第三者に渡さずに済むようにしています。\n\nより詳しい方針（サイト利用データや Cookie の扱いなど）はサイト内のプライバシー説明にありますので、気になる方はご確認ください。",
+      "section5Title": "最後に",
+      "section5Content": "ソフトを入れずに写真の EXIF を確認したり整理したりしたい方には、ExifStrip を試してもらえればと思います。トップページからすぐアップロードして試せます。使い方をもっと知りたい場合はサイト内のチュートリアル（小百科）やブログの活用例を、よくある疑問は FAQ を参照してください。フィードバックや要望はページ上の連絡方法からお送りください。\n\n機能や説明は今後も改善していきます。ご利用ありがとうございます。"
+    },
+    "faq": {
+      "title": "よくある質問",
+      "heroSubtitle": "EXIF・プライバシー・使い方に関するよくある質問。",
+      "viewAll": "すべて見る",
+      "q1": "EXIF とは？",
+      "a1": "EXIF（交換可能画像ファイル形式）は写真に埋め込まれたメタデータで、撮影機器・日時・絞り・GPS などを含みます。",
+      "q2": "画像はサーバーに送信されますか？",
+      "a2": "いいえ。処理はすべてお使いのブラウザ内で行われ、当方が画像を受け取ったり保存したりすることはありません。",
+      "q3": "対応している画像形式は？",
+      "a3": "JPEG、PNG、TIFF、HEIC/HEIF、AVIF、WebP などに対応しています。プリセットによる除去は JPEG のみ対応です。",
+      "q4": "EXIF をすべて削除するには？",
+      "a4": "「すべての EXIF を削除」を選んでからクリーンアップ後の画像をダウンロードしてください。その他の形式は再エンコードによりメタデータを除去します。",
+      "q5": "EXIF を削除すると画質は変わりますか？",
+      "a5": "JPEG のプリセット除去ではメタデータのみ書き換え、ピクセルは変更されません。PNG・WebP などは再エンコードされるためごくわずかな差が出る場合がありますが、通常は目立ちません。",
+      "q6": "GPS や撮影日時だけ削除できますか？",
+      "a6": "はい。メタデータブロックで「位置」や「日時」などの次元を選び、「選択を削除」でその部分だけ EXIF を除去し、他は残せます。",
+      "q7": "複数画像をまとめて処理できますか？",
+      "a7": "はい。複数画像を一度にアップロードし、一覧で各画像の EXIF を確認・編集したり、選択中の画像に対して除去・ダウンロードができます。",
+      "q8": "データはサーバーに送信されますか？",
+      "a8": "いいえ。読み取り・編集・除去・エクスポートはすべてブラウザ内で行われ、当方が画像や EXIF を受け取る・保存する・閲覧することはありません。",
+      "q9": "IFD とは？",
+      "a9": "IFD（Image File Directory）は EXIF 規格の情報ディレクトリです。IFD0（メイン画像）・Exif・GPS・Interop などがあり、それぞれに異なるタグが格納されます。",
+      "q10": "除去した EXIF は復元できますか？",
+      "a10": "いいえ。EXIF を削除して新しいファイルをダウンロードすると、そのファイルから元のメタデータを復元することはできません。事前に元画像のバックアップを取ることをおすすめします。",
+      "q11": "一部のタグが「不明」と表示されるのはなぜ？",
+      "a11": "メーカーや機種によっては標準外の独自タグを使っている場合があります。ツールでは可能な範囲で解析し十六進数や生の値を表示しますが、名前は「不明」になることがあります。",
+      "q12": "HEIC/HEIF と JPEG の違いは？",
+      "a12": "HEIC は Apple などで使われる高効率画像形式で、ファイルサイズが小さめです。当ツールでは HEIC の EXIF を読み取れます。プリセットで正確に除去したい場合は、一度 JPEG に変換してから処理することをおすすめします。",
+      "q13": "言語設定は記憶されますか？",
+      "a13": "はい。選択した言語はブラウザのローカル（localStorage 等）に保存され、次回訪問時もその設定が使われます。",
+      "q14": "スマホやタブレットでも使えますか？",
+      "a14": "はい。サイトはレスポンシブ対応で、スマホ・タブレットのブラウザでも利用できます。HEIC や大きなファイルの対応は端末・ブラウザにより異なる場合があります。",
+      "q15": "連絡方法は？",
+      "a15": "プライバシー・利用・技術に関するお問い合わせは、プライバシー説明に記載のメールアドレスまでご連絡ください。できるだけ早くお返事します。"
+    }
+  },
+  "blog": {
+    "pageTitle": "ブログ",
+    "heroSubtitle": "使い方のコツ、利用シーン、製品アップデートや関連トピック。ExifStrip をより活用し、EXIF とプライバシーを理解するための記事です。",
+    "notFound": "記事が見つかりません。",
+    "referencesTitle": "参考・リンク",
+    "category": {
+      "tips": "使い方のコツ",
+      "topic": "関連トピック",
+      "product": "製品・更新"
+    },
+    "entry": {
+      "topicPhonePrivacy": {
+        "title": "スマホの写真・アルバムのプライバシー設定：何をオフにできる？",
+        "desc": "システムで「写真に位置を書き込む」ことやアルバム・カメラの権限をオフ／制限する。\nすでに撮った写真に位置が入っている場合は、ツールで削除する必要がある。",
+        "content": "写真に含まれる EXIF には位置・機種・日時などが入ることが多い。共有前にツールで削除する以外に、そもそも「写真に位置を書き込まない」ようにする方法がある——スマホの設定で位置サービスや写真・カメラの権限をオフまたは制限すると、誰が写真にアクセスできるか、新しく撮る写真に位置が付くかを抑えられる。ここでは OS の設定で何ができるかだけを述べ、EXIF のフォーマット詳細には触れない。\n\n**位置と写真**\n\n多くの端末では「設定」に「位置情報サービス」や「位置情報」のマスタースイッチがある。オフにすると、新しく撮った写真には通常 GPS が書き込まれなくなる。機種によっては「カメラ」や「写真」用の位置権限が別にある：許可すると撮影時に位置が記録され、拒否すると新規写真には位置が付かないことが多い。注意：位置をオフにしても、すでに撮った写真の EXIF は消えない。過去の写真に位置が入っている場合は、[ExifStrip](https://exifstrip.com) などのツールで削除する必要がある。\n\n**アルバム・カメラの権限**\n\n「写真」「アルバム」や「カメラ」の権限で、どのアプリが画像の読み書き・削除をできるかが決まる。iOS や Android ではアプリごとに「許可しない」「選択した写真のみ」「すべて」などが設定できる。「選択した写真のみ」に制限したりアクセスを止めたりすると、サードパーティアプリがライブラリ全体をスキャンしたり EXIF 付きの原図をアップロードしたりするリスクを減らせる。カメラ権限をオフにするとそのアプリは撮影できず、新しい EXIF が付いた写真も作られない。\n\n**機種・OS による違い**\n\nメニュー名や項目名はメーカーや OS バージョンで異なる（「プライバシー」「位置情報サービス」や「アプリ管理」内の権限など）。見つからない場合は、メーカーや OS のヘルプを参照するとよい。\n\nまとめ：位置をオフにしたり写真・カメラのアクセスを制限したりすると、新規写真に位置が付くのと、誰がライブラリを読めるかを抑えられる。既存の EXIF を消すには、[表示](/guides/how-to-view)してから [編集・削除](/guides/how-to-edit-strip)する必要がある。"
+      },
+      "topicPlatformStrip": {
+        "title": "SNS はあなたの写真の EXIF をどう扱う？",
+        "desc": "X、Meta、微信、微博などがアップロード写真をどう扱うか；参考リンク付き。\n「他者に表示しない」≠「収集しない」——先に削除してからアップロードすると確実。",
+        "content": "写真を SNS にアップロードすると、多くの場合プラットフォームがファイルを処理する：EXIF を削除したり書き換えたりする場合もあれば、先に読み取ってから誰に何を見せるか決める場合もある。プラットフォームごとに方針が異なり、製品やポリシー変更で変わることもある。以下では公開されている情報に基づく一般的な扱いを簡潔にまとめ、参考リンクを付ける。どのプラットフォームでも、**アップロード前に自分で EXIF を削除しておく**方が、「誰が何を得るか」を自分でコントロールしやすい。\n\n**主な扱い（要約）**\n\n**X（旧 Twitter）**\n\nX のヘルプでは、投稿時の「位置」はオプション機能であり、写真に埋め込まれた EXIF とは別であると説明されている。アップロードされた画像はプラットフォーム側で処理され、多くの場合 GPS などの EXIF は他のユーザーにはそのまま表示されない。実際の挙動はプラットフォームの現行仕様に従う。\n\n**Instagram / Facebook（Meta）**\n\n報道やテストでは、Meta は他者に表示する前に写真を処理し、多くの EXIF 項目（GPS、機種、タイムスタンプなど）は他者が見る版には出ないとされている。一方、Meta の利用規約・データポリシーでは、共有するコンテンツから「写真の撮影場所やファイルの作成日」などの情報を収集すると記載されている。つまり「他者には見えない」ことは「プラットフォームが収集しない」ことを意味しない。\n\n**WeChat（微信）**\n\n報道や公式の説明では、「原図」を送ると EXIF（位置を含む）が含まれる可能性があり、朋友圈など圧縮・加工後の画像では通常 EXIF は残らないとされる。公式のアドバイスでは、原図を送らない、カメラの位置情報をオフにするなどが推奨されている。\n\n**微博・小红书など**\n\n各プラットフォームは「EXIF を削除するか・どの項目を削除するか」について個別の詳細な説明を公開していない。実際の挙動はバージョンで変わる可能性がある。確実にするには、アップロード前に自分で EXIF を削除するのがよい。\n\n**おすすめ**\n\nプラットフォームの方針は変わるし、「他者に表示しない」と「プラットフォームが保存・利用しない」は同じではない。位置・機種・日時などをプラットフォームや他者に渡したくない場合は、先に [ExifStrip](https://exifstrip.com) やローカルツールで [表示](/guides/how-to-view)し [必要に応じて削除](/guides/how-to-edit-strip)してからアップロードする。重要な写真は [EXIF をエクスポートしてバックアップ](/blog/tip-export-exif)してから削除してもよい。詳しくは [共有前のアドバイス](/guides/before-you-share) を参照。\n\n---\n\n# **参考・引用**\n\n- [X：投稿の位置情報 よくある質問](https://help.x.com/ja/safety-and-security/post-location-settings)（X ヘルプ、投稿と位置について）\n- [Meta プライバシーポリシー](https://www.facebook.com/privacy/policy/)（写真等のコンテンツから収集する情報の説明）\n- [微信の原图と位置情報に関する公式見解](https://www.yicai.com/news/100421452.html)（第一財経、2018年、微信公式の見解を引用）"
+      },
+      "topicExifVsMetadata": {
+        "title": "EXIF と「メタデータ」は同じ？",
+        "desc": "EXIF はメタデータの一規格；IPTC、XMP、MakerNote を簡潔に区別。\n誰が何を書くか、なぜ「作者」が残るか——小百科へリンク。",
+        "content": "「EXIF」と「メタデータ」を同じように言うことがあるが、EXIF はメタデータの一つの規格であり、すべてではない。それを押さえておくと、写真に他にどんなメタデータがあるか、誰が書き込むかが分かりやすくなり、「EXIF だけ削除するツール」と「他のブロックも触るツール」の違いも理解しやすい。\n\n**メタデータとは**\n\nメタデータ（metadata）は「データについてのデータ」：そのファイルが誰がいつ、どの機器で作ったか、著作権・タイトル・キーワードなどがどうなっているかを表す。写真ではピクセルそのものではなく、ファイル内や別ファイルに格納され、ソフトやプラットフォーム、人が読み取る。\n\n**EXIF の位置づけ**\n\nEXIF（Exchangeable Image File Format）は、JEITA/CIPA などが定めた、写真（および一部の音声）向けの**メタデータ規格**である。機種・絞り・シャッター・GPS・撮影日時などのタグ名と、JPEG や TIFF などへの格納方法を規定している。つまり **EXIF はメタデータの一種**で、主にカメラ・スマホ・スキャナーが撮影やファイル生成時に自動で書き込む。概念と構造は [EXIF とは](/guides/what-is-exif) を参照。\n\n**その他の主なメタデータ**\n\n- **IPTC**：報道・出版でよく使われ、タイトル・作者・著作権・キーワード・キャプションなど。画像素材サイトや現像ソフトが書き込むことが多い。詳しくは [IPTC・XMP・EXIF の関係](/guides/iptc-xmp-overview) を参照。\n- **XMP**（Adobe 主導）：XML で格納され、JPEG・PNG・RAW などに埋め込める。EXIF や IPTC と一緒に付くことが多く、Photoshop や Lightroom で編集履歴・評価・タグを保存するのに使われる。\n- **メーカー固有**：MakerNote など、各社の独自ブロック。シリアル番号やレンズ補正などが入り、対応ソフトでないと完全には解釈できない。\n\n一枚の画像に EXIF・IPTC・XMP が同時に入っていることがある。「EXIF を削除」するツールが EXIF ブロックだけを触り IPTC/XMP を残す場合、EXIF を消したあとに作者・著作権などが残っていれば、別のメタデータブロックに入っている可能性が高い。\n\n**誰が何を書き込むか**\n\nカメラ・スマホは主に撮影時に EXIF を書く。現像・編集ソフトは EXIF を変更し、IPTC や XMP を書き込むことが多い。アップロード後はプラットフォームがメタデータを書き換えたり削除したりすることもある。「位置だけ消したい」「著作権だけ残したい」といった場合は、まず [表示](/guides/how-to-view) でファイルにどのブロックが入っているか確認し、必要に応じて [編集・削除](/guides/how-to-edit-strip) するとよい。\n\nまとめ：EXIF はメタデータの一規格で、主に撮影パラメータ・機種・日時・位置を扱う。IPTC や XMP は別の規格・形式で、EXIF と併存する。EXIF の主なタグ一覧は [EXIF タグリファレンス](/guides/tag-reference) を参照。"
+      },
+      "tipBeforeTravelShare": {
+        "title": "旅行写真を共有する前に、EXIF を整理してから送る",
+        "desc": "旅行・出張写真は GPS 付きが多く、原図のまま上げると場所・時刻が漏れる。\n「GPS のみ」か「プライバシーのみ」で除去→ダウンロード→共有の 3 ステップ。",
+        "content": "旅行や出張で撮った写真には、スマホが自動で記録した位置情報が乗っていることが多い。そのまま SNS に上げると、ファイルを手にした人が EXIF から撮影場所や時刻を知ることができる。自宅周辺や行程を出したくないなら、共有前に一度 EXIF を落としておくと安心だ。ExifStrip ならブラウザだけでできて、インストール不要。\n\n**ステップ1：ExifStrip を開き、共有したい写真をアップロード**\n\n[ExifStrip](https://exifstrip.com) のトップでアップロード領域をクリックするか、写真をページにドラッグする。1 枚でも複数枚まとめて選んでもよい。\n\n![共有する写真をアップロード](/images/blogs/tip-before-travel-share/a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d.png)\n\n**ステップ2：除去の種類を選ぶ**\n\n位置だけ消して、機種名や撮影パラメータは残したいなら「**GPS のみ**」を選ぶ。機種・シリアル・作者・著作権なども消したいなら「**プライバシーのみ**」を選ぶ。選んだらその画像に対して除去を実行すると、該当するメタデータを落とした新しいファイルができる。\n\n![GPS のみ or プライバシーのみを選択](/images/blogs/tip-before-travel-share/b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e.png)\n\n**ステップ3：整理した写真をダウンロードしてから共有**\n\nダウンロードしたファイルを SNS に上げればよい。元ファイルはバックアップとして残しておくといい。\n\n![整理した写真をダウンロード](/images/blogs/tip-before-travel-share/c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e7f.png)\n\nJPEG なら「GPS のみ」「プライバシーのみ」はメタデータだけの変更でピクセルは触れないので画質はそのまま。HEIC などならいったん JPEG に変換してから同じ手順でよいし、「全削除」なら再エンコードでメタデータを落とす。形式ごとの説明は [ExifStrip が対応する画像形式](/blog/product-supported-formats) を参照。"
+      },
+      "tipBatchClean": {
+        "title": "複数枚の写真の EXIF をまとめて整理するには",
+        "desc": "複数枚をまとめてアップロードし、一覧から 1 枚ずつプリセットで除去・ダウンロード。\n同じプリセットで繰り返すと慣れて速くなる。",
+        "content": "何十枚も写真を共有するとき、1 枚ずつツールを開いて処理するのは時間がかかる。ExifStrip なら複数枚をまとめてアップロードし、一覧から 1 枚ずつプリセットを選んで除去→ダウンロード、と進められるので、ずっと速い。\n\n**処理したい写真をまとめてアップロード**\n\n[ExifStrip](https://exifstrip.com) のトップで複数枚をまとめて選ぶか、複数枚をまとめてドラッグする。アップロードすると左（または上）にファイル一覧が出て、どれかをクリックすると右側にその画像の EXIF と操作エリアが表示される。\n\n![複数枚アップロード後の一覧](/images/blogs/tip-batch-clean/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f8a.png)\n\n**プリセットを選び、1 枚ずつ除去・ダウンロード**\n\n除去エリアで「GPS のみ」や「プライバシーのみ」などプリセットを選び、いま選択している画像に対して除去を実行してダウンロード。終わったら一覧で次の画像を選び、同じプリセットで除去→ダウンロード、を繰り返す。同じプリセットでまとめてやると慣れて速くなる。\n\n![現在の画像でプリセットを選んでダウンロード](/images/blogs/tip-batch-clean/e5f6a7b8-c9d0-4e1f-2a3b-4c5d6e7f8a9b.png)\n\n全部終わったら、ダウンロードした「整理版」と元ファイルを分けておくと、間違えて元を共有するのを防げる。まず 1〜2 枚でプリセットの動きを試してから、残りをまとめて処理するのがおすすめ。各画像にどんな情報が含まれているかは、プライバシー分析や次元別表示で確認してからプリセットを決めてもよい。"
+      },
+      "tipKeepWhatYouNeed": {
+        "title": "GPS だけ消して、他は残したいとき",
+        "desc": "「どこで撮ったか」は隠し、機種・撮影パラメータは残すなら「GPS のみ」を選ぶ。\nJPEG はメタデータだけ変更するので画質はそのまま。",
+        "content": "「どこで撮ったか」は見せたくないが、機種名や絞り・シャッターなどの情報は残したい——自分用の記録や、他人への参考用——ということはよくある。そんなときは EXIF の位置（GPS）だけを削除すればよく、他はそのままでよい。ExifStrip の「**GPS のみ**」プリセットがそれに相当する。\n\n**アップロード後、除去で「GPS のみ」を選ぶ**\n\n[ExifStrip](https://exifstrip.com) を開き、対象の写真をアップロードする。除去エリアのプリセットから「**GPS のみ**」を選び、現在の画像に対して除去を実行する。\n\n![GPS のみプリセットを選択](/images/blogs/tip-keep-what-you-need/f6a7b8c9-d0e1-4f2a-3b4c-5d6e7f8a9b0c.png)\n\nできた新しいファイルでは、緯度・経度・高度など位置まわりが削除され、デバイス・撮影パラメータ・日時・作者・著作権などは残る。JPEG の場合はメタデータ部分だけを変えるので画質は変わらない。そのファイルをダウンロードして共有すればよい。\n\n機種・シリアル・作者情報なども消したい場合は「プライバシーのみ」、全部消したい場合は「全削除」を選ぶ。各プリセットの違いと使い分けは [EXIF の編集・削除方法](/guides/how-to-edit-strip)、[共有前に何をすべき？](/guides/before-you-share) を参照。"
+      },
+      "tipExportExif": {
+        "title": "まず確認してから決める：EXIF をエクスポートしてバックアップ・監査に使う",
+        "desc": "除去前に EXIF を 1 回エクスポート（CSV/JSON/TXT/HEX）しておくと、あとで「何が入っていたか」を確認できる。\n先にエクスポートして中身を見てから、プリセットや削除項目を決めてもよい。",
+        "content": "EXIF を削除したり除去したりする前に、いったんエクスポートして手元に残しておくと、「この画像には元々何が入っていたか」をあとから確認できる。あるいは先にエクスポートして中身を確認し、どのプリセットで、どの項目を消すか決めてから作業してもよい。ExifStrip では現在の画像の EXIF を CSV・JSON・TXT・十六進（HEX）でエクスポートでき、操作も簡単。\n\n**画像を開いたあと、ページ内の「エクスポート」を探す**\n\n[ExifStrip](https://exifstrip.com) で画像をアップロードまたは開くと、EXIF が次元別に表示される。エクスポートの入口はファイル情報やメタデータの近くにあり、そこから形式を選べる。\n\n![EXIF のエクスポート形式](/images/blogs/tip-export-exif/a7b8c9d0-e1f2-4a3b-4c5d-6e7f8a9b0c1d.png)\n\n**形式を選んでダウンロード**\n\n- **CSV**：表計算で開きやすく、複数画像のデータをまとめて比較できる。\n- **JSON**：スクリプトやプログラムで扱いやすい。バックアップや二次処理向き。\n- **TXT**：プレーンテキストで軽く、検索や保管に便利。\n- **HEX**：生の十六進。仕様との突き合わせやデバッグに使える。\n\nエクスポートされる内容は、いまページに表示している次元・フィールドと同じで、それ以上も以下もない。エクスポートは手元のマシンにファイルを作るだけで、当方には送られない。\n\n習慣として、共有や一括除去の前に大事な写真は 1 回 EXIF をエクスポートしてバックアップしておき、そのあとで除去すると、「当時何が入っていたか」「意図どおり消えたか」をあとから確認しやすい。"
+      },
+      "tipRemoveExifHeicIphone": {
+        "title": "iPhone の HEIC を共有する前に EXIF を整理する",
+        "desc": "HEIC にも GPS や機種情報が入りうる；ブラウザで確認し、JPEG に変換するとプリセット剥がしが扱いやすい。",
+        "content": "iPhone の **HEIC（HEIF）** には、いわゆる **EXIF 相当**のメタデータ（**位置**、**撮影日時**、**機種** など）が含まれることが多い。掲示板やチャットに原寸で出す前に、中身を一度見るのがおすすめだ。\n\n## ExifStrip での閲覧\n\n[ExifStrip](https://exifstrip.com) に `.heic` をアップロードすれば JPEG と同様に次元表示できる。GPS があれば地図にも出る。\n\n## 除去の注意点\n\n**JPEG** は **プリセット（GPS のみ等）** で **再エンコードせず** メタだけ変更しやすい。**HEIC** はコンテナ構造が異なり、**「すべて削除」** では **再エンコード** になりうる。詳しくは [対応フォーマット](/blog/product-supported-formats) と [RAW/HEIC FAQ](/guides/faq-raw-heic)。\n\n**実務の流れ：** 細かいプリセットを使いたい場合は、先に **JPEG に書き出し** から ExifStrip に渡す。再エンコードでよければ HEIC のまま「すべて削除」を試す。\n\n## 関連\n\n- [GPS だけ外したい](/blog/tip-keep-what-you-need)\n- [EXIF を含みうる形式](/guides/supported-formats)"
+      },
+      "tipRemoveExifPng": {
+        "title": "PNG から EXIF を除くときに知っておきたいこと",
+        "desc": "PNG のメタデータは複数チャンクに分散；本サイトで一式消す場合は再エンコードになりやすい。",
+        "content": "PNG は JPEG のような **単一 APP1 一括** ではない。**EXIF / XMP / テキストチャンク** などに分散しうるため、「GPS だけ」など部分削除は実装コストが高い。\n\n## ExifStrip の挙動\n\n- **閲覧**：パースできるメタデータは次元表示。\n- **すべて削除**：多くの場合 **画像全体を再エンコード** し、メタを載せない新ファイルを作る（品質・サイズにわずかな影響の可能性）。\n- **プリセットのみ**：主に **JPEG 向け** の設計。PNG では **すべて削除**、または **一度 JPEG 化** してからプリセット利用が現実的——[対応フォーマット](/blog/product-supported-formats) 参照。\n\n## 習慣\n\nスクリーンショットやデザイン書き出しの PNG は、念のため **一度アップロードして中身を見てから** 共有判断するとよい。\n\n## リンク\n\n- [EXIF の編集・削除](/guides/how-to-edit-strip)\n- [EXIF とメタデータは同じ？](/blog/topic-exif-vs-metadata)"
+      },
+      "topicExiftoolVsOnline": {
+        "title": "ExifTool とオンライン EXIF ツール：使い分け",
+        "desc": "ExifTool はバッチと網羅性、ブラウザツールは手軽さと JPEG プリセット向き。",
+        "content": "[ExifTool](https://exiftool.org/) は **メタデータ処理の定番 CLI** で、数万タグ・**再帰バッチ**・タグコピー・ジオタグワークフロー・JSON/CSV 出力など、上級者向けの力を持つ。\n\n## ExifTool が向くとき\n\n- **大量ファイル** の一括処理。\n- **メーカーノート／珍しい形式** を最新 DB で調べたい。\n- 自機で **自動化・スクリプト** したい。\n\n[公式ドキュメント](https://exiftool.org/exiftool_pod.html) を参照。\n\n## オンラインツールが向くとき\n\n- **インストール不要** の端末。\n- **地図付きでざっと確認**、CSV/JSON で1枚分を書き出したい。\n- 主に **JPEG** の **GPS/プライバシー系プリセット** を **[ExifStrip](https://exifstrip.com)** のように **ブラウザ内・ローカル処理** で済ませたい。\n\n## プライバシー\n\n- **ExifTool**：ローカル実行でファイルが外部に送られない。\n- **ExifStrip**：ブラウザ内解析（[プライバシー](/privacy) 参照）。\n\n## まとめ\n\nターミナルで規模と網羅性、ブラウザで手軽さと可視化——**両方使う**人も多い。\n\n## 関連\n\n- [ExifStrip でできること](/guides/what-exifstrip-does)\n- [IPTC・XMP・EXIF](/guides/iptc-xmp-overview)"
+      },
+      "productWelcome": {
+        "title": "ExifStrip へようこそ",
+        "desc": "閲覧・編集・除去・エクスポート；すべてローカルで完結し、画像は送信されない。\n初めての方向け；文末でチュートリアル・FAQ へリンク。",
+        "content": "ExifStrip は、ブラウザだけで写真の EXIF を閲覧・編集・削除できるツールです。インストールは不要で、サイトを開けばすぐ使えます。処理はすべてお使いの端末のなかで完結するので、写真がこちらのサーバーに送られることはありません。ここでは、何ができるか、データがどう扱われるか、もっと知りたいときにどこを見ればよいかをかんたんにまとめます。\n\n# **できること**\n\n**閲覧**：画像をアップロードするか、ページにドラッグすると、EXIF が「デバイス」「撮影パラメータ」「位置」「日時」などのブロックに分かれて表示されます。GPS が含まれている場合は地図に撮影場所が出るので、一目で確認できます。\n\n![次元別の EXIF 表示](/images/blogs/product-welcome/c1a2b3c4-d5e6-4f7a-8b9c-0d1e2f3a4b5c.png)\n\n![ファイル情報と GPS 地図](/images/blogs/product-welcome/d2b3c4d5-e6f7-4a8b-9c0d-1e2f3a4b5c6d.png)\n\n**編集**：作者・著作権・撮影時刻などの項目は、画面からそのまま変更して JPEG に保存できます。共有前に見せたくない情報を中性の内容に差し替えたり、本当の情報を別の値で上書きしたりするのに向いています。\n\n![EXIF フィールドの編集](/images/blogs/product-welcome/e3c4d5e6-f7a8-4b9c-0d1e-2f3a4b5c6d7e.png)\n\n**除去**：四種類のプリセット（全削除・プライバシーのみ・GPS のみ・デバイスのみ）を選べます。JPEG の場合はメタデータだけを書き換え、ピクセルには触れないので画質はそのまま。他の形式で「全削除」を選ぶと、再エンコードでメタデータを落とします。\n\n![プリセットで EXIF を除去](/images/blogs/product-welcome/f4d5e6f7-a8b9-4c0d-1e2f-3a4b5c6d7e8f.png)\n\n**エクスポート**：いま開いている画像の EXIF を CSV・JSON・TXT・十六進でエクスポートできるので、バックアップしたり、自分で確認してから削るか決めたりするのに使えます。\n\n# **ローカル処理とプライバシー**\n\n解析も編集も除去もエクスポートも、すべてお使いの端末のブラウザのなかだけで行われます。開いた画像はこちらには届かず、保存も閲覧もしていません。送っていただかない限り、こちら側にコピーはありません。だから、機能は使いつつ、写真を誰かに預けずに済みます。くわしくは [プライバシー](/privacy) ページに書いています。\n\n# **無料で利用**\n\nExifStrip は無料で、広告もありません。日本語・英語・中国語のインターフェースに対応しています。EXIF の説明や操作の手順をもっと知りたいときは、[ExifStrip でできること](/guides/what-exifstrip-does)、[EXIF の見方](/guides/how-to-view)、[EXIF の編集・削除方法](/guides/how-to-edit-strip) のガイドや [FAQ](/faq) をのぞいてみてください。"
+      },
+      "productSupportedFormats": {
+        "title": "ExifStrip が対応する画像形式",
+        "desc": "JPEG・PNG・TIFF・HEIC・AVIF・WebP の閲覧／編集／除去の対応状況。\n「なぜできるか」「なぜできないか」を構造の違いで説明。",
+        "content": "当サイトでは **JPEG、PNG、TIFF、HEIC、AVIF、WebP** といった一般的な画像形式の EXIF の閲覧・処理に対応しています。形式ごとにファイル内での EXIF の置き方が違うため、「閲覧」「編集」「プリセットで除去」の対応度も異なります。メタデータだけを書き換えてピクセルに触れない形式もあれば、メタデータを落とすには画像全体を再エンコードするしかない形式もあります。以下、形式ごとの対応内容と**その理由**を説明します。形式や規格の説明は [どの形式に EXIF が含まれる？](/guides/supported-formats) を参照してください。\n\n# **JPEG 形式**\n\nJPEG は当サイトで最も対応が手厚い形式です。\n\n**閲覧**：対応。JPEG では EXIF が**APP1 アプリケーションセグメント**（マーカー 0xFFE1）に一塊の TIFF 構造データとして格納されています。当サイトでこれを解析し、デバイス・撮影パラメータ・位置・日時・画像属性・作者・著作権などの次元別に表示します。GPS があれば地図上に撮影位置を表示します。\n\n**編集**：対応。Artist（作者）・Copyright（著作権）・撮影時刻などのフィールドは画面で編集し、JPEG ファイルに**書き戻せ**ます。理由は同じで、これらのデータは APP1 セグメント内にあり、そのセグメントだけを書き換えればよく、圧縮画像データには触れないため画質は変わりません。\n\n**除去**：複数の方法に対応。四種類のプリセット——**全削除**・**プライバシーのみ**・**GPS のみ**・**デバイスのみ**——が使えます。APP1 セグメント内の該当タグを書き換えたり削除したりするだけで、画像の再エンコードは行わないため画質はそのままです。JPEG だけが「プリセットで精密に除去」できるのは、メタデータと画像データがファイル内でセグメント分かれているため、メタデータ部分だけを操作できるからです。\n\n# **PNG / WebP 形式**\n\n**閲覧**：よく対応しています。ファイルに EXIF や同様のメタデータ（PNG の tEXt/zTXt、WebP の EXIF チャンクなど）が含まれていれば、当サイトで解析し、デバイス・撮影パラメータ・位置・日時などを次元別に表示します。JPEG と同じ表示です。\n\n**編集**：現時点では**非対応**です。PNG と WebP ではメタデータが**複数の独立したチャンク**に格納されており、JPEG の単一 APP1 セグメントとは構造が違います。書き戻すには各形式の仕様に従ってチャンクを書き直す必要があり、当サイトでは JPEG の書き戻しのみ実装しているため、PNG/WebP は閲覧のみです。\n\n**除去**：「**全削除**」を選ぶと、画像**全体を再エンコード**し、出力ではメタデータを含めません。PNG/WebP ではメタデータが複数チャンクに分散しているため、「一部だけ削る」や「プリセットで GPS だけ・デバイスだけ削る」には特定のチャンクを解析して書き換えたり捨てたりする実装が必要で、現状は未実装です。メタデータを完全に落とすには再エンコードでチャンクを省略するしかありません。そのため**プリセットによる除去**や**単一フィールドの削除**はこれらの形式では利用できません。再エンコードによる画質への影響は通常ごく小さいですが、理論上は 1 回分のエンコードがかかります。\n\n# **HEIC / HEIF 形式**\n\nApple 製品などでよく使われる形式で、メタデータは **ISOBMFF コンテナ**内の各 box に格納されており、JPEG の「一つの APP1 セグメント」とは構造が異なります。\n\n**閲覧**：対応。コンテナ内の EXIF 関連 box を読み取り、デバイス・撮影パラメータ・位置・日時などを表示します。JPEG と同様です。\n\n**編集**：現時点では**非対応**です。コンテナの box 構造と書き込みルールは JPEG と異なり、HEIC/ISOBMFF の仕様に沿って box を書き換えたり追加したりする実装は行っていません。\n\n**除去**：**プリセットによる除去**には未対応です。「GPS だけ削る」「デバイスだけ削る」などは、コンテナ内の該当 box を精密に書き換える必要があり、同様に未実装です。EXIF を落として画質への影響を抑えたい場合は、いったん HEIC を JPEG に変換してから当サイトで JPEG に対して「全削除」や任意のプリセットをかけると、メタデータ部分だけを操作し、ピクセルの再エンコードは行いません。\n\n# **TIFF / AVIF 形式**\n\n**閲覧**：対応。ファイル内の既存 EXIF を読み取り、次元別に表示します。JPEG と同様です。\n\n**編集・除去**：TIFF も規格上は IFD で EXIF を格納しており、理論上はメタデータだけを書き換えられる可能性がありますが、AVIF は HEIC と同様に box 構造です。当サイトでは TIFF・AVIF の**プリセット除去**と**書き戻し**の対応は限定的で、未実装であるか、「全削除」のみ再エンコードで行っています。詳細な挙動は現行バージョンに依存します。編集やプリセット除去をフルに使いたい場合は、JPEG に変換してから当サイトで処理することをおすすめします。\n\n---\n\n以上は現行バージョン時点の対応とその理由です。更新で変わる可能性があります。トップページの「対応形式」および [どの形式に EXIF が含まれる？](/guides/supported-formats) と整合しています。特定の形式が解析できない、またはオプションが使えない場合は、ファイル形式とサイズを確認するか、[FAQ](/faq) をご覧ください。"
+      },
+      "productUpdate": {
+        "title": "更新履歴",
+        "desc": "ExifStrip のバージョン更新説明ページ。\nリリース時に主な新機能・改善・修正を記載。",
+        "content": "このページでは ExifStrip のバージョン更新をお知らせします。リリース時に主な新機能・改善・修正をここに掲載します。\n\n# 初回リリース\n\n**EXIF の閲覧** — 1 枚または複数枚の画像をアップロードすると、次元別（デバイス・撮影設定・位置・日時・作者・著作権・画像プロパティ・ICC）に EXIF を表示。対応形式：JPEG、PNG、TIFF、HEIC、AVIF、WebP。GPS があれば地図上に撮影位置を表示。\n\n**EXIF の編集** — JPEG のみ：Artist・Copyright・撮影時刻などを画面で編集して書き戻し；保存・単一タグまたは次元単位の削除に対応；編集を反映した画像をダウンロード可能。\n\n**EXIF の除去** — プリセット 4 種：全削除、プライバシーのみ（GPS・作者・シリアル）、GPS のみ、デバイス/シリアルのみ。JPEG はプリセットで除去（ピクセル再エンコードなし）；PNG/WebP は「全削除」のみ再エンコードで対応。除去済み画像をダウンロード可能。\n\n**EXIF のエクスポート** — メタデータを CSV・JSON・TXT・HEX（生データ）でエクスポート。\n\n**プライバシー分析** — 共有前に位置・デバイス・日時などのリスクレベル（高/中/低）を表示。\n\n**サイト** — 処理はすべてブラウザ内で完結し、当方サーバーへはアップロードされません。[トップ](/)、[チュートリアル](/guides)、[ブログ](/blog)、[FAQ](/faq)、[About](/about)、[プライバシー](/privacy)、[利用規約](/terms)。English・简体中文・日本語に対応。"
+      }
+    }
+  }
+}

@@ -1,0 +1,537 @@
+{
+  "quickActions": {
+    "title": "快捷功能",
+    "upload": "上传图片",
+    "metadata": "元数据",
+    "privacy": "隐私说明"
+  },
+  "seo": {
+    "relatedReading": "延伸阅读"
+  },
+  "nav": {
+    "home": "首页",
+    "about": "关于",
+    "blog": "博客",
+    "guides": "教程",
+    "faq": "FAQ",
+    "language": "语言",
+    "sectionNav": {
+      "hero": "首屏",
+      "intro": "网站介绍",
+      "upload": "上传",
+      "metadata": "元数据",
+      "metadataGraph": "关系图",
+      "whyStripExif": "为什么移除 EXIF",
+      "privacy": "隐私说明",
+      "exifTable": "EXIF 参考表",
+      "faq": "FAQ"
+    }
+  },
+  "languageOption": {
+    "en": "English",
+    "zh-CN": "中文",
+    "ja": "日本語"
+  },
+  "hero": {
+    "title": "免费 EXIF 查看、编辑与元数据移除工具",
+    "desc": "在浏览器中查看、编辑与剥离 EXIF。不上传、永久免费。"
+  },
+  "intro": {
+    "whoWeAre": "什么是 EXIFStrip？",
+    "whoWeAreDesc": "我们是一款在线 EXIF 查看与编辑工具，支持查看、编辑、删除照片中的 EXIF。所有处理在您本地浏览器完成，不会上传到服务器，无需注册，完全免费。",
+    "whatYouCanDo": "我们如何保护您的隐私",
+    "whatYouCanDoDesc": "我们把您的隐私与安全放在首位。我们不会收集您额外的信息，不上传、不存储您的照片或 EXIF。更多说明请见隐私政策。",
+    "whatYouCanDoDescPart1": "我们把您的隐私与安全放在首位。我们不会收集您额外的信息，不上传、不存储您的照片或 EXIF。更多说明请见 ",
+    "whatYouCanDoDescLink": "隐私政策",
+    "whatYouCanDoDescPart2": "。",
+    "whatIsExif": "查看、编辑与移除 EXIF",
+    "whatIsExifDesc": "您可以上传一张或多张图片，然后查看、编辑、分析或删除 EXIF 信息——本地处理，完全免费。",
+    "tryIt": "试试看",
+    "aboutPrivacy": "为什么要重视 EXIF？",
+    "aboutPrivacyDesc": "手机、相机拍的照片里常带有 GPS位置、设备型号等个人隐私信息，直接分享可能被他人获取。所以分享前检查、清理 EXIF 很有必要。",
+    "learnMore": "想要了解更多？",
+    "learnMoreDesc": "您可以通过我们的博客或问答来了解更多的信息。",
+    "learnMoreDescPart1": "您可以通过我们的",
+    "learnMoreDescBlog": "博客",
+    "learnMoreDescOr": "或",
+    "learnMoreDescFaq": "问答",
+    "learnMoreDescPart2": "来了解更多的信息。我们的 ",
+    "learnMoreDescTutorialsLink": "教程",
+    "learnMoreDescPart3": " 也提供了丰富的使用方法。"
+  },
+  "upload": {
+    "title": "上传图片",
+    "hint": "拖拽图片到这里，或点击选择——即可查看或剥离 EXIF。",
+    "hintDrag": "将图片拖放到此处",
+    "or": "或",
+    "fileInfo": "文件信息",
+    "fileInfoPlaceholder": "上传后此处显示文件信息。",
+    "browse": "选择文件",
+    "clear": "移除",
+    "reset": "重置",
+    "clearAll": "全部清除",
+    "addMore": "继续添加图片",
+    "fileName": "文件名",
+    "fileSize": "大小",
+    "fileType": "文件类型",
+    "imageSize": "图像尺寸",
+    "bitsPerSample": "位深度",
+    "colorSpace": "色彩空间",
+    "mimeType": "MIME 类型",
+    "lastModified": "修改时间",
+    "caption": "说明",
+    "artist": "作者",
+    "copyright": "版权",
+    "supportedFormats": "支持的文件类型",
+    "supportedFormatsHint": "JPEG、PNG、TIFF、HEIC/HEIF、AVIF、WebP",
+    "supportedFormatsFooter": "后续可能继续增加支持格式。",
+    "gpsPlaceholder": "GPS 地图（有定位数据时显示）",
+    "locationsTitle": "位置",
+    "mapLoading": "地图加载中…",
+    "noLocationData": "无位置数据",
+    "seeMetadataBelow": "请查看下方 Metadata 区块",
+    "showOnlySelectedImage": "仅显示选中图片",
+    "privacyAnalysis": "隐私分析",
+    "privacyAnalysisPlaceholder": "上传并选择图片后显示隐私分析。",
+    "riskHigh": "高风险",
+    "riskMedium": "中风险",
+    "riskLow": "低风险",
+    "riskNone": "无风险",
+    "riskSafe": "未检测到隐私风险项。",
+    "riskDescLocation": "拍摄时的精确位置坐标",
+    "riskDescDevice": "相机或手机型号等设备信息",
+    "riskDescOther": "作者、版权、用户注释等",
+    "riskDescDateTime": "拍摄或修改的日期时间",
+    "issuesFound": "{{count}} 项风险"
+  },
+  "metadata": {
+    "title": "EXIF 元数据",
+    "device": "设备",
+    "imageSettings": "拍摄参数",
+    "location": "位置",
+    "dateTime": "日期与时间",
+    "other": "作者与版权",
+    "image": "图像属性",
+    "icc": "ICC",
+    "blockContentPlaceholder": "内容过高时此处可滚动。",
+    "noFileHint": "上传并选择图片后可查看元数据。",
+    "emptyStateTitle": "暂无元数据",
+    "emptyStateDesc": "请先在上方上传一张或多张图片，选中后即可在此按维度查看元数据。",
+    "emptyStateDescLine1": "请先在上方上传一张或多张图片，",
+    "emptyStateDescLine2": "选中后即可在此按维度查看 EXIF。",
+    "selectFileHint": "请在列表中选择一张图片以查看其元数据。",
+    "loading": "正在读取元数据…",
+    "iccEmpty": "此文件不包含 ICC 配置文件。",
+    "edit": "编辑",
+    "save": "保存",
+    "cancel": "取消",
+    "downloadWithEdits": "下载（含编辑）",
+    "delete": "删除",
+    "restore": "恢复",
+    "deleteBlock": "删除本维度",
+    "restoreBlock": "恢复本维度",
+    "editDisabledNonJpeg": "当前仅支持对 JPEG 进行编辑。",
+    "deleteDisabledNonJpeg": "当前版本仅支持对 JPEG 删除字段。",
+    "prev": "上一张",
+    "next": "下一张",
+    "exportExif": "导出 EXIF",
+    "exportCsv": "CSV",
+    "exportJson": "JSON",
+    "exportTxt": "TXT",
+    "exportHex": "HEX（原始）",
+    "clean": "剥离 EXIF",
+    "presetFull": "删除全部 EXIF",
+    "presetPrivacy": "隐私（GPS、作者、序列号）",
+    "presetGpsOnly": "仅 GPS",
+    "presetDeviceOnly": "仅设备/序列号",
+    "downloadCleaned": "下载已剥离的图片",
+    "stripUnsupportedFormat": "当前格式不支持剥离（如 HEIC、HEIF、TIFF、AVIF）。",
+    "stripNoRiskItems": "当前图片未检测到隐私风险项，无需剥离。",
+    "graphRootLabel": "图片",
+    "graphClose": "关闭",
+    "inputFormatHint": "仅支持英文、数字及常用符号。",
+    "validationAsciiOnly": "仅支持英文、数字及常用符号。",
+    "validationInteger": "请输入整数。",
+    "validationNumber": "数字或分数格式无效。",
+    "validationLatitude": "纬度需在 -90 到 90 之间。",
+    "validationLongitude": "经度需在 -180 到 180 之间。",
+    "opt": {
+      "orientation": { "0": "未定义", "1": "左上", "2": "右上", "3": "右下", "4": "左下", "5": "左顶", "6": "右顶", "7": "右底", "8": "左底" },
+      "whiteBalance": { "0": "自动", "1": "手动" },
+      "flash": { "0": "未闪", "1": "闪", "5": "闪(无返回)", "7": "闪(返回)", "9": "强制", "13": "强制(无返回)", "15": "强制(返回)", "16": "不强制", "24": "自动", "25": "自动(无返回)", "29": "自动(返回)", "31": "自动(返回)" },
+      "exposureProgram": { "0": "未定义", "1": "手动", "2": "正常", "3": "光圈优先", "4": "快门优先", "5": "创意", "6": "运动", "7": "人像", "8": "风景" },
+      "exposureMode": { "0": "自动", "1": "手动", "2": "包围" },
+      "meteringMode": { "0": "未知", "1": "平均", "2": "中央", "3": "点", "4": "多点", "5": "图案", "6": "局部" },
+      "sceneCaptureType": { "0": "标准", "1": "风景", "2": "人像", "3": "夜景" },
+      "resolutionUnit": { "1": "未知", "2": "英寸", "3": "厘米" },
+      "colorSpace": { "1": "sRGB", "2": "Adobe RGB", "65535": "未校准" },
+      "gpsRef": { "N": "北", "S": "南", "E": "东", "W": "西" },
+      "gpsDir": { "T": "真北", "M": "磁北" },
+      "gpsSpeedRef": { "K": "km/h", "M": "mph", "N": "节" }
+    }
+  },
+  "metadataGraph": {
+    "title": "元数据关系图",
+    "noDataTitle": "暂无关系图数据",
+    "noDataDesc": "上传图片后在此查看元数据关系图。"
+  },
+  "toast": {
+    "exportFailed": "导出失败，请重试",
+    "cleanFailed": "清理失败，请重试",
+    "downloadFailed": "下载失败，请重试",
+    "parseError": "解析失败"
+  },
+  "fourCards": {
+    "card1Title": "查看 EXIF",
+    "card1Desc": "上传图片即可按维度查看 EXIF（设备、位置、日期等）。不会上传到我们的服务器。",
+    "card2Title": "编辑与移除",
+    "card2Desc": "在 JPEG 中编辑作者、版权等字段，或用预设剥离 EXIF：仅 GPS、仅设备、隐私或全部删除。",
+    "card3Title": "导出与隐私",
+    "card3Desc": "将 EXIF 导出为 CSV、JSON、TXT 或 HEX。隐私分析会在分享前标出敏感字段。",
+    "card4Title": "不上传、不注册",
+    "card4Desc": "全部在您浏览器中完成，照片不会离开您的设备。无需注册即可使用。"
+  },
+  "whyStripExif": {
+    "title": "为什么要移除 EXIF",
+    "item1Quote": "你知道吗？",
+    "item1Desc": "你拍摄的照片可能包含 GPS 坐标、拍摄时间等。分享原图等于暴露「在何时何地拍摄」。",
+    "item2Quote": "EXIF 信息里有什么？",
+    "item2Desc": "元数据里常有相机/手机型号、序列号、软件版本等，可被用于设备指纹、身份推断。剥离后只留下「图本身」。",
+    "item3Quote": "什么是 EXIF 呢？",
+    "item3Desc": "EXIF（可交换图像文件格式）是嵌入在照片中的元数据，记录拍摄设备、时间、光圈快门、GPS 等信息。",
+    "item4Quote": "我需要删除哪些信息呢？",
+    "item4Desc": "可根据需求选择删除全部 EXIF，或仅删除位置、设备等指定维度。由你决定哪些信息随图流出。"
+  },
+  "exifTable": {
+    "title": "EXIF 参考表",
+    "tagHex": "Tag(Hex)",
+    "name": "Name",
+    "ifd": "IFD",
+    "type": "Type",
+    "value": "Value",
+    "valueExampleHeader": "Value（示例）",
+    "noFile": "请先上传图片",
+    "noTags": "暂无 EXIF 数据"
+  },
+  "privacy": {
+    "title": "隐私说明",
+    "intro": "ExifStrip 重视您的隐私。本工具自设计之初即确保您的图片与元数据**不会离开您的设备**。",
+    "lastUpdated": "最后更新：2025 年 3 月",
+    "noUploadsTitle": "不上传",
+    "noUploadsContent": "所有图片处理、EXIF 读取、编辑与移除**均在您的浏览器内完成**。您的图片**从未也不会被上传到任何服务器**（包括我们的服务器）。",
+    "noTrackingTitle": "不追踪",
+    "noTrackingContent": "我们**不会追踪、记录或存储**您上传的图片、EXIF 数据或您的编辑操作。您的使用行为**完全匿名**。",
+    "cookiesTitle": "统计与 Cookie（GA4）",
+    "cookiesContent": "我们使用 **Google Analytics 4（GA4）** 进行网站访问统计。GA4 会使用 Cookie 以统计流量与使用情况。我们自身**不将 Cookie 用于追踪或广告目的**。您可在浏览器中管理或禁用 Cookie；若希望退出 Google 统计，可使用 Google 的退出插件或调整浏览器设置。",
+    "adsenseTitle": "广告（AdSense）",
+    "adsenseContent": "我们可能使用 Google AdSense 展示广告。Google 可能使用 Cookie 进行广告个性化，但我们**不会向 Google 或任何第三方提供您的图片或 EXIF 数据**。",
+    "securityTitle": "安全",
+    "securityContent": "所有处理**均在您本地的浏览器中运行**。我们使用 **HTTPS** 保护您的连接。",
+    "openSourceTitle": "开源",
+    "openSourceContent": "核心逻辑**公开透明**，可供任何人查阅。我们欢迎注重隐私的用户审查我们的代码。",
+    "childrenTitle": "儿童隐私",
+    "childrenContent": "本网站**不面向 13 岁以下儿童**。我们不会故意收集儿童的个人信息。",
+    "contactTitle": "联系我们",
+    "contactContent": "如有隐私相关疑问，请通过本站在线方式或代码仓库中提供的联系方式与我们联系。",
+    "summaryTitle": "简要说明",
+    "summaryContent": "您的图片与元数据**仅保存在您的设备上**。我们**不会查看、存储或传输**您的文件。您**始终完全掌控**自己的数据。",
+    "linksHeading": "更多信息",
+    "linkGoogleAdsText": "Google 广告政策",
+    "linkGooglePrivacyText": "Google 隐私权政策",
+    "linkGoogleAnalyticsText": "Google 与网站如何使用数据",
+    "rightsNote": "若您来自**欧盟、英国或加州**等地，您享有当地法律规定的相关权利；我们**不在服务器上收集或存储**您的个人数据。如需行使权利，请通过上述方式联系我们。"
+  },
+  "footer": {
+    "siteName": "ExifStrip",
+    "intro": "在浏览器内查看、编辑与移除图片 EXIF 元数据，数据不出设备，无需注册。",
+    "copyright": "© {year} ExifStrip",
+    "links": "链接",
+    "privacy": "隐私",
+    "terms": "条款",
+    "about": "关于",
+    "faq": "FAQ",
+    "contactUs": "联系我们",
+    "twitter": "Twitter",
+    "github": "GitHub",
+    "feedback": "反馈"
+  },
+  "guides": {
+    "pageTitle": "EXIF 小百科",
+    "heroSubtitle": "帮您更深入的理解 EXIF，以便于更好的保护您自己的隐私信息。",
+    "pageDesc": "理解 EXIF、隐私与本站用法。",
+    "comingSoon": "内容撰写中，敬请期待。",
+    "notFound": "未找到该条目。",
+    "referencesTitle": "引用说明",
+    "category": {
+      "knowExif": "认识 EXIF",
+      "exifContent": "EXIF 里有什么（按维度）",
+      "privacy": "EXIF 与隐私",
+      "howTo": "如何查看与编辑 EXIF",
+      "faq": "常见问题",
+      "reference": "参考与延伸"
+    },
+    "entry": {
+      "whatIsExif": {
+        "title": "什么是 EXIF？",
+        "desc": "EXIF 是嵌在照片里的元数据标准，记录设备、时间、GPS 等；由 JEITA/CIPA 制定维护，不是一种新的图片格式。",
+        "content": "拍完照翻看相册时，你有没有好奇过：手机是怎么知道这张图是上周二下午拍的、用的哪款镜头、甚至当时在哪儿？这些信息就藏在照片的「EXIF」里。\n\nEXIF 的全称是 Exchangeable Image File Format（可交换图像文件格式）。名字里带「图像文件」，但它其实不是一种新的图片格式——你的照片还是 JPEG 或 TIFF，EXIF 只是给这些文件「贴标签」的规矩：该记什么、怎么记，都有一套统一约定，这样不同设备、不同软件才能正确读出同一份信息。\n\n根据美国国会图书馆对 [Exif 格式家族（LOC）](https://www.loc.gov/preservation/digital/formats/fdd/fdd000618.shtml) 的整理及其他权威说明，这些「标签」里可以包括：相机或手机型号（Make、Model）、快门速度、光圈、曝光时间、拍摄日期时间、分辨率、色彩空间、版权与描述信息、GPS 位置、甚至内嵌的缩略图等。\n\n换句话说，EXIF 是「元数据标准」而非「图像文件格式」本身：图像仍以 JPEG、TIFF 或 WAV（声音）等既有编码存储，EXIF 定义的是嵌入在这些文件中的元数据如何组织与命名。\n\nEXIF 的规范最初是由日本电子工业发展协会（JEIDA）于 1995–1996 年制定并发布第一版；2000 年 JEIDA 与 EIAJ 合并为日本电子信息技术产业协会（JEITA）；自 2009 年起，由 JEITA 与相机与影像产品协会（CIPA）共同管理与维护。\n\n标准文档完全公开，被全球数码相机、智能手机、打印机等设备广泛采用——这也是为什么你现在随手拍的一张图，里头已经悄悄带着这么多信息。\n\n若想了解规范如何随版本演进，可阅读 [《EXIF 的由来与演变》](/guides/exif-history)；若想了解这些元数据通常藏在哪些类型的文件里，可阅读 [《哪些格式包含 EXIF？》](/guides/supported-formats)。"
+      },
+      "exifHistory": {
+        "title": "EXIF 的由来与演变",
+        "desc": "从 1995 年 1.0 到 3.1 的版本演进；GPS、序列号、UTF-8 等如何逐步加入，CIPA/JEITA 共同维护。",
+        "content": "EXIF（Exchangeable Image File Format，可交换图像文件格式）的标准最早可追溯到 1995 年 10 月：日本电子工业发展协会（JEIDA）发布了 1.0 版，为数码相机定义「如何在文件里记录图像数据」的统一方法。根据 CIPA 官网的更新历史与国会图书馆对 EXIF 的格式说明，此后近三十年里规范历经多次修订，功能不断扩展。若尚未了解 EXIF 本身是什么，可先阅读 [《什么是 EXIF？》](/guides/what-is-exif)。\n\n主要版本演进如下：\n\n- 1.0（1995）：首版，规定图像数据在文件中的记录方法。\n- 2.0（1997）：引入 GPS 信息 IFD，可记录拍摄位置，EXIF 开始与「在哪里拍的」挂钩。\n- 2.1（1998）：扩展至声音——规定「如何在文件中写入音频数据」，EXIF 不再只针对静态图像。\n- 2.2（2002）：增加 ImageUniqueID（用于证明图像唯一性）、Exif Print 等；2.2 起还支持 sRGB、Adobe RGB 等色彩标识。\n- 2.3（2010）：增加相机拥有者、机身序列号等标签，便于证明影像来源与出处。\n- 2.31（2016）：支持 UTC 时差描述，以及温度、湿度、气压等拍摄环境信息。\n- 2.32（2019）：复合图像相关标签等改进。\n- 3.0（2023）：重大修订——支持 UTF-8/Unicode、盒式结构数据，以及 AI 标注、影像真实性验证等；多个标签的定义被新增或变更（如 Title、Photographer、Artist、Software 等）。\n- 3.1（2026）：当前最新版本（CIPA DC-008-Translation-2026）。\n\n标准由 CIPA 与 JEITA 共同维护，修订历程与标准文档可在 CIPA 官网查阅。\n\n规范要求：新版本阅读器必须能识别旧版本并跳过未定义的新增内容，从而保证向后兼容。关于各版本中 EXIF 数据具体可写入哪些文件格式，可参阅 [《哪些格式包含 EXIF？》](/guides/supported-formats)。"
+      },
+      "supportedFormats": {
+        "title": "哪些格式包含 EXIF？",
+        "desc": "标准层面 JPEG/TIFF/WAV 如何承载 EXIF；HEIC、RAW、WebP 等常见格式的兼容情况与本站支持。",
+        "content": "[《什么是 EXIF？》](/guides/what-is-exif) 中已说明 EXIF 是元数据标准而非文件格式本身。EXIF（Exchangeable Image File Format）规范明确定义的载体包括两类：**图像文件**（基于 TIFF 与 JFIF/JPEG）和**声音文件**（WAV）。根据美国国会图书馆对 EXIF 家族的格式说明及 CIPA 标准文档，从标准层面「包含 EXIF」的首先是 JPEG 与 TIFF。\n\n• **JPEG**：EXIF 数据存放在 JPEG 的预定义应用段 APP1（段标记 0xFFE1）中；该段实质上是一个 TIFF 结构的容器，可容纳一整套 EXIF 标签。数码相机、手机拍摄的 JPEG 几乎都带 EXIF，常见内容包括相机型号、拍摄时间、光圈快门、分辨率、可选缩略图等。\n\n• **TIFF**：通过 TIFF 私有标签 0x8769 建立 Exif 子 IFD（图像文件目录），用于存放 EXIF 专用标签；0x8825 用于 GPS 子 IFD，存放经纬度、海拔等；规范还规定在 Exif 子 IFD 内通过标签 0xA005 定义「互操作性 IFD」。\n\n• **WAV**：自 [Exif 2.1](/guides/exif-history) 起，规范也涵盖 Exif 音频（WAVE）的写入方法；EXIF 规范对文件名扩展的声明包括 jpg、tif、wav 等。\n\n此外，EXIF 风格的元数据也常出现在未严格遵循该规范的其他格式中：例如 HEIC/HEIF（苹果等设备常用）在 ISOBMFF 容器内可携带与 EXIF 兼容的相机参数、GPS、时间戳等；部分 RAW、AVIF、WebP 等由厂商或软件按需嵌入类似信息。\n\n在本站（ExifStrip）中：我们支持对 JPEG、PNG、TIFF、HEIC、AVIF、WebP 等格式进行 EXIF 的读取与展示；按预设剥离元数据主要针对 JPEG（不改动像素）；其他格式若需去除 EXIF，通常通过重编码实现。\n\n具体支持情况请以首页「支持格式」说明为准。"
+      },
+      "exifStructure": {
+        "title": "EXIF 的结构是怎样的？",
+        "desc": "EXIF 按 TIFF 目录组织：0th IFD、Exif 子 IFD、GPS 子 IFD、Interop IFD 等，标签与取值如何存放。",
+        "lead": "一张照片里的 EXIF 并不是一团乱麻，而是按「目录 → 标签 → 取值」的层级组织好的。下面这张图概括了 EXIF 在文件中的整体结构，便于先建立印象再读正文。",
+        "content": "EXIF 元数据按 TIFF 的目录结构组织。在 JPEG 文件中，整块 EXIF 存放在应用段 APP1（段标记 `0xFFE1`）里，相当于嵌入一个 TIFF；在 TIFF 文件中，则直接沿用 TIFF 的 IFD 机制。根据美国国会图书馆的格式说明，主要有以下几类目录。\n\n## 0th IFD（主图像文件目录）\n\n由文件头或 APP1 内的偏移指出，存放与主图直接相关的标签，例如图像宽高、方向等。\n\n## Exif 子 IFD\n\n由 0th IFD 中的 TIFF 私有标签 0x8769（Exif IFD）指向，存放 Exif 专用标签——拍摄参数、设备信息、日期时间等大多在此，详见 [《设备与相机信息》](/guides/dimension-device)、[《拍摄参数》](/guides/dimension-settings)、[《日期与时间》](/guides/dimension-datetime)。\n\n## GPS 子 IFD\n\n由 0th 中的私有标签 0x8825 指向，存放经纬度、海拔、GPS 时间戳等；自 [Exif 2.0](/guides/exif-history) 起纳入规范。\n\n## Interoperability IFD（互操作性 IFD）\n\n位于 Exif 子 IFD 内，通过标签 0xA005 定义，用于兼容性相关数据。\n\n---\n\n每条目录由若干「标签（Tag）+ 取值」组成；读写时按 Tag 编号与类型解析。若需了解 EXIF 本身的定义与适用格式，可参阅 [《什么是 EXIF？》](/guides/what-is-exif) 与 [《哪些格式包含 EXIF？》](/guides/supported-formats)。"
+      },
+      "dimensionDevice": {
+        "title": "设备与相机信息",
+        "desc": "Make/Model、机身与镜头序列号、Software、固件等；多由设备或后期软件写入，序列号属敏感信息。",
+        "content": "设备与相机类 EXIF 记录成像设备与软件信息，多由相机、手机或后期软件在拍摄或保存时写入。国会图书馆对 EXIF 的说明中将其归入「相机设置」等元数据类别。\n\n## 常见标签\n\n与本站「设备」维度一致：Make（制造商）、Model（型号）用于识别机型；BodySerialNumber、CameraSerialNumber 为机身或相机序列号；LensMake、LensModel 为镜头厂商与型号；Software 为处理软件名称；FirmwareVersion 为固件版本。\n\n这些项分布在 0th IFD 与 Exif 子 IFD 中，具体位置依 CIPA/JEITA 标准与常见实现而定。\n\n## 用途与注意\n\n用途包括机型溯源、设备统计与防伪。序列号等可唯一标识设备，属于敏感信息，分享前可考虑剥离。更多风险说明见 [《哪些 EXIF 信息比较敏感？》](/guides/sensitive-fields)。"
+      },
+      "dimensionSettings": {
+        "title": "拍摄参数",
+        "desc": "快门、光圈、ISO、焦距、白平衡、闪光灯、曝光程序等典型标签；由设备在拍摄时写入。",
+        "content": "拍摄参数记录按下快门瞬间的曝光与光学条件，由设备在拍摄时写入，主要位于 Exif 子 IFD。国会图书馆将此类归为「相机设置」与「技术图像数据」。\n\n## 典型标签\n\nExposureTime（快门时间，单位秒，如 1/125）；FNumber（光圈系数，如 f/2.8）；ISOSpeedRatings（感光度）；FocalLength（焦距，毫米）；WhiteBalance（白平衡模式）；Flash（闪光灯状态）；ExposureProgram（曝光程序，如程序自动、光圈优先）；ExposureBiasValue（曝光补偿）；MeteringMode（测光模式）；SceneCaptureType（场景类型）。\n\n## 简要含义\n\n光圈控制进光量与景深，快门与 ISO 共同决定曝光；焦距影响视角与透视。这些数据可用于分析拍摄条件或复现风格，与 [《图像属性》](/guides/dimension-image) 中的分辨率、色彩空间等一起描述单张图像的生成环境。"
+      },
+      "dimensionLocation": {
+        "title": "位置信息（GPS）",
+        "desc": "经纬度、海拔、GPS 时间戳等；在 GPS 子 IFD 中，有定位功能的设备会写入，属高敏感信息。",
+        "content": "位置类 EXIF 存放在独立的 GPS 子 IFD 中，由 0th IFD 的私有标签 0x8825 指向。根据国会图书馆的说明，GPS 支持自 Exif 2.0 引入，用于记录拍摄地点的地理信息。\n\n## 常见标签\n\nGPSLatitude、GPSLongitude 与 GPSLatitudeRef、GPSLongitudeRef（南北/东西参考）共同表示经纬度，规范中为度分秒有理数，可换算为十进制度数便于地图展示。\n\nGPSAltitude 与 GPSAltitudeRef 表示海拔；GPSDateStamp、GPSTimeStamp 为 GPS 接收器的时间戳；另有速度、拍摄方向等可选标签。\n\n## 隐私注意\n\n具备定位功能的相机或手机会在拍摄时写入上述数据。经纬度与时间戳可精确定位拍摄地与时刻，属于高敏感信息，分享前建议查看或剥离。详见 [《为什么要重视 EXIF 里的隐私？》](/guides/why-care-privacy)。"
+      },
+      "dimensionDatetime": {
+        "title": "日期与时间",
+        "desc": "拍摄时间、修改时间、数字化时间；常见格式无时区，部分设备用扩展字段记录时区。",
+        "content": "日期时间类 EXIF 用于记录拍摄、修改与数字化时间，便于排序、检索与溯源。国会图书馆将其列为 EXIF 元数据中的「日期与时间信息」。\n\n## 常见标签与格式\n\nDateTimeOriginal（拍摄时间）、DateTime（文件修改时间）、DateTimeDigitized（数字化时间）。格式通常为「YYYY:MM:DD HH:MM:SS」（例如 2024:03:15 14:30:00），无时区字段。\n\n## 时区限制\n\n规范层面，标准日期时间标签不包含 UTC 偏移。部分设备或软件通过 OffsetTime、OffsetTimeOriginal 等扩展记录时区，并非所有文件都有。若需结合时区精确还原时刻，需查阅设备或软件文档。\n\n版本演进中，Exif 2.31 起增加了对 UTC 时差描述的支持，可参阅 [《EXIF 的由来与演变》](/guides/exif-history)。"
+      },
+      "dimensionImage": {
+        "title": "图像属性",
+        "desc": "宽高、分辨率、色彩空间、位深度等；供播放器与打印机解析尺寸与色彩，不改变像素本身。",
+        "content": "图像属性描述图像的几何、分辨率、色彩与编码方式，与显示和打印直接相关。国会图书馆的 EXIF 说明指出，图像数据相关元数据包括像素数、像素宽高比（规范要求 1:1）、像素构成与采样（如 RGB 4:4:4，Y:Cb:Cr 4:2:2 或 4:2:0）。\n\n## 常见标签\n\nImageWidth、ImageLength（像素宽高）；XResolution、YResolution、ResolutionUnit（分辨率及单位，如 DPI）；ColorSpace（色彩空间，如 sRGB）；BitsPerSample、SamplesPerPixel（位深与采样数）；Compression、PhotometricInterpretation（压缩与光度解释）；ExifVersion、FlashPixVersion 等版本标识也常归入此类展示。\n\n## 用途\n\n这些字段供播放器与打印机正确解析尺寸与色彩，不改变像素内容本身。载体格式（如 [《哪些格式包含 EXIF？》](/guides/supported-formats) 中的 JPEG、TIFF）决定图像数据的编码方式，EXIF 仅描述嵌入的元数据。"
+      },
+      "dimensionOther": {
+        "title": "作者、版权与注释",
+        "desc": "Artist、Copyright、UserComment、ImageDescription、MakerNote；前几项多可读写，MakerNote 为厂商私有。",
+        "content": "作者、版权与注释类 EXIF 属于描述性元数据，国会图书馆将其归纳为「描述性元数据」与「版权信息」。部分由用户或软件编辑，部分由设备或厂商写入。\n\n## 常见标签\n\nArtist（作者）、Copyright（版权声明）、UserComment（用户注释）、ImageDescription（图像描述）、MakerNote（制造商备注）。\n\n其中 Artist、Copyright、UserComment、ImageDescription 在多数软件中可读写；MakerNote 为厂商自定义，格式不公开，仅对应厂商软件可完整解析，删除或保留不影响标准兼容性。\n\n## 版本与隐私\n\nExif 3.0 对 Title、Photographer、ImageEditor、Artist、Software 等有新增或变更定义。UserComment、ImageDescription 可能包含个人信息，分享前建议检查；敏感字段说明见 [《哪些 EXIF 信息比较敏感？》](/guides/sensitive-fields)。"
+      },
+      "iptcXmpOverview": {
+        "title": "IPTC、XMP 与 EXIF：三者关系简述",
+        "desc": "照片里除了 EXIF，还可能包含 IPTC（说明、关键词）和 XMP（可扩展元数据）；工具常分族展示。",
+        "content": "口语里常说「EXIF」，其实文件里可能同时存在好几类元数据：**EXIF**（拍摄参数、GPS、时间等）、**IPTC**（新闻流派常用的说明、版权、关键词）以及 **XMP**（XML 结构、Adobe 等生态常用的标题与权利信息）。像 [ExifTool](https://exiftool.org/) 会按族/命名空间整理标签，查阅时很方便。\n\n## 一句话区分\n\n**EXIF** 仍是相机/手机最核心那块；**IPTC** 偏「媒体稿件信息」；**XMP** 更灵活，也可能重复存一份版权或标题——**同一条信息出现在多块元数据里很常见**，不是解析错误。\n\n## 对「清理/分享」意味着什么\n\n只删「狭义的 EXIF」**未必**清掉所有 IPTC/XMP 里的说明或关键词。**分享前务必先预览** 工具实际解析出的内容。在 [ExifStrip](https://exifstrip.com) 上我们会按维度展示能读到的元数据；JPEG 的预设剥离与 PNG/HEIC 等差异见 [如何编辑或删除 EXIF？](/guides/how-to-edit-strip) 与 [ExifStrip 支持的图片格式](/blog/product-supported-formats)。\n\n## 延伸阅读\n\n- [什么是 EXIF？](/guides/what-is-exif)\n- [EXIF 的结构](/guides/exif-structure)\n- [EXIF 和「元数据」是一回事吗？](/blog/topic-exif-vs-metadata)"
+      },
+      "makerNotesBasics": {
+        "title": "什么是厂商备注（MakerNote）？",
+        "desc": "各相机品牌私有的 MakerNote 块解释「多出来的字段」；不是错误，也不是假 EXIF。",
+        "content": "在标准 EXIF 标签之外，很多文件里还有 **MakerNote（厂商备注）**：**只有机身厂商**才完全掌握数据结构。所以你用同一场景对比佳能、尼康、索尼的 raw/导出图时，会看到不同的「扩展行」。\n\n## 为什么要有 MakerNote\n\n厂商把对焦细节、内部序列号、镜头校正等塞进私有区；通用规范不会定义这些标签。[ExifTool 的 Tag Names](https://exiftool.org/TagNames/index.html) 汇总了大量品牌的解读，进阶排查时很有用。\n\n## 隐私角度\n\nMakerNote 往往**不如 GPS 显眼**，但仍可能含**序列号、固件线索、内部 ID** 等。若使用「设备相关」或「隐私」类剥离，具体会删哪些私有块取决于实现——**先看再决定**。参阅 [哪些字段比较敏感？](/guides/sensitive-fields)。\n\n## 本站相关\n\n解析器暴露的厂商数据会归到 **设备** 等维度。背景可读 [设备与器材](/guides/dimension-device) 与 [作者、版权与注释](/guides/dimension-other)（文中亦提及 MakerNote）。"
+      },
+      "orientationTagExplained": {
+        "title": "EXIF Orientation：显示方向与像素的关系",
+        "desc": "Orientation 取值 1～8 表示如何旋转/镜像显示；多数情况下并不等价于已把像素矩阵物理旋转存盘。",
+        "content": "**Orientation** 标签告诉软件：显示这张照片时应如何**旋转或镜像**（常见取值 1～8）。合规的看图软件会按标签旋给你看；**压缩后的像素排列**可能仍是传感器原始方向。\n\n## 常见困惑\n\n- **同一文件在不同软件里朝向不一致**：有的程序忽略 Orientation，直接显示原始像素。\n- **只改 Orientation 算不算「旋转图」**：多数情况下只是改**显示指令**；若要把旋转「烤」进像素，通常要另存/重编码导出。\n\n## 与画质\n\n只改 Orientation 一般不会触发 JPEG 重压缩；若**删掉** Orientation，有的软件又会把图看成「横着」，分享前要想好目标场景。\n\n## 延伸阅读\n\n- [拍摄与图像参数维度](/guides/dimension-settings)\n- [如何查看 EXIF？](/guides/how-to-view)\n\n词条对照可查 CIPA/JEITA 及 ExifTool [EXIF 标签页](https://exiftool.org/TagNames/EXIF.html)。"
+      },
+      "whyCarePrivacy": {
+        "title": "为什么要重视 EXIF 里的隐私？",
+        "desc": "照片默认带 GPS、设备型号甚至序列号；相册里看不见但别人用工具能读，分享前查看与按需剥离很有必要。",
+        "content": "很多人以为发出去的只是一张图，其实一起带走的还有一坨「看不见的附件」——EXIF。手机和相机默认就会往照片里写 GPS、设备型号、拍摄时间这些；你拷到电脑、传到网盘或发到群里，这些元数据通常都原样跟着走。\n\n**为什么容易被忽略？** 因为平时在相册里看不到。但 EXIF 就是文件的一部分：用系统自带的属性、专业看图软件，或者随便一个在线 EXIF 查看器，都能把里头的经纬度、时间戳、机身序列号读出来。下面两张图是解析后的 EXIF 展示示例：\n\n![EXIF 解析示例一](/images/guides/why-care-privacy/0ad3b346-6904-4671-8c10-50eabd569275.png)\n\n![EXIF 解析示例二](/images/guides/why-care-privacy/e3db8d12-1776-4167-9fc9-5a3cf04738a6.png)\n\n社交平台、网盘、论坛会不会在上传时帮你 strip 掉？有的会，有的不会，而且不会明说——你不能指望「平台会帮我处理」。\n\n**结果是什么？** 别人拿到原图，就能还原你当时在哪拍的、什么时候拍的、用的什么机器。这些信息足够做行为分析、人肉甚至骚扰；商业场景里也可能被用来做用户画像。反面例子很常见：比如在群里发一张「打卡照」原图，EXIF 里带着精确 GPS，等于把常去地点甚至住址暴露给所有能保存图片的人。\n\n所以：分享前看一眼、按需剥离，成本很低，习惯一下就好。具体哪些字段算敏感，可以看 [《哪些 EXIF 信息比较敏感？》](/guides/sensitive-fields)；实操上怎么选「只删位置」还是「全删」，可以看 [《分享前建议怎么做？》](/guides/before-you-share)。"
+      },
+      "sensitiveFields": {
+        "title": "哪些 EXIF 信息比较敏感？",
+        "desc": "按风险从高到低：位置与序列号、时间与机型、自由文本；结合场景说明为何敏感及反面示例。",
+        "content": "「敏感」取决于谁拿到、用来干什么——同一类 EXIF，在不同场景下风险不一样。下面按常见风险从高到低捋一遍。\n\n**高敏感：位置与设备唯一标识**\n\n[位置信息（GPS）](/guides/dimension-location) 里的经纬度、海拔、GPS 时间戳，能直接定位到拍摄地点甚至精确到几米。一旦原图流出，别人就能知道你当时在哪；结合多张图还能推断常去地点、住址或工作地。设备或镜头序列号（如 CameraSerialNumber、BodySerialNumber）在 EXIF 里也可能出现：它们唯一对应你这台机器，能和保修、账号、二手交易记录挂上钩，被用来套机、诈骗或人肉的案例都有。下图是某张照片解析出的高敏感字段示例：\n\n![高敏感字段示例](/images/guides/sensitive-fields/8023c07e-def7-4ae7-8183-96a31ef94dbd.png)\n\n**中敏感：时间与机型**\n\n[日期与时间](/guides/dimension-datetime) 里的拍摄时间（DateTimeOriginal 等）能拼出你的行为时间线、作息习惯。Make/Model 虽不唯一，但能推断设备档次、使用习惯，在特定场景下也会变成身份线索。\n\n**低敏感但别大意：自由文本**\n\nUserComment、ImageDescription 这类是用户或软件手写的，可能夹带姓名、地点、计划、备注。不检查就发出去，等于主动泄露。下图是时间、机型、自由文本等中低敏感字段的解析示例：\n\n![中低敏感字段示例](/images/guides/sensitive-fields/ef685d0f-95c7-46dc-a592-7a515a38947a.png)\n\n**反面示例**：带 GPS 的亲子照被陌生人拿到，常去的公园、学校路线一目了然；或者序列号 + 社交资料被用来冒充机主套机。\n\n搞清楚「哪些敏感」之后，再配合 [《分享前建议怎么做？》](/guides/before-you-share) 做策略性剥离会更顺手。"
+      },
+      "beforeYouShare": {
+        "title": "分享前建议怎么做？",
+        "desc": "习惯「先查看再决定」：用本站或系统属性看一遍，再选只删位置、只删设备或全部移除，对应本站剥离预设。",
+        "content": "没有「一律不能留 EXIF」的绝对规则，关键看你要发给谁、对方会不会再传播。建议养成一个习惯：**先查看，再决定**。\n\n**第一步：先看一遍**\n\n用系统自带的文件属性、专业软件，或像本站这种浏览器里就能用的 [EXIF 查看方式](/guides/how-to-view)，打开原图看一眼。重点看 [《哪些 EXIF 信息比较敏感？》](/guides/sensitive-fields) 里提到的几类——GPS、序列号、拍摄时间、UserComment 等——你的图里到底有没有、有多少。用本站时，上传后可以先看「隐私分析」区块里有哪些敏感项，示意如下：\n\n![隐私分析示意](/images/guides/before-you-share/4d550a07-ed4d-485e-9f6d-6012509120dd.png)\n\n**第二步：选策略**\n\n- **只删位置**：保留设备、时间，方便自己日后按拍摄时间排序或归档；适合发给熟人、但不希望对方知道拍摄地点的场景。\n- **只删设备/序列号**：保留时间和位置，适合只不想暴露器材、但时间地点无所谓的场景。\n- **全部移除**：对外公开、发给陌生人或不确定会不会被再传播时，最省心的做法。\n\n本站的「仅隐私 / 仅 GPS / 仅设备 / 全部移除」等 [剥离预设](/guides/how-to-edit-strip) 就是按上面几种思路来的，可按需选。确定策略后，在工具里选择对应预设即可执行删除，示意如下：\n\n![剥离删除示意](/images/guides/before-you-share/40e336e7-9ff5-4489-94e6-1bc9f88f8ce8.png)\n\n**反面示例**：不看就全删，结果自己以后想按拍摄时间整理照片时发现全没了；或者该删不删，直接把原图发给陌生人或公开到论坛。\n\n总结一句：发前看一眼，再按场景选「删什么」。具体能做什么可以看 [《ExifStrip 能做什么？》](/guides/what-exifstrip-does)。"
+      },
+      "howToView": {
+        "title": "如何查看 EXIF？",
+        "desc": "系统自带（Windows 属性、macOS 预览、手机详情）、专业软件、在线工具；本站本地解析、不上传、按维度展示。",
+        "content": "一直强调 EXIF 信息非常重要，那么什么是 EXIF 信息呢？EXIF（Exchangeable Image File Format）是嵌在照片文件里的元数据标准，用来记录拍摄设备、快门光圈、日期时间、GPS 位置等信息。该标准由 JEITA（日本电子信息技术产业协会）与 CIPA（相机与影像产品协会）共同制定与维护。\n\n格式层面的权威说明可参阅 [美国国会图书馆 – Exif 家族](https://www.loc.gov/preservation/digital/formats/fdd/fdd000618.shtml) 与 [CIPA Exif 标准](https://www.cipa.jp/e/std/std-sec.html)。\n\n通常这些信息不会在普通的相册或缩略图里显示，直接看也看不出来，因为是隐藏在照片背后的信息，但是在一些系统自带的或比较专业的软件里是可以看到这些信息的，在判断照片来源、分享前检查隐私、或做归档整理时很有用。\n\n下面分几种方式来说明如何查看照片中隐藏的 EXIF。\n\n# **操作系统自带**\n\n不用借助专业的软件也能查看这些信息。不同系统入口如下。\n\n**Windows**：在文件资源管理器中找到目标图片，右键点击 → 选择「属性」→ 切换到「详细信息」标签页，可看到设备、尺寸、拍摄日期等部分字段；不同 Windows 版本显示的项可能略有差异，且不一定包含完整 EXIF。\n\n![Windows 下查看 EXIF](/images/guides/how-to-view/window-view.png)\n\n**macOS**：用系统自带的「预览」打开图片，点击菜单栏「工具」→「显示检查器」（快捷键 Option+Command+I），在弹出窗口中选「更多信息」或相应标签页，即可查看 EXIF；部分机型或格式下某些字段可能不显示。\n\n**手机（Android / iOS）**：在相册或照片 App 中打开图片，通过「详情」「信息」或上滑查看，通常能看到拍摄日期、位置等；完整 EXIF 不一定全部展示，如需更全的字段可借助文件管理器或第三方 App。\n\n![iOS 下查看 EXIF](/images/guides/how-to-view/ios-view.png)\n\n# **专业软件**\n\n需要更完整、可批量查看或编辑 EXIF 时，可用桌面端专业工具。\n\n**ExifTool**：命令行工具，支持读写多种格式的 EXIF，功能全面，被不少软件作为底层库使用；缺点是需要输入命令，对不熟悉命令行的用户有门槛。\n\n**XnView**：免费、支持多格式图片、可批量查看与导出 EXIF，界面相对友好；部分高级功能在付费版中提供。\n\n**IrfanView**（Windows）：体积小、启动快，可查看和编辑 EXIF；仅支持 Windows 平台。\n\n这类软件共同优点是功能强、可离线使用；不足是需安装，且不同软件对 HEIC、RAW 等格式的支持不一，使用前可先确认是否支持你的文件类型。\n\n# **在线工具**\n\n不少网站提供「上传图片后查看 EXIF」的功能，无需安装，在任意设备的浏览器中打开即可使用，适合临时查一张图。使用这类服务时，图片会上传到对方服务器，若照片涉及隐私或敏感内容，建议先查看该站点的隐私政策与数据使用说明，再决定是否使用。\n\n# **本站（[ExifStrip](https://exifstrip.com)）的做法**\n\n第一步：在浏览器中打开 [ExifStrip](https://exifstrip.com) 网站，进入首页。\n\n![第一步](/images/guides/how-to-view/7d6ba228-d45f-4dca-8188-e64943375df4.png)\n\n第二步：点击上传区域，或直接将待查看的图片拖拽到页面指定区域；支持单张或一次选择多张。\n\n![第二步](/images/guides/how-to-view/23f33ad8-9927-4bf3-bed7-8479df406acc.png)\n\n第三步：选择文件后，页面会在本地解析该图片的 EXIF，不将图片上传到服务器。解析完成后，「文件信息」区域会显示文件名、尺寸、类型等；下方按维度分组展示元数据（设备、拍摄参数、位置、日期时间、图像属性、作者版权等），便于快速找到某一类信息。\n\n![第三步](/images/guides/how-to-view/df78d179-7f68-4aa9-9362-df72046dd366.png)\n\n第四步：若图片含有 GPS 信息，页面会在地图上标出拍摄位置，方便对照位置与 EXIF。\n\n![第四步](/images/guides/how-to-view/ec7a0466-bd8a-405e-8598-d13f0ea3c053.png)\n\n[ExifStrip](https://exifstrip.com) 的优点是：解析与展示均在本地完成，图片不会离开你的设备，适合既想查看 EXIF 又在意隐私的场景；无需安装，打开浏览器即可使用；支持 JPEG、PNG、HEIC、WebP 等多种格式的读取与展示。\n\n---\n\n查看 EXIF 的方式有多种，可按使用习惯、是否需要批量处理、以及是否在意图片上传到第三方来选择。若查看后需要编辑或删除部分 EXIF，可参考 [《如何编辑或删除 EXIF？》](/guides/how-to-edit-strip)；本站完整功能说明见 [《ExifStrip 能做什么？》](/guides/what-exifstrip-does)。"
+      },
+      "howToEditStrip": {
+        "title": "如何编辑或删除 EXIF？",
+        "desc": "编辑作者/版权/时间等并写回 JPEG；剥离分「按维度删」与「全删」，JPEG 无损、PNG/WebP 重编码，四种预设用法。",
+        "content": "JPEG 中的 EXIF 元数据通常存放在 [APP1 段](https://www.loc.gov/preservation/digital/formats/fdd/fdd000147.shtml) 中，与压缩图像数据分离，因此在不少情况下可以**只改元数据、不重编码像素**。\n\n既然照片中的 EXIF 信息这么重要，那我应该如何对其进行编辑和删除，以用来保护我的隐私信息呢？本站提供如下两个方案：\n\n1. **编辑** —— 修改 EXIF 信息的部分字段（如作者、版权、拍摄时间）并写回文件，可以用来填写一些虚假信息以隐藏真实的元数据。\n\n2. **剥离** —— 删掉一部分或全部元数据，别人拿到修改后的图片后既看不到、也无法还原原始的元数据。\n\n下面分块说明，并对应到本站的做法。\n\n# **编辑 EXIF 信息**\n\n不少软件支持修改 EXIF 里的部分字段，例如 Artist（作者）、Copyright（版权）、拍摄时间等，改完后写回原文件。本站对 JPEG 支持部分字段的编辑，按下面步骤即可完成。\n\n**第一步：上传并查看** —— 在 [如何查看 EXIF？](/guides/how-to-view) 中上传图片后，页面会按维度展示元数据（设备、拍摄参数、作者版权、日期时间等）。找到你打算修改的维度区块即可进行下一步。\n\n![编辑步骤一：上传后按维度展示](/images/guides/how-to-edit-strip/0f0a5151-c932-4fd3-9a5b-594dc67a8977.png)\n\n**第二步：点编辑并改值** —— 在对应维度（如作者版权、日期时间）里找到带编辑图标的可编辑项，点击该行右侧的编辑图标，在弹窗中输入新值（如替换作者、版权或拍摄时间），用于隐藏真实元数据或填写虚假信息。\n\n![编辑步骤二：点击编辑图标并修改](/images/guides/how-to-edit-strip/0b18359e-a2df-4ca8-9b15-add3b3aac849.png)\n\n**第三步：保存写回** —— 确认无误后点击保存，修改会写回当前图片的 EXIF。并非所有标签都可改，只有规范中允许写入且本站已支持的字段才会出现编辑入口。\n\n![编辑步骤三：保存后写回文件](/images/guides/how-to-edit-strip/cb971da1-98c8-427f-8b3e-120842d80445.png)\n\n# **删除与剥离**\n\n删除 EXIF 有两种常见思路：一是按「维度」批量删——例如只删 GPS、只删设备信息，其余保留；二是整段清空，即移除全部 EXIF。本站可在页面中选择剥离预设并执行剥离，示意如下。\n\n![删除与剥离示意](/images/guides/how-to-edit-strip/b19298f7-47e7-4612-9772-54ac12e18712.png)\n\n**JPEG** 的 EXIF 存放在 APP1 段里，与图像像素数据是分开的。剥离时只改写或去掉这段元数据，不动像素，因此可以做到**无损剥离**，画质不变。**PNG、WebP** 等格式通常没有这种「只改头部」的通道，要删 EXIF 一般需要先解码再编码，相当于重新压一次图，画质影响通常很小，详见 [《删除 EXIF 会影响画质吗？》](/guides/faq-remove-safe)。各格式对 EXIF 的承载方式见 [《哪些格式包含 EXIF？》](/guides/supported-formats)。\n\n# **本站预设**\n\n[ExifStrip](https://exifstrip.com) 提供四种剥离选项，与上述「按维度删」的思路一致：\n\n- **全部移除**：去掉文件中全部 EXIF。\n- **仅隐私**：只删位置、设备、作者版权等与隐私相关的维度，保留拍摄参数、日期时间、图像属性等。\n- **仅 GPS**：只删位置信息，其余保留。\n- **仅设备**：只删设备与镜头等相关信息，其余保留。\n\n四种预设的选项示意如下。\n\n![本站剥离预设示意](/images/guides/how-to-edit-strip/ca9fa2cc-90ad-42bd-aa7f-ff6caddb214b.png)\n\n对 **JPEG** 使用上述预设时，只改写元数据段，不改像素，画质不变。对 **PNG、WebP** 等格式，若选择「全部移除」，会通过重编码去除元数据，画质影响一般可忽略。**HEIC、TIFF、AVIF** 等格式本站目前不支持按预设剥离；若需去除这些格式的 EXIF，可考虑先转为 JPEG 再处理，或使用其他支持该格式的工具。\n\n---\n\n选好预设后，在页面中点「剥离」并下载即可得到处理后的文件。若需先查看再决定删哪些，可先看 [《如何查看 EXIF？》](/guides/how-to-view)；本站完整功能说明见 [《ExifStrip 能做什么？》](/guides/what-exifstrip-does)。"
+      },
+      "whatExifstripDoes": {
+        "title": "ExifStrip 能做什么？",
+        "desc": "查看（按维度与地图）、编辑部分字段、四种预设剥离、导出 CSV/JSON/TXT/HEX、隐私分析；全在本地、免费、无上传。",
+        "content": "[ExifStrip](https://exifstrip.com) 是一个在浏览器里查看、编辑和移除图片 EXIF 的工具。无需安装软件，打开网页即可使用；所有解析、编辑与剥离都在你本机完成，图片不会上传到任何服务器，适合既想查看或清理 EXIF、又在意隐私的用户。下面按功能分块说明本站能做什么。\n\n# **查看**\n\n上传或拖拽图片后，页面会按维度展示 EXIF：**设备**（制造商、型号、镜头等）、**拍摄参数**（光圈、快门、ISO、焦距等）、**位置**（GPS）、**日期时间**、**图像属性**（宽高、分辨率、色彩空间等）、**作者版权**（Artist、Copyright、UserComment 等）。这种分组便于快速找到某一类信息，而不必在整张标签表里翻找。顶部的「文件信息」区域会显示文件名、尺寸、类型、修改时间等；若图片含有 GPS，会在页面上用地图标出拍摄位置，便于对照经纬度与 EXIF 中的位置字段。本站支持 JPEG、PNG、HEIC、WebP 等多种格式的 EXIF 读取与展示。下图即为按维度展示的 EXIF 与文件信息区域。\n\n![按维度展示的 EXIF 与文件信息](/images/guides/what-exifstrip-does/e7a1b2c3-d4e5-4f6a-b7c8-d9e0f1a2b3c4.png)\n\n具体操作步骤见 [《如何查看 EXIF？》](/guides/how-to-view)。\n\n# **编辑与剥离**\n\n**编辑**：部分字段（如 Artist、Copyright、拍摄时间等）可在页面中直接修改，保存后会写回 JPEG 文件，适合用虚假或中性信息覆盖真实元数据、在保留 EXIF 结构的前提下隐藏敏感内容。**剥离**：支持四种预设——**全部移除**（清空全部 EXIF）、**仅隐私**（只删位置、设备、作者版权等）、**仅 GPS**、**仅设备**。JPEG 下按预设剥离只改写元数据段，不改动像素，画质不变；非 JPEG（如 PNG、WebP）若选「全部移除」，会通过重编码去除元数据，画质影响通常可忽略。HEIC、TIFF、AVIF 等格式目前不支持按预设剥离。详细步骤与格式说明见 [《如何编辑或删除 EXIF？》](/guides/how-to-edit-strip)。\n\n# **导出**\n\n可将当前图片的 EXIF 导出为 **CSV**、**JSON**、**TXT** 或 **HEX**（原始十六进制），如下图所示。\n\n![导出 EXIF 格式选项](/images/guides/what-exifstrip-does/b3c4d5e6-f7a8-4b9c-0d1e-2f3a4b5c6d7e.png)\n\nCSV 便于在表格软件中查看或合并多张图的数据；JSON 适合程序读取与二次处理；TXT 为纯文本，便于存档或搜索；HEX 为底层十六进制 dump，便于排查或与规范对照。导出内容与页面上按维度展示的数据一致。\n\n# **隐私分析**\n\n页面会自动识别 GPS、设备/镜头序列号、拍摄时间等敏感项，并在界面中标出高、中、低等风险等级。\n\n![文件信息、GPS 与隐私风险标识](/images/guides/what-exifstrip-does/a2b3c4d5-e6f7-4a8b-9c0d-1e2f3a4b5c6d.png)\n\n这样在分享前可以一眼看到这张图里有哪些敏感 EXIF，再决定是「只删位置」还是「全删」，与 [《哪些 EXIF 信息比较敏感？》](/guides/sensitive-fields)、[《分享前建议怎么做？》](/guides/before-you-share) 中的思路一致，方便养成「先看再删」的习惯。\n\n---\n\n[ExifStrip](https://exifstrip.com) 免费使用，无广告；支持一次选择多张图片并逐张查看与处理；处理全程在本地完成，符合隐私优先的设计。想了解如何一步步查看或剥离 EXIF，可看 [《如何查看 EXIF？》](/guides/how-to-view)、[《如何编辑或删除 EXIF？》](/guides/how-to-edit-strip)。"
+      },
+      "faqRemoveSafe": {
+        "title": "删除 EXIF 会影响画质吗？",
+        "desc": "只改元数据不重编码（如本站对 JPEG 的预设剥离）画质不变；PNG/WebP 等重编码时理论上可能有极细微差异。",
+        "content": "**结论先说**：只删元数据、不重编码（比如本站对 JPEG 用的那种「预设剥离」），像素一个都不动，画质不会变。会变的是「通过重新编码来去掉 EXIF」的情况——例如对 PNG、WebP 做解码再编码，那会多一次压缩，理论上可能有极细微差异，一般肉眼看不出来。\n\n**原因** EXIF 在文件里占的是头部的几段（JPEG 里在 APP1 等），和真正的图像像素数据是分开存的。剥离时只是改写或去掉这些段，不会动到已经压缩好的图像流。所以「只动元数据」的删除不会影响画质。\n\n**反面示例** 有人误以为「删 EXIF = 一定会重编码」，所以不敢删；或者反过来，用了会重编码的工具，却指望「像素 100% 不变」——那就要看具体格式和编码参数了。\n\n想搞清楚自己用的工具属于哪一种，可以看 [《如何编辑或删除 EXIF？》](/guides/how-to-edit-strip)；各格式对 EXIF 的承载方式见 [《哪些格式包含 EXIF？》](/guides/supported-formats)。"
+      },
+      "faqWhoWrites": {
+        "title": "EXIF 是谁写进去的？",
+        "desc": "主要是拍摄设备在按下快门时写入；后期软件、导出、平台上传都可能保留、改写或追加，最终 EXIF 未必是「相机原样」。",
+        "content": "**谁写的？** 首先是拍摄设备。你按下快门时，相机或手机里的固件/系统会按规范自动写一整套 EXIF：设备型号、拍摄参数、[日期与时间](/guides/dimension-datetime)、有的还有 [位置信息（GPS）](/guides/dimension-location)。所以「谁写的」第一答是：**设备在拍摄那一刻写的**。\n\n**会不会被改？** 会。后期用的软件（修图、导出、管理）可能保留、改写或追加：比如导出时改 Software 字段、改时间，或写入版权、作者。上传到社交平台、网盘之后，很多服务也会改图（缩图、重编码、strip 掉全部或部分 EXIF），所以最终你看到的 EXIF 不一定是「相机原样」，可能是设备 + 好几款软件叠加后的结果。\n\n**反面示例** 把 EXIF 当「相机原始记录」用于取证或纠纷，却不考虑中间是否经过修图/导出/上传；或者默认「别人没动过」就一定是设备当时写的——在不确定链路的情况下要谨慎。\n\n设备相关字段的含义可以看 [《设备与相机信息》](/guides/dimension-device)。"
+      },
+      "faqSocialNetwork": {
+        "title": "发到社交平台后 EXIF 还在吗？",
+        "desc": "各平台行为不统一、也不明说；不能默认「发出去就没了」，要确保敏感信息不跟走就自己先清理再上传。",
+        "content": "**简短结论**：很多平台会对上传的图做处理（缩图、重编码、去掉部分或全部 EXIF），但**行为不统一，也不会都写清楚**。所以不能默认「发出去 EXIF 就一定没了」；真要确保敏感信息不跟着走，还是自己先清理再上传最稳。\n\n**原因** 平台出于隐私、存储或策略，常会动一下图：有的会 strip 掉全部 EXIF，有的只对「公开图」脱敏、私信原图还留着，有的只改尺寸、不动元数据。你从外面很难知道具体规则，而且规则还会变。\n\n**反面示例** 不清理就发原图，以为「大平台会帮我脱敏」，结果被爬虫或别人保存到带 GPS、时间的版本；或者反过来过度紧张、什么图都不敢发。折中做法就是：发前自己看一遍 EXIF，按 [《分享前建议怎么做？》](/guides/before-you-share) 选「只删位置」或「全删」，再上传。\n\n为什么要先在意 EXIF 里的隐私，可以看 [《为什么要重视 EXIF 里的隐私？》](/guides/why-care-privacy)。"
+      },
+      "faqCanRecover": {
+        "title": "删除后能恢复吗？",
+        "desc": "从已剥离的那张文件里恢复不出被删的 EXIF；只有原图或未覆盖的副本里还能读到当时的元数据。",
+        "content": "**结论**：从**已经剥离过的那张文件**里，恢复不出被删掉的 EXIF。没有「回收站」或「撤销」——删了就没了。除非你还有**原图备份**（或没被覆盖的副本），才能从那些文件里再读到当时的 EXIF。\n\n**原因** 剥离时要么是直接改写/去掉文件里的元数据段，要么是重新编码生成一张新图。新文件里本来就没写进旧 EXIF，所以用任何工具去读这张新文件，都读不到被删的内容。\n\n**反面示例** 删完才想起来需要里面的拍摄时间或 GPS 做归档；或者误操作把原图覆盖了、只留下剥离版，那就真的没了。所以建议：重要原图先备份再动手；确定要长期留 EXIF 的，别对原文件做「全删」或覆盖。\n\n怎么删、有哪些剥离方式，可以看 [《如何编辑或删除 EXIF？》](/guides/how-to-edit-strip)。"
+      },
+      "faqRawHeic": {
+        "title": "RAW / HEIC 的 EXIF 有什么特别？",
+        "desc": "RAW 各家格式不同，HEIC 用 ISOBMFF 容器；本站可读 HEIC 的 EXIF，按预设精确剥离主要针对 JPEG。",
+        "content": "**和 JPEG 的差别** RAW 是厂商各自的格式，EXIF 往往和 RAW 文件头、MakerNote 等绑在一起，读写都要按各家规范来。HEIC（以及 HEIF）用的是 ISOBMFF 容器，里头可以嵌和 EXIF 兼容的元数据（相机参数、GPS、时间等），但**嵌入方式和 JPEG 不一样**，剥离时一般要动容器或重编码，不像 JPEG 可以「只改 APP1、像素不动」。\n\n**本站能做什么** 本站可以**读取** HEIC 等格式里的 EXIF 并展示；但按「预设」做的**精确剥离**（只动元数据、不改像素）主要针对 JPEG。RAW/HEIC 若要在本站或别处去掉 EXIF，通常会涉及解码再编码或专用工具，和 JPEG 的「无损剥离」不是同一回事。\n\n**反面示例** 用对 JPEG 的预期去套 RAW/HEIC，以为「删 EXIF 一定不伤画质」；或者以为本站对 HEIC 也能做和 JPEG 一模一样的预设剥离——目前不是这样，要看具体格式支持。\n\n哪些格式能带 EXIF、各自怎么存，可以看 [《哪些格式包含 EXIF？》](/guides/supported-formats)；本站能力汇总见 [《ExifStrip 能做什么？》](/guides/what-exifstrip-does)。"
+      },
+      "tagReference": {
+        "title": "EXIF 常见标签速查",
+        "desc": "按设备、拍摄参数、位置、日期时间、作者版权、图像属性等维度列出本站可解析的 EXIF 标签与简要说明。",
+        "content": "下面按 [《EXIF 的结构》](/guides/exif-structure) 中 0th/Exif/GPS 等块，对照 `exifBlocks` 与 `EXIF维度解析与字段说明`，列出本站可解析的完整标签表。格式定义以 CIPA/JEITA 及 [LOC Tags for TIFF](https://www.loc.gov/preservation/digital/formats/content/tiff_tags.shtml) 为准。\n\n## 1. device（设备/相机）\n\n| Tag | 说明 |\n|-----|------|\n| Make | 制造商 |\n| Model | 型号 |\n| BodySerialNumber | 机身序列号 |\n| CameraSerialNumber | 相机序列号 |\n| LensMake | 镜头制造商 |\n| LensModel | 镜头型号 |\n| Software | 软件 |\n| FirmwareVersion | 固件版本 |\n\n## 2. imageSettings（拍摄参数）\n\n| Tag | 说明 |\n|-----|------|\n| Orientation | 方向 |\n| ExposureTime | 快门 |\n| FNumber | 光圈 |\n| FocalLength | 焦距 |\n| ISOSpeedRatings | ISO |\n| WhiteBalance | 白平衡 |\n| Flash | 闪光灯 |\n| ExposureProgram | 曝光程序 |\n| ExposureMode | 曝光模式 |\n| MeteringMode | 测光模式 |\n| SceneCaptureType | 场景类型 |\n| SceneType | 场景类型(字节) |\n| ExposureBiasValue | 曝光补偿 |\n\n## 3. location（GPS）\n\n| Tag | 说明 |\n|-----|------|\n| GPSLatitude | 纬度 |\n| GPSLongitude | 经度 |\n| GPSAltitude | 海拔 |\n| GPSDateStamp | GPS 日期 |\n| GPSTimeStamp | GPS 时间 |\n| GPSLatitudeRef | 南北 |\n| GPSLongitudeRef | 东西 |\n| GPSSpeedRef | 速度单位 |\n| GPSImgDirection | 图像方向 |\n| GPSImgDirectionRef | 方向参照 |\n| GPSDestBearing | 目标方位 |\n| GPSDestBearingRef | 目标方位参照 |\n\n## 4. dateTime（日期与时间）\n\n| Tag | 说明 |\n|-----|------|\n| DateTimeOriginal | 拍摄时间 |\n| DateTime | 修改时间 |\n| DateTimeDigitized | 数字化时间 |\n\n## 5. other（作者/版权）\n\n| Tag | 说明 |\n|-----|------|\n| Artist | 作者 |\n| Copyright | 版权 |\n| UserComment | 用户注释 |\n| ImageDescription | 图像描述 |\n| MakerNote | 制造商备注 |\n\n## 6. image（图像属性）\n\n| Tag | 说明 |\n|-----|------|\n| ImageWidth | 图像宽 |\n| ImageLength | 图像高 |\n| XResolution | 水平分辨率 |\n| YResolution | 垂直分辨率 |\n| ResolutionUnit | 分辨率单位 |\n| ColorSpace | 色彩空间 |\n| BitsPerSample | 位深 |\n| SamplesPerPixel | 采样数 |\n| Compression | 压缩 |\n| PhotometricInterpretation | 光度解释 |\n| YCbCrPositioning | YCbCr 定位 |\n| PlanarConfiguration | 平面配置 |\n| ExifVersion | EXIF 版本 |\n| FlashPixVersion | FlashPix 版本 |\n| ComponentsConfiguration | 分量配置 |\n| CompressedBitsPerPixel | 压缩位/像素 |\n\n---\n\n以上与本站首页 [EXIF 参考表](/)、元数据区块展示一致。详细说明见 [《设备与相机信息》](/guides/dimension-device)、[《拍摄参数》](/guides/dimension-settings)、[《位置信息（GPS）》](/guides/dimension-location)、[《日期与时间》](/guides/dimension-datetime)、[《图像属性》](/guides/dimension-image)、[《作者、版权与注释》](/guides/dimension-other)；规范见 [《标准与规范链接》](/guides/standards-links)。"
+      },
+      "standardsLinks": {
+        "title": "标准与规范链接",
+        "desc": "CIPA 标准与更新履历、美国国会图书馆 EXIF/TIFF 格式与标签说明、Wikipedia 入门；做解析或核对 tag 时查权威来源。",
+        "content": "做兼容、写解析器或核对 tag/版本时，需要查原始规范。这里只列链接和一句说明，不转载正文；以官方最新为准。\n\n**CIPA（相机与影像产品协会）** 与 JEITA 共同维护 Exif 标准。\n\n- [CIPA 标准一览（含 Exif DC-008）](https://www.cipa.jp/e/std/std-sec.html) — 现行 Exif 规范及下载入口。\n- [CIPA 更新履历](https://www.cipa.jp/e/std/history_sec.html) — 版本历史。\n\n**美国国会图书馆（LOC）格式说明**\n\n- [Exchangeable Image File Format (Exif) Family](https://www.loc.gov/preservation/digital/formats/fdd/fdd000618.shtml) — Exif 家族概述、版本、在 JPEG/TIFF 中的使用。\n- [Tags for TIFF and Related Specifications](https://www.loc.gov/preservation/digital/formats/content/tiff_tags.shtml) — TIFF/Exif 常用标签表（含 Exif/GPS/Interop）。\n\n**延伸** Wikipedia 的 [Exif](https://en.wikipedia.org/wiki/Exif) 条目可作入门，具体 tag 与行为以 CIPA/JEITA 及 LOC 为准。\n\n规范由来与版本演进见 [《EXIF 的由来与演变》](/guides/exif-history)；标签含义速查见 [《EXIF 常见标签速查》](/guides/tag-reference)。"
+      }
+    }
+  },
+  "pages": {
+    "privacy": { "title": "隐私说明" },
+    "terms": { "title": "使用条款", "content": "使用条款内容将在此展示。请勿将本工具用于侵犯他人隐私或违反当地法律的用途。使用即表示同意本条款。" },
+    "about": {
+      "title": "关于我们",
+      "section1Title": "ExifStrip 是干什么的？",
+      "section1Content": "ExifStrip 是一个在浏览器里就能用的工具，用来查看、编辑和删除照片里的 EXIF 信息。你不需要安装任何软件，打开网页，把图片传上去，就能看到这张图里嵌入了哪些元数据——拍摄设备、镜头、时间、光圈快门、ISO、GPS 位置等，都会按类别列出来。\n\n带 GPS 的照片还会在地图上标出拍摄地点，方便你一眼判断「这张图有没有暴露位置」。你可以按需要修改其中某些字段，或者用预设一次性删掉一整类信息（比如只删位置、只删设备相关），再下载处理后的图片。\n\n手机、电脑都能用，支持中文、英文和日文界面。",
+      "section2Title": "为什么要做这个工具？",
+      "section2Content": "做这个工具的初衷很简单：照片里自带的 EXIF 虽然方便整理和回忆，但也可能泄露你不想公开的信息。\n\n很多人不知道发到社交平台或发给别人的「原图」里，往往带着精确的 GPS、设备型号甚至机身序列号；别人下载下来用工具一读，就能知道你在哪儿拍的、用的什么机器。一旦被有心人利用，就可能带来隐私或安全风险。\n\n市面上有各种桌面软件可以处理 EXIF，但要么要安装，要么要付费，要么不清楚会不会把图上传到别处。我们希望能有一个简单、免费、不依赖安装的方式，让任何人在分享或上传前，都能先看清楚自己照片里有什么，再决定要不要删、删哪些；并且所有处理都在本地完成，不把图交给别人。所以 ExifStrip 就按「本地处理、不上传」的思路做了出来。",
+      "section3Title": "包含哪些功能？",
+      "section3Content": "功能上，ExifStrip 主要包含四块。\n\n一是查看：上传后可以按维度（设备、拍摄参数、位置、日期时间等）浏览 EXIF，带 GPS 的会在地图上标出拍摄位置；还可以用「隐私分析」快速扫一眼哪些信息比较敏感。\n\n二是编辑：像作者、版权、拍摄时间这类字段可以直接在页面上改，改完写回 JPEG，适合在分享前把不想暴露的改成中性内容。\n\n三是剥离：提供多种预设（全部移除、仅隐私、仅 GPS、仅设备等）——对 JPEG 用预设时只动元数据、不动像素，画质不变；其他格式如 PNG、WebP 可选「全部移除」，通过重编码去掉元数据。\n\n四是导出：可以把当前图的 EXIF 导出成 CSV、JSON、TXT 或十六进制，方便备份或自己审计一遍再决定删什么。支持 JPEG、PNG、TIFF、HEIC、AVIF、WebP 等常见格式，不同格式支持的能力略有差异（例如按预设剥离目前主要针对 JPEG），站内教程和博客里有详细说明。",
+      "section4Title": "隐私策略",
+      "section4Content": "隐私方面，从解析、编辑、剥离到导出，全在你设备上的浏览器里完成。我们收不到、也看不到你打开的那张图；你没主动发给我们，我们这边就没有任何副本。\n\n不会拿你的照片做训练、不会做行为分析，也没有广告。这样你既能把 EXIF 管好，又不用把照片交给别人。\n\n更细的承诺（包括我们收集哪些网站使用数据、Cookie 等）写在站内的隐私说明里，用之前如有顾虑可以看一眼。",
+      "section5Title": "写在最后",
+      "section5Content": "如果你刚好需要在不装软件的前提下查看或清理照片里的 EXIF，欢迎试试 ExifStrip。首页可以立刻上传体验，想系统了解可以看站内的教程（小百科）和博客里的使用技巧；遇到常见问题可以翻 FAQ，有反馈或建议可以通过页面上的方式联系我们。\n\n我们会持续改进功能和说明，感谢你的使用。"
+    },
+    "faq": {
+      "title": "常见问题",
+      "heroSubtitle": "关于 EXIF、隐私与使用方式的常见问答。",
+      "viewAll": "查看更多",
+      "q1": "EXIF 是什么？",
+      "a1": "EXIF（可交换图像文件格式）是嵌入在照片中的元数据，可包含拍摄设备、时间、光圈、GPS 等信息。",
+      "q2": "图片会上传到服务器吗？",
+      "a2": "不会。所有处理均在您本地的浏览器中完成，我们不会接收或存储您的图片。",
+      "q3": "支持哪些图片格式？",
+      "a3": "支持 JPEG、PNG、TIFF、HEIC/HEIF、AVIF、WebP 等常见格式。按预设剥离仅支持 JPEG。",
+      "q4": "如何完全删除 EXIF？",
+      "a4": "选择「删除全部 EXIF」后下载清理后的图片即可。其他格式会通过重编码移除全部元数据。",
+      "q5": "删除 EXIF 后画质会变吗？",
+      "a5": "JPEG 使用预设剥离时只改写元数据，像素不变，画质不受影响。PNG、WebP 等格式会重新编码，可能产生极轻微差异，一般肉眼难以察觉。",
+      "q6": "可以只删除 GPS 或拍摄时间吗？",
+      "a6": "可以。在元数据区块中选择「位置」或「日期时间」等维度，使用「删除所选」即可只移除该部分 EXIF，其他信息保留。",
+      "q7": "支持批量处理多张图片吗？",
+      "a7": "支持。可一次选择多张图片上传，在列表中逐张查看与编辑 EXIF，或对当前选中的图片执行剥离与下载。",
+      "q8": "数据会传到你们的服务器吗？",
+      "a8": "不会。所有读取、编辑、剥离与导出均在您浏览器内完成，我们无法也不会接收、存储或查看您的图片与 EXIF。",
+      "q9": "什么是 IFD？",
+      "a9": "IFD（Image File Directory）是 EXIF 标准里的信息目录，常见有 IFD0（主图）、Exif、GPS、Interop 等，不同 IFD 下存有不同的标签。",
+      "q10": "剥离后能恢复吗？",
+      "a10": "不能。一旦删除 EXIF 并下载新文件，原元数据无法从该文件中恢复。建议操作前保留原图备份。",
+      "q11": "为什么有些标签显示为「未知」？",
+      "a11": "部分厂商或机型使用自定义标签，不在标准 EXIF 规范内。工具会尽量解析并显示其十六进制与原始值，名称可能显示为未知。",
+      "q12": "HEIC/HEIF 和 JPEG 有什么区别？",
+      "a12": "HEIC 是苹果等设备常用的高效图像格式，体积更小。本工具可读取 HEIC 的 EXIF；若需按预设精确剥离，建议先转为 JPEG 再处理。",
+      "q13": "语言偏好会被记住吗？",
+      "a13": "会。您选择的界面语言会保存在浏览器本地（如 localStorage），下次访问会沿用，无需重复设置。",
+      "q14": "在手机或平板上能用吗？",
+      "a14": "可以。本站为响应式设计，支持在手机、平板上通过浏览器使用。部分浏览器对 HEIC、大文件的支持可能因设备而异。",
+      "q15": "如何联系你们？",
+      "a15": "如有隐私、使用或技术问题，请通过本站隐私说明中的联系邮箱与我们联系，我们会尽快回复。"
+    }
+  },
+  "blog": {
+    "pageTitle": "博客",
+    "heroSubtitle": "使用技巧、场景说明、产品动态与延伸话题；帮助您用好 ExifStrip，了解 EXIF 与隐私。",
+    "notFound": "未找到该文章。",
+    "referencesTitle": "参考与引用",
+    "category": {
+      "tips": "使用技巧",
+      "topic": "延伸话题",
+      "product": "产品与更新"
+    },
+    "entry": {
+      "topicPhonePrivacy": {
+        "title": "手机相册的隐私设置：你能关掉哪些？",
+        "desc": "在系统里关掉或限制「把位置写进照片」、相册与相机权限，从源头减少 EXIF。\n已拍好的照片若已带位置，仍需用工具清理。",
+        "content": "照片里的 EXIF 常包含位置、设备、时间等信息，这些除了在分享前用工具清理，还可以从源头上减少——在手机系统里关掉或限制「把位置写进照片」的权限，相册和相机相关的权限也能控制谁可以访问你的图库。下面只说系统设置能做什么，不涉及 EXIF 的格式细节。\n\n**位置与照片**\n\n多数手机在「设置」里都有「位置服务」或「定位」总开关；关掉后，新拍的照片一般不会再写入 GPS 坐标。有的机型还单独提供「相机」或「照片」的定位权限：允许位置时，拍照会记下地点；关掉后，新照片通常不带位置。注意：只关定位不会删掉已经拍好的照片里已有的 EXIF，历史照片若已经带位置，要清理仍需用 [ExifStrip](https://exifstrip.com) 或同类工具。\n\n**相册与相机权限**\n\n「相册」「照片」或「相机」权限决定哪些应用可以读取、写入或删除你的图片。在 iOS 和 Android 里都可以按应用单独设置：不允许访问、仅允许选中的照片、或允许访问全部。限制第三方应用只能「选中的照片」或关闭其访问，能减少应用自动扫你整库或上传带 EXIF 的原图。相机权限则控制能否使用摄像头；关掉后该应用无法拍照，自然也就不会产生新的带 EXIF 的照片。\n\n**系统更新与差异**\n\n不同品牌、不同系统版本的入口和选项名称可能不一样，有的叫「隐私」「位置服务」，有的在「应用管理」里按应用设置。若找不到，可以查该品牌或系统的官方帮助文档。\n\n总结：关掉位置或限制相册/相机权限，能减少新照片带位置、以及谁可以读你图库；已经带 EXIF 的旧图要脱敏，还是得靠先 [查看](/guides/how-to-view) 再 [编辑或剥离](/guides/how-to-edit-strip)。"
+      },
+      "topicPlatformStrip": {
+        "title": "社交平台会怎么处理你照片的 EXIF？",
+        "desc": "X、Meta、微信、微博等对上传照片的常见处理；附参考链接。\n「平台不对外展示」不等于「不收集」——先自行清理再上传更可控。",
+        "content": "把照片发到社交平台后，平台通常会对你上传的文件做一步处理：有的会去掉或改写 EXIF，有的会先读取再决定展示给谁看。不同平台策略不一样，且会随产品与政策调整；下面按公开信息简述常见做法，并附参考链接。无论平台怎么处理，**先在自己这边清理 EXIF 再上传**，你对「谁拿到什么」更可控。\n\n**常见做法简述**\n\n**X（原 Twitter）**：根据其帮助中心说明，发帖时的「位置」是可选功能，且与照片内嵌的 EXIF 是两回事；上传的图片会经平台处理，多数情况下 EXIF 中的 GPS 等不会原样展示给其他用户。具体以平台当前行为为准。\n\n**Instagram / Facebook（Meta）**：公开报道与测试显示，Meta 会在展示给其他用户前对照片做处理，许多 EXIF 字段（如 GPS、相机型号、时间戳等）不会出现在他人看到的版本上；但 Meta 在服务条款与数据政策中说明会收集「你分享的内容中的信息，包括照片的拍摄地点、文件创建日期等」，即平台侧可能先读取、再决定是否对外展示。因此「他人看不到」不等于「平台不收集」。\n\n**微信**：曾有媒体报道与官方回应称，发送「原图」时可能携带 EXIF（含位置）；朋友圈等经过压缩或处理的图则通常不再带完整 EXIF。官方建议可通过不发原图、关闭相机定位等降低泄露风险。\n\n**微博、小红书等**：各平台未单独公布「是否剥离 EXIF、剥离哪些」的详细说明，实际行为可能随版本变化。稳妥做法仍是上传前自行清理敏感 EXIF。\n\n**建议**\n\n平台策略会变，且「平台不对外展示」不等于「平台不保存或不使用」。若你不想把位置、设备、时间等交给平台或他人，建议：先用 [ExifStrip](https://exifstrip.com) 或本地工具 [查看](/guides/how-to-view) 并 [按需剥离](/guides/how-to-edit-strip)，再上传；重要照片可 [导出 EXIF 做备份](/blog/tip-export-exif) 再删。更多思路见 [《分享前建议怎么做？》](/guides/before-you-share)。\n\n---\n\n# **参考与引用**\n\n- [X：帖子位置常见问题](https://help.x.com/zh-cn/safety-and-security/post-location-settings)（X Help Center，关于发帖与位置）\n- [Meta 数据政策](https://www.facebook.com/privacy/policy/)（Meta 关于从照片等内容收集信息的说明）\n- [微信发原图或泄露位置等信息？官方建议](https://www.yicai.com/news/100421452.html)（第一财经，2018，引用微信官方回应）"
+      },
+      "topicExifVsMetadata": {
+        "title": "EXIF 和「元数据」是一回事吗？",
+        "desc": "EXIF 只是元数据里的一种标准；IPTC、XMP、MakerNote 等简要区分。\n谁在写、为什么「删了 EXIF 还有作者」——链至小百科。",
+        "content": "常有人把「EXIF」和「元数据」混在一起说，其实 EXIF 只是元数据里的一种标准，不是全部。弄清这一点，再看照片里还有哪些别的元数据、谁在写，会更容易理解为什么有的工具只删 EXIF、有的会动别的字段。\n\n**元数据是什么**\n\n元数据（metadata）就是「关于数据的数据」：描述这份文件是谁在什么时候、用什么设备生成的，有什么版权、标题、关键词等。照片的元数据不会直接变成像素，但会嵌在文件里或单独存放，供软件、平台或人来读。\n\n**EXIF 在元数据里的位置**\n\nEXIF（Exchangeable Image File Format）是由 JEITA/CIPA 等制定的、专门针对照片（及部分音频）的**元数据标准**。它规定了一整套标签（如设备型号、光圈快门、GPS、拍摄时间等）的名字和怎么存进 JPEG、TIFF 等文件。所以：**EXIF 是元数据的一种**，而且主要是相机、手机、扫描仪在拍摄或生成文件时自动写入的。概念与结构可看 [《什么是 EXIF？》](/guides/what-is-exif)。\n\n**别的常见元数据**\n\n- **IPTC**：新闻与出版里常用，侧重标题、作者、版权、关键词、拍摄说明等；很多图片库和后期软件会写 IPTC。进一步辨析见 [IPTC、XMP 与 EXIF](/guides/iptc-xmp-overview)。\n- **XMP**（Adobe 主导）：用 XML 存，可包进 JPEG、PNG、RAW 等，常和 EXIF、IPTC 一起出现，被 Photoshop、Lightroom 等用来存编辑历史、评分、标签。\n- **厂商私有**：如 MakerNote，各品牌自定义，记录机身序列号、镜头校准等，只有对应软件能完整解析。\n\n同一张图里可以同时有 EXIF、IPTC、XMP；有的软件「删除 EXIF」只动 EXIF 块，不动 IPTC/XMP，所以若你发现删了 EXIF 后还有作者、版权等信息，多半在别的元数据块里。\n\n**谁在写这些**\n\n相机、手机在拍照时主要写 EXIF；修图、排版软件常改 EXIF 并写 IPTC/XMP。上传到社交平台或网盘后，平台也可能改写或剥离部分元数据。若你想「只删位置」或「只留版权」等，需要先 [查看](/guides/how-to-view) 当前文件里到底有哪些维度、哪些块，再 [编辑或剥离](/guides/how-to-edit-strip)。\n\n总结：EXIF 是元数据的一种标准，主要管拍摄参数、设备、时间、位置等；IPTC、XMP 等是另外的元数据标准或格式，和 EXIF 并存。想进一步看 EXIF 里具体有哪些字段，可查 [《EXIF 常见标签速查》](/guides/tag-reference)。"
+      },
+      "tipBeforeTravelShare": {
+        "title": "出行照片分享前，先清理 EXIF 再发",
+        "desc": "旅行、出差照常带 GPS，直接发原图可能暴露地点与时间。\n用「仅移除 GPS」或「仅隐私」剥离后下载再发，三步完成。",
+        "content": "出去玩或出差时拍的照片，很多都带着手机自动记下的位置信息。直接发到朋友圈、微博或小红书，拿到你照片的人有可能从 EXIF 里看到拍摄地点甚至时间，如果你不想暴露住址或行程，发之前先清一下会更安心。用 ExifStrip 的话，不用装软件，在浏览器里就能搞定。\n\n**第一步：打开 ExifStrip，把要发的照片传上去**\n\n在 [ExifStrip](https://exifstrip.com) 首页点击上传区域，或直接把照片拖进页面。支持单张也可以多选一批，一起处理。\n\n![上传要分享的照片](/images/blogs/tip-before-travel-share/a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d.png)\n\n**第二步：选一个剥离方式**\n\n如果你只想去掉位置、保留设备型号和拍摄参数，选「**仅移除 GPS**」；如果还想去掉设备、序列号、作者版权等，选「**仅隐私**」。选好后对当前这张图执行剥离，页面会生成一个去掉对应元数据的新文件。\n\n![选择仅移除 GPS 或仅隐私](/images/blogs/tip-before-travel-share/b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e.png)\n\n**第三步：下载清理后的照片再发**\n\n把下载下来的新图发到社交平台即可。原图建议自己留着备份，不要删。\n\n![下载清理后的照片](/images/blogs/tip-before-travel-share/c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e7f.png)\n\n照片是 JPEG 的话，用「仅移除 GPS」或「仅隐私」只改元数据、不改像素，画质不变。若是 HEIC 或别的格式，可以先转成 JPEG 再按上面步骤做，或直接选「全部移除」会通过重编码去掉元数据。更多格式说明见 [《ExifStrip 支持的图片格式说明》](/blog/product-supported-formats)。"
+      },
+      "tipBatchClean": {
+        "title": "批量处理多张照片的 EXIF：怎么更快？",
+        "desc": "一次选多张上传，在列表里逐张选预设、剥离、下载。\n同一预设重复操作，比单张反复打开工具快很多。",
+        "content": "一次要分享十来张、几十张照片的时候，一张张打开工具再处理会很费时间。ExifStrip 支持一次选多张图上传，然后在列表里逐张选预设、剥离、下载，比单张反复操作快不少。\n\n**先把要处理的照片都传上去**\n\n在 [ExifStrip](https://exifstrip.com) 首页可以一次选择多张图片上传，或把多张图一起拖进页面。上传后左侧（或上方）会出现文件列表，点击某一张，右边就显示这张的 EXIF 和操作区。\n\n![多张照片上传后的列表](/images/blogs/tip-batch-clean/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f8a.png)\n\n**选好预设，再一张张剥离、下载**\n\n在「剥离」区域选一个预设，比如「仅移除 GPS」或「仅隐私」，然后对当前选中的这张执行剥离；下载完成后，在列表里点下一张，再选同样的预设、剥离、下载，重复即可。同一批图用同一个预设的话，操作会很快熟悉。\n\n![对当前图片选择预设并下载](/images/blogs/tip-batch-clean/e5f6a7b8-c9d0-4e1f-2a3b-4c5d6e7f8a9b.png)\n\n全部处理完后，记得把下载好的「清理版」和原图分开放，避免发错。批量时建议先用一两张试一下预设效果，确认没问题再整批处理。若想先看看每张图里有哪些敏感信息，可以先用页面的「隐私分析」或按维度扫一眼再决定用哪个预设。"
+      },
+      "tipKeepWhatYouNeed": {
+        "title": "只想删 GPS，其他信息保留：怎么做？",
+        "desc": "只想去掉「在哪儿拍的」，设备与拍摄参数想保留时，用「仅移除 GPS」。\nJPEG 只改元数据，画质不变。",
+        "content": "有的人发图时不想让人知道「在哪儿拍的」，但想保留相机或手机型号、光圈快门之类的信息，方便自己以后看或别人参考。这种情况下只要把 EXIF 里的位置（GPS）删掉就行，别的可以留着。ExifStrip 的「**仅移除 GPS**」就是干这个的。\n\n**上传照片后，在剥离里选「仅移除 GPS」**\n\n打开 [ExifStrip](https://exifstrip.com)，把要处理的照片传上去。在剥离区域找到预设选项，选「**仅移除 GPS**」，然后对当前图片执行剥离。\n\n![选择仅移除 GPS 预设](/images/blogs/tip-keep-what-you-need/f6a7b8c9-d0e1-4f2a-3b4c-5d6e7f8a9b0c.png)\n\n生成的新图里，经纬度、海拔等位置相关字段会被去掉，设备、拍摄参数、日期时间、作者版权等都会保留。对 JPEG 来说只改元数据段、不重编码图像，画质不变。下载这张新图去分享即可。\n\n如果还想顺便去掉设备型号、序列号、作者信息等，可以改用「仅隐私」预设；若想全部清空，选「全部移除」。各预设的区别和适用场景可以看 [《如何编辑或删除 EXIF？》](/guides/how-to-edit-strip)、[《分享前建议怎么做？》](/guides/before-you-share)。"
+      },
+      "tipExportExif": {
+        "title": "先查看再决定：导出 EXIF 做备份或审计",
+        "desc": "剥离前导出一份 EXIF（CSV/JSON/TXT/HEX），以后可查「原来有什么」。\n或先导出看一遍，再决定用哪个预设、删哪些字段。",
+        "content": "在删掉或剥离 EXIF 之前，先导出一份留着，以后想查「这张图原来带过什么信息」就有据可查；或者先导出看一遍，再决定用哪个预设、删哪些字段。ExifStrip 支持把当前图片的 EXIF 导出成 CSV、JSON、TXT 或十六进制（HEX），用起来很简单。\n\n**上传图片后，在页面里找到「导出」**\n\n在 [ExifStrip](https://exifstrip.com) 上传或打开一张图后，页面会按维度展示它的 EXIF。导出入口一般在文件信息或元数据区域附近，点进去可以选择导出格式。\n\n![导出 EXIF 的格式选项](/images/blogs/tip-export-exif/a7b8c9d0-e1f2-4a3b-4c5d-6e7f8a9b0c1d.png)\n\n**选一个格式，下载即可**\n\n- **CSV**：表格软件里打开方便，多张图的数据可以合并在一起对比。\n- **JSON**：程序或脚本读起来方便，适合做备份或二次处理。\n- **TXT**：纯文本，占地方小，搜索、存档都方便。\n- **HEX**：原始十六进制，适合排查问题或和规范对照。\n\n导出的内容就是当前页面上展示的那些维度与字段，不会多也不会少。导出只是在你自己电脑里生成一个文件，不会上传到我们这边。\n\n建议习惯：分享或批量剥离前，先给重要照片导出一份 EXIF 做备份，再动手删；这样以后想确认「当时有没有删干净」或「原来有哪些字段」都有记录可查。"
+      },
+      "tipRemoveExifHeicIphone": {
+        "title": "iPhone HEIC 照片分享前如何清理 EXIF？",
+        "desc": "HEIC 常带 GPS、设备等元数据；浏览器内先查看，再按需剥离——精细预设可先转 JPEG。",
+        "content": "苹果手机默认拍摄的 **HEIC（HEIF）** 里，往往同样有人们常说的「EXIF」信息：**定位**、**拍摄时间**、**机型号** 等。发帖、发群、挂二手前，最好先打开看一眼里面有什么。\n\n## 在 ExifStrip 上查看\n\n打开 [ExifStrip](https://exifstrip.com)，上传 `.heic` 文件，流程与 JPEG 相同；有 GPS 时会在地图上看到位置。\n\n## 剥离时要注意什么\n\n本站对 **JPEG** 的 **按预设剥离**（仅 GPS、仅隐私等）可以做到 **不重编码画质**。**HEIC** 使用与 JPEG 不同的容器，预设逻辑与 JPEG **不完全相同**；对 HEIC 选 **「全部移除」** 时，往往会 **重新编码** 以去掉元数据——详见 [支持的图片格式](/blog/product-supported-formats) 与 [RAW / HEIC FAQ](/guides/faq-raw-heic)。\n\n**实用做法：** 若你希望与 JPEG 一样的 **GPS / 隐私** 等预设，可先在系统或工具里 **导出为 JPEG**，再上传 JPEG 到本站处理。若能接受重编码，可直接对 HEIC 尝试「全部移除」。\n\n## 相关阅读\n\n- [只想删 GPS](/blog/tip-keep-what-you-need)\n- [哪些格式包含 EXIF？](/guides/supported-formats)"
+      },
+      "tipRemoveExifPng": {
+        "title": "从 PNG 里移除 EXIF：你能预期什么？",
+        "desc": "PNG 的元数据在多个块里，不像 JPEG 一段 APP1；本站「全部移除」常需重编码。",
+        "content": "PNG **不是**把 EXIF 像 JPEG 那样塞进单一 **APP1**。元数据可能在 **EXIF、XMP、文本块** 等多处，所以要「只删一类、保留其它」实现成本更高。\n\n## ExifStrip 上的行为\n\n- **查看**：若 PNG 内有可解析的元数据，会按维度展示。\n- **全部移除元数据**：通常通过 **整图重编码** 生成不再带这些块的新文件，可能带来轻微体积/画质变化。\n- **按预设只删 GPS 等**：这类预设主要按 **JPEG 元数据结构** 设计；对 PNG 更稳妥的是 **全部移除**，或先 **转成 JPEG** 再用预设——见 [支持格式说明](/blog/product-supported-formats)。\n\n## 小习惯\n\n设计导出、截图转 PNG 后，若不确定是否带敏感信息，**先上传扫一眼**再决定是否清理。\n\n## 相关链接\n\n- [如何编辑或删除 EXIF？](/guides/how-to-edit-strip)\n- [EXIF 和元数据是一回事吗？](/blog/topic-exif-vs-metadata)"
+      },
+      "topicExiftoolVsOnline": {
+        "title": "ExifTool 和在线 EXIF 工具：什么时候用哪个？",
+        "desc": "ExifTool 适合批量与硬核标签库；浏览器工具适合免安装、少量图与 JPEG 预设剥离。",
+        "content": "[ExifTool](https://exiftool.org/) 是很多进阶用户心中的「**元数据瑞士军刀**」：标签覆盖广、支持 **批量**、目录递归、标签复制、地理标记流水线，还能输出 JSON/CSV 等，适合会写一点命令行的人。\n\n## 什么时候优先考虑 ExifTool\n\n- 一次处理 **成百上千** 张归档、活动照片。\n- 需要最新 **厂商备注 / 少见格式** 的解读。\n- 要在自己机器上 **脚本化、自动化**（备份、数字资产管理）。\n\n可阅读其[官方命令说明](https://exiftool.org/exiftool_pod.html)。\n\n## 什么时候用在线工具更合适\n\n- 临时电脑、**不方便安装**。\n- 只想 **快速看图、看地图、导出一份 CSV/JSON**。\n- 主要为 **JPEG** 做 **GPS / 隐私** 等 **预设剥离**，且希望 **[ExifStrip](https://exifstrip.com)** 这类 **浏览器内、不上传** 的流程。\n\n## 隐私\n\n- **ExifTool**：在你本机跑，文件不外传。\n- **ExifStrip**：解析在浏览器本地完成（参见 [隐私](/privacy)）。两者都强调「别把原图交给不信任的第三方」。\n\n## 小结\n\n命令行要效率与全覆盖，浏览器要顺手与可视；很多人 **两种都会用**，视场景切换。\n\n## 站内延伸\n\n- [ExifStrip 能做什么？](/guides/what-exifstrip-does)\n- [IPTC、XMP 与 EXIF](/guides/iptc-xmp-overview)"
+      },
+      "productWelcome": {
+        "title": "欢迎使用 ExifStrip",
+        "desc": "查看、编辑、剥离、导出 EXIF；全部在本地完成，照片不上传。\n适合第一次来的读者，文末链至教程与 FAQ。",
+        "content": "ExifStrip 是一个在浏览器里就能用的工具，帮你查看、编辑和去掉照片里的 EXIF 信息。不用装软件，打开网页就行；所有操作都在你自己电脑或手机里完成，照片不会传到我们这边。下面简单说说它能干什么、你的数据会怎样被对待，以及想深入了解时可以看哪里。\n\n# **能做什么**\n\n**查看**：把图片上传或拖进页面后，会按「设备」「拍摄参数」「位置」「日期时间」等一块块展示 EXIF。如果照片里带了 GPS，还会在地图上标出拍摄位置，方便对照。\n\n![按维度展示的 EXIF](/images/blogs/product-welcome/c1a2b3c4-d5e6-4f7a-8b9c-0d1e2f3a4b5c.png)\n\n![文件信息与 GPS 地图](/images/blogs/product-welcome/d2b3c4d5-e6f7-4a8b-9c0d-1e2f3a4b5c6d.png)\n\n**编辑**：像作者、版权、拍摄时间这类字段，可以直接在页面上改，改完保存会写回 JPEG。适合在分享前把不想暴露的信息改成中性内容，或者用假信息盖掉真实的。\n\n![编辑 EXIF 字段](/images/blogs/product-welcome/e3c4d5e6-f7a8-4b9c-0d1e-2f3a4b5c6d7e.png)\n\n**剥离**：我们提供了四种预设——全部移除、仅隐私、仅 GPS、仅设备。对 JPEG 用预设剥离时，只动元数据，不动像素，画质不变；其他格式如果选「全部移除」，会通过重新编码把元数据去掉。\n\n![按预设剥离 EXIF](/images/blogs/product-welcome/f4d5e6f7-a8b9-4c0d-1e2f-3a4b5c6d7e8f.png)\n\n**导出**：可以把当前这张图的 EXIF 导出成 CSV、JSON、TXT 或十六进制，方便你备份或自己审计一遍再决定要不要删。\n\n# **本地处理与隐私**\n\n从解析、编辑、剥离到导出，全在你设备上的浏览器里跑完。我们收不到、也看不到你打开的那张图；你没主动发给我们的话，我们这边没有任何副本。这样你既能用上这些功能，又不用把照片交给别人。更细的承诺写在 [隐私说明](/privacy) 里。\n\n# **免费与使用方式**\n\nExifStrip 免费使用，没有广告，界面支持中文、英文和日文。想多了解一点 EXIF 是什么、或者一步步怎么操作，可以看站里的 [《ExifStrip 能做什么？》](/guides/what-exifstrip-does)、[《如何查看 EXIF？》](/guides/how-to-view)、[《如何编辑或删除 EXIF？》](/guides/how-to-edit-strip)，或者到 [FAQ](/faq) 里翻一翻常见问题。"
+      },
+      "productSupportedFormats": {
+        "title": "ExifStrip 支持的图片格式说明",
+        "desc": "JPEG、PNG、TIFF、HEIC、AVIF、WebP 在本站的查看/编辑/剥离能力。\n按格式说明「为什么能」或「为什么不能」——结构不同，支持程度不同。",
+        "content": "本站支持对 **JPEG、PNG、TIFF、HEIC、AVIF、WebP** 等常见图片格式进行 EXIF 的查看与处理。不同格式在文件里存放 EXIF 的方式不一样，所以「能查看」「能编辑」「能按预设剥离」的程度也不一样：有的格式可以只改元数据、不动像素，有的格式只能通过整图重编码来去掉元数据。下面按格式说明支持情况，以及**为什么**能或不能。格式与标准层面的背景可参阅 [《哪些格式包含 EXIF？》](/guides/supported-formats)。\n\n# **JPEG 格式**\n\nJPEG 在本站支持的功能最全。\n\n**查看**：支持。EXIF 在 JPEG 里通常放在固定的 **APP1 应用段**（段标记 0xFFE1）中，是一整块 TIFF 结构的数据；本站可以完整解析，并按维度展示——设备、拍摄参数、位置、日期时间、图像属性、作者版权等。若含有 GPS，会在地图上标出拍摄位置。\n\n**编辑**：支持。作者（Artist）、版权（Copyright）、拍摄时间等字段可以在页面上修改并**写回** JPEG 文件。原因同样是：这些数据都在 APP1 这一段里，我们只改写这一段、不动后面的压缩图像数据，所以画质不变。\n\n**剥离**：支持多种方式。四种预设——**全部移除**、**仅隐私**、**仅 GPS**、**仅设备**——都可以用。做法是只重写或删除 APP1 段里的对应标签，不重新编码像素，因此画质不变。这也是为什么只有 JPEG 能「按预设精确剥离」：它的元数据和图像数据在文件里是分段的，我们只动元数据段即可。\n\n# **PNG / WebP 格式**\n\n**查看**：支持得比较全。只要文件里带有 EXIF 或类似元数据（例如 PNG 的 tEXt/zTXt、WebP 的 EXIF 块），本站会解析并按维度展示，例如设备、拍摄参数、位置、日期时间等，与 JPEG 的展示方式一致。\n\n**编辑**：目前**不支持**把修改后的元数据写回 PNG 或 WebP。原因是这两种格式的元数据存放在**多个独立的 chunk（块）**里，结构和 JPEG 的单一 APP1 段不同；要写回就需要按各自格式的规范重写这些块，本站目前只实现了 JPEG 的写回逻辑，因此 PNG/WebP 暂时只能查看、不能编辑保存。\n\n**剥离**：若选择「**全部移除**」，会通过**重新编码整张图**的方式生成一张不带元数据的新图。因为 PNG/WebP 的元数据是嵌在多个 chunk 里的，要「只删某几类」或「按预设只删 GPS/设备等」就必须解析并逐个改写或丢弃特定 chunk，实现成本高，目前没有做；所以要彻底去掉元数据，只能整图重编并省略这些块。**按预设剥离**（仅隐私、仅 GPS、仅设备）和**单字段删除**因此在此类格式上不可用。重编码对画质的影响通常很小，但理论上会多一次有损/无损编码。\n\n# **HEIC / HEIF 格式**\n\n苹果等设备常用的高效图像格式，元数据放在 **ISOBMFF 容器**里的各个 box 中，和 JPEG 的「一段 APP1」结构不同。\n\n**查看**：支持。本站可以读取容器内的 EXIF 相关 box，解析出设备、拍摄参数、位置、日期时间等维度并展示，与 JPEG 的展示一致。\n\n**编辑**：目前**不支持**写回 HEIC。容器的 box 结构和写入规则与 JPEG 差异较大，需要按 HEIC/ISOBMFF 规范重写或新增 box，本站目前未实现。\n\n**剥离**：**按预设剥离**目前不支持。若要「只删 GPS」或「只删设备」而保留其他元数据，需要在容器层面精确改写对应 box，同样未实现。若你只想把 EXIF 全去掉且尽量少动画质，可以先把 HEIC 转成 JPEG，再在本站对 JPEG 使用「全部移除」或任意预设，此时只动元数据段、不重编码像素。\n\n# **TIFF / AVIF 格式**\n\n**查看**：支持。文件中已有的 EXIF 会被读取并按维度展示，与 JPEG 一致。\n\n**编辑 / 剥离**：TIFF 在标准上也是用 IFD 存 EXIF，理论上可以只改元数据段；AVIF 则类似 HEIC，是箱型（box）结构。本站目前对**按预设剥离**和**写回**在 TIFF/AVIF 上的支持有限，要么未实现，要么通过重编码实现「全部移除」；具体行为以当前版本为准。若需要可编辑、可预设剥离的体验，建议先转为 JPEG 再在本站处理。\n\n---\n\n以上为当前版本的支持情况与原因说明，随产品更新可能调整。首页「支持格式」与 [《哪些格式包含 EXIF？》](/guides/supported-formats) 与本文保持一致；若某格式无法解析或某选项不可用，可先确认文件类型与大小，或参阅 [FAQ](/faq)。"
+      },
+      "productUpdate": {
+        "title": "更新说明",
+        "desc": "ExifStrip 版本更新说明页。\n新版本发布时会在此列出主要新增、改进与修复。",
+        "content": "本页用于发布 ExifStrip 的版本更新说明。新版本发布时我们会在此列出主要新增、改进与修复。\n\n# 第一版\n\n**查看 EXIF** — 上传一张或多张图片后，按维度展示 EXIF（设备、拍摄参数、位置、日期时间、作者与版权、图像属性、ICC）。支持格式：JPEG、PNG、TIFF、HEIC、AVIF、WebP。含 GPS 时在地图上显示拍摄位置。\n\n**编辑 EXIF** — 仅 JPEG：在页面上编辑作者、版权、拍摄时间等字段并写回；支持保存、按字段或按维度删除；可下载「含编辑」的图片。\n\n**剥离 EXIF** — 四种预设：全部移除、仅隐私（GPS/作者/序列号）、仅 GPS、仅设备/序列号。JPEG 支持按预设剥离且不重编码像素；PNG/WebP 通过重编码实现「全部移除」。可下载剥离后的图片。\n\n**导出 EXIF** — 将元数据导出为 CSV、JSON、TXT 或 HEX（原始）。\n\n**隐私分析** — 分享前对位置、设备、日期时间等敏感项做风险等级（高/中/低）提示。\n\n**站点** — 全部在浏览器内处理，不上传至服务器。页面： [首页](/)、[教程](/guides)、[博客](/blog)、[FAQ](/faq)、[关于](/about)、[隐私](/privacy)、[条款](/terms)。支持 English、简体中文、日本語。"
+      }
+    }
+  }
+}

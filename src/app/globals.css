@@ -1,0 +1,85 @@
+/* Source Sans Pro 400/700 由 @fontsource/source-sans-pro 在 layout 中引入，随构建打包 */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Backgrounds */
+  --color-bg-page: #ffffff;
+  --color-bg-elevated: #f5f5f5;
+  --color-bg-block: #ffffff;
+  --color-bg-hover: #f5f5f5;
+  --color-bg-active: #eeeeee;
+  /* Borders */
+  --color-border-subtle: #f0f0f0;
+  --color-border-default: #e5e5e5;
+  --color-border-strong: #d0d0d0;
+  /* Text */
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #525252;
+  --color-text-tertiary: #737373;
+  --color-text-disabled: #a3a3a3;
+  --color-text-inverse: #ffffff;
+  /* Function */
+  --color-link: #2563eb;
+  --color-link-hover: #1d4ed8;
+  /* 与导航 Globe / logo 色系一致 */
+  --color-brand-logo: #21548a;
+  --color-focus-ring: #2563eb;
+  --color-error: #dc2626;
+  /* 多图列表选中行：浅蓝底（与参考图一致） */
+  --color-upload-list-selected: #e0f0ff;
+  --color-success: #16a34a;
+  /* Block icon colors */
+  --color-block-device: #0ea5e9;
+  --color-block-image-settings: #8b5cf6;
+  --color-block-location: #059669;
+  --color-block-datetime: #d97706;
+  --color-block-other: #b45309;
+  --color-block-image: #64748b;
+  --color-block-icc: #475569;
+  /* Radius */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  /* Shadow */
+  --shadow-block: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-button: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+@layer base {
+  html {
+    font-size: 16px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  /* 与 favicon.io/Bulma 一致：字号、字重、行高；字体由 Tailwind theme.fontFamily.sans 统一提供 */
+  body {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-page);
+  }
+}
+
+/* Leaflet：自定义 divIcon 无白底 */
+.gps-map-marker {
+  background: transparent !important;
+  border: none !important;
+}
+/* Leaflet 容器高度由父级决定，上传区右侧随左侧 File Information 展开变高 */
+.leaflet-container {
+  background: var(--color-bg-active);
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+}
