@@ -42,6 +42,9 @@ export default function ExifTableSection() {
                     <th className="min-w-[120px] px-4 py-2 text-left font-semibold text-[var(--color-text-primary)]">
                       {t("exifTable.valueExampleHeader")}
                     </th>
+                    <th className="min-w-[180px] px-4 py-2 text-left font-semibold text-[var(--color-text-primary)]">
+                      {t("exifTable.valueDecodedHeader")}
+                    </th>
                   </tr>
                 </thead>
                 <tbody className="text-[var(--color-text-secondary)]">
@@ -64,6 +67,9 @@ export default function ExifTableSection() {
                       </td>
                       <td className="max-w-[400px] break-all px-4 py-1.5">
                         {row.value}
+                      </td>
+                      <td className="max-w-[min(28rem,90vw)] break-words px-4 py-1.5 font-mono text-xs leading-snug text-[var(--color-text-secondary)]">
+                        {row.valueDecoded}
                       </td>
                     </tr>
                   ))}

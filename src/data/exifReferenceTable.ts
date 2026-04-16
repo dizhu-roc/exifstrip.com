@@ -1,5 +1,5 @@
 /**
- * 全量 EXIF 参考表静态数据（6 个维度，不含 icc）：Tag(Hex), Name, IFD, Type, Value(示例)。
+ * 全量 EXIF 参考表静态数据（6 个维度，不含 icc）：Tag(Hex), Name, IFD, Type, Value(示例), 常见显示/解码说明。
  * 与 constants/exifBlocks.BLOCK_TAG_NAMES 一致；IFD/tagId 与 stripExifPresets 对齐，缺失的单独补全。
  */
 import { BLOCK_TAG_NAMES } from "@/constants/exifBlocks";
@@ -11,6 +11,8 @@ export type ExifReferenceRow = {
   ifd: string;
   type: string;
   value: string;
+  /** 与「Tag(Hex)」列不同：多为标签**取值**的常见显示（如 ExifVersion 的四字符 ASCII 与逐字节 hex），无则 "—" */
+  valueDecoded: string;
 };
 
 const IFD_ORDER: Record<string, number> = { "0th": 0, Exif: 1, GPS: 2 };
@@ -144,6 +146,23 @@ const TAG_VALUE_EXAMPLE: Record<string, string> = {
   GPSDestBearingRef: "T",
 };
 
+/** 示例取值对应的四字节 ASCII 的十六进制（空格分隔），用于与「0220 / 0231」类显示对照——非 Tag ID */
+function asciiFourCharToByteHex(s: string): string {
+  if (s.length !== 4) return "—";
+  return [...s]
+    .map((ch) => ch.charCodeAt(0).toString(16).toUpperCase().padStart(2, "0"))
+    .join(" ");
+}
+
+/**
+ * 「Value (example)」列多为工具直接展示的字符串；本列说明在文件中的常见形态（尤其 UNDEFINED 版本串）。
+ * 与 IFD 里的 **Tag 编号**（tagHex，如 ExifVersion=0x9000）不是同一概念。
+ */
+const TAG_VALUE_DECODED: Record<string, string> = {
+  ExifVersion: `ASCII "0231" (4 bytes: ${asciiFourCharToByteHex("0231")}) — not tag number 0x9000`,
+  FlashPixVersion: `ASCII "0100" (4 bytes: ${asciiFourCharToByteHex("0100")})`,
+};
+
 function getIfdAndId(tagName: string): { ifd: "0th" | "Exif" | "GPS"; tagId: number } | null {
   const fromPresets = (TAG_TO_IFD_AND_ID as Record<string, { ifd: "0th" | "Exif" | "GPS"; tagId: number }>)[tagName];
   if (fromPresets) return fromPresets;
@@ -177,7 +196,8 @@ function buildRows(): ExifReferenceRow[] {
     const ifd = info ? info.ifd : "—";
     const type = TAG_TYPE[name] ?? "—";
     const value = TAG_VALUE_EXAMPLE[name] ?? "—";
-    rows.push({ tagHex, name, ifd, type, value });
+    const valueDecoded = TAG_VALUE_DECODED[name] ?? "—";
+    rows.push({ tagHex, name, ifd, type, value, valueDecoded });
   }
   rows.sort((a, b) => {
     const aIfd = IFD_ORDER[a.ifd] ?? 99;
