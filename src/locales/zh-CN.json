@@ -156,18 +156,91 @@
     "validationLatitude": "纬度需在 -90 到 90 之间。",
     "validationLongitude": "经度需在 -180 到 180 之间。",
     "opt": {
-      "orientation": { "0": "未定义", "1": "左上", "2": "右上", "3": "右下", "4": "左下", "5": "左顶", "6": "右顶", "7": "右底", "8": "左底" },
-      "whiteBalance": { "0": "自动", "1": "手动" },
-      "flash": { "0": "未闪", "1": "闪", "5": "闪(无返回)", "7": "闪(返回)", "9": "强制", "13": "强制(无返回)", "15": "强制(返回)", "16": "不强制", "24": "自动", "25": "自动(无返回)", "29": "自动(返回)", "31": "自动(返回)" },
-      "exposureProgram": { "0": "未定义", "1": "手动", "2": "正常", "3": "光圈优先", "4": "快门优先", "5": "创意", "6": "运动", "7": "人像", "8": "风景" },
-      "exposureMode": { "0": "自动", "1": "手动", "2": "包围" },
-      "meteringMode": { "0": "未知", "1": "平均", "2": "中央", "3": "点", "4": "多点", "5": "图案", "6": "局部" },
-      "sceneCaptureType": { "0": "标准", "1": "风景", "2": "人像", "3": "夜景" },
-      "resolutionUnit": { "1": "未知", "2": "英寸", "3": "厘米" },
-      "colorSpace": { "1": "sRGB", "2": "Adobe RGB", "65535": "未校准" },
-      "gpsRef": { "N": "北", "S": "南", "E": "东", "W": "西" },
-      "gpsDir": { "T": "真北", "M": "磁北" },
-      "gpsSpeedRef": { "K": "km/h", "M": "mph", "N": "节" }
+      "orientation": {
+        "0": "未定义",
+        "1": "左上",
+        "2": "右上",
+        "3": "右下",
+        "4": "左下",
+        "5": "左顶",
+        "6": "右顶",
+        "7": "右底",
+        "8": "左底"
+      },
+      "whiteBalance": {
+        "0": "自动",
+        "1": "手动"
+      },
+      "flash": {
+        "0": "未闪",
+        "1": "闪",
+        "5": "闪(无返回)",
+        "7": "闪(返回)",
+        "9": "强制",
+        "13": "强制(无返回)",
+        "15": "强制(返回)",
+        "16": "不强制",
+        "24": "自动",
+        "25": "自动(无返回)",
+        "29": "自动(返回)",
+        "31": "自动(返回)"
+      },
+      "exposureProgram": {
+        "0": "未定义",
+        "1": "手动",
+        "2": "正常",
+        "3": "光圈优先",
+        "4": "快门优先",
+        "5": "创意",
+        "6": "运动",
+        "7": "人像",
+        "8": "风景"
+      },
+      "exposureMode": {
+        "0": "自动",
+        "1": "手动",
+        "2": "包围"
+      },
+      "meteringMode": {
+        "0": "未知",
+        "1": "平均",
+        "2": "中央",
+        "3": "点",
+        "4": "多点",
+        "5": "图案",
+        "6": "局部"
+      },
+      "sceneCaptureType": {
+        "0": "标准",
+        "1": "风景",
+        "2": "人像",
+        "3": "夜景"
+      },
+      "resolutionUnit": {
+        "1": "未知",
+        "2": "英寸",
+        "3": "厘米"
+      },
+      "colorSpace": {
+        "1": "sRGB",
+        "2": "Adobe RGB",
+        "65535": "未校准"
+      },
+      "gpsRef": {
+        "N": "北",
+        "S": "南",
+        "E": "东",
+        "W": "西"
+      },
+      "gpsDir": {
+        "T": "真北",
+        "M": "磁北"
+      },
+      "gpsSpeedRef": {
+        "K": "km/h",
+        "M": "mph",
+        "N": "节"
+      }
     }
   },
   "metadataGraph": {
@@ -300,17 +373,17 @@
       "dimensionSettings": {
         "title": "拍摄参数",
         "desc": "快门、光圈、ISO、焦距、白平衡、闪光灯、曝光程序等典型标签；由设备在拍摄时写入。",
-        "content": "拍摄参数记录按下快门瞬间的曝光与光学条件，由设备在拍摄时写入，主要位于 Exif 子 IFD。国会图书馆将此类归为「相机设置」与「技术图像数据」。\n\n## 典型标签\n\nExposureTime（快门时间，单位秒，如 1/125）；FNumber（光圈系数，如 f/2.8）；ISOSpeedRatings（感光度）；FocalLength（焦距，毫米）；WhiteBalance（白平衡模式）；Flash（闪光灯状态）；ExposureProgram（曝光程序，如程序自动、光圈优先）；ExposureBiasValue（曝光补偿）；MeteringMode（测光模式）；SceneCaptureType（场景类型）。\n\n## 简要含义\n\n光圈控制进光量与景深，快门与 ISO 共同决定曝光；焦距影响视角与透视。这些数据可用于分析拍摄条件或复现风格，与 [《图像属性》](/guides/dimension-image) 中的分辨率、色彩空间等一起描述单张图像的生成环境。"
+        "content": "拍摄参数记录按下快门瞬间的曝光与光学条件，由设备在拍摄时写入，主要位于 Exif 子 IFD。国会图书馆将此类归为「相机设置」与「技术图像数据」。\n\n## 典型标签\n\nExposureTime（快门时间，单位秒，如 1/125）；FNumber（光圈系数，如 f/2.8）；ISOSpeedRatings（感光度）；FocalLength（焦距，毫米）；WhiteBalance（白平衡模式）；Flash（闪光灯状态）；ExposureProgram（曝光程序，如程序自动、光圈优先）；ExposureBiasValue（曝光补偿）；MeteringMode（测光模式）；SceneCaptureType（场景类型）。\n\n## 简要含义\n\n光圈控制进光量与景深，快门与 ISO 共同决定曝光；焦距影响视角与透视。这些数据可用于分析拍摄条件或复现风格，与 [《图像属性》](/guides/dimension-image) 中的分辨率、色彩空间等一起描述单张图像的生成环境。\n\n**标签级说明**：**FNumber**、**ExposureTime**、**ISOSpeedRatings**、**ExposureBiasValue** 与摄影术语的对应见 [《光圈、快门、ISO 标签》](/guides/exif-aperture-shutter-iso-tags)；**Flash** 位掩码见 [《EXIF Flash 标签》](/guides/exif-flash-tag-bitmask)。"
       },
       "dimensionLocation": {
         "title": "位置信息（GPS）",
         "desc": "EXIF GPS：经纬度、海拔与 GPSAltitudeRef（海平面上下参考）、GPS 时间戳；属高敏感信息。",
-        "content": "**EXIF GPS** 元数据存放在独立的 GPS 子 IFD 中，由 0th IFD 的私有标签 0x8825 指向。根据国会图书馆的说明，GPS 支持自 Exif 2.0 引入，用于记录拍摄地点的地理信息。\n\n## 常见标签\n\nGPSLatitude、GPSLongitude 与 GPSLatitudeRef、GPSLongitudeRef（南北/东西参考）共同表示经纬度，规范中为度分秒有理数，可换算为十进制度数便于地图展示。\n\nGPSAltitude 与 **GPSAltitudeRef** 表示海拔；GPSDateStamp、GPSTimeStamp 为 GPS 接收器的时间戳；另有速度、拍摄方向等可选标签。\n\n## GPSAltitudeRef 与 GPSAltitude\n\n**GPSAltitude** 以有理数记录高度数值；**GPSAltitudeRef** 是一个单字节标签，用于说明该高度是**海平面以上**（常见为 `0`）还是**海平面以下**（`1`）。软件应把两者一起解读。即使没有门牌号，海拔也可能暗示地形或楼层——与经纬度一样，分享前宜视为敏感信息，参阅 [《哪些 EXIF 信息比较敏感？》](/guides/sensitive-fields)。标签名可对照 [ExifTool GPS 标签页](https://exiftool.org/TagNames/GPS.html)；权威定义以 CIPA/JEITA Exif 规范为准。\n\n## 隐私注意\n\n具备定位功能的相机或手机会在拍摄时写入上述数据。经纬度与时间戳可精确定位拍摄地与时刻，属于高敏感信息，分享前建议查看或剥离。详见 [《为什么要重视 EXIF 里的隐私？》](/guides/why-care-privacy)。"
+        "content": "**EXIF GPS** 元数据存放在独立的 GPS 子 IFD 中，由 0th IFD 的私有标签 0x8825 指向。根据国会图书馆的说明，GPS 支持自 Exif 2.0 引入，用于记录拍摄地点的地理信息。\n\n## 常见标签\n\nGPSLatitude、GPSLongitude 与 GPSLatitudeRef、GPSLongitudeRef（南北/东西参考）共同表示经纬度，规范中为度分秒有理数，可换算为十进制度数便于地图展示。\n\nGPSAltitude 与 **GPSAltitudeRef** 表示海拔；GPSDateStamp、GPSTimeStamp 为 GPS 接收器的时间戳；另有速度、拍摄方向等可选标签。\n\n## GPSAltitudeRef 与 GPSAltitude\n\n**GPSAltitude** 以有理数记录高度数值；**GPSAltitudeRef** 是一个单字节标签，用于说明该高度是**海平面以上**（常见为 `0`）还是**海平面以下**（`1`）。软件应把两者一起解读。即使没有门牌号，海拔也可能暗示地形或楼层——与经纬度一样，分享前宜视为敏感信息，参阅 [《哪些 EXIF 信息比较敏感？》](/guides/sensitive-fields)。标签名可对照 [ExifTool GPS 标签页](https://exiftool.org/TagNames/GPS.html)；权威定义以 CIPA/JEITA Exif 规范为准。\n\n关于 **GPSLatitudeRef**、**GPSLongitudeRef**、**GPSAltitudeRef** 与 **GPSLatitude** / **GPSLongitude** / **GPSAltitude** 如何配对解码，见 [《EXIF GPS 参考标签》](/guides/exif-gps-reference-tags)。\n\n## 隐私注意\n\n具备定位功能的相机或手机会在拍摄时写入上述数据。经纬度与时间戳可精确定位拍摄地与时刻，属于高敏感信息，分享前建议查看或剥离。详见 [《为什么要重视 EXIF 里的隐私？》](/guides/why-care-privacy)。"
       },
       "dimensionDatetime": {
         "title": "日期与时间",
         "desc": "拍摄时间、修改时间、数字化时间；常见格式无时区，部分设备用扩展字段记录时区。",
-        "content": "日期时间类 EXIF 用于记录拍摄、修改与数字化时间，便于排序、检索与溯源。国会图书馆将其列为 EXIF 元数据中的「日期与时间信息」。\n\n## 常见标签与格式\n\nDateTimeOriginal（拍摄时间）、DateTime（文件修改时间）、DateTimeDigitized（数字化时间）。格式通常为「YYYY:MM:DD HH:MM:SS」（例如 2024:03:15 14:30:00），无时区字段。\n\n## 时区限制\n\n规范层面，标准日期时间标签不包含 UTC 偏移。部分设备或软件通过 OffsetTime、OffsetTimeOriginal 等扩展记录时区，并非所有文件都有。若需结合时区精确还原时刻，需查阅设备或软件文档。\n\n版本演进中，Exif 2.31 起增加了对 UTC 时差描述的支持，可参阅 [《EXIF 的由来与演变》](/guides/exif-history)。"
+        "content": "日期时间类 EXIF 用于记录拍摄、修改与数字化时间，便于排序、检索与溯源。国会图书馆将其列为 EXIF 元数据中的「日期与时间信息」。\n\n## 常见标签与格式\n\nDateTimeOriginal（拍摄时间）、DateTime（文件修改时间）、DateTimeDigitized（数字化时间）。格式通常为「YYYY:MM:DD HH:MM:SS」（例如 2024:03:15 14:30:00），无时区字段。\n\n## 时区限制\n\n规范层面，标准日期时间标签不包含 UTC 偏移。部分设备或软件通过 OffsetTime、OffsetTimeOriginal 等扩展记录时区，并非所有文件都有。若需结合时区精确还原时刻，需查阅设备或软件文档。\n\n版本演进中，Exif 2.31 起增加了对 UTC 时差描述的支持，可参阅 [《EXIF 的由来与演变》](/guides/exif-history)。\n\n若需对照 **DateTimeOriginal**、**DateTime**、**DateTimeDigitized** 三者的异同，见 [《DateTimeOriginal 与 DateTime、DateTimeDigitized 的区别》](/guides/exif-datetimeoriginal-vs-datetime)。"
       },
       "dimensionImage": {
         "title": "图像属性",
@@ -335,7 +408,7 @@
       "orientationTagExplained": {
         "title": "EXIF Orientation：显示方向与像素的关系",
         "desc": "Orientation 取值 1～8 表示如何旋转/镜像显示；多数情况下并不等价于已把像素矩阵物理旋转存盘。",
-        "content": "**Orientation** 标签告诉软件：显示这张照片时应如何**旋转或镜像**（常见取值 1～8）。合规的看图软件会按标签旋给你看；**压缩后的像素排列**可能仍是传感器原始方向。\n\n## EXIF Orientation 取值 1～8（对照）\n\n| 值 | 常见含义（显示） |\n| --- | --- |\n| 1 | 正常（0°） |\n| 2 | 水平翻转 |\n| 3 | 旋转 180° |\n| 4 | 垂直翻转 |\n| 5 | 水平翻转 + 顺时针 270°（或逆时针 90°） |\n| 6 | 顺时针旋转 90° |\n| 7 | 水平翻转 + 顺时针 90° |\n| 8 | 逆时针旋转 90° |\n\n规范原文用行/列表述；各看图软件实现上述八种情形。搜索 **orientation exif** 或 **exif orientation 1～8** 多指本标签。\n\n## 常见困惑\n\n- **同一文件在不同软件里朝向不一致**：有的程序忽略 Orientation，直接显示原始像素。\n- **只改 Orientation 算不算「旋转图」**：多数情况下只是改**显示指令**；若要把旋转「烤」进像素，通常要另存/重编码导出。\n\n## 与画质\n\n只改 Orientation 一般不会触发 JPEG 重压缩；若**删掉** Orientation，有的软件又会把图看成「横着」，分享前要想好目标场景。\n\n## 延伸阅读\n\n- [拍摄与图像参数维度](/guides/dimension-settings)\n- [如何查看 EXIF？](/guides/how-to-view)\n\n词条对照可查 CIPA/JEITA 及 ExifTool [EXIF 标签页](https://exiftool.org/TagNames/EXIF.html)。"
+        "content": "若你搜索 **orientation exif**、**EXIF Orientation 1～8** 或 **EXIF 方向标签**，本文说明 **Orientation** 如何指示显示时的旋转与镜像（常见取值 1～8），且与 [《EXIF 标签速查》](/guides/tag-reference)、[LOC TIFF/Exif 标签表](https://www.loc.gov/preservation/digital/formats/content/tiff_tags.shtml) 中的定义一致。**Orientation** 标签告诉软件：显示这张照片时应如何**旋转或镜像**。合规的看图软件会按标签旋给你看；**压缩后的像素排列**可能仍是传感器原始方向。\n\n## EXIF Orientation 取值 1～8（对照）\n\n| 值 | 常见含义（显示） |\n| --- | --- |\n| 1 | 正常（0°） |\n| 2 | 水平翻转 |\n| 3 | 旋转 180° |\n| 4 | 垂直翻转 |\n| 5 | 水平翻转 + 顺时针 270°（或逆时针 90°） |\n| 6 | 顺时针旋转 90° |\n| 7 | 水平翻转 + 顺时针 90° |\n| 8 | 逆时针旋转 90° |\n\n规范原文用行/列表述；各看图软件实现上述八种情形。搜索 **orientation exif** 或 **exif orientation 1～8** 多指本标签。\n\n## 常见困惑\n\n- **同一文件在不同软件里朝向不一致**：有的程序忽略 Orientation，直接显示原始像素。\n- **只改 Orientation 算不算「旋转图」**：多数情况下只是改**显示指令**；若要把旋转「烤」进像素，通常要另存/重编码导出。\n\n## 与画质\n\n只改 Orientation 一般不会触发 JPEG 重压缩；若**删掉** Orientation，有的软件又会把图看成「横着」，分享前要想好目标场景。\n\n## 延伸阅读\n\n- [拍摄与图像参数维度](/guides/dimension-settings)\n- [如何查看 EXIF？](/guides/how-to-view)\n\n词条对照可查 CIPA/JEITA 及 ExifTool [EXIF 标签页](https://exiftool.org/TagNames/EXIF.html)。"
       },
       "whyCarePrivacy": {
         "title": "为什么要重视 EXIF 里的隐私？",
@@ -395,18 +468,53 @@
       "tagReference": {
         "title": "EXIF 常见标签速查",
         "desc": "按设备、拍摄参数、位置、日期时间、作者版权、图像属性等维度列出本站可解析的 EXIF 标签与简要说明。",
-        "content": "下面按 [《EXIF 的结构》](/guides/exif-structure) 中 0th/Exif/GPS 等块，对照 `exifBlocks` 与 `EXIF维度解析与字段说明`，列出本站可解析的完整标签表。格式定义以 CIPA/JEITA 及 [LOC Tags for TIFF](https://www.loc.gov/preservation/digital/formats/content/tiff_tags.shtml) 为准。\n\n## 1. device（设备/相机）\n\n| Tag | 说明 |\n|-----|------|\n| Make | 制造商 |\n| Model | 型号 |\n| BodySerialNumber | 机身序列号 |\n| CameraSerialNumber | 相机序列号 |\n| LensMake | 镜头制造商 |\n| LensModel | 镜头型号 |\n| Software | 软件 |\n| FirmwareVersion | 固件版本 |\n\n## 2. imageSettings（拍摄参数）\n\n| Tag | 说明 |\n|-----|------|\n| Orientation | 方向 |\n| ExposureTime | 快门 |\n| FNumber | 光圈 |\n| FocalLength | 焦距 |\n| ISOSpeedRatings | ISO |\n| WhiteBalance | 白平衡 |\n| Flash | 闪光灯 |\n| ExposureProgram | 曝光程序 |\n| ExposureMode | 曝光模式 |\n| MeteringMode | 测光模式 |\n| SceneCaptureType | 场景类型 |\n| SceneType | 场景类型(字节) |\n| ExposureBiasValue | 曝光补偿 |\n\n## 3. location（GPS）\n\n| Tag | 说明 |\n|-----|------|\n| GPSLatitude | 纬度 |\n| GPSLongitude | 经度 |\n| GPSAltitude | 海拔 |\n| GPSAltitudeRef | 海拔基准（海平面上下） |\n| GPSDateStamp | GPS 日期 |\n| GPSTimeStamp | GPS 时间 |\n| GPSLatitudeRef | 南北 |\n| GPSLongitudeRef | 东西 |\n| GPSSpeedRef | 速度单位 |\n| GPSImgDirection | 图像方向 |\n| GPSImgDirectionRef | 方向参照 |\n| GPSDestBearing | 目标方位 |\n| GPSDestBearingRef | 目标方位参照 |\n\n## 4. dateTime（日期与时间）\n\n| Tag | 说明 |\n|-----|------|\n| DateTimeOriginal | 拍摄时间 |\n| DateTime | 修改时间 |\n| DateTimeDigitized | 数字化时间 |\n\n## 5. other（作者/版权）\n\n| Tag | 说明 |\n|-----|------|\n| Artist | 作者 |\n| Copyright | 版权 |\n| UserComment | 用户注释 |\n| ImageDescription | 图像描述 |\n| MakerNote | 制造商备注 |\n\n## 6. image（图像属性）\n\n| Tag | 说明 |\n|-----|------|\n| ImageWidth | 图像宽 |\n| ImageLength | 图像高 |\n| XResolution | 水平分辨率 |\n| YResolution | 垂直分辨率 |\n| ResolutionUnit | 分辨率单位 |\n| ColorSpace | 色彩空间 |\n| BitsPerSample | 位深 |\n| SamplesPerPixel | 采样数 |\n| Compression | 压缩 |\n| PhotometricInterpretation | 光度解释 |\n| YCbCrPositioning | YCbCr 定位 |\n| PlanarConfiguration | 平面配置 |\n| ExifVersion | EXIF 版本 |\n| FlashPixVersion | FlashPix 版本 |\n| ComponentsConfiguration | 分量配置 |\n| CompressedBitsPerPixel | 压缩位/像素 |\n\n---\n\n以上与本站首页 [EXIF 参考表](/)、元数据区块展示一致。详细说明见 [《设备与相机信息》](/guides/dimension-device)、[《拍摄参数》](/guides/dimension-settings)、[《位置信息（GPS）》](/guides/dimension-location)、[《日期与时间》](/guides/dimension-datetime)、[《图像属性》](/guides/dimension-image)、[《作者、版权与注释》](/guides/dimension-other)；规范见 [《标准与规范链接》](/guides/standards-links)。"
+        "content": "下面按 [《EXIF 的结构》](/guides/exif-structure) 中 0th/Exif/GPS 等块，对照 `exifBlocks` 与 `EXIF维度解析与字段说明`，列出本站可解析的完整标签表。格式定义以 CIPA/JEITA 及 [LOC Tags for TIFF](https://www.loc.gov/preservation/digital/formats/content/tiff_tags.shtml) 为准。\n\n## 1. device（设备/相机）\n\n| Tag | 说明 |\n|-----|------|\n| Make | 制造商 |\n| Model | 型号 |\n| BodySerialNumber | 机身序列号 |\n| CameraSerialNumber | 相机序列号 |\n| LensMake | 镜头制造商 |\n| LensModel | 镜头型号 |\n| Software | 软件 |\n| FirmwareVersion | 固件版本 |\n\n## 2. imageSettings（拍摄参数）\n\n| Tag | 说明 |\n|-----|------|\n| Orientation | 方向 |\n| ExposureTime | 快门 |\n| FNumber | 光圈 |\n| FocalLength | 焦距 |\n| ISOSpeedRatings | ISO |\n| WhiteBalance | 白平衡 |\n| Flash | 闪光灯 |\n| ExposureProgram | 曝光程序 |\n| ExposureMode | 曝光模式 |\n| MeteringMode | 测光模式 |\n| SceneCaptureType | 场景类型 |\n| SceneType | 场景类型(字节) |\n| ExposureBiasValue | 曝光补偿 |\n\n## 3. location（GPS）\n\n| Tag | 说明 |\n|-----|------|\n| GPSLatitude | 纬度 |\n| GPSLongitude | 经度 |\n| GPSAltitude | 海拔 |\n| GPSAltitudeRef | 海拔基准（海平面上下） |\n| GPSDateStamp | GPS 日期 |\n| GPSTimeStamp | GPS 时间 |\n| GPSLatitudeRef | 南北 |\n| GPSLongitudeRef | 东西 |\n| GPSSpeedRef | 速度单位 |\n| GPSImgDirection | 图像方向 |\n| GPSImgDirectionRef | 方向参照 |\n| GPSDestBearing | 目标方位 |\n| GPSDestBearingRef | 目标方位参照 |\n\n## 4. dateTime（日期与时间）\n\n| Tag | 说明 |\n|-----|------|\n| DateTimeOriginal | 拍摄时间 |\n| DateTime | 修改时间 |\n| DateTimeDigitized | 数字化时间 |\n\n## 5. other（作者/版权）\n\n| Tag | 说明 |\n|-----|------|\n| Artist | 作者 |\n| Copyright | 版权 |\n| UserComment | 用户注释 |\n| ImageDescription | 图像描述 |\n| MakerNote | 制造商备注 |\n\n## 6. image（图像属性）\n\n| Tag | 说明 |\n|-----|------|\n| ImageWidth | 图像宽 |\n| ImageLength | 图像高 |\n| XResolution | 水平分辨率 |\n| YResolution | 垂直分辨率 |\n| ResolutionUnit | 分辨率单位 |\n| ColorSpace | 色彩空间 |\n| BitsPerSample | 位深 |\n| SamplesPerPixel | 采样数 |\n| Compression | 压缩 |\n| PhotometricInterpretation | 光度解释 |\n| YCbCrPositioning | YCbCr 定位 |\n| PlanarConfiguration | 平面配置 |\n| ExifVersion | EXIF 版本 |\n| FlashPixVersion | FlashPix 版本 |\n| ComponentsConfiguration | 分量配置 |\n| CompressedBitsPerPixel | 压缩位/像素 |\n\n---\n\n## 专题延伸阅读（与本表字段对齐）\n\n- [DateTimeOriginal 与 DateTime、DateTimeDigitized](/guides/exif-datetimeoriginal-vs-datetime)\n- [ExifVersion 与 FlashPixVersion（0220、0221、0231 等）](/guides/exifversion-flashpixversion-explained)\n- [光圈、快门、ISO（FNumber、ExposureTime 等）](/guides/exif-aperture-shutter-iso-tags)\n- [GPS 参考标签（南北/东西/海拔基准）](/guides/exif-gps-reference-tags)\n- [Flash 位掩码](/guides/exif-flash-tag-bitmask)\n- [如何阅读 EXIF 官方规范](/guides/exif-specification-overview)\n\n---\n\n以上与本站首页 [EXIF 参考表](/)、元数据区块展示一致。详细说明见 [《设备与相机信息》](/guides/dimension-device)、[《拍摄参数》](/guides/dimension-settings)、[《位置信息（GPS）》](/guides/dimension-location)、[《日期与时间》](/guides/dimension-datetime)、[《图像属性》](/guides/dimension-image)、[《作者、版权与注释》](/guides/dimension-other)；规范见 [《标准与规范链接》](/guides/standards-links)。"
       },
       "standardsLinks": {
         "title": "标准与规范链接",
         "desc": "EXIF 规范与标准：CIPA/JEITA、国会图书馆 JPEG/TIFF 家族说明与标签表；实现解析时以官方为准。",
         "content": "做兼容、写解析器或核对 tag/版本时，需要查原始规范。这里只列链接和一句说明，不转载正文；以官方最新为准。\n\n**CIPA（相机与影像产品协会）** 与 JEITA 共同维护 Exif 标准。\n\n- [CIPA 标准一览（含 Exif DC-008）](https://www.cipa.jp/e/std/std-sec.html) — 现行 Exif 规范及下载入口。\n- [CIPA 更新履历](https://www.cipa.jp/e/std/history_sec.html) — 版本历史。\n\n**美国国会图书馆（LOC）格式说明**\n\n- [Exchangeable Image File Format (Exif) Family](https://www.loc.gov/preservation/digital/formats/fdd/fdd000618.shtml) — Exif 家族概述、版本、在 JPEG/TIFF 中的使用。\n- [Tags for TIFF and Related Specifications](https://www.loc.gov/preservation/digital/formats/content/tiff_tags.shtml) — TIFF/Exif 常用标签表（含 Exif/GPS/Interop）。\n\n**延伸** Wikipedia 的 [Exif](https://en.wikipedia.org/wiki/Exif) 条目可作入门，具体 tag 与行为以 CIPA/JEITA 及 LOC 为准。\n\n## 「EXIF 规范」与「带 EXIF 的 JPEG」\n\n常说 **EXIF 规范** 多指 CIPA/JEITA 发布的 **Exif 标准**（标签定义与 IFD 规则）；**JPEG 里的 EXIF** 一般指：在普通 JPEG 码流中增加 **APP1** 段，内嵌 TIFF 风格的 EXIF 树。目录结构见 [《EXIF 的结构》](/guides/exif-structure)；哪些格式可携带见 [《哪些格式包含 EXIF？》](/guides/supported-formats)。本站是实用的查看/剥离工具，**不是**一致性认证实验室。\n\n规范由来与版本演进见 [《EXIF 的由来与演变》](/guides/exif-history)；标签含义速查见 [《EXIF 常见标签速查》](/guides/tag-reference)。"
+      },
+      "exifSpecificationOverview": {
+        "title": "EXIF 规范：官方出处与阅读方式",
+        "desc": "CIPA/JEITA Exif（DC-008）、美国国会图书馆格式说明，以及「规范本身」与「JPEG 内嵌 EXIF」的关系。",
+        "content": "当人们说 **EXIF 规范**（exif specification）时，通常指 **CIPA** 与 **JEITA** 发布的**规范性文档**：定义标签名、数值类型、IFD 结构、GPS/日期等规则——**不是**某一张示例 JPEG 文件。本文说明**真正的规范在哪里**、它与**带 EXIF 的 JPEG 文件**如何对应，以及在需要**精确**标签语义时应以何为准。\n\n## 谁维护 EXIF 规范？\n\n- **CIPA**（相机与影像产品协会）与 **JEITA** 共同维护《可交换图像文件格式》（常称 **Exif** 或 **DC-008**）。现行文本与**更新履历**见 [CIPA 标准页](https://www.cipa.jp/e/std/std-sec.html) 与 [历史](https://www.cipa.jp/e/std/history_sec.html)。\n- **美国国会图书馆（LOC）**发布**格式说明类**文档（例如 [Exif 家族概述](https://www.loc.gov/preservation/digital/formats/fdd/fdd000618.shtml)），便于理解版本与在 JPEG/TIFF 中的使用场景；适合**建立整体认识**。若要**实现解析器**或核对边角行为，仍应以 **CIPA/JEITA** 正文为主。\n\n[ExifTool Tag Names](https://exiftool.org/TagNames/index.html) 等索引在工程上很实用，但**不能替代**标准正文对编码细节的界定。\n\n## 「Exif 标准」与「内含 EXIF 的 JPEG」\n\n两层含义常被混在一起：\n\n1. **Exif 标准本身** — 描述 **IFD0**、**Exif 子 IFD**（指针 `0x8769`）、**GPS IFD**（`0x8825`）、**Interop**（`0xA005`）、标签 ID、TIFF 类型（ASCII、SHORT、RATIONAL、SRATIONAL 等），以及 **ExifVersion**、**DateTimeOriginal** 等字段。搜索 **exif specification**、**jpeg exif format** 时，多数是在问这套**元数据规则**。\n2. **携带 EXIF 的 JPEG 文件** — 普通 JPEG **码流**中的 **APP1** 段（`0xFFE1`）内嵌 **TIFF 风格**的 EXIF 树。[LOC 对「带 Exif 的 JPEG」的说明](https://www.loc.gov/preservation/digital/formats/fdd/fdd000147.shtml)描述元数据如何与压缩图像数据**并列存在**——典型基线 JPEG 中一般**不在**熵编码扫描数据里塞 EXIF。\n\n需要**规范**才能准确解释 **GPSAltitudeRef**；需要**文件布局**才知道 APP1 从哪里开始。本站 [《EXIF 的结构》](/guides/exif-structure) 讲 IFD 关系；[《标准与规范链接》](/guides/standards-links) 只列权威 URL。\n\n## IPTC、XMP 与边界\n\n**Exif 规范**并不覆盖 **IPTC** 或 **XMP**。同一 JPEG 里可以同时存在多种元数据；只「删 EXIF」未必动到其它块——见 [《IPTC、XMP 与 EXIF》](/guides/iptc-xmp-overview)。\n\n## 本站能力边界\n\n**ExifStrip** 面向日常查看与剥离：解析常见标签并按维度展示。**不是**针对 Exif 全版本、全厂商 **MakerNote** 的一致性认证实验室。复杂情形请以官方修订与厂商文档为准。\n\n## 延伸阅读\n\n- [《EXIF 的历史》](/guides/exif-history)\n- [《EXIF 标签速查》](/guides/tag-reference)\n- [《什么是 EXIF？》](/guides/what-is-exif)"
+      },
+      "exifDatetimeoriginalVsDatetime": {
+        "title": "DateTimeOriginal 与 DateTime、DateTimeDigitized 的区别",
+        "desc": "拍摄时间、文件修改时间、数字化时间——标签含义、常见 IFD 位置与查看器误读。",
+        "content": "若你搜索 **DateTimeOriginal 和 DateTime 区别** 或 **DateTimeOriginal 是什么**，通常是在同一文件里比较三种不同的时间含义。三者多使用 `YYYY:MM:DD HH:MM:SS` 的 **ASCII** 写法（基础标签**不带时区**），但回答的问题不同。名称与维度划分与本站 [《EXIF 标签速查》](/guides/tag-reference)、[《日期与时间》](/guides/dimension-datetime) 一致。\n\n## 一句话对照\n\n| 标签 | 常见含义 | 常见位置 |\n| --- | --- | --- |\n| **DateTimeOriginal** | **拍摄/快门时刻**（设备记录的原始捕获时间） | 多在 **Exif 子 IFD** |\n| **DateTime** | **图像文件最后被改动的时间**（保存、元数据写入等） | 多在 **IFD0** |\n| **DateTimeDigitized** | **数字化时间**——数码拍摄时常接近拍摄时刻；扫描件则表示扫描时刻 | 多在 **Exif 子 IFD** |\n\n精确语义以 **CIPA/JEITA** 规范为准；上表便于实际查阅。\n\n## 为什么不同软件显示不一致\n\n- 有的界面只显示一列「拍摄时间」，底层可能映射到 **DateTimeOriginal**，也可能退回到 **DateTime** 或文件系统时间——**并不等价**。\n- **DateTime** 会在软件**回写文件**或**触碰元数据**时更新，即使像素未变；**DateTimeOriginal** 理论上应对齐**拍摄**，除非软件显式改写（并非所有软件都遵守）。\n- **DateTimeDigitized** 对**扫描照片**特别有意义：可与物理照片年代、**DateTimeOriginal** 不同。\n\n## 时区与偏移\n\n经典三标签**不内嵌时区**。**OffsetTime** / **OffsetTimeOriginal** 等扩展字段在较新用法中提供 UTC 偏移；详见 [《日期与时间》](/guides/dimension-datetime) 与 [《EXIF 的历史》](/guides/exif-history)。\n\n## 隐私\n\n时间戳与 GPS 一样可能暴露行程与习惯。分享前请评估；见 [《哪些 EXIF 字段敏感？》](/guides/sensitive-fields)、[《如何编辑或删除 EXIF？》](/guides/how-to-edit-strip)。\n\n## 延伸阅读\n\n- [《日期与时间（维度）》](/guides/dimension-datetime)\n- [《EXIF 标签速查》](/guides/tag-reference)"
+      },
+      "exifVersionFlashpixVersionExplained": {
+        "title": "ExifVersion 与 FlashPixVersion：0220、0221、0231 等含义",
+        "desc": "四字节版本串、FlashPixVersion（如 0100）、谁写入、剥离元数据后是否还在。",
+        "content": "若在 **ExifVersion** 里看到 **0220**、**0221**、**0231** 等，你看到的是**四个字节的字段**（常显示为字符串），表示写入方所依据的 **Exif 规范世代**——**不是**机身固件版本号。**FlashPixVersion** 是另一路**互操作/版本信息**（常见 **0100**），与 FlashPix 相关；二者在本站「图像属性」类展示与 [《EXIF 标签速查》](/guides/tag-reference) 中均有对应行。\n\n## ExifVersion（四字符）\n\n- 位于 **Exif 子 IFD**，类型多为 **UNDEFINED**（四字节）；界面常显示为 **0220**、**0221**、**0230**、**0231**、**0300** 等。\n- 数字串与 **CIPA/JEITA** 修订（2.2、2.3、2.31、3.0…）对应；**精确映射**请以 [CIPA 更新履历](https://www.cipa.jp/e/std/history_sec.html) 与现行 PDF 为准，勿依赖非官方对照表的臆断。\n- **相机、手机与软件**在写入 EXIF 时设置；用新版软件另存时，有可能随元数据升级而更新。\n\n## FlashPixVersion\n\n- 常见 **0100** 表示 **FlashPix 1.0** 一类互操作信息。**不能**用 FlashPixVersion 代替 ExifVersion；同一文件可同时存在二者。\n- 若你只关心摄影参数，**ExifVersion** 通常更能反映 **Exif** 演进；FlashPixVersion 更多出现在需兼容旧互操作场景时。\n\n## 剥离或导出「无元数据」之后\n\n执行 **剥离 EXIF** 或导出无元数据文件时，**ExifVersion** 与 **FlashPixVersion** 一般会随 EXIF 块一起消失（视工具而定）。对典型 **JPEG 无损剥离**通常不改变像素；见 [《如何编辑或删除 EXIF？》](/guides/how-to-edit-strip)。\n\n## 延伸阅读\n\n- [《EXIF 的历史》](/guides/exif-history)\n- [《图像属性（维度）》](/guides/dimension-image)\n- [《EXIF 规范：如何阅读官方文档》](/guides/exif-specification-overview)"
+      },
+      "exifApertureShutterIsoTags": {
+        "title": "光圈、快门、ISO：FNumber、ExposureTime、ISOSpeedRatings",
+        "desc": "摄影术语与 EXIF 标签对应关系、RATIONAL/SRATIONAL 类型，及与「拍摄设置」维度的关系。",
+        "content": "本文把 **光圈、快门、感光度、曝光补偿** 等说法，对应到文件里的 **EXIF 标签名**（与 [《EXIF 标签速查》](/guides/tag-reference) 及本站解析一致）。这些标签多在 **Exif 子 IFD**，数值类型遵循 **TIFF/Exif**（常用 RATIONAL / SRATIONAL 表示分数）。\n\n## FNumber（光圈）\n\n- **标签：** `FNumber`，类型 **RATIONAL**（例如 `28/10` 表示 **f/2.8**）。\n- **含义：** 拍摄时的 **f 值**；数值越小通常光圈越大（进光多、景深更浅）。「**aperture in EXIF**」一般就指此标签。\n\n## ExposureTime（快门）\n\n- **标签：** `ExposureTime`，**RATIONAL**，单位为**秒**（如 `1/250`）。\n- **含义：** **曝光时间**；越长越容易拍糊运动物体，越短越容易「凝固」瞬间。\n\n## ISOSpeedRatings（ISO）\n\n- **标签：** `ISOSpeedRatings`，消费级文件里常见为 **SHORT** 主 ISO。\n- **含义：** **感光度**；越高噪声往往越明显。部分厂商还会在 **MakerNote** 里写扩展 ISO 信息，通用工具仍优先读标准标签。\n\n## ExposureBiasValue（曝光补偿）\n\n- **标签：** `ExposureBiasValue`，**SRATIONAL**（有符号有理数）。\n- **含义：** 相对测光结果的 **曝光补偿**（如 +1/3 EV）。与 **测光模式**、**曝光程序**等一起描述拍摄决策。\n\n## 与其它维度的关系\n\n这些字段描述**怎么拍的**；不包含镜头厂商型号（见设备类标签）或 **Orientation**（见 [《EXIF Orientation 说明》](/guides/orientation-tag-explained)）。总览见 [《拍摄设置》](/guides/dimension-settings)。\n\n## 延伸阅读\n\n- [《EXIF 标签速查》](/guides/tag-reference)\n- [《EXIF 的结构》](/guides/exif-structure)"
+      },
+      "exifGpsReferenceTags": {
+        "title": "EXIF GPS 参考标签：经纬度与海拔参考",
+        "desc": "GPSLatitudeRef/GPSLongitudeRef/GPSAltitudeRef 与 GPSLatitude、GPSLongitude、GPSAltitude 如何配对解码。",
+        "content": "EXIF 里的 GPS 坐标分为**数值**与**参考字节**（半球/海平面基准），对应 **GPS 子 IFD**。这与 [《EXIF 标签速查》](/guides/tag-reference) 中的 **GPSLatitudeRef**、**GPSLongitudeRef**、**GPSAltitude**、**GPSAltitudeRef** 等行一致。入门可读 [《位置信息（GPS）》](/guides/dimension-location)。\n\n## GPSLatitudeRef 与 GPSLongitudeRef\n\n- **GPSLatitudeRef**：**ASCII** 单字符 **`N`** 或 **`S`**，表示 **GPSLatitude** 在北半球还是南半球。\n- **GPSLongitudeRef**：**`E`** 或 **`W`**，表示东经或西经。\n- **GPSLatitude** / **GPSLongitude**：多为 **度分秒** 形式的 **RATIONAL** 三元组；地图常用**十进制度**展示。解码时**必须**与 Ref 一起使用。\n\n## GPSAltitudeRef 与 GPSAltitude\n\n- **GPSAltitude**：海拔高度，**RATIONAL**（常以米为单位）。\n- **GPSAltitudeRef**：**BYTE**，规范中常用 **0** 表示**海平面以上**、**1** 表示**海平面以下**；应与 **GPSAltitude** 成对解释。\n\n## 隐私\n\n参考标签不会让 GPS **更不敏感**——它们只是完整解码坐标的一部分。**海拔**仍可能暗示楼层或地形。分享前请整体评估；见 [《哪些 EXIF 字段敏感？》](/guides/sensitive-fields)。\n\n## 延伸阅读\n\n- [《位置信息（GPS）》](/guides/dimension-location)\n- [《EXIF 标签速查》](/guides/tag-reference)"
+      },
+      "exifFlashTagBitmask": {
+        "title": "EXIF Flash 标签：位掩码与含义",
+        "desc": "Flash（SHORT）如何把是否闪光、回光检测、模式等打包成一个 16 位整数。",
+        "content": "EXIF 中的 **Flash** 标签是 **SHORT**（16 位）整数，**不是**简单的开关。规范将其定义为**位域**：低位记录闪光灯**是否触发**、是否检测到**回光**、**闪光模式**（未知/强制开/关/自动等）以及其它标志位。因此导出里会出现 **0、9、16、25** 等「看不懂的整数」——它们是**打包后的值**，不是直观的十进制枚举名。\n\n## 软件如何解读\n\n- 常见查看器（含 ExifTool 类解码）会按规范把整数翻成「未闪光」「自动闪光、已触发」等可读句子。\n- 对摄影者而言，它说明**闪光是否参与曝光**，与 **ExposureTime**、**FNumber** 等相互独立又相关。\n\n## 精确位定义\n\n**逐位**含义请以 **CIPA/JEITA** Exif 规范 PDF 为准。工程上也可对照 [ExifTool 对 Flash 的说明](https://exiftool.org/TagNames/EXIF.html#Flash) 作为解码参考。\n\n## 相关标签\n\n**ExposureProgram**、**ExposureMode**、**MeteringMode** 等提供更广的曝光上下文；见 [《拍摄设置》](/guides/dimension-settings) 与 [《光圈、快门、ISO 标签》](/guides/exif-aperture-shutter-iso-tags)。\n\n## 延伸阅读\n\n- [《EXIF 标签速查》](/guides/tag-reference)\n- [《拍摄设置》](/guides/dimension-settings)"
       }
     }
   },
   "pages": {
-    "privacy": { "title": "隐私说明" },
-    "terms": { "title": "使用条款", "content": "使用条款内容将在此展示。请勿将本工具用于侵犯他人隐私或违反当地法律的用途。使用即表示同意本条款。" },
+    "privacy": {
+      "title": "隐私说明"
+    },
+    "terms": {
+      "title": "使用条款",
+      "content": "使用条款内容将在此展示。请勿将本工具用于侵犯他人隐私或违反当地法律的用途。使用即表示同意本条款。"
+    },
     "about": {
       "title": "关于我们",
       "section1Title": "ExifStrip 是干什么的？",
@@ -519,7 +627,7 @@
       "topicExiftoolVsOnline": {
         "title": "ExifTool 和在线 EXIF 工具：什么时候用哪个？",
         "desc": "「在线 ExifTool」？ExifStrip 并非 ExifTool；CLI 批量与浏览器内 JPEG 预设各有所长。",
-        "content": "[ExifTool](https://exiftool.org/) 是很多进阶用户心中的「**元数据瑞士军刀**」：标签覆盖广、支持 **批量**、目录递归、标签复制、地理标记流水线，还能输出 JSON/CSV 等，适合会写一点命令行的人。\n\n## ExifStrip 是「在线 ExifTool」吗？\n\n**不是。** ExifTool 指 Phil Harvey 的特定开源项目与命令行工具；**ExifStrip** 为独立产品，解析引擎与功能不同，**无隶属或授权关系**。若你搜索 **exiftool online / 在线 exiftool**，多半是想要 **免安装** 的元数据查看或清理：本站侧重 **浏览器本地** 的可视化、地图与 **JPEG 预设剥离**；需要 `-all=` / `-all:all=` 等高级语义时，请安装 ExifTool 并以其 [官方文档](https://exiftool.org/exiftool_pod.html) 为准。\n\n## 什么时候优先考虑 ExifTool\n\n- 一次处理 **成百上千** 张归档、活动照片。\n- 需要最新 **厂商备注 / 少见格式** 的解读。\n- 要在自己机器上 **脚本化、自动化**（备份、数字资产管理）。\n\n可阅读其[官方命令说明](https://exiftool.org/exiftool_pod.html)。\n\n## 什么时候用在线工具更合适\n\n- 临时电脑、**不方便安装**。\n- 只想 **快速看图、看地图、导出一份 CSV/JSON**。\n- 主要为 **JPEG** 做 **GPS / 隐私** 等 **预设剥离**，且希望 **[ExifStrip](https://exifstrip.com)** 这类 **浏览器内、不上传** 的流程。\n\n## 隐私\n\n- **ExifTool**：在你本机跑，文件不外传。\n- **ExifStrip**：解析在浏览器本地完成（参见 [隐私](/privacy)）。两者都强调「别把原图交给不信任的第三方」。\n\n## 小结\n\n命令行要效率与全覆盖，浏览器要顺手与可视；很多人 **两种都会用**，视场景切换。\n\n## 站内延伸\n\n- [ExifStrip 能做什么？](/guides/what-exifstrip-does)\n- [IPTC、XMP 与 EXIF](/guides/iptc-xmp-overview)"
+        "content": "[ExifTool](https://exiftool.org/) 是很多进阶用户心中的「**元数据瑞士军刀**」：标签覆盖广、支持 **批量**、目录递归、标签复制、地理标记流水线，还能输出 JSON/CSV 等，适合会写一点命令行的人。\n\n## ExifStrip 是「在线 ExifTool」吗？\n\n**不是。** ExifTool 指 Phil Harvey 的特定开源项目与命令行工具；**ExifStrip** 为独立产品，解析引擎与功能不同，**无隶属或授权关系**。若你搜索 **exiftool online / 在线 exiftool**，多半是想要 **免安装** 的元数据查看或清理：本站侧重 **浏览器本地** 的可视化、地图与 **JPEG 预设剥离**；需要 `-all=` / `-all:all=` 等高级语义时，可先读专题 [《ExifTool `-all=` 与 `-all:all=`》](/blog/topic-exiftool-all-vs-allall)，再安装 ExifTool 并以其 [官方文档](https://exiftool.org/exiftool_pod.html) 为准。\n\n## 什么时候优先考虑 ExifTool\n\n- 一次处理 **成百上千** 张归档、活动照片。\n- 需要最新 **厂商备注 / 少见格式** 的解读。\n- 要在自己机器上 **脚本化、自动化**（备份、数字资产管理）。\n\n可阅读其[官方命令说明](https://exiftool.org/exiftool_pod.html)。\n\n## 什么时候用在线工具更合适\n\n- 临时电脑、**不方便安装**。\n- 只想 **快速看图、看地图、导出一份 CSV/JSON**。\n- 主要为 **JPEG** 做 **GPS / 隐私** 等 **预设剥离**，且希望 **[ExifStrip](https://exifstrip.com)** 这类 **浏览器内、不上传** 的流程。\n\n## 隐私\n\n- **ExifTool**：在你本机跑，文件不外传。\n- **ExifStrip**：解析在浏览器本地完成（参见 [隐私](/privacy)）。两者都强调「别把原图交给不信任的第三方」。\n\n## 小结\n\n命令行要效率与全覆盖，浏览器要顺手与可视；很多人 **两种都会用**，视场景切换。\n\n## 站内延伸\n\n- [ExifStrip 能做什么？](/guides/what-exifstrip-does)\n- [IPTC、XMP 与 EXIF](/guides/iptc-xmp-overview)\n- [ExifTool `-all=` 与 `-all:all=`](/blog/topic-exiftool-all-vs-allall)\n- [从 JPEG 剥离元数据](/blog/tip-strip-metadata-from-jpeg)"
       },
       "productWelcome": {
         "title": "欢迎使用 ExifStrip",
@@ -535,6 +643,16 @@
         "title": "更新说明",
         "desc": "ExifStrip 版本更新说明页。\n新版本发布时会在此列出主要新增、改进与修复。",
         "content": "本页用于发布 ExifStrip 的版本更新说明。新版本发布时我们会在此列出主要新增、改进与修复。\n\n# 第一版\n\n**查看 EXIF** — 上传一张或多张图片后，按维度展示 EXIF（设备、拍摄参数、位置、日期时间、作者与版权、图像属性、ICC）。支持格式：JPEG、PNG、TIFF、HEIC、AVIF、WebP。含 GPS 时在地图上显示拍摄位置。\n\n**编辑 EXIF** — 仅 JPEG：在页面上编辑作者、版权、拍摄时间等字段并写回；支持保存、按字段或按维度删除；可下载「含编辑」的图片。\n\n**剥离 EXIF** — 四种预设：全部移除、仅隐私（GPS/作者/序列号）、仅 GPS、仅设备/序列号。JPEG 支持按预设剥离且不重编码像素；PNG/WebP 通过重编码实现「全部移除」。可下载剥离后的图片。\n\n**导出 EXIF** — 将元数据导出为 CSV、JSON、TXT 或 HEX（原始）。\n\n**隐私分析** — 分享前对位置、设备、日期时间等敏感项做风险等级（高/中/低）提示。\n\n**站点** — 全部在浏览器内处理，不上传至服务器。页面： [首页](/)、[教程](/guides)、[博客](/blog)、[FAQ](/faq)、[关于](/about)、[隐私](/privacy)、[条款](/terms)。支持 English、简体中文、日本語。"
+      },
+      "tipStripMetadataFromJpeg": {
+        "title": "从 JPEG 剥离元数据：EXIF、IPTC、XMP 与画质",
+        "desc": "JPEG 里不只有像素：APP1 里的 EXIF，以及 IPTC、XMP；何时可无损剥离、何时会重编码，以及预设对应的真实数据块。",
+        "content": "人们常说「去掉 JPEG 的 EXIF」，但相机或软件导出的 JPEG 里往往**不止一类嵌入元数据**。若你要在分享前尽量干净，需要知道：**文件里可能有什么**、**工具会动哪几块**、**会不会重编码 JPEG**。下文贴近常见的 JPEG 结构与 ExifTool 官方文档表述；**具体软件版本与命令请以官方说明为准**。\n\n## 「JPEG 里的元数据」通常指什么\n\nJPEG 由若干**段（segment）**组成：起始标记、**应用段 APPn**、量化与 Huffman 表、压缩图像数据等。大家常说的 **EXIF** 多放在 **APP1**（常见标记 `0xFFE1`）里，内部是 **TIFF 风格**的目录结构，而不是「和像素混在一起」。结构说明见 [《EXIF 的结构》](/guides/exif-structure) 与 [《哪些格式包含 EXIF？》](/guides/supported-formats)。\n\n但**敏感信息不一定只在 EXIF**。同一文件里还可能有：\n\n- **IPTC**（说明、关键词、署名等，常见于新闻/图库流程）\n- **XMP**（常为 XML；权利、标题、Lightroom 等）\n- **厂商私有块**（如 MakerNote，或额外 APP 段）\n\n因此检索 **strip metadata from jpeg**、**remove metadata from images** 时，意图往往比 **remove EXIF** 更宽：**几类元数据可以并存**，只清 EXIF **未必**清掉 IPTC/XMP。对照阅读 [《IPTC、XMP 与 EXIF》](/guides/iptc-xmp-overview)。\n\n## 「只删 EXIF」与「尽量清空嵌入信息」\n\n不少工具自称「EXIF 清除」：\n\n- 有的只改写/删除 **EXIF（APP1 / TIFF IFD）**；\n- 有的会一并处理 **IPTC/XMP** 或整段删除。\n\n若你发现「EXIF 删了」但图库里仍显示**版权/关键词**，这些字段很可能在 **IPTC 或 XMP**。应用 **[如何查看 EXIF？](/guides/how-to-view)** 的思路：用同一类查看器**再打开导出文件**核对。\n\n## 画质：JPEG 下何时算「无损剥离」\n\n**要点：**若工具**只改写或删除元数据段**、**不碰压缩图像数据**，则**不会再次 JPEG 压缩**，通常**不存在因剥离导致的画质损失**。\n\n本站对 JPEG **预设剥离**的说明见 [《删除 EXIF 会影响画质吗？》](/guides/faq-remove-safe) 与 [《如何编辑或删除 EXIF？》](/guides/how-to-edit-strip)。\n\n若流程是**解码成像素再重新编码 JPEG** 以去掉分散在各处的元数据，则属于**新一代压缩**，可能带来**代际损失**或体积变化——即便肉眼不易察觉。\n\n## 分享前的实用流程\n\n1. 用可信方式**查看**设备、GPS、时间、作者/版权等（本站按维度分组）。\n2. **选定范围**：仅 GPS、更广的隐私项，或 **尽可能全部移除**（取决于工具支持的块）。\n3. **下载后再打开一次**核对——高敏感场景建议重复确认。\n\n在 [ExifStrip](https://exifstrip.com) 上，**JPEG** 支持四种剥离预设，目标是在支持的预设下**尽量只动元数据、不重编码像素**；详见 [《ExifStrip 能做什么？》](/guides/what-exifstrip-does)。\n\n## 何时更偏向 ExifTool\n\n[ExifTool](https://exiftool.org/) 适合 **批量**、**脚本化**、需要**精确到标签/族** 的场景。若在比较 **`-all=`** 与 **`-all:all=`** 这类**批量删除**写法，请读专题 [《ExifTool `-all=` 与 `-all:all=`》](/blog/topic-exiftool-all-vs-allall)，并以 [官方命令文档](https://exiftool.org/exiftool_pod.html) 为准。\n\n## 备份习惯\n\n剥离对元数据是**破坏性**的：分发出去的「干净版」**无法**从该文件还原已删标签。若以后可能需要溯源，可先 [导出 EXIF 备份](/blog/tip-export-exif) 再剥离。\n\n## 小结\n\n**从 JPEG 剥离元数据**不是单一开关：**EXIF / IPTC / XMP** 可能各占一块。JPEG 上**仅改元数据段**通常可避免重编码；**其他格式**见 [《支持的图片格式》](/blog/product-supported-formats)。操作指引从 [《如何编辑或删除 EXIF？》](/guides/how-to-edit-strip) 开始，再按批量与隐私需求选工具。"
+      },
+      "topicExiftoolAllVsAllall": {
+        "title": "ExifTool：`-all=` 与 `-all:all=` 到底差在哪",
+        "desc": "不是同一个命令写两遍：GROUP:TAG 语法、整段删除与逐标签删除，官方 pod 中的说明位置。",
+        "content": "论坛里常同时出现 **`exiftool -all=`** 和 **`exiftool -all:all=`** 两种「清空元数据」的写法。它们看起来像近亲，但 ExifTool 是按 **`GROUP:TAG`** 规则解析的，不是自然语言里的「全部」。本文说明二者在**删除元数据**语境下常被讨论的差异，并指向 **[官方 application 文档](https://exiftool.org/exiftool_pod.html)**；**务必以你本机安装的版本说明为准**。\n\n## 先理解：`GROUP:TAG` 与特殊名 `All`\n\n官方文档在「写入/删除标签」一节说明：标签名可带**组名**、**族（family）** 前缀等。文档中还介绍了特殊标签名 **`All`**，用于在指定范围内表示**全部标签**——因此「删除全部」常写成 **`-All=`** 这类形式，而不是随意拼句子。\n\n## `-all=` 一般指什么\n\n在官方 **WRITING EXAMPLES** 中，有类似下面的最小示例（仅说明**标签侧**，实际命令还会配合输出选项）：\n\n`exiftool -all= dst.jpg`\n\n可以理解为：这是文档里常见的 **「删除该文件中（在适用条件下）可删除的元信息」** 的入口写法。同一文档也强调：**不要**对多数 **RAW**（DNG 以外）盲目做「删全部」，因为厂商 **MakerNote** 可能含解读图像所需信息——**请先读官方警告**。\n\n## `-all:all=`：冒号两侧各司其职\n\n这里的 **`all:all`** 不是「比 `-all=` 多删一点」的口语，而是 **`组:标签`**：\n\n- 第一个 **`all`** 表示 ExifTool **组系统**里的 **group**（可用 `-listg`、`-listd` 等查看）；\n- 第二个 **`all`** 对应文档中的 **`All`** 标签语义，即在**该组范围**内指向**全部标签**。\n\n### 整段删除 vs 逐条删除\n\n官方在关于**删除**的说明里指出：在指定 **family** 与 **group** 时，删除可以是**逐标签**进行，也可以是**整段/整块**删除；并对比 **`-2all:all=`** 与 **`-all:all=`** 等写法——**一种模式下逐条删，另一种按块删**（措辞以英文原版为准）。这对 **JPEG** 尤其相关，因为元数据可能分布在多个 **APP** 段与厂商块中。\n\n**实务结论：**多数「导出前清干净」教程仍从 **`-all=`** 入手；当你明确需要文档所述的 **块级** 删除语义时，再深入研究 **`-all:all=`** 与 family 选项。\n\n## 复制元数据时也会见到 `-all:all`\n\n在 **`-tagsFromFile`** 相关说明中，文档解释如何把可写标签复制到输出文件的**对应位置**，其中也会出现 **`-all:all`** 与 **`All`** 的组合——那是**复制/对齐位置**的语境，与「一键删光」不是同一段操作，但会造成搜索结果里两种写法混在一起。\n\n## JPEG 的额外注意点\n\n即便「删光」元数据，文档也指出：**JPEG APP14 Adobe** 段默认可能**不会**随普通 **`-All=`** 一类操作去掉（与显示/色彩相关），同时又提醒**色彩空间**信息可能被移除导致**色彩变化**。若你需要**视觉完全一致**，请阅读 pod 内 **Adobe / ColorSpace** 相关说明，而不是假设一条命令万能。\n\n## 与 ExifStrip 的关系\n\n[ExifStrip](https://exifstrip.com) **不是** ExifTool，浏览器里也不会解析同样的 CLI 参数。我们侧重 **可视化检查**、**JPEG 预设剥离**与**本地处理**——见 [《ExifTool 与在线工具》](/blog/topic-exiftool-vs-online)。需要任意标签批处理时，用 **ExifTool**；需要免安装、小批量、偏隐私场景时，用 **ExifStrip**。\n\n## 延伸阅读\n\n- [官方 ExifTool 文档](https://exiftool.org/exiftool_pod.html)\n- [JPEG 中的 EXIF 结构](/guides/exif-structure)\n- [如何编辑或删除 EXIF？](/guides/how-to-edit-strip)"
       }
     }
   }

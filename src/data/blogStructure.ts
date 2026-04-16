@@ -57,6 +57,12 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
         descKey: "blog.entry.tipRemoveExifPng.desc",
         contentKey: "blog.entry.tipRemoveExifPng.content",
       },
+      {
+        id: "tip-strip-metadata-from-jpeg",
+        titleKey: "blog.entry.tipStripMetadataFromJpeg.title",
+        descKey: "blog.entry.tipStripMetadataFromJpeg.desc",
+        contentKey: "blog.entry.tipStripMetadataFromJpeg.content",
+      },
     ],
   },
   {
@@ -86,6 +92,12 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
         titleKey: "blog.entry.topicExiftoolVsOnline.title",
         descKey: "blog.entry.topicExiftoolVsOnline.desc",
         contentKey: "blog.entry.topicExiftoolVsOnline.content",
+      },
+      {
+        id: "topic-exiftool-all-vs-allall",
+        titleKey: "blog.entry.topicExiftoolAllVsAllall.title",
+        descKey: "blog.entry.topicExiftoolAllVsAllall.desc",
+        contentKey: "blog.entry.topicExiftoolAllVsAllall.content",
       },
     ],
   },

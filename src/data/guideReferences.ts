@@ -109,6 +109,31 @@ export const GUIDE_REFERENCES: Record<string, GuideReference[]> = {
     { title: "CIPA – Exif Standard (DC-008)", url: "https://www.cipa.jp/e/std/std-sec.html" },
     { title: "Library of Congress – Exif Format Description", url: "https://www.loc.gov/preservation/digital/formats/fdd/fdd000618.shtml" },
   ],
+  "exif-specification-overview": [
+    { title: "CIPA – Exchangeable image file format for digital still cameras (Exif standard)", url: "https://www.cipa.jp/e/std/std-sec.html" },
+    { title: "CIPA – Update history (Exif version history)", url: "https://www.cipa.jp/e/std/history_sec.html" },
+    { title: "Library of Congress – Exchangeable Image File Format (Exif) Family", url: "https://www.loc.gov/preservation/digital/formats/fdd/fdd000618.shtml" },
+  ],
+  "exif-datetimeoriginal-vs-datetime": [
+    { title: "CIPA – Exif Standard (date/time tags)", url: "https://www.cipa.jp/e/std/std-sec.html" },
+    { title: "Library of Congress – Tags for TIFF and Related (Exif IFD)", url: "https://www.loc.gov/preservation/digital/formats/content/tiff_tags.shtml" },
+  ],
+  "exifversion-flashpixversion-explained": [
+    { title: "CIPA – Exif Standard (ExifVersion, FlashPixVersion)", url: "https://www.cipa.jp/e/std/std-sec.html" },
+    { title: "Library of Congress – Exif Family (versions and embedded metadata)", url: "https://www.loc.gov/preservation/digital/formats/fdd/fdd000618.shtml" },
+  ],
+  "exif-aperture-shutter-iso-tags": [
+    { title: "CIPA – Exif Standard (capture tags)", url: "https://www.cipa.jp/e/std/std-sec.html" },
+    { title: "ExifTool – EXIF Tags (FNumber, ExposureTime, ISO, Flash)", url: "https://exiftool.org/TagNames/EXIF.html" },
+  ],
+  "exif-gps-reference-tags": [
+    { title: "CIPA – Exif Standard (GPS IFD)", url: "https://www.cipa.jp/e/std/std-sec.html" },
+    { title: "ExifTool – GPS Tags", url: "https://exiftool.org/TagNames/GPS.html" },
+  ],
+  "exif-flash-tag-bitmask": [
+    { title: "CIPA – Exif Standard (Flash tag)", url: "https://www.cipa.jp/e/std/std-sec.html" },
+    { title: "ExifTool – EXIF Tag Names (Flash bitmask)", url: "https://exiftool.org/TagNames/EXIF.html#Flash" },
+  ],
   /** IPTC / XMP / MakerNote / Orientation (added guides) */
   "iptc-xmp-overview": [
     { title: "ExifTool – IPTC tag names", url: "https://exiftool.org/TagNames/IPTC.html" },

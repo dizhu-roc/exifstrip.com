@@ -36,6 +36,11 @@ export const BLOG_SEO: Record<
     description:
       "PNG stores metadata in chunks; removing all EXIF often re-encodes. JPEG preset strip works differently.",
   },
+  "tip-strip-metadata-from-jpeg": {
+    title: "Strip metadata from JPEG: EXIF, IPTC, XMP, and quality",
+    description:
+      "What lives in a JPEG besides pixels: EXIF APP1, IPTC, XMP. Lossless vs re-encode, presets, and when to use ExifTool vs ExifStrip.",
+  },
   "topic-phone-privacy": {
     title: "Phone and album privacy settings",
     description:
@@ -55,6 +60,11 @@ export const BLOG_SEO: Record<
     title: "ExifTool vs online EXIF tools (exiftool online, no install)",
     description:
       "Online ExifTool searches: ExifStrip is not ExifTool—compare CLI batch vs browser JPEG stripping and privacy.",
+  },
+  "topic-exiftool-all-vs-allall": {
+    title: "ExifTool -all= vs -all:all=: difference explained",
+    description:
+      "ExifTool group:tag syntax for mass delete vs block delete. Official pod notes on -all=, -all:all=, and JPEG APP segments.",
   },
   "product-welcome": {
     title: "Welcome to ExifStrip",

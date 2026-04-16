@@ -97,6 +97,42 @@ export const GUIDES_CATEGORIES: GuideCategory[] = [
     entries: [
       { id: "tag-reference", titleKey: "guides.entry.tagReference.title", descKey: "guides.entry.tagReference.desc", contentKey: "guides.entry.tagReference.content" },
       { id: "standards-links", titleKey: "guides.entry.standardsLinks.title", descKey: "guides.entry.standardsLinks.desc", contentKey: "guides.entry.standardsLinks.content" },
+      {
+        id: "exif-specification-overview",
+        titleKey: "guides.entry.exifSpecificationOverview.title",
+        descKey: "guides.entry.exifSpecificationOverview.desc",
+        contentKey: "guides.entry.exifSpecificationOverview.content",
+      },
+      {
+        id: "exif-datetimeoriginal-vs-datetime",
+        titleKey: "guides.entry.exifDatetimeoriginalVsDatetime.title",
+        descKey: "guides.entry.exifDatetimeoriginalVsDatetime.desc",
+        contentKey: "guides.entry.exifDatetimeoriginalVsDatetime.content",
+      },
+      {
+        id: "exifversion-flashpixversion-explained",
+        titleKey: "guides.entry.exifVersionFlashpixVersionExplained.title",
+        descKey: "guides.entry.exifVersionFlashpixVersionExplained.desc",
+        contentKey: "guides.entry.exifVersionFlashpixVersionExplained.content",
+      },
+      {
+        id: "exif-aperture-shutter-iso-tags",
+        titleKey: "guides.entry.exifApertureShutterIsoTags.title",
+        descKey: "guides.entry.exifApertureShutterIsoTags.desc",
+        contentKey: "guides.entry.exifApertureShutterIsoTags.content",
+      },
+      {
+        id: "exif-gps-reference-tags",
+        titleKey: "guides.entry.exifGpsReferenceTags.title",
+        descKey: "guides.entry.exifGpsReferenceTags.desc",
+        contentKey: "guides.entry.exifGpsReferenceTags.content",
+      },
+      {
+        id: "exif-flash-tag-bitmask",
+        titleKey: "guides.entry.exifFlashTagBitmask.title",
+        descKey: "guides.entry.exifFlashTagBitmask.desc",
+        contentKey: "guides.entry.exifFlashTagBitmask.content",
+      },
     ],
   },
 ];

@@ -156,18 +156,91 @@
     "validationLatitude": "緯度は -90 ～ 90 の範囲で入力してください。",
     "validationLongitude": "経度は -180 ～ 180 の範囲で入力してください。",
     "opt": {
-      "orientation": { "0": "未定義", "1": "左上", "2": "右上", "3": "右下", "4": "左下", "5": "左頂", "6": "右頂", "7": "右底", "8": "左底" },
-      "whiteBalance": { "0": "自動", "1": "手動" },
-      "flash": { "0": "なし", "1": "発光", "5": "発光(復帰不明)", "7": "発光(復帰)", "9": "強制", "13": "強制(復帰不明)", "15": "強制(復帰)", "16": "禁止", "24": "自動", "25": "自動(復帰不明)", "29": "自動(復帰)", "31": "自動(復帰)" },
-      "exposureProgram": { "0": "未定義", "1": "手動", "2": "通常", "3": "絞り優先", "4": "シャッター優先", "5": "クリエイティブ", "6": "アクション", "7": "ポートレート", "8": "風景" },
-      "exposureMode": { "0": "自動", "1": "手動", "2": "ブラケット" },
-      "meteringMode": { "0": "不明", "1": "平均", "2": "中央", "3": "スポット", "4": "マルチ", "5": "パターン", "6": "部分" },
-      "sceneCaptureType": { "0": "標準", "1": "風景", "2": "ポートレート", "3": "夜景" },
-      "resolutionUnit": { "1": "不明", "2": "インチ", "3": "cm" },
-      "colorSpace": { "1": "sRGB", "2": "Adobe RGB", "65535": "未校正" },
-      "gpsRef": { "N": "北", "S": "南", "E": "東", "W": "西" },
-      "gpsDir": { "T": "真北", "M": "磁北" },
-      "gpsSpeedRef": { "K": "km/h", "M": "mph", "N": "ノット" }
+      "orientation": {
+        "0": "未定義",
+        "1": "左上",
+        "2": "右上",
+        "3": "右下",
+        "4": "左下",
+        "5": "左頂",
+        "6": "右頂",
+        "7": "右底",
+        "8": "左底"
+      },
+      "whiteBalance": {
+        "0": "自動",
+        "1": "手動"
+      },
+      "flash": {
+        "0": "なし",
+        "1": "発光",
+        "5": "発光(復帰不明)",
+        "7": "発光(復帰)",
+        "9": "強制",
+        "13": "強制(復帰不明)",
+        "15": "強制(復帰)",
+        "16": "禁止",
+        "24": "自動",
+        "25": "自動(復帰不明)",
+        "29": "自動(復帰)",
+        "31": "自動(復帰)"
+      },
+      "exposureProgram": {
+        "0": "未定義",
+        "1": "手動",
+        "2": "通常",
+        "3": "絞り優先",
+        "4": "シャッター優先",
+        "5": "クリエイティブ",
+        "6": "アクション",
+        "7": "ポートレート",
+        "8": "風景"
+      },
+      "exposureMode": {
+        "0": "自動",
+        "1": "手動",
+        "2": "ブラケット"
+      },
+      "meteringMode": {
+        "0": "不明",
+        "1": "平均",
+        "2": "中央",
+        "3": "スポット",
+        "4": "マルチ",
+        "5": "パターン",
+        "6": "部分"
+      },
+      "sceneCaptureType": {
+        "0": "標準",
+        "1": "風景",
+        "2": "ポートレート",
+        "3": "夜景"
+      },
+      "resolutionUnit": {
+        "1": "不明",
+        "2": "インチ",
+        "3": "cm"
+      },
+      "colorSpace": {
+        "1": "sRGB",
+        "2": "Adobe RGB",
+        "65535": "未校正"
+      },
+      "gpsRef": {
+        "N": "北",
+        "S": "南",
+        "E": "東",
+        "W": "西"
+      },
+      "gpsDir": {
+        "T": "真北",
+        "M": "磁北"
+      },
+      "gpsSpeedRef": {
+        "K": "km/h",
+        "M": "mph",
+        "N": "ノット"
+      }
     }
   },
   "metadataGraph": {
@@ -300,17 +373,17 @@
       "dimensionSettings": {
         "title": "撮影パラメータ",
         "desc": "シャッター・絞り・ISO・焦点距離・ホワイトバランス・フラッシュ・露出プログラム等；撮影時に機器が書き込む。",
-        "content": "撮影パラメータはシャッターを切った瞬間の露出・光学条件を記録し、撮影時に機器が書き込む。主に Exif 子 IFD に格納される。議会図書館では「カメラ設定」「技術的画像データ」に分類される。\n\n## 代表的なタグ\n\nExposureTime（シャッター、秒、例 1/125）、FNumber（絞り、例 f/2.8）、ISOSpeedRatings（感度）、FocalLength（焦点距離・mm）、WhiteBalance、Flash、ExposureProgram（プログラムオート・絞り優先など）、ExposureBiasValue（露出補正）、MeteringMode（測光）、SceneCaptureType（シーンタイプ）。\n\n## 簡単な意味\n\n絞りは入射光量と被写界深度、シャッターと ISO は露出を決め、焦点距離は画角と遠近感に影響する。これらのデータは撮影条件の分析や再現に使え、[画像属性](/guides/dimension-image) の解像度・色空間と合わせて一枚の画像の生成環境を説明する。"
+        "content": "撮影パラメータはシャッターを切った瞬間の露出・光学条件を記録し、撮影時に機器が書き込む。主に Exif 子 IFD に格納される。議会図書館では「カメラ設定」「技術的画像データ」に分類される。\n\n## 代表的なタグ\n\nExposureTime（シャッター、秒、例 1/125）、FNumber（絞り、例 f/2.8）、ISOSpeedRatings（感度）、FocalLength（焦点距離・mm）、WhiteBalance、Flash、ExposureProgram（プログラムオート・絞り優先など）、ExposureBiasValue（露出補正）、MeteringMode（測光）、SceneCaptureType（シーンタイプ）。\n\n## 簡単な意味\n\n絞りは入射光量と被写界深度、シャッターと ISO は露出を決め、焦点距離は画角と遠近感に影響する。これらのデータは撮影条件の分析や再現に使え、[画像属性](/guides/dimension-image) の解像度・色空間と合わせて一枚の画像の生成環境を説明する。\n\nタグ単位の対応は [FNumber・ExposureTime・ISO など](/guides/exif-aperture-shutter-iso-tags)、**Flash** のビットマスクは [EXIF Flash タグ](/guides/exif-flash-tag-bitmask) を参照。"
       },
       "dimensionLocation": {
         "title": "位置情報（GPS）",
         "desc": "EXIF GPS：緯度経度・高度・GPSAltitudeRef（海抜の基準）・GPS タイムスタンプ。高リスク。",
-        "content": "**EXIF GPS** メタデータは独立した GPS 子 IFD に格納され、0th IFD のプライベートタグ 0x8825 で参照される。議会図書館の説明では、GPS 対応は Exif 2.0 で導入され、撮影地点の地理情報を記録するために使われる。\n\n## 主なタグ\n\nGPSLatitude／GPSLongitude と GPSLatitudeRef／GPSLongitudeRef（南北・東西）で緯度経度を表す。規格上は度分秒の有理数で、十進度に換算して地図表示に使う。\n\nGPSAltitude／**GPSAltitudeRef**、GPSDateStamp／GPSTimeStamp、および速度・撮影方向などのオプションタグがある。\n\n## GPSAltitudeRef と GPSAltitude\n\n**GPSAltitude** は高度を有理数で格納する。**GPSAltitudeRef** は 1 バイトで、高度が **海抜以上**（多くは `0`）か **海抜未満／海底下**（`1`）かを示す。ビューアは両方を組み合わせて解釈する。住所がなくても高度は地形や階層の手がかりになりうるため、緯度経度と同様に共有前の確認対象に含めるとよい。詳しくは [どの EXIF が敏感？](/guides/sensitive-fields)。タグ名は [ExifTool GPS](https://exiftool.org/TagNames/GPS.html)、定義は CIPA/JEITA の Exif 規格を参照。\n\n## プライバシー上の注意\n\n測位機能を持つカメラやスマホが撮影時にこれらを書き込む。緯度経度とタイムスタンプで撮影場所・時刻を特定できるため高リスクであり、共有前に表示・除去を推奨する。詳しくは [EXIF のプライバシーをなぜ気にする？](/guides/why-care-privacy) を参照。"
+        "content": "**EXIF GPS** メタデータは独立した GPS 子 IFD に格納され、0th IFD のプライベートタグ 0x8825 で参照される。議会図書館の説明では、GPS 対応は Exif 2.0 で導入され、撮影地点の地理情報を記録するために使われる。\n\n## 主なタグ\n\nGPSLatitude／GPSLongitude と GPSLatitudeRef／GPSLongitudeRef（南北・東西）で緯度経度を表す。規格上は度分秒の有理数で、十進度に換算して地図表示に使う。\n\nGPSAltitude／**GPSAltitudeRef**、GPSDateStamp／GPSTimeStamp、および速度・撮影方向などのオプションタグがある。\n\n## GPSAltitudeRef と GPSAltitude\n\n**GPSAltitude** は高度を有理数で格納する。**GPSAltitudeRef** は 1 バイトで、高度が **海抜以上**（多くは `0`）か **海抜未満／海底下**（`1`）かを示す。ビューアは両方を組み合わせて解釈する。住所がなくても高度は地形や階層の手がかりになりうるため、緯度経度と同様に共有前の確認対象に含めるとよい。詳しくは [どの EXIF が敏感？](/guides/sensitive-fields)。タグ名は [ExifTool GPS](https://exiftool.org/TagNames/GPS.html)、定義は CIPA/JEITA の Exif 規格を参照。\n\n**GPSLatitudeRef**／**GPSLongitudeRef**／**GPSAltitudeRef** と数値タグの組み合わせは [EXIF GPS 基準タグ](/guides/exif-gps-reference-tags) を参照。\n\n## プライバシー上の注意\n\n測位機能を持つカメラやスマホが撮影時にこれらを書き込む。緯度経度とタイムスタンプで撮影場所・時刻を特定できるため高リスクであり、共有前に表示・除去を推奨する。詳しくは [EXIF のプライバシーをなぜ気にする？](/guides/why-care-privacy) を参照。"
       },
       "dimensionDatetime": {
         "title": "日付・時刻",
         "desc": "撮影・更新・デジタル化の時刻；一般的な形式にタイムゾーンなし；一部機器は拡張で時差を記録。",
-        "content": "日付・時刻の EXIF は撮影・更新・デジタル化の時刻を記録し、並び替え・検索・出所の確認に使う。議会図書館では EXIF メタデータの「日付・時刻情報」に含まれる。\n\n## 主なタグと形式\n\nDateTimeOriginal（撮影）、DateTime（更新）、DateTimeDigitized（デジタル化）。形式は通常「YYYY:MM:DD HH:MM:SS」（例 2024:03:15 14:30:00）で、タイムゾーン欄はない。\n\n## タイムゾーンの制限\n\n規格上の標準日時タグには UTC オフセットが含まれない。OffsetTime／OffsetTimeOriginal などの拡張で時差を記録する機器・ソフトもあるが、すべてのファイルにあるわけではない。\n\nExif 2.31 で UTC 時差の記述が追加されている。版本の変遷は [EXIF の由来と変遷](/guides/exif-history) を参照。"
+        "content": "日付・時刻の EXIF は撮影・更新・デジタル化の時刻を記録し、並び替え・検索・出所の確認に使う。議会図書館では EXIF メタデータの「日付・時刻情報」に含まれる。\n\n## 主なタグと形式\n\nDateTimeOriginal（撮影）、DateTime（更新）、DateTimeDigitized（デジタル化）。形式は通常「YYYY:MM:DD HH:MM:SS」（例 2024:03:15 14:30:00）で、タイムゾーン欄はない。\n\n## タイムゾーンの制限\n\n規格上の標準日時タグには UTC オフセットが含まれない。OffsetTime／OffsetTimeOriginal などの拡張で時差を記録する機器・ソフトもあるが、すべてのファイルにあるわけではない。\n\nExif 2.31 で UTC 時差の記述が追加されている。版本の変遷は [EXIF の由来と変遷](/guides/exif-history) を参照。\n\n三つのタグの違いを表で整理した解説は [DateTimeOriginal と DateTime、DateTimeDigitized](/guides/exif-datetimeoriginal-vs-datetime) を参照。"
       },
       "dimensionImage": {
         "title": "画像属性",
@@ -335,7 +408,7 @@
       "orientationTagExplained": {
         "title": "EXIF Orientation：表示とピクセルの関係",
         "desc": "値 1～8 は表示時の回転・反転；ピクセル行列そのものが必ずしも物理回転されているわけではない。",
-        "content": "**Orientation** はビューアに「どう表示するか」（回転・ミラー）を指示するタグで、値 **1～8** が定義される。正しいビューアはタグに従うが、**圧縮ビットストリームはセンサー向きのまま**ということが多い。\n\n## EXIF Orientation 値 1～8（参照）\n\n| 値 | 典型的な表示の意味 |\n| --- | --- |\n| 1 | 通常（0°） |\n| 2 | 左右反転 |\n| 3 | 180° 回転 |\n| 4 | 上下反転 |\n| 5 | 左右反転＋時計回り 270°（または反時計回り 90°） |\n| 6 | 時計回り 90° |\n| 7 | 左右反転＋時計回り 90° |\n| 8 | 反時計回り 90° |\n\n規格の文言は行・列の言い方だが、ビューアは同じ 8 パターンを実装する。**orientation exif** や **exif orientation 1-8** の検索は本タグを指すことが多い。\n\n## よくある誤解\n\n- アプリによって向きが違う → Orientation を無視する実装があるから。\n- タグだけ変えたら「回転した」？→ 多くは**表示解釈**の変更。ピクセルを焼き込むには再エンコードが別途必要。\n\n## 品質への影響\n\nOrientation をメタデータだけ更新しても JPEG の再圧縮は通常不要。削除すると再度「横向き」に見えることがある。\n\n## 詳しく\n\n- [画像設定ディメンション](/guides/dimension-settings)\n- [EXIF の見方](/guides/how-to-view)\n\n[ExifTool EXIF タグ](https://exiftool.org/TagNames/EXIF.html) も参照。"
+        "content": "**orientation exif**、**EXIF Orientation 1～8**、**EXIF 方向タグ** で調べた場合の説明です。**Orientation** は [EXIF タグ早見](/guides/tag-reference) や [LOC TIFF/Exif タグ表](https://www.loc.gov/preservation/digital/formats/content/tiff_tags.shtml) にある表示用タグで、ビューアに「どう表示するか」（回転・ミラー）を指示し、値 **1～8** が定義される。正しいビューアはタグに従うが、**圧縮ビットストリームはセンサー向きのまま**ということが多い。\n\n## EXIF Orientation 値 1～8（参照）\n\n| 値 | 典型的な表示の意味 |\n| --- | --- |\n| 1 | 通常（0°） |\n| 2 | 左右反転 |\n| 3 | 180° 回転 |\n| 4 | 上下反転 |\n| 5 | 左右反転＋時計回り 270°（または反時計回り 90°） |\n| 6 | 時計回り 90° |\n| 7 | 左右反転＋時計回り 90° |\n| 8 | 反時計回り 90° |\n\n規格の文言は行・列の言い方だが、ビューアは同じ 8 パターンを実装する。**orientation exif** や **exif orientation 1-8** の検索は本タグを指すことが多い。\n\n## よくある誤解\n\n- アプリによって向きが違う → Orientation を無視する実装があるから。\n- タグだけ変えたら「回転した」？→ 多くは**表示解釈**の変更。ピクセルを焼き込むには再エンコードが別途必要。\n\n## 品質への影響\n\nOrientation をメタデータだけ更新しても JPEG の再圧縮は通常不要。削除すると再度「横向き」に見えることがある。\n\n## 詳しく\n\n- [画像設定ディメンション](/guides/dimension-settings)\n- [EXIF の見方](/guides/how-to-view)\n\n[ExifTool EXIF タグ](https://exiftool.org/TagNames/EXIF.html) も参照。"
       },
       "whyCarePrivacy": {
         "title": "EXIF のプライバシーをなぜ気にする？",
@@ -395,18 +468,53 @@
       "tagReference": {
         "title": "EXIF タグ早見表",
         "desc": "デバイス・撮影・位置・日時・作者・画像属性など次元別に、当サイトで解析可能な EXIF タグと簡単な説明を一覧。",
-        "content": "[EXIF の構造](/guides/exif-structure) の 0th/Exif/GPS 等に対応し、`exifBlocks` と EXIF 次元ドキュメントに合わせた完全なタグ一覧。正式な定義は CIPA/JEITA および [LOC Tags for TIFF](https://www.loc.gov/preservation/digital/formats/content/tiff_tags.shtml) に準拠。\n\n## 1. device（デバイス／カメラ）\n\n| Tag | 説明 |\n|-----|------|\n| Make | メーカー |\n| Model | モデル |\n| BodySerialNumber | ボディシリアル |\n| CameraSerialNumber | カメラシリアル |\n| LensMake | レンズメーカー |\n| LensModel | レンズモデル |\n| Software | ソフトウェア |\n| FirmwareVersion | ファームウェア版 |\n\n## 2. imageSettings（撮影パラメータ）\n\n| Tag | 説明 |\n|-----|------|\n| Orientation | 方向 |\n| ExposureTime | シャッター速度 |\n| FNumber | 絞り |\n| FocalLength | 焦点距離 |\n| ISOSpeedRatings | ISO |\n| WhiteBalance | ホワイトバランス |\n| Flash | フラッシュ |\n| ExposureProgram | 露出プログラム |\n| ExposureMode | 露出モード |\n| MeteringMode | 測光モード |\n| SceneCaptureType | シーンタイプ |\n| SceneType | シーンタイプ（バイト） |\n| ExposureBiasValue | 露出補正 |\n\n## 3. location（GPS）\n\n| Tag | 説明 |\n|-----|------|\n| GPSLatitude | 緯度 |\n| GPSLongitude | 経度 |\n| GPSAltitude | 高度 |\n| GPSAltitudeRef | 高度の基準（海抜の上下） |\n| GPSDateStamp | GPS 日付 |\n| GPSTimeStamp | GPS 時刻 |\n| GPSLatitudeRef | 南北参照 |\n| GPSLongitudeRef | 東西参照 |\n| GPSSpeedRef | 速度単位参照 |\n| GPSImgDirection | 画像方向 |\n| GPSImgDirectionRef | 方向参照 |\n| GPSDestBearing | 目的地方位 |\n| GPSDestBearingRef | 方位参照 |\n\n## 4. dateTime（日付・時刻）\n\n| Tag | 説明 |\n|-----|------|\n| DateTimeOriginal | 撮影日時 |\n| DateTime | 更新日時 |\n| DateTimeDigitized | デジタル化日時 |\n\n## 5. other（作者・著作権）\n\n| Tag | 説明 |\n|-----|------|\n| Artist | 作者 |\n| Copyright | 著作権 |\n| UserComment | ユーザーコメント |\n| ImageDescription | 画像説明 |\n| MakerNote | メーカーノート |\n\n## 6. image（画像属性）\n\n| Tag | 説明 |\n|-----|------|\n| ImageWidth | 画像幅 |\n| ImageLength | 画像高さ |\n| XResolution | 水平解像度 |\n| YResolution | 垂直解像度 |\n| ResolutionUnit | 解像度単位 |\n| ColorSpace | 色空間 |\n| BitsPerSample | ビット深度 |\n| SamplesPerPixel | サンプル数 |\n| Compression | 圧縮 |\n| PhotometricInterpretation | フォトメトリック解釈 |\n| YCbCrPositioning | YCbCr 配置 |\n| PlanarConfiguration | プレーナー構成 |\n| ExifVersion | EXIF バージョン |\n| FlashPixVersion | FlashPix バージョン |\n| ComponentsConfiguration | コンポーネント構成 |\n| CompressedBitsPerPixel | 圧縮ビット/ピクセル |\n\n---\n\n上記はトップページの [EXIF 一覧](/)、メタデータブロックの表示、および次元別ガイドと一致： [デバイス・カメラ情報](/guides/dimension-device)、[撮影パラメータ](/guides/dimension-settings)、[位置情報（GPS）](/guides/dimension-location)、[日付・時刻](/guides/dimension-datetime)、[画像属性](/guides/dimension-image)、[作者・著作権・コメント](/guides/dimension-other)。規格は [規格・仕様リンク](/guides/standards-links) を参照。"
+        "content": "[EXIF の構造](/guides/exif-structure) の 0th/Exif/GPS 等に対応し、`exifBlocks` と EXIF 次元ドキュメントに合わせた完全なタグ一覧。正式な定義は CIPA/JEITA および [LOC Tags for TIFF](https://www.loc.gov/preservation/digital/formats/content/tiff_tags.shtml) に準拠。\n\n## 1. device（デバイス／カメラ）\n\n| Tag | 説明 |\n|-----|------|\n| Make | メーカー |\n| Model | モデル |\n| BodySerialNumber | ボディシリアル |\n| CameraSerialNumber | カメラシリアル |\n| LensMake | レンズメーカー |\n| LensModel | レンズモデル |\n| Software | ソフトウェア |\n| FirmwareVersion | ファームウェア版 |\n\n## 2. imageSettings（撮影パラメータ）\n\n| Tag | 説明 |\n|-----|------|\n| Orientation | 方向 |\n| ExposureTime | シャッター速度 |\n| FNumber | 絞り |\n| FocalLength | 焦点距離 |\n| ISOSpeedRatings | ISO |\n| WhiteBalance | ホワイトバランス |\n| Flash | フラッシュ |\n| ExposureProgram | 露出プログラム |\n| ExposureMode | 露出モード |\n| MeteringMode | 測光モード |\n| SceneCaptureType | シーンタイプ |\n| SceneType | シーンタイプ（バイト） |\n| ExposureBiasValue | 露出補正 |\n\n## 3. location（GPS）\n\n| Tag | 説明 |\n|-----|------|\n| GPSLatitude | 緯度 |\n| GPSLongitude | 経度 |\n| GPSAltitude | 高度 |\n| GPSAltitudeRef | 高度の基準（海抜の上下） |\n| GPSDateStamp | GPS 日付 |\n| GPSTimeStamp | GPS 時刻 |\n| GPSLatitudeRef | 南北参照 |\n| GPSLongitudeRef | 東西参照 |\n| GPSSpeedRef | 速度単位参照 |\n| GPSImgDirection | 画像方向 |\n| GPSImgDirectionRef | 方向参照 |\n| GPSDestBearing | 目的地方位 |\n| GPSDestBearingRef | 方位参照 |\n\n## 4. dateTime（日付・時刻）\n\n| Tag | 説明 |\n|-----|------|\n| DateTimeOriginal | 撮影日時 |\n| DateTime | 更新日時 |\n| DateTimeDigitized | デジタル化日時 |\n\n## 5. other（作者・著作権）\n\n| Tag | 説明 |\n|-----|------|\n| Artist | 作者 |\n| Copyright | 著作権 |\n| UserComment | ユーザーコメント |\n| ImageDescription | 画像説明 |\n| MakerNote | メーカーノート |\n\n## 6. image（画像属性）\n\n| Tag | 説明 |\n|-----|------|\n| ImageWidth | 画像幅 |\n| ImageLength | 画像高さ |\n| XResolution | 水平解像度 |\n| YResolution | 垂直解像度 |\n| ResolutionUnit | 解像度単位 |\n| ColorSpace | 色空間 |\n| BitsPerSample | ビット深度 |\n| SamplesPerPixel | サンプル数 |\n| Compression | 圧縮 |\n| PhotometricInterpretation | フォトメトリック解釈 |\n| YCbCrPositioning | YCbCr 配置 |\n| PlanarConfiguration | プレーナー構成 |\n| ExifVersion | EXIF バージョン |\n| FlashPixVersion | FlashPix バージョン |\n| ComponentsConfiguration | コンポーネント構成 |\n| CompressedBitsPerPixel | 圧縮ビット/ピクセル |\n\n---\n\n## タグに沿った深掘り記事\n\n- [DateTimeOriginal と DateTime、DateTimeDigitized](/guides/exif-datetimeoriginal-vs-datetime)\n- [ExifVersion と FlashPixVersion](/guides/exifversion-flashpixversion-explained)\n- [FNumber・ExposureTime・ISO など](/guides/exif-aperture-shutter-iso-tags)\n- [GPS 基準タグ（南北・東西・高度）](/guides/exif-gps-reference-tags)\n- [Flash ビットマスク](/guides/exif-flash-tag-bitmask)\n- [EXIF 仕様の読み方](/guides/exif-specification-overview)\n\n---\n\n上記はトップページの [EXIF 一覧](/)、メタデータブロックの表示、および次元別ガイドと一致： [デバイス・カメラ情報](/guides/dimension-device)、[撮影パラメータ](/guides/dimension-settings)、[位置情報（GPS）](/guides/dimension-location)、[日付・時刻](/guides/dimension-datetime)、[画像属性](/guides/dimension-image)、[作者・著作権・コメント](/guides/dimension-other)。規格は [規格・仕様リンク](/guides/standards-links) を参照。"
       },
       "standardsLinks": {
         "title": "規格・仕様リンク",
         "desc": "EXIF 仕様・標準：CIPA/JEITA、LOC の JPEG/TIFF ファミリーとタグ表。実装時は一次資料を参照。",
         "content": "互換実装やパーサを書く・タグやバージョンを確認するときに、公式の規格を参照する必要がある。ここではリンクと一行説明のみとし、本文は転載しない。最新は公式を参照のこと。\n\n**CIPA（カメラ映像機器工業会）** が JEITA と共同で Exif 規格を維持している。\n\n- [CIPA 標準一覧（Exif DC-008 含む）](https://www.cipa.jp/e/std/std-sec.html) — 現行 Exif 規格とダウンロード。\n- [CIPA 更新履歴](https://www.cipa.jp/e/std/history_sec.html) — バージョン履歴。\n\n**米国議会図書館（LOC）形式説明**\n\n- [Exchangeable Image File Format (Exif) Family](https://www.loc.gov/preservation/digital/formats/fdd/fdd000618.shtml) — Exif ファミリー概要・バージョン・JPEG/TIFF での利用。\n- [Tags for TIFF and Related Specifications](https://www.loc.gov/preservation/digital/formats/content/tiff_tags.shtml) — TIFF/Exif タグ一覧（Exif/GPS/Interop）。\n\n**その他** Wikipedia の [Exif](https://en.wikipedia.org/wiki/Exif) は入門向け；タグや挙動の詳細は CIPA/JEITA と LOC を参照。\n\n## 「EXIF 仕様」と「EXIF 付き JPEG」\n\n**EXIF 仕様** とは多くの場合、CIPA/JEITA の **Exif 規格**（タグ定義と IFD 構造）を指す。**JPEG に EXIF が載る** 典型的な形は、通常の JPEG ビットストリームに **APP1** セグメントを差し込み、その中に TIFF 風の EXIF ツリーを埋めること。IFD の配置は [EXIF の構造](/guides/exif-structure)、対応形式は [どの形式に EXIF が含まれる？](/guides/supported-formats)。当サイトは実用的な閲覧・除去ツールであり、**適合試験ラボではない**。\n\n規格の由来とバージョンは [EXIF の由来と変遷](/guides/exif-history)、タグの意味の速査は [EXIF タグ早見表](/guides/tag-reference) を参照。"
+      },
+      "exifSpecificationOverview": {
+        "title": "EXIF 仕様：公式ソースと読み方",
+        "desc": "CIPA/JEITA Exif（DC-008）、LOC の形式説明、「規格本文」と「JPEG 内の EXIF」の関係。",
+        "content": "**EXIF specification** と言ったとき、多くの場合 **CIPA** と **JEITA** が公開する**規格書**（タグ名・型・IFD 構造・GPS/日付の扱い）を指し、**ある 1 枚の JPEG サンプル**ではありません。本文では **公式文書の所在**、**EXIF を含む JPEG ファイル**との対応、**厳密な意味**が必要なときの参照先を整理します。\n\n## 誰が EXIF を規定するか\n\n- **CIPA** と **JEITA** が共同で **Exchangeable image file format for digital still cameras**（通称 **Exif**、**DC-008**）を保守します。現行版と**改訂履歴**は [CIPA 標準ページ](https://www.cipa.jp/e/std/std-sec.html) と [更新履歴](https://www.cipa.jp/e/std/history_sec.html) を参照してください。\n- **米国議会図書館（LOC）**は [Exif ファミリー概要](https://www.loc.gov/preservation/digital/formats/fdd/fdd000618.shtml) のような**解説資料**を公開しており、バージョンや JPEG/TIFF での利用イメージを掴むのに有用です。**パーサ実装**や境界条件の確認には **CIPA/JEITA** の本文が一次資料です。\n\n[ExifTool Tag Names](https://exiftool.org/TagNames/index.html) は実務で便利な索引ですが、**規格の代替**ではありません。\n\n## 「Exif 標準」と「EXIF 入り JPEG」\n\n1. **Exif 標準** — **IFD0**、**Exif サブ IFD**（ポインタ `0x8769`）、**GPS IFD**（`0x8825`）、**Interop**（`0xA005`）、タグ ID、TIFF 型、**ExifVersion** や **DateTimeOriginal** などを定義する。**exif specification** / **jpeg exif format** で調べるのは主にこの**メタデータのルール**です。\n2. **EXIF を埋め込んだ JPEG** — 通常の JPEG **ビットストリーム**に **APP1**（`0xFFE1`）セグメントを挟み、その中に **TIFF 風**の EXIF ツリーを入れる構造です。[LOC の JPEG+Exif の説明](https://www.loc.gov/preservation/digital/formats/fdd/fdd000147.shtml) がファイル配置のイメージに役立ちます。\n\n**GPSAltitudeRef** の意味は**規格**で、APP1 の位置は**ファイル形式**で読み取ります。IFD の全体像は [EXIF の構造](/guides/exif-structure)、リンク集は [標準・仕様リンク](/guides/standards-links) を参照してください。\n\n## IPTC / XMP\n\n**Exif** だけが写真ファイルに入るメタデータではありません。**IPTC** や **XMP** は別枠です。EXIF だけ削除してもキャプションが残ることがあります — [IPTC・XMP・EXIF](/guides/iptc-xmp-overview)。\n\n## 本サイトの位置づけ\n\n**ExifStrip** はブラウザでよく使うタグを**閲覧・削除**する実用ツールです。**全タグ・全ベンダーの Exif 適合試験**を行うものではありません。端の挙動は **CIPA/JEITA** とメーカー資料を参照してください。\n\n## 関連\n\n- [EXIF の歴史](/guides/exif-history)\n- [EXIF タグ早見](/guides/tag-reference)\n- [EXIF とは](/guides/what-is-exif)"
+      },
+      "exifDatetimeoriginalVsDatetime": {
+        "title": "DateTimeOriginal と DateTime、DateTimeDigitized の違い",
+        "desc": "撮影時刻・ファイル更新時刻・デジタイズ時刻、IFD の置き方、ビューアの取り違え。",
+        "content": "**DateTimeOriginal vs DateTime** で調べる場合、同じファイル内の**別々の「時間」**を比べています。三つとも多くの場合 `YYYY:MM:DD HH:MM:SS` 形式の **ASCII** ですが（基本タグに**タイムゾーンは含まれない**）、意味が異なります。[EXIF タグ早見](/guides/tag-reference) と [日付と時刻](/guides/dimension-datetime) の分類と対応します。\n\n## 早見表\n\n| タグ | 典型的な意味 | 置かれやすい場所 |\n| --- | --- | --- |\n| **DateTimeOriginal** | **撮影（シャッター）の瞬間** | 多くは **Exif サブ IFD** |\n| **DateTime** | **ファイル／画像が最後に変更された時刻** | 多くは **IFD0** |\n| **DateTimeDigitized** | **デジタイズされた時刻**（デジカメでは撮影に近い／スキャンではスキャン時刻） | 多くは **Exif サブ IFD** |\n\n厳密な定義は **CIPA/JEITA** に従ってください。\n\n## 表示が違う理由\n\n- 「撮影日時」と 1 列だけ出すアプリは **DateTimeOriginal** にしている場合もあれば **DateTime** にフォールバックしている場合もあります。\n- **DateTime** はメタデータを書き換えると更新されやすく、**DateTimeOriginal** は撮影時刻として残る意図ですが、ソフトが上書きすることもあります。\n- **DateTimeDigitized** は**スキャン画像**で特に意味が分かれます。\n\n## タイムゾーン\n\n古典的な三タグだけでは**オフセット**がありません。**OffsetTime** 系の拡張がある場合もあります。[日付と時刻](/guides/dimension-datetime)、[EXIF の歴史](/guides/exif-history) を参照。\n\n## プライバシー\n\n時刻だけでも行動の推定に使われ得ます。[敏感なフィールド](/guides/sensitive-fields)、[編集・削除](/guides/how-to-edit-strip) を参照。\n\n## 関連\n\n- [日付と時刻（次元）](/guides/dimension-datetime)\n- [EXIF タグ早見](/guides/tag-reference)"
+      },
+      "exifVersionFlashpixVersionExplained": {
+        "title": "ExifVersion と FlashPixVersion（0220 / 0221 / 0231 など）",
+        "desc": "4 バイトのバージョン文字列、FlashPixVersion（例: 0100）、記録者、ストリップ後。",
+        "content": "**ExifVersion** に **0220**、**0221**、**0231** などと出るのは、多くの場合 **4 バイトのフィールド**（文字列のように見える）で、書き込み側が目指した **Exif 規格の世代**を示します。**カメラのファームウェア版**ではありません。**FlashPixVersion**（例 **0100**）は別系統の **FlashPix** 互換情報で、本サイトの [EXIF タグ早見](/guides/tag-reference) にも載る **画像プロパティ**側のタグです。\n\n## ExifVersion\n\n- **Exif サブ IFD** に **UNDEFINED** 4 バイトとして格納されることが多く、**0220**、**0231**、**0300** のように表示されます。\n- 文字列と **CIPA/JEITA** の改訂（2.2、2.31、3.0…）の対応は **[CIPA 更新履歴](https://www.cipa.jp/e/std/history_sec.html)** と最新 PDF で確認してください。\n\n## FlashPixVersion\n\n- **0100** は **FlashPix 1.0** 相当として現れることがあります。**ExifVersion** の代替ではありません。\n\n## メタデータ削除後\n\nEXIF を**ストリップ**すると、これらのタグも通常はまとめて消えます（ツール依存）。JPEG の**画素を変えない**メタデータ削除の話は [EXIF の編集・削除](/guides/how-to-edit-strip) を参照。\n\n## 関連\n\n- [EXIF の歴史](/guides/exif-history)\n- [画像プロパティ](/guides/dimension-image)\n- [EXIF 仕様の読み方](/guides/exif-specification-overview)"
+      },
+      "exifApertureShutterIsoTags": {
+        "title": "FNumber、ExposureTime、ISO（ISOSpeedRatings）など",
+        "desc": "絞り・シャッター・ISO・補正を EXIF タグ名で対応づける（RATIONAL / SRATIONAL）。",
+        "content": "本ページは **絞り・シャッター・ISO・露出補正** という言葉と、ファイル内の **EXIF タグ名**（[EXIF タグ早見](/guides/tag-reference) および本站の解析と一致）を対応づけます。多くは **Exif サブ IFD** にあり、型は **TIFF/Exif** のルールに従います。\n\n## FNumber（絞り）\n\n- **タグ** `FNumber` — **RATIONAL**（例: `28/10` → f/2.8）。\n\n## ExposureTime（シャッター速度）\n\n- **タグ** `ExposureTime` — **RATIONAL**（秒）。例: `1/250`。\n\n## ISOSpeedRatings（ISO 感度）\n\n- **タグ** `ISOSpeedRatings` — 多くは **SHORT**。メーカー独自の拡張は **MakerNote** にあることもあります。\n\n## ExposureBiasValue（露出補正）\n\n- **タグ** `ExposureBiasValue` — **SRATIONAL**。\n\n## その他\n\n**Orientation** は [EXIF Orientation](/guides/orientation-tag-explained)、全体は [撮影設定](/guides/dimension-settings) を参照。\n\n## 関連\n\n- [EXIF タグ早見](/guides/tag-reference)\n- [EXIF の構造](/guides/exif-structure)"
+      },
+      "exifGpsReferenceTags": {
+        "title": "GPS の基準タグ：緯度・経度・高度の Ref",
+        "desc": "GPSLatitudeRef / GPSLongitudeRef / GPSAltitudeRef と数値タグの組み合わせ。",
+        "content": "EXIF の GPS は **数値**と **基準（Ref）** の組で解釈します。**GPSLatitudeRef**、**GPSLongitudeRef**、**GPSAltitude**、**GPSAltitudeRef** は [EXIF タグ早見](/guides/tag-reference) の GPS 行と一致します。概要は [位置情報（GPS）](/guides/dimension-location) を参照。\n\n## GPSLatitudeRef / GPSLongitudeRef\n\n- **GPSLatitudeRef** — **N** または **S**。\n- **GPSLongitudeRef** — **E** または **W**。\n- **GPSLatitude** / **GPSLongitude** — 多くは度・分・秒の **RATIONAL**。**Ref とセット**で十進度に変換します。\n\n## GPSAltitudeRef / GPSAltitude\n\n- **GPSAltitude** — **RATIONAL**（多くはメートル）。\n- **GPSAltitudeRef** — **BYTE**。**0**＝海抜以上、**1**＝海抜未満（負の高度）という意味合いで **GPSAltitude** と併用されます。\n\n## プライバシー\n\n基準タグも含め、GPS ブロック全体を機微情報として扱ってください。[敏感なフィールド](/guides/sensitive-fields)。\n\n## 関連\n\n- [位置情報（GPS）](/guides/dimension-location)\n- [EXIF タグ早見](/guides/tag-reference)"
+      },
+      "exifFlashTagBitmask": {
+        "title": "EXIF Flash タグ：ビットマスク",
+        "desc": "Flash（SHORT）が発光の有無・戻り光・モードなどを 16 ビットに詰める仕組み。",
+        "content": "**Flash** は **SHORT**（16 ビット）で、単なるオン／オフではありません。**CIPA/JEITA** の Exif では **ビットフィールド**として定義され、発光の有無、ストロボの戻り検出、モード（不明・強制発光・オフ・自動など）などが下位ビットに入ります。だから **0、9、16、25** のような値が出ます。\n\n## 実装・表示\n\nビューアや [ExifTool の Flash 説明](https://exiftool.org/TagNames/EXIF.html#Flash) は、同じ整数を人間可読な文に展開します。\n\n## 関連タグ\n\n**ExposureProgram**、**ExposureMode** などは [撮影設定](/guides/dimension-settings)、絞り・シャッター・ISO は [FNumber など](/guides/exif-aperture-shutter-iso-tags)。\n\n## 関連\n\n- [EXIF タグ早見](/guides/tag-reference)\n- [撮影設定](/guides/dimension-settings)"
       }
     }
   },
   "pages": {
-    "privacy": { "title": "プライバシー" },
-    "terms": { "title": "利用規約", "content": "利用規約の内容はここに表示されます。本ツールを他者のプライバシー侵害や法令に反する目的で使用しないでください。利用により本規約に同意したものとみなします。" },
+    "privacy": {
+      "title": "プライバシー"
+    },
+    "terms": {
+      "title": "利用規約",
+      "content": "利用規約の内容はここに表示されます。本ツールを他者のプライバシー侵害や法令に反する目的で使用しないでください。利用により本規約に同意したものとみなします。"
+    },
     "about": {
       "title": "私たちについて",
       "section1Title": "ExifStrip とは？",
@@ -519,7 +627,7 @@
       "topicExiftoolVsOnline": {
         "title": "ExifTool とオンライン EXIF ツール：使い分け",
         "desc": "「オンライン ExifTool」？ ExifStrip は ExifTool 本体ではない。CLI バッチとブラウザの役割の違い。",
-        "content": "[ExifTool](https://exiftool.org/) は **メタデータ処理の定番 CLI** で、数万タグ・**再帰バッチ**・タグコピー・ジオタグワークフロー・JSON/CSV 出力など、上級者向けの力を持つ。\n\n## ExifStrip は「オンライン版 ExifTool」か？\n\n**いいえ。** ExifTool は特定のオープンソース CLI プロジェクトを指し、**ExifStrip** は別のブラウザアプリで、**提携・承認関係はない**。**exiftool online** のような検索では「インストール不要でメタデータを扱いたい」ニーズが多い。当サイトは **ブラウザ内ローカル処理**・地図表示・**JPEG プリセット除去** に強みがあり、`-all=` と `-all:all=` のような高度な CLI オプションは **公式の [ExifTool ドキュメント](https://exiftool.org/exiftool_pod.html)** を参照してローカルで使うのが適切。\n\n## ExifTool が向くとき\n\n- **大量ファイル** の一括処理。\n- **メーカーノート／珍しい形式** を最新 DB で調べたい。\n- 自機で **自動化・スクリプト** したい。\n\n[公式ドキュメント](https://exiftool.org/exiftool_pod.html) を参照。\n\n## オンラインツールが向くとき\n\n- **インストール不要** の端末。\n- **地図付きでざっと確認**、CSV/JSON で1枚分を書き出したい。\n- 主に **JPEG** の **GPS/プライバシー系プリセット** を **[ExifStrip](https://exifstrip.com)** のように **ブラウザ内・ローカル処理** で済ませたい。\n\n## プライバシー\n\n- **ExifTool**：ローカル実行でファイルが外部に送られない。\n- **ExifStrip**：ブラウザ内解析（[プライバシー](/privacy) 参照）。\n\n## まとめ\n\nターミナルで規模と網羅性、ブラウザで手軽さと可視化——**両方使う**人も多い。\n\n## 関連\n\n- [ExifStrip でできること](/guides/what-exifstrip-does)\n- [IPTC・XMP・EXIF](/guides/iptc-xmp-overview)"
+        "content": "[ExifTool](https://exiftool.org/) は **メタデータ処理の定番 CLI** で、数万タグ・**再帰バッチ**・タグコピー・ジオタグワークフロー・JSON/CSV 出力など、上級者向けの力を持つ。\n\n## ExifStrip は「オンライン版 ExifTool」か？\n\n**いいえ。** ExifTool は特定のオープンソース CLI プロジェクトを指し、**ExifStrip** は別のブラウザアプリで、**提携・承認関係はない**。**exiftool online** のような検索では「インストール不要でメタデータを扱いたい」ニーズが多い。当サイトは **ブラウザ内ローカル処理**・地図表示・**JPEG プリセット除去** に強みがあり、`-all=` と `-all:all=` の違いは [解説記事](/blog/topic-exiftool-all-vs-allall) もあわせて読み、**公式の [ExifTool ドキュメント](https://exiftool.org/exiftool_pod.html)** に沿ってローカルで使うのが適切。\n\n## ExifTool が向くとき\n\n- **大量ファイル** の一括処理。\n- **メーカーノート／珍しい形式** を最新 DB で調べたい。\n- 自機で **自動化・スクリプト** したい。\n\n[公式ドキュメント](https://exiftool.org/exiftool_pod.html) を参照。\n\n## オンラインツールが向くとき\n\n- **インストール不要** の端末。\n- **地図付きでざっと確認**、CSV/JSON で1枚分を書き出したい。\n- 主に **JPEG** の **GPS/プライバシー系プリセット** を **[ExifStrip](https://exifstrip.com)** のように **ブラウザ内・ローカル処理** で済ませたい。\n\n## プライバシー\n\n- **ExifTool**：ローカル実行でファイルが外部に送られない。\n- **ExifStrip**：ブラウザ内解析（[プライバシー](/privacy) 参照）。\n\n## まとめ\n\nターミナルで規模と網羅性、ブラウザで手軽さと可視化——**両方使う**人も多い。\n\n## 関連\n\n- [ExifStrip でできること](/guides/what-exifstrip-does)\n- [IPTC・XMP・EXIF](/guides/iptc-xmp-overview)\n- [ExifTool：`-all=` と `-all:all=`](/blog/topic-exiftool-all-vs-allall)\n- [JPEG からメタデータを除去する](/blog/tip-strip-metadata-from-jpeg)"
       },
       "productWelcome": {
         "title": "ExifStrip へようこそ",
@@ -535,6 +643,16 @@
         "title": "更新履歴",
         "desc": "ExifStrip のバージョン更新説明ページ。\nリリース時に主な新機能・改善・修正を記載。",
         "content": "このページでは ExifStrip のバージョン更新をお知らせします。リリース時に主な新機能・改善・修正をここに掲載します。\n\n# 初回リリース\n\n**EXIF の閲覧** — 1 枚または複数枚の画像をアップロードすると、次元別（デバイス・撮影設定・位置・日時・作者・著作権・画像プロパティ・ICC）に EXIF を表示。対応形式：JPEG、PNG、TIFF、HEIC、AVIF、WebP。GPS があれば地図上に撮影位置を表示。\n\n**EXIF の編集** — JPEG のみ：Artist・Copyright・撮影時刻などを画面で編集して書き戻し；保存・単一タグまたは次元単位の削除に対応；編集を反映した画像をダウンロード可能。\n\n**EXIF の除去** — プリセット 4 種：全削除、プライバシーのみ（GPS・作者・シリアル）、GPS のみ、デバイス/シリアルのみ。JPEG はプリセットで除去（ピクセル再エンコードなし）；PNG/WebP は「全削除」のみ再エンコードで対応。除去済み画像をダウンロード可能。\n\n**EXIF のエクスポート** — メタデータを CSV・JSON・TXT・HEX（生データ）でエクスポート。\n\n**プライバシー分析** — 共有前に位置・デバイス・日時などのリスクレベル（高/中/低）を表示。\n\n**サイト** — 処理はすべてブラウザ内で完結し、当方サーバーへはアップロードされません。[トップ](/)、[チュートリアル](/guides)、[ブログ](/blog)、[FAQ](/faq)、[About](/about)、[プライバシー](/privacy)、[利用規約](/terms)。English・简体中文・日本語に対応。"
+      },
+      "tipStripMetadataFromJpeg": {
+        "title": "JPEG からメタデータを除去する：EXIF・IPTC・XMP と画質",
+        "desc": "JPEG には画素以外に APP1 の EXIF や IPTC/XMP が同居しうる。無劣化で落とせる場合と再エンコードが要る場合、プリセットの意味。",
+        "content": "「JPEG の EXIF を消す」と言いながら、実際には **EXIF 以外の埋め込み情報**まで含めて整理したい場面が多いです。共有前にファイルをきれいにしたいときは、**中に何があり得るか**、**ツールがどのブロックを触るか**、**JPEG を再圧縮するか**を押さえると安全です。以下は一般的な構造と ExifTool 公式ドキュメントの説明に沿った整理であり、**利用中のソフト・版では挙動を必ず確認**してください。\n\n## JPEG に「入っている」メタデータとは\n\nJPEG は **セグメント**の列で、多くの場合 **EXIF** は **APP1**（多くは `0xFFE1`）に **TIFF 風**のツリーとして入ります（画素データそのものとは別）。概要は [EXIF の構造](/guides/exif-structure)、形式全般は [どの形式に EXIF が含まれる？](/guides/supported-formats) を参照。\n\nただし **EXIF だけが全てではありません**。同じファイルに例えば次のようなものが同居しえます。\n\n- **IPTC**（キャプション、キーワード、クレジット等）\n- **XMP**（XML ベースの権利・タイトル、Lightroom 等）\n- **メーカー依存**（MakerNote や追加 APP セグメント）\n\nそのため **strip metadata from jpeg** という検索意図は **remove EXIF** より広いです。**複数のメタデータ族**があり、**片方だけ消しても**別ブロックに同じ意味の文字列が残ることがあります。整理は [IPTC・XMP・EXIF の関係](/guides/iptc-xmp-overview) が近道です。\n\n## 「EXIF だけ削除」と「埋め込みをできる限り空にする」\n\nツールによっては **EXIF（APP1 周辺）だけ**を書き換えるもの、**IPTC/XMP まで**辿るものがあります。「EXIF は消したのに著作権が残る」場合、値が **IPTC か XMP** にある可能性が高いです。出力ファイルは [EXIF の見方](/guides/how-to-view) と同じ発想で**もう一度開いて確認**してください。\n\n## 画質：JPEG で「無劣化」と言えるのはどんなとき\n\n**要点：** **メタデータ用セグメントだけ**を書き換え・削除し、**圧縮画像データに触れない**なら、**新たな JPEG 再圧縮は発生せず**、通常 **画質低下はありません**。\n\n本站の説明は [EXIF 削除で画質は変わる？](/guides/faq-remove-safe) や [EXIF の編集・削除方法](/guides/how-to-edit-strip) にまとまっています。\n\n一方、**デコード→再エンコード**でメタデータを落とす方式では **世代劣化**やファイルサイズ変化がありえます（PNG/WebP で「全削除」が該当しやすい例は [対応フォーマット](/blog/product-supported-formats)）。\n\n## 共有前の実務フロー\n\n1. まず **閲覧**（機種・GPS・日時・作者・著作権など）。\n2. **範囲**を決める（GPS のみ／プライバシー寄り／可能な限り全削除）。\n3. **ダウンロード後にもう一度**確認する（重要な共有ほど）。\n\n[ExifStrip](https://exifstrip.com) では **JPEG** に対し **四種のプリセット**で、**画素を再エンコードしない**前提の説明を [ExifStrip でできること](/guides/what-exifstrip-does) に載せています。\n\n## ExifTool を選ぶ場面\n\n[ExifTool](https://exiftool.org/) は **CLI** での **大量処理**や **タグ単位の制御**向きです。**`-all=` と `-all:all=`** の違いは [別記事](/blog/topic-exiftool-all-vs-allall) と [公式 pod](https://exiftool.org/exiftool_pod.html) を参照してください。\n\n## バックアップ\n\n除去後のファイルから **消したタグを復元**することはできません。必要なら先に [EXIF をエクスポート](/blog/tip-export-exif) してから削除してください。\n\n## まとめ\n\n**JPEG からメタデータを剥がす**ときは **EXIF / IPTC / XMP** の区別が実務上の鍵です。JPEG は **メタデータのみの書き換え**で済むことが多く、他形式とは違います。手順の土台は [EXIF の編集・削除方法](/guides/how-to-edit-strip) から。"
+      },
+      "topicExiftoolAllVsAllall": {
+        "title": "ExifTool：`-all=` と `-all:all=` の違い（公式の言い方）",
+        "desc": "同じ「全部削除」に見えて GROUP:TAG の解釈が違う。ブロック削除と個別タグ削除、公式ドキュメント上の位置づけ。",
+        "content": "検索すると **`exiftool -all=`** と **`exiftool -all:all=`** の両方が「メタデータ削除」の例として出てきます。見た目は似ていますが、ExifTool は **`GROUP:TAG`** 規則で解釈します。**最終的な挙動はインストールした版の [公式 application ドキュメント](https://exiftool.org/exiftool_pod.html) を正としてください**。\n\n## `GROUP:TAG` と `All`\n\n公式ではタグ名に **グループ名**や **ファミリー番号**を付けて指定できると説明され、**すべてのタグ**を指す特別な名前として **`All`** が登場します。だから「全部消す」は英語の文章ではなく **構造化された削除オプション**として書かれます。\n\n## `-all=` が指しやすいもの\n\n**WRITING EXAMPLES** には、メタ情報を削除する最小例として **`-all=`** を使った行が載っています（ここでは **タグ指定部分のみ**示し、出力ファイルの扱いは別オプションと組み合わせます）。\n\nまた **RAW（DNG 以外）に安易に全削除しない**こと、メーカーノートに依存する情報があることの警告も同じ文書にあります。**一括処理の前に必ず読んでください**。\n\n## `-all:all=` の読み方：`all:all` は二語ではない\n\nここでは **`GROUP:TAG`** であり、\n\n- 最初の **`all`** は ExifTool の **グループ名**（`-listg` 等で調査）、\n- 二つ目の **`all`** はその文脈での **`All` タグ**（グループ内の全タグを指す）、\n\nという構造です。「`-all=` より強い英語の all」ではありません。\n\n### ブロック削除と個別削除\n\n公式の注では、**削除**のとき **ファミリーとグループの指定**によって、タグを**一つずつ**消すのか、**ブロックごと**消すのかが変わる、と説明され、**`-2all:all=`** と **`-all:all=`** を対比する記述があります（**一方は個別、一方はブロック**—原文の英文に従って理解してください）。JPEG のように **APP セグメント**に情報が分かれている形式では、この違いが実務的に効きます。\n\n## `-tagsFromFile` にも `-all:all` が出る理由\n\n**すべての書き込み可能タグを、出力側の対応する位置にコピーする**例でも **`-all:all`** が登場します。これは **削除**とは別の作業ですが、検索結果に同じトークンが並ぶ理由の一つです。\n\n## JPEG での注意（Adobe / ColorSpace）\n\n「全部削除」でも **JPEG APP14 Adobe** セグメントは **デフォルトでは残る**場合があり、見た目に関わる、と文档は述べます。同時に **色空間**情報を消すと**色が変わる**可能性にも触れています。画素完全一致が必要なら、pod 内の該当節を読んでから運用してください。\n\n## ExifStrip との関係\n\n[ExifStrip](https://exifstrip.com) は **ExifTool ではありません**。ブラウザ向けに **可視化・JPEG プリセット・ローカル処理**を提供します（[ExifTool とオンライン](/blog/topic-exiftool-vs-online)）。**任意タグのバッチ処理**は ExifTool、**インストールなしで少数ファイル**は ExifStrip、という使い分けが現実的です。\n\n## 参照\n\n- [ExifTool 公式 application ドキュメント](https://exiftool.org/exiftool_pod.html)\n- [JPEG 内の EXIF の構造](/guides/exif-structure)\n- [EXIF の編集・削除](/guides/how-to-edit-strip)"
       }
     }
   }

@@ -137,6 +137,36 @@ export const GUIDE_SEO: Record<
     description:
       "EXIF specification sources: CIPA/JEITA Exif standard, LOC JPEG/TIFF family, tag lists for parsers.",
   },
+  "exif-specification-overview": {
+    title: "EXIF specification: official sources and how to read them",
+    description:
+      "CIPA/JEITA Exif standard (DC-008), LOC format notes, and how the normative spec relates to JPEG APP1 EXIF—without confusing file format with metadata standard.",
+  },
+  "exif-datetimeoriginal-vs-datetime": {
+    title: "DateTimeOriginal vs DateTime in EXIF: what’s the difference?",
+    description:
+      "EXIF DateTimeOriginal vs DateTime vs DateTimeDigitized: capture vs file change vs scan time, IFD placement, and common viewer mistakes.",
+  },
+  "exifversion-flashpixversion-explained": {
+    title: "ExifVersion 0220, 0221, 0231 and FlashPixVersion explained",
+    description:
+      "EXIF ExifVersion four-byte field (0220/0221/0231…), FlashPixVersion, what cameras and software write, and after metadata strip.",
+  },
+  "exif-aperture-shutter-iso-tags": {
+    title: "FNumber, ExposureTime, ISO in EXIF (aperture & shutter metadata)",
+    description:
+      "EXIF tags for aperture (FNumber), shutter (ExposureTime), ISO (ISOSpeedRatings), exposure bias—aligned with the tag reference table and capture settings.",
+  },
+  "exif-gps-reference-tags": {
+    title: "GPSLatitudeRef, GPSLongitudeRef, GPSAltitudeRef in EXIF GPS",
+    description:
+      "EXIF GPS reference tags: N/S, E/W, above/below sea level; how they pair with GPSLatitude, GPSLongitude, GPSAltitude for decoding coordinates.",
+  },
+  "exif-flash-tag-bitmask": {
+    title: "EXIF Flash tag: bitmask, fired, return, and mode",
+    description:
+      "EXIF Flash (SHORT) as a bit field: fired/not fired, strobe return, flash mode—how readers decode the value and link to capture settings.",
+  },
 };
 
 export function getGuideSeo(id: string): { title: string; description: string } | null {

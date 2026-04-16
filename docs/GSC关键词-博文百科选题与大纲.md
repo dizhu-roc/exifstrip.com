@@ -22,7 +22,7 @@
 | **🔄 部分达成** | 核心关键词/段落已写入**现有**百科或博客（on-page 补强），**独立 slug 未建** |
 | **⏳ 未开始** | 尚未写作或未进 `src/locales` |
 
-**说明（2026-04 对齐仓库现状）**：第一节「对照表」与若干百科/博客已做 **🔄 部分达成** 的文案与 SEO meta 补强；第二节 **A/B/C 独立篇均未新建 slug**。下文第二节在原有 A–C 基础上，**补充多条与 [`guides/tag-reference`](/guides/tag-reference) 及 `src/data/exifReferenceTable.ts` 字段对齐的 tag 专题**，并标注**权重可能性**（相对站内摄影/隐私检索意图，非 Google 官方分数）。
+**说明（2026-04 对齐仓库现状）**：第一节「对照表」与若干百科/博客已做 **🔄 部分达成** 的文案与 SEO meta 补强；第二节原 **A/B/C** 与 **P1/P2 tag-reference 对齐**条目已按合并策略**落地独立 slug**（见 §2.1、§2.2 状态列）。下文第二节在原有 A–C 基础上，**补充多条与 [`guides/tag-reference`](/guides/tag-reference) 及 `src/data/exifReferenceTable.ts` 字段对齐的 tag 专题**，并标注**权重可能性**（相对站内摄影/隐私检索意图，非 Google 官方分数）。
 
 ---
 
@@ -35,8 +35,8 @@
 | iptc vs exif | Guides：`iptc-xmp-overview` | H2 对比表 + meta | **✅ 已达成**（IPTC 表 + **XMP vs EXIF** H2，`guideSeo`） |
 | online exiftool / exiftool online | Blog：`topic-exiftool-vs-online` | FAQ 式小标题 | **🔄 部分达成**（已增「非 ExifTool 本体」段） |
 | does X (Twitter) strip EXIF | Blog：`topic-platform-strip`；FAQ：`faq-social-network` | X 专段 + 日期注记 | **🔄 部分达成**（博客 + FAQ + `faq-social-network`） |
-| exif gps | Guides：`dimension-location` | 首段 *EXIF GPS*、内链敏感字段 | **🔄 部分达成**（含 GPSAltitudeRef 专段） |
-| exif specification / standards | Guides：`standards-links`、`tag-reference` | 规范导读独立篇或继续补强 | **🔄 部分达成**（`standards-links` 已增「规范 vs JPEG 内 EXIF」） |
+| exif gps | Guides：`dimension-location`、**`exif-gps-reference-tags`** | 首段 *EXIF GPS*、内链敏感字段；参考类标签独立篇 | **✅ 已达成**（维度文 + GPS 参考标签篇三语；`dimension-location` 仍作总览） |
+| exif specification / standards | Guides：`standards-links`、`tag-reference`、**`exif-specification-overview`** | 规范导读独立篇或继续补强 | **✅ 已达成**（独立篇 `exif-specification-overview` 三语；`standards-links` 仍保留链接集） |
 | view EXIF / EXIF viewer / view EXIF online | Guides：`how-to-view`；首页功能 | 首段与 meta 含 *viewer*、*read EXIF*；与「工具型」共用落地 | **✅ 已达成**（首段 + `guideSeo`：*free online EXIF viewer* 等） |
 | Meta / Instagram / Facebook 与 EXIF | Blog：`topic-platform-strip`；`faq-social-network` | 与 X 同属「平台是否 strip」簇，勿只绑 X 一文 | **🔄 部分达成**（博客正文含 Meta；**归类注意**：勿与「仅 X」行互斥，应视为**同一意图簇**） |
 | XMP only / remove XMP vs EXIF | Guides：`iptc-xmp-overview`；`topic-exif-vs-metadata` | 首轮仅有 *iptc vs exif*；**XMP 单独检索**宜在 iptc-xmp 文内增加 H2 或同义词 | **✅ 已达成**（`iptc-xmp-overview` 内 **XMP vs EXIF** H2 + 表；博客增速览；`blogSeo`；*remove XMP* 仍以工具说明为准、未单开 slug） |
@@ -50,9 +50,9 @@
 
 | ID | 建议 slug | 英文 SEO 标题（示例） | 覆盖关键词（示例） | 状态 |
 |----|-----------|------------------------|----------------------|------|
-| **A** | `exif-specification-overview`（或与 `standards-links` 二选一） | *EXIF specification: official sources and how to read them* | exif specification、jpeg exif format | **⏳ 未开始**（独立篇）；**🔄** `standards-links` 已部分覆盖 |
-| **B** | `exif-version-0220-0221` | *EXIF version 0220 vs 0221: what ExifVersion means* | exif version、exif 0220、exif version 0221 | **⏳ 未开始** |
-| **C** | `gps-altituderef-explained` | *GPSAltitudeRef in EXIF: sea level above or below?* | gpsaltituderef、exif gps | **⏳ 未开始**（独立篇）；**🔄** `dimension-location` + `tag-reference` 已含 GPSAltitudeRef |
+| **A** | `exif-specification-overview`（或与 `standards-links` 二选一） | *EXIF specification: official sources and how to read them* | exif specification、jpeg exif format | **✅ 已落地** → `/guides/exif-specification-overview`（三语；与 `standards-links` 并存） |
+| **B** | ~~`exif-version-0220-0221`~~ → 合并为 `exifversion-flashpixversion-explained` | *ExifVersion 0220, 0221, 0231 and FlashPixVersion explained* | exif version、exif 0220、exif version 0221 | **✅ 已落地** → `/guides/exifversion-flashpixversion-explained`（原单独 slug 未建，按规划与 P1 合并） |
+| **C** | ~~`gps-altituderef-explained`~~ → 合并为 `exif-gps-reference-tags` | *GPS ref tags（含 AltitudeRef + Lat/Lon Ref）* | gpsaltituderef、exif gps | **✅ 已落地** → `/guides/exif-gps-reference-tags`（含 **C** 与 P2 经纬度参考；原单独 slug 未建） |
 
 **原 A 大纲摘要**：CIPA/JEITA 文档层级 → JPEG APP1 位置 → 链 `exif-structure`、`iptc-xmp-overview` → 本站边界 → 外链。  
 **原 B 大纲摘要**：`ExifVersion` 四字符 → 0220/0221/0231 等表（以规范为准）→ 固件/软件写入 → 剥离后是否保留 → 站内查看路径。  
@@ -66,22 +66,22 @@
 
 | 优先级 | 建议 slug | 主标签（`exifReferenceTable` / 速查表） | 英文标题方向（SEO） | 权重可能性 | 备注 |
 |--------|-----------|----------------------------------------|------------------------|------------|------|
-| P1 | `exif-datetimeoriginal-vs-datetime` | `DateTimeOriginal`、`DateTime`、`DateTimeDigitized` | *DateTimeOriginal vs DateTime in EXIF: what’s the difference?* | **高** | 极强问答意图；与 [`dimension-datetime`](/guides/dimension-datetime) 互补，避免重复可写「对照表 + 常见误解」 |
-| P1 | `exifversion-flashpixversion-explained` | `ExifVersion`、`FlashPixVersion` | *ExifVersion 0220, 0221, 0231 and FlashPixVersion explained* | **高** | 与上节 **B** 合并为一篇即可，避免两篇抢同一批词 |
-| P1 | `exif-aperture-shutter-iso-tags` | `FNumber`、`ExposureTime`、`ISOSpeedRatings`、`ExposureBiasValue` | *FNumber, ExposureTime, ISO in EXIF (aperture & shutter metadata)* | **高** | 承接 *aperture*、*shutter*、相机参数类检索；链 [`dimension-settings`](/guides/dimension-settings) |
-| P2 | `gps-latitude-longitude-ref-tags` | `GPSLatitudeRef`、`GPSLongitudeRef`、`GPSLatitude`、`GPSLongitude` | *GPSLatitudeRef and GPSLongitudeRef: N/S and E/W in EXIF GPS* | **中高** | 与 **C**（AltitudeRef）成套；可一篇「GPS 参考类标签」或拆两篇 |
-| P2 | `exif-orientation-values-1-8` | `Orientation` | *EXIF Orientation values 1–8 explained* | **中** | 与已有 [`orientation-tag-explained`](/guides/orientation-tag-explained) **高度重叠** → 建议 **不新建**，仅加强现文 H2「1–8 表」与 *orientation exif* 关键词 |
-| P2 | `exif-flash-tag-bitmask` | `Flash` | *EXIF Flash tag: bitmask and fired / return / mode* | **中** | 技术向长尾；链 `dimension-settings` |
+| P1 | `exif-datetimeoriginal-vs-datetime` | `DateTimeOriginal`、`DateTime`、`DateTimeDigitized` | *DateTimeOriginal vs DateTime in EXIF: what’s the difference?* | **高** | **✅ 已落地** `/guides/exif-datetimeoriginal-vs-datetime`；与 [`dimension-datetime`](/guides/dimension-datetime) 互补 |
+| P1 | `exifversion-flashpixversion-explained` | `ExifVersion`、`FlashPixVersion` | *ExifVersion 0220, 0221, 0231 and FlashPixVersion explained* | **高** | **✅ 已落地** `/guides/exifversion-flashpixversion-explained`（与 §2.1 **B** 合并） |
+| P1 | `exif-aperture-shutter-iso-tags` | `FNumber`、`ExposureTime`、`ISOSpeedRatings`、`ExposureBiasValue` | *FNumber, ExposureTime, ISO in EXIF (aperture & shutter metadata)* | **高** | **✅ 已落地** `/guides/exif-aperture-shutter-iso-tags`；链 [`dimension-settings`](/guides/dimension-settings) |
+| P2 | ~~`gps-latitude-longitude-ref-tags`~~（合并进下栏） | `GPSLatitudeRef`、`GPSLongitudeRef`、`GPSLatitude`、`GPSLongitude` | 并入 `exif-gps-reference-tags` | **中高** | **✅ 已合并** 至 `/guides/exif-gps-reference-tags`（与 **C**、AltitudeRef 同篇） |
+| P2 | `exif-orientation-values-1-8` | `Orientation` | *EXIF Orientation values 1–8 explained* | **中** | **🔄 部分达成**：**未新建 slug**；已加强 [`orientation-tag-explained`](/guides/orientation-tag-explained) 首段与 *orientation exif* 关键词，保留 H2「1–8 表」 |
+| P2 | `exif-flash-tag-bitmask` | `Flash` | *EXIF Flash tag: bitmask and fired / return / mode* | **中** | **✅ 已落地** `/guides/exif-flash-tag-bitmask`；链 `dimension-settings` |
 | P3 | `exif-usercomment-encoding` | `UserComment` | *EXIF UserComment: character code and UNICODE* | **中低** | 开发者/修图人群；链 [`dimension-other`](/guides/dimension-other) |
 | P3 | `exif-colorspace-srgb-adobe` | `ColorSpace` | *EXIF ColorSpace: sRGB vs Adobe RGB (tag meaning)* | **中** | 与 [`dimension-image`](/guides/dimension-image) 互补 |
 | P3 | `serial-tags-body-camera-exif` | `BodySerialNumber`、`CameraSerialNumber` | *BodySerialNumber and CameraSerialNumber in EXIF (privacy)* | **中高** | 隐私检索；链 [`sensitive-fields`](/guides/sensitive-fields)、[`dimension-device`](/guides/dimension-device) |
 
 **落地建议**
 
-- **P1 三篇**（日期对照、版本号、光圈快门 ISO）与 GSC「*what is / difference / exif 0220*」类查询重合度最高，建议作为 **第二节之后的首批独立百科**。  
-- **B** 与 **`exifversion-flashpixversion-explained`** 合并为 **一篇** 即可。  
-- **C** 与 **`gps-latitude-longitude-ref-tags` / `gps-altituderef`** 可合并为 **一篇「EXIF GPS 参考标签」**（AltitudeRef + Lat/Lon Ref 一节），减少碎片化。  
-- **`orientation`**：**不新起 slug**，强化现有 `orientation-tag-explained`。
+- **P1 三篇**（日期对照、版本号、光圈快门 ISO）— **已落地**（见上表 **✅**）。  
+- **B** 与 **`exifversion-flashpixversion-explained`** — **已合并落地** 一篇。  
+- **C** 与经纬度参考 — **已合并** 为 **`exif-gps-reference-tags`** 一篇（AltitudeRef + Lat/Lon Ref）。  
+- **`orientation`**：**未新起 slug**；已对 `orientation-tag-explained` 做 on-page 补强。
 
 ---
 
@@ -89,8 +89,8 @@
 
 | ID | 建议 slug | 英文 SEO 标题（示例） | 状态 |
 |----|-----------|------------------------|------|
-| **D** | `topic-exiftool-all-vs-allall` | *ExifTool \`-all=\` vs \`-all:all=\`: difference explained* | **⏳ 未开始** |
-| **E** | `tip-strip-metadata-from-jpeg` | *Strip metadata from JPEG: EXIF, IPTC, XMP, and quality* | **⏳ 未开始** |
+| **D** | `topic-exiftool-all-vs-allall` | *ExifTool \`-all=\` vs \`-all:all=\`: difference explained* | **✅ 已落地**（三语正文 + `blogReferences` + 内链） |
+| **E** | `tip-strip-metadata-from-jpeg` | *Strip metadata from JPEG: EXIF, IPTC, XMP, and quality* | **✅ 已落地**（三语正文 + `blogReferences` + 内链） |
 | **F** | `topic-exif-deleter-scrubber-wording` | *EXIF deleter vs scrubber vs stripper: naming and risks* | **⏳ 未开始**（与 `how-to-edit-strip` 有重叠，可降优先） |
 | **G** | `tip-exift-typo-exiftool` | *“Exift” search results: did you mean ExifTool?* | **⏳ 未开始** |
 
@@ -108,11 +108,11 @@
 
 ## 五、落地优先级（更新）
 
-1. **高**：博客 **D**、**E**（ExifTool 参数、JPEG 剥离实操）— 与 GSC 技术/工具意图重合度高。  
-2. **高**：百科 **P1**（`DateTimeOriginal` 对照、`ExifVersion`/0220/0221、`FNumber`/快门/ISO）— **tag-reference 对齐**，易占「difference / what is」类摘要。  
-3. **中**：合并后的 **GPS 参考标签篇**（含 AltitudeRef + Lat/Lon Ref；原 **C**）、**A**（或维持仅 `standards-links` 补强）。  
-4. **中**：**Flash**、**ColorSpace**、**序列号** 单篇或并入隐私/设备维度。  
-5. **低**：博客 **F**、**G**；百科 **UserComment**。
+1. ~~**高**：博客 **D**、**E**~~ — **✅ 已落地**。  
+2. ~~**高**：百科 **P1**~~ — **✅ 已落地**（`exif-datetimeoriginal-vs-datetime`、`exifversion-flashpixversion-explained`、`exif-aperture-shutter-iso-tags`）。  
+3. ~~**中**：合并 **GPS 参考标签篇**、**A**~~ — **✅ 已落地**（`exif-gps-reference-tags`、`exif-specification-overview`）。  
+4. **中**：**Flash** — **✅ 已落地**（`exif-flash-tag-bitmask`）；**ColorSpace**、**序列号** 仍为 P3（见 §2.2），可单篇或并入 [`dimension-image`](/guides/dimension-image) / [`sensitive-fields`](/guides/sensitive-fields)。  
+5. **低**：博客 **F**、**G**；百科 P3（**UserComment** 等）。
 
 ---
 
@@ -132,6 +132,8 @@
 | 2026-04 | 第一节多行 **🔄 部分达成**；第二节 A/B/C 独立篇 **⏳**；新增 **2.2 tag-reference 对齐专题表** 与优先级；第三至五节状态列更新。 |
 | 2026-04 | **§八 GSC 覆盖审计**：对照首轮查询词归簇；补充 Google/GSC 阅读说明；修正平台类（X vs Meta）与 *strip data* 歧义；补 **viewer/XMP/监控词** 缺口说明。 |
 | 2026-04-15 | 闭环 **§一** 若干 🔄：`how-to-view` / `exif-structure` / `orientation-tag-explained` / `how-to-edit-strip` / `iptc-xmp-overview` / `topic-exif-vs-metadata` 三语 on-page；`guideSeo`・`blogSeo` 更新；`/faq` **FAQPage JSON-LD** 扩展为与页面 17 问一致的 `mainEntity`（英文）。 |
+| 2026-04-16 | 博客 **D** `topic-exiftool-all-vs-allall`、**E** `tip-strip-metadata-from-jpeg` 落地（英文主文 + 中/日翻译）；`blogStructure` / `blogSeo` / `blogReferences` / `relatedContent`；`topic-exiftool-vs-online` 增链 D/E。 |
+| 2026-04-16 | 百科 §二：**A** `exif-specification-overview`、**B**+P1 `exifversion-flashpixversion-explained`、**C**+P2 `exif-gps-reference-tags`、P1 `exif-datetimeoriginal-vs-datetime` / `exif-aperture-shutter-iso-tags`、P2 `exif-flash-tag-bitmask` 落地（三语）；`orientation-tag-explained` on-page 补强；`guidesStructure` / `guideSeo` / `guideReferences` / `relatedContent`；`tag-reference` 与维度文增链；[`百科与博客增补规划.md`](./百科与博客增补规划.md) 已登记。 |
 
 ---
 
@@ -142,20 +144,20 @@
 | 簇编号 | 意图簇（示例词） | 文档中的承载/章节 | 状态与说明 |
 |--------|------------------|---------------------|------------|
 | 1 | **定义/科普**：what is exif, what is an exif, what does exif mean, exif meaning, what is exif information, what is exif format, exif format | §一 → `what-is-exif`、`exif-structure` | **🔄**（`exif-structure` 已增 *jpeg exif format* / APP1 开篇）；勿与「工具型」混为一谈 |
-| 2 | **规范/格式**：exif specification, jpeg exif format, exif version, exif 0220, exif version 0221 | §一、§二 **A/B**、**P1 ExifVersion** | **🔄 + ⏳**；版本号长尾宜独立篇或合并 **B+P1** |
+| 2 | **规范/格式**：exif specification, jpeg exif format, exif version, exif 0220, exif version 0221 | §一、§二 **A**、`exifversion-flashpixversion-explained` | **✅**（`exif-specification-overview` + `exifversion-flashpixversion-explained` 三语落地；§一 `standards-links` 仍作链接集） |
 | 3 | **删除/剥离（工具）**：remove exif, remove exif data, removing exif data, exif delete, delete exif, exif stripping, stripping exif data, exif data remove, strip photo metadata, remove metadata from images, exif scrubber, exif deleter | §一 → `how-to-edit-strip`；博客 **E**、**F** | **🔄**；**F** 与 how-to 重叠已在 §五 降级 |
 | 4 | **泛词需限定**：strip data | §四、本节、`how-to-edit-strip` | **on-page**：`how-to-edit-strip` 已加「strip data」歧义短节（三语），引导至 strip photo metadata；GSC 仍可能混入非图片噪声 |
-| 5 | **命令/对比**：exiftool -all= vs -all:all=, …difference, exiftool online, online exiftool | §一、博客 **D**、`topic-exiftool-vs-online` | **🔄 + ⏳ D** |
+| 5 | **命令/对比**：exiftool -all= vs -all:all=, …difference, exiftool online, online exiftool | §一、博客 **D**、`topic-exiftool-vs-online` | **✅ D**；与 `topic-exiftool-vs-online` 互链 |
 | 6 | **拼写/品牌**：exift | 博客 **G** | **⏳** |
 | 7 | **平台**：does X strip EXIF, twitter strip exif metadata… | §一、`topic-platform-strip`、`faq-social-network` | **🔄**；**归类修正**：与 **Instagram/Facebook** 同属**平台 strip** 簇（§一 已增行） |
 | 8 | **标准对立**：iptc vs exif, xmp vs exif | §一 `iptc-xmp-overview`、`topic-exif-vs-metadata` | **✅**（`iptc-xmp-overview` 内 **XMP vs EXIF** H2 + 表；博客增速览；*仅 XMP* 长尾仍无独立 slug，属刻意范围控制） |
-| 9 | **GPS/字段**：exif gps, gpsaltituderef | §一 `dimension-location`；§二 **C**、**P2 GPS** | **🔄 + ⏳** 独立篇 |
+| 9 | **GPS/字段**：exif gps, gpsaltituderef | §一 `dimension-location`；§二 **`exif-gps-reference-tags`** | **✅ + 🔄**（独立篇已落地；`dimension-location` 仍作维度总览） |
 | 10 | **首轮未出现但常见于同类站点**（建议监控 GSC）：free exif viewer, exif viewer online, metadata remover, remove gps from photo, HEIC EXIF | `how-to-view`、首页、`tip-remove-exif-heic-*` 等 | **🔄→✅ viewer**：`how-to-view` 首段 + `guideSeo` 已对齐 *online EXIF viewer / no upload*；其余仍监控 GSC；勿与簇 1/3 混排 |
 
 **审计结论摘要**
 
 1. **归类修正**：「Meta/Instagram/Facebook」与 X 同属**平台 strip** 簇，不应仅出现在「X」行而被误认为未覆盖。  
 2. **遗漏补录**：**view EXIF / viewer**、**XMP 单独词**、**strip data 歧义**、**首轮未列的常见词** 已在上表与 §一 补充。  
-3. **第二节 P1** 已覆盖 **aperture/shutter** 与 **FNumber** 相关检索，与「aperture inurl:blog」不同，后者保留 §四 不跟策略。
+3. **第二节 P1** 已覆盖 **aperture/shutter** 与 **FNumber** 相关检索（`exif-aperture-shutter-iso-tags` 已落地），与「aperture inurl:blog」不同，后者保留 §四 不跟策略。
 
 本文档为规划稿；**新建 slug 实现时** 请更新 `guidesStructure.ts` / `blogStructure.ts`、`百科与博客增补规划.md` 与本表及 **§八** 状态列。

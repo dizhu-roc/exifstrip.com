@@ -29,6 +29,11 @@ export const BLOG_REFERENCES: Record<string, GuideReference[]> = {
     { title: "W3C – Portable Network Graphics (PNG) Specification", url: "https://www.w3.org/TR/png/" },
     { title: "ExifTool – PNG tags", url: "https://exiftool.org/TagNames/PNG.html" },
   ],
+  "tip-strip-metadata-from-jpeg": [
+    { title: "Library of Congress – JPEG with Exif (APP1)", url: "https://www.loc.gov/preservation/digital/formats/fdd/fdd000147.shtml" },
+    { title: "Library of Congress – Exif format family", url: "https://www.loc.gov/preservation/digital/formats/fdd/fdd000618.shtml" },
+    { title: "CIPA – Exif Standard", url: "https://www.cipa.jp/e/std/std-sec.html" },
+  ],
   "topic-phone-privacy": [
     { title: "Library of Congress – What EXIF can contain", url: "https://www.loc.gov/preservation/digital/formats/fdd/fdd000618.shtml" },
   ],
@@ -45,6 +50,10 @@ export const BLOG_REFERENCES: Record<string, GuideReference[]> = {
   "topic-exiftool-vs-online": [
     { title: "ExifTool official site", url: "https://exiftool.org/" },
     { title: "ExifTool – application documentation", url: "https://exiftool.org/exiftool_pod.html" },
+  ],
+  "topic-exiftool-all-vs-allall": [
+    { title: "ExifTool – application documentation (writing / deleting tags)", url: "https://exiftool.org/exiftool_pod.html" },
+    { title: "ExifTool – tag and group names", url: "https://exiftool.org/TagNames/index.html" },
   ],
   "product-welcome": [
     { title: "CIPA – Exif Standard", url: "https://www.cipa.jp/e/std/std-sec.html" },
