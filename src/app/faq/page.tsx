@@ -19,6 +19,8 @@ const FAQ_ENTRIES = [
   { qKey: "pages.faq.q13", aKey: "pages.faq.a13" },
   { qKey: "pages.faq.q14", aKey: "pages.faq.a14" },
   { qKey: "pages.faq.q15", aKey: "pages.faq.a15" },
+  { qKey: "pages.faq.q16", aKey: "pages.faq.a16" },
+  { qKey: "pages.faq.q17", aKey: "pages.faq.a17" },
 ] as const;
 
 export default function FAQPage() {

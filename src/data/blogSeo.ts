@@ -42,19 +42,19 @@ export const BLOG_SEO: Record<
       "What you can turn off for photo privacy on your device. EXIF and location in albums.",
   },
   "topic-platform-strip": {
-    title: "Do social networks strip EXIF from your photos?",
+    title: "Does X (Twitter) strip EXIF? Social networks & photo metadata",
     description:
-      "Platform behavior varies. Don’t assume posted means EXIF is gone. Strip before upload to be sure.",
+      "Twitter/X, Instagram, Meta, WeChat: do they strip EXIF? Public docs summarized—strip locally before upload.",
   },
   "topic-exif-vs-metadata": {
-    title: "EXIF vs metadata: what's the difference?",
+    title: "EXIF vs metadata: IPTC, XMP, and EXIF difference",
     description:
-      "EXIF is one metadata standard; IPTC, XMP, MakerNote are others. What’s in your photo file.",
+      "Is EXIF the same as metadata? EXIF vs IPTC vs XMP; xmp vs exif—different blocks in one file. Who writes what.",
   },
   "topic-exiftool-vs-online": {
-    title: "ExifTool vs online EXIF tools: when to use which",
+    title: "ExifTool vs online EXIF tools (exiftool online, no install)",
     description:
-      "Command-line batch and rare tags vs browser, no-install viewers. Both can respect privacy when used right.",
+      "Online ExifTool searches: ExifStrip is not ExifTool—compare CLI batch vs browser JPEG stripping and privacy.",
   },
   "product-welcome": {
     title: "Welcome to ExifStrip",

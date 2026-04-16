@@ -8,9 +8,9 @@ export const GUIDE_SEO: Record<
   { title: string; description: string }
 > = {
   "what-is-exif": {
-    title: "What is EXIF?",
+    title: "What is EXIF? Meaning, information, and format",
     description:
-      "EXIF is a metadata standard in photos: device, time, GPS, and more. Learn what EXIF means and which formats contain it. Free EXIF guide.",
+      "What EXIF means: embedded metadata (device, time, GPS)—not a separate image format. Exif specification basics and which files carry EXIF.",
   },
   "exif-history": {
     title: "History of EXIF",
@@ -23,9 +23,9 @@ export const GUIDE_SEO: Record<
       "How JPEG, TIFF, WAV carry EXIF; HEIC, RAW, WebP compatibility. What ExifStrip supports for view and strip.",
   },
   "exif-structure": {
-    title: "Where is EXIF stored in a JPEG?",
+    title: "JPEG EXIF format: APP1 segment & IFD structure",
     description:
-      "EXIF is organized in TIFF-style directories: 0th IFD, Exif sub-IFD, GPS sub-IFD. How tags and values are stored.",
+      "Where EXIF sits in a JPEG (APP1 / 0xFFE1), TIFF-style IFDs (0th, Exif, GPS), and how tags are stored.",
   },
   "dimension-device": {
     title: "Device and camera info in EXIF",
@@ -38,9 +38,9 @@ export const GUIDE_SEO: Record<
       "Shutter, aperture, ISO, focal length, white balance. Written by the device at capture.",
   },
   "dimension-location": {
-    title: "Location (GPS) in EXIF",
+    title: "EXIF GPS: location, altitude, GPSAltitudeRef",
     description:
-      "Lat/lon, altitude, GPS timestamps. Remove GPS from photo for privacy. Highly sensitive.",
+      "EXIF GPS tags: lat/lon, GPSAltitude and GPSAltitudeRef (sea level). Remove GPS from photos before sharing.",
   },
   "dimension-datetime": {
     title: "Date and time in EXIF",
@@ -58,9 +58,9 @@ export const GUIDE_SEO: Record<
       "Artist, Copyright, UserComment, ImageDescription. Often editable; check before sharing.",
   },
   "iptc-xmp-overview": {
-    title: "IPTC, XMP, and EXIF: how they fit together",
+    title: "IPTC vs EXIF (and XMP): how they fit together",
     description:
-      "Photos can hold IPTC captions, XMP tags, and EXIF together. Learn how stripping one may not remove the rest.",
+      "XMP vs EXIF: different metadata containers; clearing one may not clear the other. IPTC captions vs EXIF GPS—preview before sharing.",
   },
   "maker-notes-basics": {
     title: "What are camera maker notes (MakerNote)?",
@@ -68,9 +68,9 @@ export const GUIDE_SEO: Record<
       "Vendor-specific EXIF blobs explain extra fields from Canon, Nikon—in addition to standard tags.",
   },
   "orientation-tag-explained": {
-    title: "EXIF Orientation tag explained",
+    title: "EXIF Orientation values 1–8 explained",
     description:
-      "Orientation 1–8 tells viewers how to rotate or mirror for display; usually no JPEG recompression. Why apps disagree.",
+      "EXIF Orientation tag 1–8: rotation and mirroring for display. Why the same file looks different in some apps.",
   },
   "why-care-privacy": {
     title: "Why care about EXIF privacy?",
@@ -88,14 +88,14 @@ export const GUIDE_SEO: Record<
       "View EXIF first, then decide. Strip only GPS, device only, or remove all. Check before you share.",
   },
   "how-to-view": {
-    title: "How to view EXIF?",
+    title: "View EXIF online (free EXIF viewer, no upload)",
     description:
-      "View EXIF online with no upload. OS, desktop apps, and this browser tool. Read EXIF data locally.",
+      "Free online EXIF viewer: read EXIF in your browser without uploading. OS tools, desktop apps, and ExifStrip—local parsing.",
   },
   "how-to-edit-strip": {
-    title: "How to remove EXIF from photos?",
+    title: "Remove or strip EXIF from photos (JPEG presets)",
     description:
-      "Edit or strip EXIF in JPEG; remove GPS, device, or all. Four presets. Safe to remove—no quality loss for JPEG.",
+      "Remove EXIF data, strip metadata, or scrub GPS: JPEG lossless presets (remove all, privacy, GPS only). PNG/WebP notes.",
   },
   "what-exifstrip-does": {
     title: "What can ExifStrip do?",
@@ -113,9 +113,9 @@ export const GUIDE_SEO: Record<
       "Mainly the capture device at shutter; software and platforms may change it. EXIF is not always camera-original.",
   },
   "faq-social-network": {
-    title: "Is EXIF removed when I post to Instagram or Facebook?",
+    title: "Social media & EXIF: does X (Twitter) strip metadata?",
     description:
-      "Platform behavior varies; don’t assume posted = gone. Strip before upload if you want to be sure.",
+      "Instagram, Facebook, X (Twitter): EXIF handling varies. Do not assume posted = gone—strip EXIF locally first.",
   },
   "faq-can-recover": {
     title: "Can you recover EXIF after stripping?",
@@ -133,9 +133,9 @@ export const GUIDE_SEO: Record<
       "EXIF tags by dimension: device, capture, location, date/time, artist/copyright. With short descriptions.",
   },
   "standards-links": {
-    title: "EXIF standards and specs",
+    title: "EXIF specification & standards (official links)",
     description:
-      "CIPA spec, Library of Congress EXIF/TIFF docs. Links for parsers and tag reference.",
+      "EXIF specification sources: CIPA/JEITA Exif standard, LOC JPEG/TIFF family, tag lists for parsers.",
   },
 };
 
