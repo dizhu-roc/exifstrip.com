@@ -1,0 +1,9 @@
+# ads.txt file for exifstrip.com
+# This file is used to declare authorized sellers for advertising on this website.
+# Format: domain, publisher_id, relationship_type, certification_authority_id
+# Replace 'pub-XXXXXXXXXXXXXXXX' with your actual Google AdSense Publisher ID.
+
+google.com, pub-2886846261982052, DIRECT, f08c47fec0942fa0
+
+# Add additional authorized sellers here if needed.
+# Example: facebook.com, 0000000000000000, RESELLER, c3e20eee3f780d68
