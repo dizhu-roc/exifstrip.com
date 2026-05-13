@@ -98,11 +98,11 @@ export default function RootLayout({
             </Script>
           </>
         )}
+        {/* Google AdSense（与官方 async 片段等效，使用 afterInteractive 在可交互后加载） */}
         <Script
-          async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2886846261982052"
           crossOrigin="anonymous"
-          strategy="beforeInteractive"
+          strategy="afterInteractive"
         />
         <script
           type="application/ld+json"
